@@ -1,0 +1,11 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.wrapper{
+	background: url(img/clouds-bg.png);
+	width: 1200px;
+	height: 2000px;
+	margin: 0 auto;
+}
