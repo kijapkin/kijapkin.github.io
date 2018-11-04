@@ -85,7 +85,7 @@ li a{
 	width: 298px;
 	height: 220px;
 	border: 1px solid #333;
-	margin: 2%;
+	margin: 1%;
 	font:30px Tahoma, Verdana, Segoe, sans-serif;
 	text-align: center;
 	transition:all .2s ease-in-out;
@@ -204,10 +204,15 @@ li a{
 	}
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
 	ul.nav li a{
-		font-size: .7em;
+		font-size: 1.3em;
+		padding: 20px 0;
 	}
+	.content{
+		padding-top: 220px;
+	}
+
 }
 @media screen and (max-width: 852px){
 	.content{
