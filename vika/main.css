@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Lobster');
+
 *{
 	padding: 0;
 	margin: 0;
@@ -7,13 +9,13 @@
 }
 #wrapper{
 	width: 100%;
-	min-height: 930px;
+	/* min-height: 930px; */
 	margin: 0 auto;
 }
 .wr-logo{
 	display: flex;
-	align-content:center;
-	padding: 10px;
+	/* align-content:center; */
+	padding: 10px 0;
 }
 .header{
 	background: url(img/header-bg.jpg);
@@ -24,31 +26,38 @@
 a.logo{
 	background: url(img/flag-logo.png);
 	min-width: 68px;
-	height: 68px;
+	min-height: 68px;
 	border-radius: 50%;
 	transition:all .1s ease-in-out;
-	align-self:center;
+	/* align-self:center; */
 	margin:0 0 0 5%;
 }
 a.logo:hover{
 	cursor: pointer;
 	box-shadow: 0 0 20px #000;
+	transform: scale(1.1);
 }
 h1.head-tex{
-	font: 40px Tahoma, Verdana, Segoe, sans-serif;
-	margin: auto;
-	padding: 0 25px;
-	text-align: center;
+	font: 2.7em Cinzel, Lobster, Tahoma, Verdana, Segoe, sans-serif;
+	color: yellow;
+	/* font-weight: bold; */
+	text-shadow: 0 0 15px #000;
+	margin:  auto;
+	/* padding: 0 25px; */
+	/* text-align: center; */
 }
 ul.nav{
 	background: rgba(0,0,0,.7);
-	min-height: 50px;
+	/* min-height: 50px; */
 	display: flex;
 	margin: auto;
+	text-align: center;
+	-ms-align-items: center;
+	align-items: center;
 }
 li{
-	padding: 12px 10px;
-	text-align: center;
+	/* padding: 12px 10px; */
+	/* text-align: center; */
 	flex-grow:1;
 	transition:all .2s ease-in-out;
 }
@@ -60,6 +69,9 @@ li:hover{
 li a{
 	color: #fff;
 	font: 20px bold Tahoma, Verdana, Segoe, sans-serif;
+	display: block;
+	padding: 10px 0;
+	/* height: 100%; */
 }
 .content{
 	background: url(img/bg.gif);
