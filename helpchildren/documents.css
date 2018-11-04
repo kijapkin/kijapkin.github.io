@@ -1,0 +1,29 @@
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: tahoma, arial;
+}
+body{
+	background: url(imgs/bg-body.png);
+}
+#wrapper{
+	max-width: 1200px;
+	min-width: 650px;
+	margin: 0 auto;
+}
+#header{
+	background:rgba(0,0,0,.8);
+	padding-bottom: 1px;
+	min-height: 700px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+}
