@@ -13,7 +13,10 @@
 }
 .wr-logo{
 	display: flex;
-	padding: 10px 0;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-around;
+	/* padding: 10px 150px; */
 }
 .header{
 	background: url(img/header-bg.jpg);
@@ -27,8 +30,8 @@ a.logo{
 	min-height: 68px;
 	border-radius: 50%;
 	transition:all .1s ease-in-out;
-	align-self:center;
-	margin:0 5%;
+	/* align-self:center; */
+	/* margin: 0 50px; */
 }
 a.logo:hover{
 	cursor: pointer;
@@ -36,13 +39,15 @@ a.logo:hover{
 	transform: scale(1.1);
 }
 h1.head-tex{
-	font: 2.7em Cinzel, Lobster, Tahoma, Verdana, Segoe, sans-serif;
-	color: yellow;
+	font: 3.8em Cinzel, Lobster, Tahoma, Verdana, Segoe, sans-serif;
+	/* color: yellow; */
 	/* font-weight: bold; */
-	text-shadow: 0 0 15px #000;
-	margin:  auto;
-	/* padding: 0 25px; */
+	/* text-shadow: 0 0 15px yellow; */
+	/* margin: 0 auto; */
+	padding: 35px 0;
 	text-align: center;
+	color: #000;
+	text-shadow: 0px 0px 19px #000;
 }
 ul.nav{
 	background: rgba(0,0,0,.7);
@@ -62,7 +67,7 @@ li{
 li:hover{
 	/*box-shadow: 0px 0px 25px #000;*/
 	/*box-shadow: 0 3px 20px rgba(71, 136, 245, 0.5);*/
-	background: rgba(71, 136, 245, 0.5)
+	background: rgba(71, 136, 245, 0.5);
 }
 li a{
 	color: #fff;
@@ -70,6 +75,10 @@ li a{
 	display: block;
 	padding: 10px 0;
 	/* height: 100%; */
+}
+li a:hover{
+	color: yellow;
+	/* text-shadow: 0 0 5px #000; */
 }
 .content{
 	background: url(img/bg.gif);
@@ -192,7 +201,7 @@ li a{
 	left: 10px;
 }
 
-@media screen and (max-width: 1300px){
+/* @media screen and (max-width: 1300px){
 	.head-tex{
 		width: 750px;
 	}
@@ -202,17 +211,28 @@ li a{
 	ul.nav li a{
 		font-size: 1em;
 	}
-}
+} */
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1005px){
 	ul.nav li a{
-		font-size: 1.3em;
+		font-size: 1.4em;
 		padding: 20px 0;
 	}
 	.content{
-		padding-top: 220px;
+		padding-top: 370px;
 	}
-
+	a.logo{
+		transform: scale(2);
+		margin: 0 5% 0 8%;
+	}
+	a.logo:hover{
+		transform: scale(2.1);
+	}
+	h1.head-tex{
+		font-size: 5em;
+		/* margin:0 5%; */
+		/* align-self:left; */
+	}
 }
 @media screen and (max-width: 852px){
 	.content{
