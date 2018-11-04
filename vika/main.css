@@ -9,12 +9,10 @@
 }
 #wrapper{
 	width: 100%;
-	/* min-height: 930px; */
 	margin: 0 auto;
 }
 .wr-logo{
 	display: flex;
-	/* align-content:center; */
 	padding: 10px 0;
 }
 .header{
@@ -24,13 +22,13 @@
 	box-shadow: 0px 3px 25px #000;
 }
 a.logo{
-	background: url(img/flag-logo.png);
+	background: url(img/flag-logo.png) no-repeat;
 	min-width: 68px;
 	min-height: 68px;
 	border-radius: 50%;
 	transition:all .1s ease-in-out;
-	/* align-self:center; */
-	margin:0 0 0 5%;
+	align-self:center;
+	margin:0 5%;
 }
 a.logo:hover{
 	cursor: pointer;
@@ -44,7 +42,7 @@ h1.head-tex{
 	text-shadow: 0 0 15px #000;
 	margin:  auto;
 	/* padding: 0 25px; */
-	/* text-align: center; */
+	text-align: center;
 }
 ul.nav{
 	background: rgba(0,0,0,.7);
@@ -194,11 +192,29 @@ li a{
 	left: 10px;
 }
 
-@media screen and (min-width:80px) and (max-width:1000px){
-	.content2{
-	font-size: 10px;
+@media screen and (max-width: 1300px){
+	.head-tex{
+		width: 750px;
 	}
-	.content2 span{
-		font-size: 20px;
+	.content{
+		padding-top: 180px;
+	}
+	ul.nav li a{
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 900px){
+	ul.nav li a{
+		font-size: .7em;
+	}
+}
+@media screen and (max-width: 852px){
+	.content{
+		padding-top: 260px;
+	}
+	ul.nav li a{
+		font-size: 1.1em;
+		padding: 20px 0;
 	}
 }
