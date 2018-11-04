@@ -210,9 +210,12 @@ p.copy-coder a, p.copy-owner a{
 		margin: 0 0 15px -10px;
 	}
 	p.contacts a, p.copy-coder a, p.copy-owner a{
-		font-size: 1.8em;
+		font-size: 1.9em;
 	}
 	p.contacts{
-		padding-bottom: 15px;
+		padding-bottom: 30px;
+	}
+	#footer{
+		padding: 30px 0 30px 20px;
 	}
 }
