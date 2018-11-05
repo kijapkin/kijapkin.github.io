@@ -142,7 +142,7 @@ p.copy-coder a, p.copy-owner a{
 
 @media screen and (max-width: 980px){
 	#header{
-		background: url(imgs/bg-mob1.jpg);
+		background: url(imgs/bg-mob.jpg);
 		background-size: cover;
 		min-height: 2000px;
 	}
@@ -176,6 +176,7 @@ p.copy-coder a, p.copy-owner a{
 		margin-bottom: 20px;
 	}
 	#wr-portret{
+		background: rgba(0,0,0,.5);
 		top: 500px;
 		right: 16%;
 		transform: scale(1.25);
