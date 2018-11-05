@@ -239,15 +239,15 @@ li a:hover{
 		padding-top: 420px;
 	}
 	#logo-img{
-		top: 30%;
-		transform: scale(1.4);
+		top: 31%;
+		transform: scale(1.6);
 	}
 	#cross-img{
 		top: 30%;
 		transform: scale(1.4);
 	}
-	a.logo:hover{
-		transform: scale(2.1);
+	#logo-img:hover{
+		transform: scale(1.7);
 	}
 	h1.head-tex{
 		font-size: 4.3em;
