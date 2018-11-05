@@ -142,8 +142,8 @@ p.copy-coder a, p.copy-owner a{
 
 @media screen and (max-width: 980px){
 	#header{
-		background: url(imgs/bg-mob.jpg);
-		background-size: cover;
+		background: url(imgs/bg-mob2.jpg);
+		background-size: 100%;
 		min-height: 2000px;
 	}
 	p.title{
