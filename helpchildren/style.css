@@ -150,7 +150,7 @@ p.copy-coder a, p.copy-owner a{
 		font-size: 8em;
 		line-height: 145px;
 		padding: 30px 10px;
-		text-shadow: 0 0 0 #000;
+		text-shadow: 0 0 8px #fff;
 	}
 	p.under{
 		font-size: 5em;
