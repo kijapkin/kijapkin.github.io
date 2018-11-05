@@ -11,32 +11,33 @@
 	width: 100%;
 	margin: 0 auto;
 }
-.wr-logo{
-	display: flex;
-	-ms-align-items: center;
-	align-items: center;
-	justify-content: space-around;
-	/* padding: 10px 150px; */
-}
 .header{
 	background: url(img/header-bg.jpg);
 	position: fixed;
 	width: 100%;
 	box-shadow: 0px 3px 25px #000;
 }
-a.logo{
+.wr-logo{
+	position: relative;
+}
+#logo-img{
+	position: absolute;
 	background: url(img/flag-logo.png) no-repeat;
-	min-width: 68px;
-	min-height: 68px;
+	width: 90px;
+	height: 90px;
+	-webkit-background-size: 100%;
+	background-size: 100%;
 	border-radius: 50%;
+	top: 25px;
+	left: 5%;
 	transition:all .1s ease-in-out;
 	/* align-self:center; */
 	/* margin: 0 50px; */
 }
-a.logo:hover{
+#logo-img:hover{
 	cursor: pointer;
 	box-shadow: 0 0 20px #000;
-	transform: scale(1.1);
+	transform: scale(1.2);
 }
 h1.head-tex{
 	font: 3.8em Cinzel, Lobster, Tahoma, Verdana, Segoe, sans-serif;
@@ -44,10 +45,20 @@ h1.head-tex{
 	/* font-weight: bold; */
 	/* text-shadow: 0 0 15px yellow; */
 	/* margin: 0 auto; */
-	padding: 35px 0;
+	padding: 35px 170px;
 	text-align: center;
 	color: #000;
 	text-shadow: 0px 0px 19px #000;
+}
+#cross-img{
+	position: absolute;
+	background: url(img/redcross.png) no-repeat;
+	width: 100px;
+	height: 100px;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	top: 25px;
+	right: 5%;
 }
 ul.nav{
 	background: rgba(0,0,0,.7);
@@ -82,7 +93,7 @@ li a:hover{
 }
 .content{
 	background: url(img/bg.gif);
-	padding-top: 150px;
+	padding-top: 210px;
 
 }
 .cont-blocks{
@@ -164,12 +175,16 @@ li a:hover{
 }
 .wr-cont2{
 	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
 }
 .content2{
 	color: #000;
-	margin: 3%;
+	margin: 3% 3% 0 3%;
 	padding: 2%;
-	flex:1 400px;
 	background-color: rgba(0,0,0,.2);
 	box-shadow: 5px 5px 10px rgba(0,0,0,.7);
 
@@ -182,7 +197,8 @@ li a:hover{
 
 }
 .footer{
-	height: 120px;
+	margin-top: 40px;
+	min-height: 120px;
 	background: #222;
 	position: relative;
 }
@@ -197,8 +213,9 @@ li a:hover{
 	font: 12px Arial, Helvetica, sans-serif;
 	font-style: italic;
 	position: absolute;
-	bottom: 5px;
-	left: 10px;
+	top: 20%;
+	left: 2%;
+	font-size: 1em;
 }
 
 /* @media screen and (max-width: 1300px){
@@ -221,16 +238,20 @@ li a:hover{
 	.content{
 		padding-top: 420px;
 	}
-	a.logo{
-		transform: scale(2);
-		margin: 0 5% 0 8%;
+	#logo-img{
+		top: 30%;
+		transform: scale(1.4);
+	}
+	#cross-img{
+		top: 30%;
+		transform: scale(1.4);
 	}
 	a.logo:hover{
 		transform: scale(2.1);
 	}
 	h1.head-tex{
-		font-size: 5em;
-		/* margin:0 5%; */
+		font-size: 4.5em;
+		padding: 40px 140px;
 		/* align-self:left; */
 	}
 }
