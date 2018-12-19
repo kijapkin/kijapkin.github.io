@@ -13,7 +13,6 @@
 }
 #wrapper{
 	max-width: 1920px;
-	margin: 0 auto;
 }
 #header{
 	position: relative;
@@ -50,7 +49,13 @@
 
 /* =====CONTAINER-GRID======= */
 
-
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 
 @media (min-width: 768px) {
@@ -73,14 +78,7 @@
     max-width: 1230px;
   }
 }
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: none;
-}
+
 /* ========SECTION======= */
 
 .section{
@@ -107,7 +105,6 @@
 }
 
 .img-drop{
-	display: inline-block;
 	background: url(imgs/drop.png) no-repeat center;
 	height: 32px;
 	width: 100%;
@@ -118,7 +115,6 @@
 	display: inline-block;
 }
 .section .block-main-left{
-	display: inline-block;
 	float: left;
 	width: 45%;
 	padding-right: 40px;
@@ -127,7 +123,6 @@
 	/* position: relative; */
 }
 .section .block-main-right{
-	display: inline-block;
 	float: left;
 	width: 55%;
 	/* height: 330px; */
@@ -154,14 +149,12 @@
 	color: #fff;
 }
 .title-right h3{
-	display: inline-block;
 	margin-bottom: 40px;
 	font-size: 30px;
 	text-transform: uppercase;
 	font-weight: lighter;
 }
 .price{
-	display: inline-block;
 	width: 100%;
 	padding: 14px;
 	background: #fff;
@@ -173,7 +166,7 @@
 	width: 70%;	
 	display: inline-block;
 }
-.price-1, .price-2{
+.price-1,.price-2{
 	margin-bottom: 10px;	
 }
 .sum{
@@ -184,7 +177,7 @@
 	color: #35a629;
 }
 .comment{
-	margin-top: 50px;
+	margin-top: 30px;
 	font-size: .9rem;
 }
 
@@ -193,9 +186,6 @@
 		width: 100%;
 		display: inline-block;
 		float: none;
-	}
-	.section .block-main-left{
-		text-align: center;
 	}
 	.section .block-main-right{
 		margin-top: 100px;
