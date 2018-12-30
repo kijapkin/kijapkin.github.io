@@ -83,7 +83,7 @@
 	margin: 30px 0;
 }
 .subtitle h2{
-	font-family: time new roman;
+	font-family: times new romans;
 	letter-spacing: 6px;
 	text-transform: uppercase;
 	font-weight: lighter;
@@ -98,7 +98,24 @@
 .box-offer{
 	margin: auto;
 	background: #f6e5d3;
+	padding: 40px;
 }
+.title-offer{
+	text-align: center;
+}
+.title-offer h2{
+	font-family: times new romans;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 1.8em;
+}
+.box-imgs{
+	display: grid;
+	grid-template-columns: 2;
+	grid-template-rows: 2;
+}
+
 
  @media screen and (max-width: 800px) {
  	 	.wr-numb-page{
