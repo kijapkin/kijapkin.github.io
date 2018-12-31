@@ -4,6 +4,10 @@
 	list-style: none;
 	text-decoration: none;
 	font-family: tahoma, arial;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 #wrapper{
 	padding: 0 20px;
@@ -116,11 +120,12 @@
 .box-offer{
 	margin: auto;
 	background: #f6e5d3;
-	padding: 40px;
+	padding: 60px;
 	margin-bottom: 100px;
 }
 .title-offer{
 	text-align: center;
+	margin-bottom: 60px;
 }
 .title-offer h2{
 	font-family: times new romans;
@@ -138,8 +143,8 @@
 .item-card{
 	/*outline: 1px dashed green;*/
 	text-align: center;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
 .item-card .img{
 	display: grid;
@@ -163,6 +168,17 @@
 	font-size: 15px;
 
 }
+.one{
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.two{
+	border-bottom: 1px solid #ccc;
+}
+.three{
+	border-right: 1px solid #ccc;
+}
+
 
  @media (max-width: 800px) {
  	 	.wr-numb-page{
@@ -177,5 +193,9 @@
  	 	}
  	 	.box-cards{
 			grid-template-columns: 1fr;
+		}
+		.one, .two, .three{
+			border: 0px solid red;
+			border-bottom: 1px solid #ccc;
 		}
  }
