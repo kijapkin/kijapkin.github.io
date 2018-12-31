@@ -54,6 +54,7 @@
 }
 .title-page2{
 	display: inline-block;
+	padding-top: 2px;
 }
 .title-page2 h1 a{
 	font-size: 30px;
