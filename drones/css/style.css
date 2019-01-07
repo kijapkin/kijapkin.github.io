@@ -102,6 +102,10 @@ p.arrow:hover{
 	padding: 10px 20px;
 	display: inline-block;
 	font-size: 16px;
+	transition: background .3s ease;
+}
+.sign-in a:hover{
+	background: rgba(0,0,0,.5);
 }
 ul.menu{
 	display: inline-block;
@@ -121,10 +125,11 @@ ul.menu a:hover{
 	text-align: center;
 	margin-top: 250px;
 }
-.title-main p{
+.title-main h1{
 	color: #fff;
 	font-size: 60px;
 	text-transform: uppercase;
+	font-weight: lighter;
 }
 .block-for-button{
 	display: inline-block;
@@ -146,5 +151,50 @@ ul.menu a:hover{
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	transition: background .3s ease;
 }
-///x
+.button-more-information a:hover{
+	background: rgba(0,0,0,.5);
+}
+
+/* ========SECTION-PRODUCTS======= */
+
+section.products{
+	background: #f6f6f6;
+	padding-top: 40px;
+}
+.block-title{
+	text-align: center;
+}
+.block-title h2{
+	margin-top: 20px;
+	display: inline-block;
+	font-size: 50px;
+	font-weight: lighter;
+}
+.wrap-label{
+	position: relative;
+	display: inline-block;
+	left: 5px;
+}
+.tr-l{
+	display: inline-block;
+	width: 0; height: 0;
+	border-top: 10px solid transparent;
+	border-right: 10px solid #63AFD0;
+	border-bottom: 10px solid transparent;
+	position: relative;
+	bottom: 4px;
+	right: -5px;
+}
+.block-title a{
+	display: inline-block;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 12px 16px;
+	background: #63AFD0;
+	border-radius: 6px;
+	color: #000;
+	position: relative;
+	top: -9px;
+}
