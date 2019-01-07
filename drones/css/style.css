@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: arial, tahoma;
+}
+
+
+#wrapper{
+	max-width: 1920px;
+	margin: auto;
+}
+header{
+	background: url(../imgs/fon-header.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	/*outline: 2px dashed red;*/
+	padding: 40px 140px;
+	min-height: 1080px;
+}
+img.logo{
+	float: left;
+	margin-right: 10px;
+}
+.logo-title p{
+	/*outline: 2px dashed red;*/
+	text-transform: uppercase;
+	padding-top: 10px;
+	letter-spacing: 3px;
+	line-height: 15px;
+	color: #fff;
+	font-size: 20px;
+	float: left;
+}
+span.logo{
+	color: #4380D3;
+	font-weight: bold;
+}
+span.sub{
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+.block-social{
+	/*outline: 2px dashed red;*/
+	float: left;
+	padding: 10px 20px;
+	margin-left: 60px;
+}
+img.social{
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-right: 6px;
+}
+.block-right{
+	float: right;
+}
+.phone{
+	float: left;
+	width: 250px;
+	margin-right: 100px;
+	padding-top: 12px;
+}
+.icon-phone{
+	width: 40px;
+	float: left;
+	margin-right: 20px;
+	margin-top: -10px;
+}
+.phone p{
+	font-weight: bold;
+	font-size: 20px;
+	color: #fff;
+	line-height: 5px;
+}
+span.call a{
+	color: #4380D3;
+	font-size: 16px;
+	border-bottom: 1px solid #4380A9;
+}
+p.arrow{
+	display: inline-block;
+	float: right;
+	margin-top: -6px;
+	transition: all .3s ease;
+	cursor: pointer;
+}
+p.arrow:hover{
+	transform: rotate(180deg);
+}
+.sign-in{
+	border: 2px solid #4380D3;
+	border-radius: 6px;
+	float: right;
+}
+.sign-in a{
+	color: #fff;
+	padding: 10px 20px;
+	display: inline-block;
+	font-size: 16px;
+}
+ul.menu{
+	display: inline-block;
+	width: 100%;
+	margin-top: 60px;
+}
+ul.menu a{
+	color: #fff;
+	margin-right: 75px;
+	font-size: 13px;
+	font-weight: bold;
+}
+ul.menu a:hover{
+	text-decoration: underline;
+}
+.title-main{
+	text-align: center;
+	margin-top: 250px;
+}
+.title-main p{
+	color: #fff;
+	font-size: 60px;
+	text-transform: uppercase;
+}
+.block-for-button{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin-top: 120px;
+}
+.button-more-information{
+	border: 2px solid #4380D3;
+	display: inline-block;
+	border-radius: 6px;
+	text-align: center;
+}
+.button-more-information a{
+	padding: 22px;
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+///x
