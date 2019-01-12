@@ -18,7 +18,7 @@ header{
 	background: url(../imgs/fon-header.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	background-size: cover;
-	/*outline: 2px dashed red;*/
+	/* outline: 2px dashed red; */
 	padding: 40px 140px;
 	min-height: 1080px;
 }
@@ -45,7 +45,7 @@ span.sub{
 	letter-spacing: 2px;
 }
 .block-social{
-	/*outline: 2px dashed red;*/
+	outline: 2px dashed red;
 	float: left;
 	padding: 10px 20px;
 	margin-left: 60px;
@@ -190,6 +190,7 @@ section.products{
 .block-title a{
 	display: inline-block;
 	font-size: 14px;
+	font-weight: bold;
 	text-transform: uppercase;
 	padding: 12px 16px;
 	background: rgba(125,144,188,.4);
@@ -214,13 +215,17 @@ section.products{
 	padding: 20px;
 }
 .circle{
-	padding: 30px 25px;
 	display: inline-block;
 	color: #fff;
 	background: #63AFD0;
 	border-radius: 50%;
 	text-transform: uppercase;
 	float: left;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	padding-top: 32px;
+
 }
 .circle-two{
 	background: red;
@@ -254,6 +259,27 @@ a.want{
 	margin: 15px;
 }
 
+
+/*=========description==========*/
+
+section.description{
+	width: 100%;
+	display: inline-block;
+}
+.container{
+	position: relative;
+	/*overflow: hidden;*/
+}
+.box-img-one{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 100%;
+}
+.box-text-one{
+	width: 50%;
+}
 /*=======FOOTER=======*/
 
 footer{

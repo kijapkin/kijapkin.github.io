@@ -1,0 +1,188 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: arial, tahoma;
+}
+.wrapper_content{
+	background: #f6f6f6;
+	padding-top: 40px;
+}
+.block-title{
+	text-align: center;
+}
+.block-title h2{
+	margin-top: 20px;
+	display: inline-block;
+	font-size: 50px;
+	font-weight: lighter;
+}
+.wrap-label{
+	position: relative;
+	display: inline-block;
+	left: 5px;
+}
+.tr-l{
+	display: inline-block;
+	width: 0; height: 0;
+	border-top: 10px solid transparent;
+	border-right: 10px solid #cbd3e4;
+	border-bottom: 10px solid transparent;
+	position: relative;
+	bottom: 4px;
+	right: -5px;
+
+}
+.block-title a{
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 12px 16px;
+	background: #cbd3e4;
+	border-radius: 6px;
+	color: #000;
+	position: relative;
+	top: -9px;
+}
+.price-cards{
+	margin-top: 60px;
+	padding-bottom: 60px;
+	width: 100%;
+	text-align: center;
+}
+/* .card{
+	text-align: left;
+	width: 540px;
+	height: 380px;
+	background: #fff;
+	display: inline-block;
+	margin: 15px;
+	padding: 20px;
+} */
+.circle{
+	display: inline-block;
+	font-weight: bold;
+	color: #fff;
+	background: #63AFD0;
+	border-radius: 50%;
+	text-transform: uppercase;
+	float: left;
+	width: 62px;
+	height: 62px;
+	text-align: center;
+	padding-top: 23px;
+
+}
+.card h3{
+	font-size: 16px;
+	font-weight: bold;
+}
+.circle-two{
+	background: red;
+}
+.card img{
+	width: 200px;
+	height: 200px;
+	margin-left: 90px;
+	outline: 1px solid red;
+}
+p.price{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 40px;
+}
+a.want{
+	float: right;
+	margin-top: -40px;
+	padding: 8px 25px;
+	background: #63AFD0;
+	color: #fff;
+	border-radius: 5px;
+}
+.block-video{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.block-video iframe{
+	margin: 15px;
+}
+
+/* ======description===== */
+
+section.description{
+}
+.block-up{
+	position: relative;
+	margin: 0 auto;
+}
+.box-up-left{
+	width: 50%;
+	min-height: 550px;
+	background: #fff;
+	padding-left: 40px;
+	padding-bottom: 80px;
+}
+.text-left{
+	max-width: 560px;
+	padding-top: 80px;
+	padding-right: 100px;
+	float: right;
+	font-size: 18px;
+	
+	h2{
+		font-size: 36px;
+	}
+}
+.img-up{
+	background: url(../images/sky-copter-right.jpg);
+	background-size: cover;
+	min-height: 550px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 50%;
+}
+
+// ==========.section_test=========
+
+/* .section_test{
+	display: inline-block;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	.wrap-test{
+		background: #fff;
+		width: 100%;
+	}
+	.test{
+		display: inline-block;
+		float: left;
+		width: 100%;
+		position: relative;
+		text-align: left;
+		min-height: 500px;
+		background: #fff;
+	}
+	.left{
+		display: inline-block;
+		float: left;
+		width: 50%;
+	}
+	.right{
+		position: absolute;
+		left: 50%;
+		top: 0;
+		bottom: 0;
+		width: 150%;
+		background-position: left;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+} */
