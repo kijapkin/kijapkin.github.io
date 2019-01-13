@@ -5,3 +5,12 @@
 	background: #fff;
 	position: relative;
 }
+.footer-main-bg{
+	background: url(../images/footer-bg.jpg);
+	height: 193px;
+}
+.footer-bottom-strip{
+	background: url(../images/footer-bottom-strip.png) no-repeat bottom right;
+	height: 100%;
+	outline: 1px dashed red;
+}
