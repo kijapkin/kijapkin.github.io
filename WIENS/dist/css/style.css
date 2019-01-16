@@ -427,7 +427,9 @@ body {
 * {
   margin: 0;
   padding: 0;
-  outline: none; }
+  outline: none;
+  list-style: none;
+  text-decoration: none; }
 
 a {
   color: #000; }
@@ -631,6 +633,9 @@ input.lupe {
   .switch a:hover {
     background: rgba(0, 0, 0, 0.3);
     color: #bf0c1a; }
+  .switch li.active a {
+    background: rgba(0, 0, 0, 0.3);
+    color: #bf0c1a; }
 
 .header-midle-strip {
   background: #ebebeb;
@@ -680,10 +685,10 @@ input.lupe {
         -o-transition: all .3s ease;
         transition: all .3s ease; }
       .header-bottom-strip ul li a:hover {
-        color: #26292a;
         text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-        font-weight: bold; }
-    .header-bottom-strip ul li:hover {
+        font-weight: bold;
+        color: #26292a; }
+    .header-bottom-strip ul li:active {
       background: rgba(200, 15, 20, 0.3); }
 
 @media (max-width: 768px) {
@@ -699,6 +704,49 @@ input.lupe {
 @media (max-width: 1199px) {
   .header-bottom-strip {
     background: #8a0e12; } }
+
+section.slider {
+  padding-top: 25px; }
+
+.block-slider {
+  background: #fff;
+  position: relative; }
+  .block-slider .wr-slide {
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 3px 2px #ccc;
+    box-shadow: 0 3px 2px #ccc; }
+    .block-slider .wr-slide .bg-slide {
+      min-height: 294px;
+      max-width: 1178px;
+      margin: 12px;
+      position: relative; }
+      .block-slider .wr-slide .bg-slide .dark-block {
+        width: 390px;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 28px 20px;
+        color: #fff; }
+        .block-slider .wr-slide .bg-slide .dark-block h1 {
+          font-size: 25px;
+          font-family: MyriadWebPro;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin: 0;
+          letter-spacing: 1.4px; }
+        .block-slider .wr-slide .bg-slide .dark-block h2 {
+          font-size: 19px;
+          font-family: MyriadWebPro;
+          font-weight: normal;
+          text-transform: uppercase;
+          margin-bottom: 25px; }
+        .block-slider .wr-slide .bg-slide .dark-block p {
+          text-align: justify;
+          font-size: 15px;
+          line-height: 24px;
+          letter-spacing: .5px; }
 
 .footer {
   width: 100%;
@@ -770,8 +818,8 @@ input.lupe {
     width: 100%;
     position: absolute;
     bottom: 0;
-    /* 		background-repeat: no-repeat;
-background-position: bottom center; */ }
+    /* background-repeat: no-repeat;
+		background-position: bottom right; */ }
     .footer .footer-bottom-strip .fb img {
       position: absolute;
       right: 390px;

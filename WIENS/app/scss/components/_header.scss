@@ -80,6 +80,10 @@ input.lupe{
 		background: rgba(0,0,0,.3);
 		color: #bf0c1a;
 	}
+	li.active a{
+		background: rgba(0,0,0,.3);
+		color: #bf0c1a;
+	}
 }
 
 .header-midle-strip{
@@ -119,12 +123,12 @@ input.lupe{
 				transition: all .3s ease;
 			}
 			a:hover{
-				color: #26292a;
 				text-shadow: 1px 1px 0 rgba(255,255,255,.3);
 				font-weight: bold;
-			}
+				color: #26292a;	
+			}			
 		}
-		li:hover{
+		li:active{
 			background: rgba(200,15,20,.3);
 		}
 	}

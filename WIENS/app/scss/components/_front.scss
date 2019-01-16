@@ -1,0 +1,48 @@
+section.slider{
+	padding-top: 25px;
+}
+.block-slider{
+	background: #fff;
+	position: relative;
+	.wr-slide{
+		border: 1px solid #ccc;
+		box-shadow: 0 3px 2px #ccc;
+		.bg-slide{
+			min-height: 294px;	
+			max-width: 1178px;
+			margin: 12px;
+			position: relative;
+			.dark-block{
+				width: 390px;
+				background: rgba(0,0,0,.7);
+				position: absolute;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				padding: 28px 20px;
+				color: #fff;
+				h1{
+					font-size: 25px;
+					font-family: MyriadWebPro;
+					font-weight: bold;
+					text-transform: uppercase;
+					margin: 0;
+					letter-spacing: 1.4px;
+				}
+				h2{
+					font-size: 19px;
+					font-family: MyriadWebPro;
+					font-weight: normal;
+					text-transform: uppercase;
+					margin-bottom: 25px;
+				}
+				p{
+					text-align: justify;
+					font-size: 15px;
+					line-height: 24px;
+					letter-spacing: .5px;
+				}
+			}
+		}
+	}	
+}
