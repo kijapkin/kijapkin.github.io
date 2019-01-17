@@ -707,72 +707,84 @@ input.lupe {
 
 section.slider {
   padding-top: 25px; }
-
-.wrapper-block-slider {
-  position: relative;
-  z-index: 1; }
-  .wrapper-block-slider .white-tringle {
-    width: 0;
-    border: 50px solid transparent;
-    border-right: 50px solid #fff;
-    border-bottom: 50px solid #fff;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1; }
-    .wrapper-block-slider .white-tringle .block-arrows {
-      position: absolute;
-      right: -40px;
-      bottom: -50px;
-      /* outline: 1px dashed red; */
-      z-index: 1; }
-      .wrapper-block-slider .white-tringle .block-arrows span {
-        float: left;
-        margin-right: 5px;
-        color: #555;
-        font-size: 55px; }
-  .wrapper-block-slider .block-slider {
-    background: #fff;
+  section.slider .wrapper-block-slider {
     position: relative;
-    border: 1px solid #eee;
-    -webkit-box-shadow: 0 3px 2px #ccc;
-    box-shadow: 0 3px 2px #ccc; }
-    .wrapper-block-slider .block-slider .wr-slide {
-      display: none; }
-      .wrapper-block-slider .block-slider .wr-slide:first-child {
-        display: block; }
-      .wrapper-block-slider .block-slider .wr-slide .bg-slide {
-        min-height: 294px;
-        max-width: 1178px;
-        margin: 12px;
-        position: relative; }
-        .wrapper-block-slider .block-slider .wr-slide .bg-slide .dark-block {
-          width: 390px;
-          background: rgba(0, 0, 0, 0.7);
-          position: absolute;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          padding: 28px 20px;
-          color: #fff; }
-          .wrapper-block-slider .block-slider .wr-slide .bg-slide .dark-block h1 {
-            font-size: 25px;
-            font-family: MyriadWebPro;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin: 0;
-            letter-spacing: 1.4px; }
-          .wrapper-block-slider .block-slider .wr-slide .bg-slide .dark-block h2 {
-            font-size: 19px;
-            font-family: MyriadWebPro;
-            font-weight: normal;
-            text-transform: uppercase;
-            margin-bottom: 25px; }
-          .wrapper-block-slider .block-slider .wr-slide .bg-slide .dark-block p {
-            /* text-align: justify; */
-            font-size: 15px;
-            line-height: 24px;
-            letter-spacing: .5px; }
+    z-index: 1; }
+    section.slider .wrapper-block-slider .white-tringle {
+      width: 0;
+      border: 50px solid transparent;
+      border-right: 50px solid #fff;
+      border-bottom: 50px solid #fff;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1; }
+      section.slider .wrapper-block-slider .white-tringle .block-arrows {
+        position: absolute;
+        right: -40px;
+        bottom: -50px;
+        /* outline: 1px dashed red; */
+        z-index: 1; }
+        section.slider .wrapper-block-slider .white-tringle .block-arrows span {
+          float: left;
+          margin-right: 5px;
+          color: #555;
+          font-size: 55px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+    section.slider .wrapper-block-slider .block-slider {
+      background: #fff;
+      position: relative;
+      border: 1px solid #eee;
+      -webkit-box-shadow: 0 3px 2px #ccc;
+      box-shadow: 0 3px 2px #ccc; }
+      section.slider .wrapper-block-slider .block-slider .wr-slide {
+        display: none; }
+        section.slider .wrapper-block-slider .block-slider .wr-slide:first-child {
+          display: block; }
+        section.slider .wrapper-block-slider .block-slider .wr-slide .bg-slide {
+          min-height: 294px;
+          max-width: 1178px;
+          margin: 12px;
+          position: relative; }
+          section.slider .wrapper-block-slider .block-slider .wr-slide .bg-slide .dark-block {
+            width: 390px;
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            padding: 28px 20px;
+            color: #fff; }
+            section.slider .wrapper-block-slider .block-slider .wr-slide .bg-slide .dark-block h1 {
+              font-size: 25px;
+              font-family: MyriadWebPro;
+              font-weight: bold;
+              text-transform: uppercase;
+              margin: 0;
+              letter-spacing: 1.4px; }
+            section.slider .wrapper-block-slider .block-slider .wr-slide .bg-slide .dark-block h2 {
+              font-size: 19px;
+              font-family: MyriadWebPro;
+              font-weight: normal;
+              text-transform: uppercase;
+              margin-bottom: 25px; }
+            section.slider .wrapper-block-slider .block-slider .wr-slide .bg-slide .dark-block p {
+              /* text-align: justify; */
+              font-size: 15px;
+              line-height: 24px;
+              letter-spacing: .5px; }
+
+section.services .container .block-boxes .box {
+  width: 290px;
+  height: 250px;
+  background: #ebebeb;
+  outline: 2px dashed red;
+  float: left;
+  margin-right: 1px; }
 
 .footer {
   width: 100%;
