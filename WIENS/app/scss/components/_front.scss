@@ -68,10 +68,25 @@ section.slider{
 							margin-bottom: 25px;
 						}
 						p{
-							/* text-align: justify; */
 							font-size: 15px;
 							line-height: 24px;
 							letter-spacing: .5px;
+							padding-bottom: 50px;
+						}
+						@media (max-width: 768px) {
+							width: 100%;
+							padding: 15px;
+						}
+						@media (max-width: 400px) {	
+							h1{
+								font-size: 18px;
+							}
+							h2{
+								font-size: 16px;
+							}
+							p{
+								line-height: 18px;
+							}
 						}
 					}
 				}
@@ -80,16 +95,179 @@ section.slider{
 	}
 }
 section.services{
+	padding: 100px 0;
+	@media (max-width: ) {
+		
+	}
 	.container{
 		.block-boxes{
+			grid-template-columns: 1.1fr 1fr 1fr 1fr;
+			grid-template-rows: auto;
+			grid-gap: 1px;
+			.box-pointer{
+				position: relative;
+				min-height: 250px;
+				background: #fff;
+				display: grid;
+				width: 100%;
+				padding-bottom: 62px;
+				.title-services{
+					align-self: center;
+					h1{
+						padding: 20px;
+						font-size: 29px;
+						font-weight: normal;
+						width: 270px;
+						color: #525658;
+						line-height: 45px;
+					}
+				}
+				h2{
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					height: 62px;
+					line-height: 62px;
+					padding-left: 20px;
+					background: #ddd;
+					font-size: 19px;
+					font-weight: normal;
+					color: #5d6062;
+					background: #f3f3f3;
+
+				}
+				.arrow-pointer{
+					background: #e8e9e9;
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					height: 62px;
+					width: 77px;
+					padding-top: 11px;
+					text-align: center;
+					img{
+						@media (max-width:532px) {
+						transform: rotate(90deg);
+						}
+					}
+				}
+			}
 			.box{
-				width: 290px;
-				height: 250px;
-				background: #ebebeb;
-				outline: 2px dashed red;
-				float: left;
-				margin-right: 1px;
+				padding: 16px;
+				min-height: 250px;
+				background: #eaeaea;
+				position: relative;
+				display: grid;
+				text-align: center;
+				grid-template-rows: 1fr	1fr;
+				img{
+					align-self: center;
+					justify-self: center; 
+				}
+				.discription{
+					display: grid;
+					h2{
+						color: #c51828;
+						text-transform: uppercase;
+						font-size: 18px;
+						font-weight: lighter;
+					}
+					p{
+						color: #525658;
+					}
+				}
+				a{
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+				}
+			}
+			@media (max-width: 1200px) {
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+			}
+			@media (max-width: 532px) {
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr;
 			}
 		}
-	}		
+	}
+}
+section.bottom{
+	/* background: url(../images/section-bottom.png); */
+	background: #ebecec;
+	text-align: center;
+	.line-max{
+		max-width: 100%;
+		border-bottom: 1px solid #efefff;
+		box-shadow: 0 1px 0 #bbb;
+	}
+	h1{
+		padding-top: 74px;
+		margin: 0;
+		color: #525658;
+		font-weight: bold;
+		font-size: 28px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		@media (max-width: 600px) {
+			font-size: 26px;
+		}
+	}
+	h2{
+		font-size: 16px;
+		color: #5c6062;
+		text-transform: uppercase;
+		font-weight: lighter;
+		padding-top: 6px;
+		margin: 0;
+	}
+	.line-355{
+		max-width: 355px;
+		border-bottom: 1px solid #ccc;
+		box-shadow: 0 1px 1px #fff;
+		margin: 37px auto;
+	}
+	.block-columns{
+		padding-bottom: 80px;
+		.column-one{grid-area: c1}
+		.column-two{grid-area: c2}
+		.column-img{grid-area: img;img{border-radius: 12px;}}
+		grid-template-columns: 1fr 1fr 330px;
+		grid-template-rows: 250px;
+		grid-template-areas: "c1 c2 img";
+		grid-gap: 60px;
+		.column{
+			overflow: hidden;
+			p{
+				text-align: justify;
+				font-size: 15px;
+				font-weight: normal;
+				color: #525658;
+				line-height: 37px;
+			}
+			.text-img{
+				text-align: center;
+				font-style: italic;
+			}
+		}
+		@media (max-width: 1200px) {
+			grid-template-columns: 310px 1fr;
+			grid-template-areas: "img c1"
+					   			"c2 c2";
+		}
+		@media (max-width: 600px) {
+			grid-template-columns: auto;
+			grid-template-rows: auto;
+			grid-template-areas: "img" "c1" "c2";
+			grid-gap: 40px;
+			.column img{
+				width: 100%;
+			}
+		}
+	}
+
 }

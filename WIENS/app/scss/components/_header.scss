@@ -126,7 +126,7 @@ input.lupe{
 				text-shadow: 1px 1px 0 rgba(255,255,255,.3);
 				font-weight: bold;
 				color: #26292a;	
-			}			
+			}
 		}
 		li:active{
 			background: rgba(200,15,20,.3);
@@ -135,11 +135,6 @@ input.lupe{
 }
 
 // ========media=======
-@media (max-width: 768px) {
-	ul{
-		/* flex-direction: column; */
-	}
-}
 @media (max-width: 360px) {
 	.wr-search{
 	border-left: none;

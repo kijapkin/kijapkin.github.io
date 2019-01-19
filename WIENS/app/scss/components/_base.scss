@@ -1,5 +1,5 @@
 .middle {
-	padding-bottom: 235px;
+	padding-bottom: 0;
 } 
 
 html {
@@ -36,7 +36,12 @@ a{
 		color: $color_main;
 	}
 }
-
+.grid{
+	display: grid;
+}
+.flex{
+	display: flex;
+}
 
 .container {
   padding-right: 15px;
