@@ -42,6 +42,10 @@ a{
 .flex{
 	display: flex;
 }
+.clearfix{
+	content: " ";
+	clear: both;
+}
 
 .container {
   padding-right: 15px;
