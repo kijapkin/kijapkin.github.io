@@ -721,6 +721,8 @@ input.lupe {
   -webkit-box-shadow: 0 1px 0 #fff;
   box-shadow: 0 1px 0 #fff; }
 
+/* *************************************** */
+/* ========-SLIDER-========== */
 section.slider {
   padding-top: 25px; }
   section.slider .wrapper-block-slider {
@@ -739,7 +741,6 @@ section.slider {
         position: absolute;
         right: -40px;
         bottom: -50px;
-        /* outline: 1px dashed red; */
         z-index: 1; }
         section.slider .wrapper-block-slider .white-tringle .block-arrows span {
           float: left;
@@ -808,6 +809,8 @@ section.slider {
               section.slider .wrapper-block-slider .block-slider .wr-slide .bg-slide .dark-block p {
                 line-height: 18px; } }
 
+/* *************************************** */
+/* ========-HOME-========== */
 section.services {
   padding: 100px 0; }
   section.services .container .block-boxes {
@@ -897,7 +900,6 @@ section.services {
         grid-template-rows: 1fr; } }
 
 section.bottom {
-  /* background: url(../images/section-bottom.png); */
   background: #ebecec;
   text-align: center; }
   section.bottom h1 {
@@ -925,43 +927,52 @@ section.bottom {
     box-shadow: 0 1px 1px #fff;
     margin: 37px auto; }
   section.bottom .block-columns {
-    padding-bottom: 80px;
-    grid-template-columns: 1fr 1fr 330px;
-    grid-template-rows: 250px;
-    grid-template-areas: "c1 c2 img";
-    grid-gap: 60px; }
-    section.bottom .block-columns .column-one {
-      grid-area: c1; }
-    section.bottom .block-columns .column-two {
-      grid-area: c2; }
-    section.bottom .block-columns .column-img {
-      grid-area: img; }
-      section.bottom .block-columns .column-img img {
-        -webkit-border-radius: 12px;
-        border-radius: 12px; }
-    section.bottom .block-columns .column {
-      overflow: hidden; }
-      section.bottom .block-columns .column p {
+    padding-bottom: 100px; }
+    section.bottom .block-columns .column-text {
+      width: 68%;
+      display: inline-block;
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      -webkit-column-gap: 60px;
+      -moz-column-gap: 60px;
+      column-gap: 60px; }
+      @media (max-width: 1300px) {
+        section.bottom .block-columns .column-text {
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
+          width: 100%;
+          padding: 0 20px; } }
+      section.bottom .block-columns .column-text p {
         text-align: justify;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: normal;
         color: #525658;
-        line-height: 37px; }
-      section.bottom .block-columns .column .text-img {
-        text-align: center;
-        font-style: italic; }
-    @media (max-width: 1200px) {
-      section.bottom .block-columns {
-        grid-template-columns: 310px 1fr;
-        grid-template-areas: "img c1" "c2 c2"; } }
-    @media (max-width: 600px) {
-      section.bottom .block-columns {
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "img" "c1" "c2";
-        grid-gap: 40px; }
-        section.bottom .block-columns .column img {
-          width: 100%; } }
+        line-height: 37px;
+        word-spacing: 1.3px; }
+    section.bottom .block-columns .column-img {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+      margin-left: 30px;
+      /* @media (max-width: 1300px) {
+				max-width: 100%;
+			} */ }
+      section.bottom .block-columns .column-img img {
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        margin-bottom: 10px; }
+        @media (max-width: 1300px) {
+          section.bottom .block-columns .column-img img {
+            margin-top: 40px;
+            max-width: 100%; } }
+      section.bottom .block-columns .column-img p {
+        padding-right: 8px;
+        font-style: italic;
+        color: #525658;
+        font-size: 14px; }
 
 /* *************************************** */
 /* ========-UBER-========== */
@@ -1182,31 +1193,31 @@ section.cards {
   box-shadow: 0 1px 1px #fff;
   margin: 37px auto; }
 
-.main-titile p {
+.main-titile p.anspre {
   color: #525658;
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
-  -webkit-column-gap: 60px;
-  -moz-column-gap: 60px;
-  column-gap: 60px;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
   text-align: justify;
   font-size: 14px;
   padding-bottom: 50px;
   line-height: 37px;
-  word-spacing: 4px; }
+  word-spacing: .3px; }
   @media (max-width: 1200px) {
-    .main-titile p {
+    .main-titile p.anspre {
       -webkit-column-count: 2;
       -moz-column-count: 2;
       column-count: 2; } }
   @media (max-width: 800px) {
-    .main-titile p {
+    .main-titile p.anspre {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1;
       line-height: 25px; } }
-  .main-titile p span {
+  .main-titile p.anspre span {
     color: #bd0c1a; }
 
 section.portrait {
@@ -1249,6 +1260,8 @@ section.portrait {
         -webkit-transition: all .5s ease;
         -o-transition: all .5s ease;
         transition: all .5s ease; }
+        section.portrait .container .wrapper-squares .wr-sq:hover .text p a {
+          color: #525658; }
       section.portrait .container .wrapper-squares .wr-sq .text {
         padding-top: 50px; }
         section.portrait .container .wrapper-squares .wr-sq .text p {
@@ -1257,8 +1270,10 @@ section.portrait {
           margin: 0 auto;
           color: #a5a7a7;
           font-weight: normal; }
-          section.portrait .container .wrapper-squares .wr-sq .text p i {
-            font-weight: normal; }
+          section.portrait .container .wrapper-squares .wr-sq .text p a {
+            font-weight: normal;
+            color: #a5a7a7;
+            font-style: italic; }
       section.portrait .container .wrapper-squares .wr-sq .square {
         position: relative;
         width: 200px;
@@ -1329,11 +1344,6 @@ section.portrait {
               transform: rotate(45deg);
               float: right; }
 
-/* .square:hover{
-filter: grayscale(100%);
-filter: url(grayscale.svg); Firefox 4+
-filter: gray; IE 6-9
-} */
 .footer {
   width: 100%;
   background: #fff;
