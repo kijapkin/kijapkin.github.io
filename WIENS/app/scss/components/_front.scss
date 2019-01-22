@@ -51,7 +51,7 @@ section.slider{
 					position: relative;
 					.dark-block{
 						width: 390px;
-						background: rgba(0,0,0,.7);
+						background: rgba(0,0,0,.5);
 						position: absolute;
 						right: 0;
 						top: 0;
@@ -59,12 +59,15 @@ section.slider{
 						padding: 28px 20px;
 						color: #fff;
 						h1{
+							text-align: left;
 							font-size: 25px;
 							font-family: MyriadWebPro;
 							font-weight: bold;
 							text-transform: uppercase;
 							margin: 0;
+							padding: 0;
 							letter-spacing: 1.4px;
+							color: #fff;
 						}
 						h2{
 							font-size: 19px;
@@ -296,7 +299,7 @@ section.download{
 	width: 100%;
 	background: #ebebeb;
 	padding-bottom: 75px;
-	box-shadow: 0 4px 0 rgba(10,10,10,.2);
+	box-shadow: 0 2px 0 rgba(10,10,10,.2);
 	position: relative;
 	z-index: 100;
 	.line-max{
@@ -492,3 +495,170 @@ section.cards{
 		}
 	}
 }
+
+/* *************************************** */
+/* ========--ANSPRECHPARTNER--========== */
+
+.main-titile{
+	h1{
+		font-size: 29px;
+	}
+	h3.max{
+		color: #525658;
+		padding: 0;
+	}
+	.line-ihr{
+	max-width: 355px;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0 1px 1px #fff;
+	margin: 37px auto;
+	}
+	p{
+		color: #525658;
+		column-count: 3;
+		column-gap: 60px;
+		text-align: justify;
+		font-size: 14px;
+		padding-bottom: 50px;
+		line-height: 37px;
+		word-spacing: 4px;
+		@media (max-width: 1200px) {
+			column-count: 2;
+		}
+		@media (max-width: 800px) {
+			column-count: 1;
+			line-height: 25px;
+		}
+		span{
+			color: #bd0c1a;
+		}
+	}
+}
+section.portrait{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: #ebebeb;
+	box-shadow: 0 2px 0 rgba(10,10,10,.2);
+	position: relative;
+	z-index: 100;
+	.container{
+		.wrapper-squares{
+			max-width: 600px;
+			text-align: center;
+			display: grid;
+			grid-gap: 130px;
+			grid-template-columns: 1fr 1fr;
+			margin: 0 auto;
+			padding-top: 100px;
+			padding-bottom: 60px;
+			@media (max-width: 715px) {
+				grid-template-columns: auto;
+			}
+			.wr-sq{
+				text-align: center;
+				&:hover{
+					.square{
+						transition: all .5s ease;
+						background: linear-gradient(to right, 
+							rgba(143,14,14,1) 0%, 
+							rgba(224,5,31,1) 49%, 
+							rgba(30,33,34,1) 51%, 
+							rgba(121,126,129,1) 100%);
+						filter:none;
+						opacity: 1;
+					}
+					.text p{
+						color: #525658;
+						font-weight: bold;
+						transition: all .5s ease;
+					}
+				}
+				.text{
+					padding-top: 50px;
+					p{
+						width: 200px;
+						font-size: 14px;
+						margin: 0 auto;
+						color: #a5a7a7;
+						font-weight: normal;
+						i{
+							font-weight: normal;
+						}
+					}
+				}
+				
+				.square{
+					position: relative;
+					width: 200px;
+					height: 200px;
+					background: #fff;
+					transform: rotate(-45deg);
+					display: inline-block;
+					filter: grayscale(100%);
+					filter: gray;
+					opacity: .5;
+					box-shadow: -1px 1px 0px #ccc;
+					.cube1,.cube2{
+						position: absolute;
+						width: 14px;
+						height: 18px;
+						background: #ebebeb;
+						z-index: 100;
+					}
+					.cube1{
+					  right: 93px;
+					  bottom: -2px;
+					}
+					.cube2{
+					  right: 93px;
+					  top: -2px;
+					}
+					.layer{
+					  background: #ebebeb;
+					  width: 172px;
+					  height: 172px;
+					  position: absolute;
+					  left: 14px;
+					  top: 14px;
+					  box-shadow: 1px -1px 0px #ccc;
+					  .wrapper-port{
+						  width: 142px;
+						  height: 142px;
+						  overflow: hidden;
+						  position: relative;
+						  position: absolute;
+						  left: 15px;
+						  top: 15px;
+						  .portrait-left{
+							  background: url(../images/potter1.jpg) no-repeat center;
+							  width: 200px;
+							  height: 200px;
+							  position: absolute;
+							  margin: -29px;
+							  background-size: cover;
+							  transform: rotate(45deg);
+							  float: left;
+							}
+							.portrait-right{
+							  background: url(../images/volan.jpg) no-repeat center;
+							  width: 200px;
+							  height: 200px;
+							  position: absolute;
+							  margin: -29px;
+							  background-size: cover;
+							  transform: rotate(45deg);
+							  float: right;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* .square:hover{
+filter: grayscale(100%);
+filter: url(grayscale.svg); Firefox 4+
+filter: gray; IE 6-9
+} */
