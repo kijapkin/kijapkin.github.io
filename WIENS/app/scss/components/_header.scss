@@ -25,15 +25,22 @@ li
 {
 	display: inline-block;
 }
+
 .wr-search{
 	border-right: 1px solid #36363b;
 	border-left: 1px solid #36363b;
 	padding: 5px 26px;
+	@media (max-width: 700px) {
+		&:hover input.field{
+			width: 190px;
+		}
+	}
 }
 .search{
 	position: relative;
 }
 input.field{
+	transition: all .5s ease;
 	background: #171c22;
 	border-radius: 50px;
 	width: 190px;
@@ -45,6 +52,9 @@ input.field{
 	color: #fff;
 	padding-right: 30px;
 	padding-left: 20px;
+	@media (max-width: 700px) {
+		width: 50px;
+	}
 }
 input.field::placeholder{
 	font-style: italic;
@@ -108,6 +118,9 @@ input.lupe{
 		flex-wrap: wrap;
 		text-align: center;
 		li{
+			&:hover{
+				background: rgba(200,15,20,.3);
+			}
 			flex: 1 1 auto;
 			transition: all .3s ease;
 			border-right: 1px solid rgba(255,255,255,.2);
@@ -127,9 +140,6 @@ input.lupe{
 				font-weight: bold;
 				color: #26292a;	
 			}
-		}
-		li:active{
-			background: rgba(200,15,20,.3);
 		}
 	}
 }
