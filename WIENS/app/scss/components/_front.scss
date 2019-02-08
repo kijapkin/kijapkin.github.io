@@ -525,6 +525,10 @@ section.slider{
 				&:last-child{
 					border-right: none;
 				}
+				&.active a{
+					font-weight: bold;
+					color: #c60b1b;
+				}
 				a{
 					align-self: center;
 					font-size: 14px;
@@ -542,71 +546,63 @@ section.slider{
 }
 section.cards{
 	background: #ebebeb;
-	padding-bottom: 75px;
 	box-shadow: 0 4px 0 rgba(10,10,10,.2);
-	position: relative;
-	z-index: 100;
 	.block-cards{
+		padding-top: 64px;
+		padding-bottom: 130px;
 		display: grid;
-		grid-template-columns: repeat(4,1fr);
-		grid-gap: 54px;
-		@media (max-width: 1300px) {
-			grid-template-columns: repeat(3,1fr);
-		}
-		@media (max-width: 998px) {
-			grid-template-columns: repeat(2,1fr)
-		}
-		@media (max-width: 600px) {
-			grid-template-columns: 1fr;
-		}
+		grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+		grid-gap: 115px 53px;
+		justify-content: center;
 		.card{
-			padding: 64px 0;
-			width: 260px;
-			margin: 0 auto;
-			img{
-				width: 100%;
-				padding: 10px;
-				border: 1px solid #adadad;
+			.pic{
+				img{
+					width: 100%;
+					padding: 10px;
+					border: 1px solid #adadad;
+				}
 			}
-			h3{
-				font-size: 16px;
-				padding: 20px 0 10px;
-				text-transform: uppercase;
-				color: #3c3c3b;
-			}
-			p.disc{
-				font-size: 14px;
-				color: #575756;
-				text-align: justify;
-				line-height: 28px;
-				padding-bottom: 45px;
-			}
-			.down-block{
+			.block-text{
+				padding: 0 8px;
+				display: grid;
+				align-items: center;
+				grid-template-columns: 148px auto 50px;
+				h3{
+					font-size: 14px;
+					font-weight: bold;
+					padding: 14px 0 4px;
+					text-transform: uppercase;
+					color: #3c3c3b;
+					grid-area: 1/1/2/-1;
+				}
 				p{
+					font-size: 14px;
+					color: #575756;
+					line-height: 26px;
+					padding-bottom: 45px;
+					text-align: justify;
+					font-weight: normal;
+					grid-area: 2/1/3/-1;
+				}
+				a>h4{
+					font-size: 14px;
+					font-weight: normal;
 					border-right: 2px solid #939393;
 					color: #575756;
-					display: inline-block;
 					padding-right: 18px;
-					margin-bottom: 18px;
+					font-weight: normal;
 				}
-				img.quotes{
-					height: 20px;
-					width: 20px;
-					padding: 0;
-					border: 0;
-					position: relative;
-					top: 5px;
-					left: 15px;
+				a{
+					justify-self: end;
+					display: grid;
+					align-items: center;
 				}
-				img.eye{
-					height: 20px;
-					width: 28px;
-					padding: 0;
-					border: 0;
-					position: relative;
-					top: 5px;
-					left: 30px;
-				}
+			}
+			.line{
+				max-width: 100%;
+				border-bottom: 1px solid #ccc;
+				box-shadow: 0 1px 0 #fff;
+				padding-top: 12px;
 			}
 		}
 	}
@@ -629,7 +625,7 @@ section.cards{
 	box-shadow: 0 1px 1px #fff;
 	margin: 37px auto;
 	}
-	p.anspre{
+	p{
 		color: #525658;
 		column-count: 3;
 		column-gap: 50px;
@@ -784,44 +780,32 @@ section.portrait{
 	h1{
 		padding-bottom: 5px;
 	}
-}
-.ul-menu-anfahrt{
-	display: grid;
-	grid-gap: 8px;
-	color: #525658;
-	padding-bottom: 40px;
-	li{
-		a{
-			color: #525658;
-			&:after{
-				padding: 8px;
-				content: "\2022";
+	.ul-menu-anfahrt{
+		display: grid;
+		grid-row-gap: 8px;
+		color: #525658;
+		padding-bottom: 40px;
+		.one, .two {
+			h4{
+				display: inline-block;
+				font-weight: normal;
 			}
-		}
-		&:first-child{
-			margin-right: 5px;
-			font-weight: bold;
-		}
-		&:last-child a:after{
-		content: none;
-}
-	}
-	ul.two{
-		li{
-			&:after{
-				padding: 8px;
-				content: "\2022";
-			}
-			&:last-child:after{
-				content: none;
-			}
-			&:first-child:after{
-				content: none;
+			ul{
+				display: inline-block;
+				li{
+					color: #525658;
+					&:after{
+						padding: 8px;
+						content: "\2022";
+					}
+					&:first-child:after, &:last-child:after{
+						content: " ";
+					}
+				}
 			}
 		}
 	}
 }
-
 
 section.navigation{
 	margin: 0;
@@ -836,27 +820,22 @@ section.navigation{
 	padding: 70px 10px 105px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-template-areas: "adress map";
-	grid-gap: 40px;
+	grid-template-areas: 
+	"adress map"
+	"text map";
+	grid-gap: 35px 40px;
 	@media (max-width: 1199px) {
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr;
+		/* grid-template-rows: auto 100% auto; */
 		grid-template-areas: 
+		"adress"
 		"map"
-		"adress";
-	}
-	@media (max-width: 650px) {
-		grid-template-rows: 1fr 2fr;
-	}
-	@media (max-width: 426px) {
-		grid-template-rows: 1fr 4fr;
+		"text"
 	}
 	.block-adress{
 		grid-area: adress;
 		.form{
 			text-align: left;
-			padding-bottom: 30px;
 			form{
 				input{
 					margin-right: 8px;
@@ -884,15 +863,6 @@ section.navigation{
 				text-align: left;
 			}
 		}
-		.text{
-			grid-gap: 30px;
-			text-align: left;
-			p{
-				line-height: 28px;
-				color: #525658;
-				font-size: 13px;
-			}
-		}
 	}
 	.block-map{
 		grid-area: map;
@@ -901,25 +871,37 @@ section.navigation{
 		.map{
 			position: relative;
 			width: 100%;
-			height: 100%;
+			min-height: 400px;
 			overflow: hidden;
 			box-shadow: 0px 0px 4px rgba(111,111,111,.8);
 			iframe{
-				position: absolute;
-				height: 100%;
+				min-height: 100%;
 				width: 100%;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right: 0;
 			}
+		}
+	}
+	.block-text{
+		display: grid;
+		grid-area: text;
+		grid-gap: 30px;
+		text-align: left;
+		p{
+			line-height: 28px;
+			color: #525658;
+			font-size: 13px;
 		}
 	}
 }
 
 /* *************************************** */
 /* ========--KONTAKT--========== */
-
+.kont-text{
+	p{
+		text-align: center;
+		column-count: 1;
+		padding: 0;
+	}
+}
 section.kontakt{
 	margin: 0;
 	padding: 0;
@@ -937,7 +919,7 @@ section.kontakt{
 		}
 		padding: 76px 20px 134px;
 		display: grid;
-		grid-gap: 50px;
+		grid-column-gap: 50px;
 		grid-template-columns: minmax(190px, 380px) auto;
 		@media (max-width: 992px) {
 			grid-template-columns: 1fr;
@@ -958,29 +940,32 @@ section.kontakt{
 					color: #000;
 					font-size: 13px;
 					line-height: 24px;
-					a:hover{
-						text-decoration: underline;
+					a{
+						transition: all .1s ease;
+						&:hover{
+							color: #c70a1c;
+							text-shadow: 0 0 1px #c70a1c;
+						}						
 					}
 				}
 			}
 		}
 		.kontaktformular{
+			display: grid;
+			text-align: left;
 			form{
-				display: grid;
-				grid-gap: 50px;
-				grid-template-columns: minmax(300px,380px) minmax(280px,380px);
-				@media (max-width: 992px) {
-					grid-template-columns: 1fr 1fr;
-				}
-				@media (max-width: 560px) {
-					grid-template-columns: auto;
-				}
-				.block-inputs{
-					text-align: left;
-					.wrap-input{
-						display: grid;
-						grid-gap: 16px;
+				.wpforms-field-container{
+					display: grid;
+					grid-template-columns: minmax(300px,380px) minmax(280px,380px);
+					grid-column-gap: 42px;
+					@media (max-width: 720px) {
+						grid-template-columns: 1fr;
+					}
+					div{
+							min-width: 260px;
+							height: 56px;						
 						input{
+							color: #525658;
 							width: 100%;
 							padding: 8px 22px;
 							border-radius: 3px;
@@ -988,27 +973,38 @@ section.kontakt{
 							box-shadow: 0 1px 1px #555;
 							font-size: 14px;
 						}
+						label{
+							font-size: 12px;
+							color: red;
+							opacity: .6;
+						}
+					}
+					div:last-child{
+						grid-area: 1/2/5/3;
+						margin-bottom: 20px;
+						@media (max-width: 720px){
+							grid-area: 5/1/span 1/span 1;
+						}
+						textarea{
+							padding: 8px 12px;
+							color: #525658;
+							width: 100%;
+							min-height: 200px;
+							resize: none;
+							border-radius: 3px;
+							border: none;
+							box-shadow: 0 1px 1px #555;
+							font-size: 14px;
+						}
 					}
 				}
-				.block-textarea{
+				.submit{
 					text-align: right;
-					padding-top: 60px;
-					textarea{
-						padding: 8px 12px;
-						color: #525658;
-						width: 100%;
-						min-height: 177px;
-						resize: none;
-						border-radius: 3px;
-						border: none;
-						box-shadow: 0 1px 1px #555;
-						font-size: 14px;
-					}
 					button{
 						background: #fff;
 						color: #444444;
 						font-size: 14px;
-						margin-top: 26px;
+						margin-top: 10px;
 						padding: 6px 22px;
 						border-radius: 3px;
 						border: none;
@@ -1026,9 +1022,15 @@ section.kontakt{
 /* *************************************** */
 /* ========--IMPRESSUM--========== */
 
-p.impress{
-	text-transform: uppercase;
-	font-size: 14px;
+.impressum-titile{
+	p{
+		color: #525658;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+		margin-top: 5px;
+		font-size: 14px;
+	}
 }
 section.impressum{
 	margin: 0;
@@ -1038,9 +1040,12 @@ section.impressum{
 	box-shadow: 0 2px 0 rgba(10,10,10,.2);
 	position: relative;
 	z-index: 100;
-	.wrapper-blocks{
+	.impressum-articles{
 		text-align: center;
 		padding: 85px 0 190px;
+		:nth-child(4){
+			margin-top: 105px;
+		}
 		@media (max-width: 700px) {
 			padding-bottom: 100px;
 		}
@@ -1058,9 +1063,6 @@ section.impressum{
 			@media (max-width: 700px) {
 				text-align: justify;
 			}
-		}
-		.rechtliche{
-			margin-bottom: 105px;
 		}
 	}
 }

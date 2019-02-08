@@ -24,7 +24,7 @@
 							</form>
 						</div>
 						<ul class="switch">
-							<li class="active"><a href="#">De</a></li>
+							<li class="current-lang"><a href="#">De</a></li>
 							<li><a href="#">En</a></li>
 						</ul>
 					</div>
@@ -40,13 +40,13 @@
 			<div class="header-bottom-strip">
 				<div class="container">
 					<ul>
-						<li><a href="home.html">HOME</a></li><!-- 
-						 --><li><a href="uber.html">ÜBER UNS</a></li><!-- 
-						 --><li><a href="leistungsportfolio.html">LEISTUNGSPORTFOLIO</a></li><!-- 
-						 --><li><a href="ansprechpartner.html">ANSPRECHPARTNER</a></li><!-- 
-						 --><li><a href="anfahrt.html">ANFAHRT</a></li><!-- 
-						 --><li><a href="kontakt.html">KONTAKT</a></li><!-- 
-						 --><li><a href="impressum.html">IMPRESSUM</a></li>
+						<li class="current-menu-item"><a href="home.html">HOME</a></li><!-- 
+					 --><li><a href="uber.html">ÜBER UNS</a></li><!-- 
+					 --><li><a href="leistungsportfolio.html">LEISTUNGSPORTFOLIO</a></li><!-- 
+					 --><li><a href="ansprechpartner.html">ANSPRECHPARTNER</a></li><!-- 
+					 --><li><a href="anfahrt.html">ANFAHRT</a></li><!-- 
+					 --><li><a href="kontakt.html">KONTAKT</a></li><!-- 
+					 --><li><a href="impressum.html">IMPRESSUM</a></li>
 					</ul>
 				</div>	
 			</div>
@@ -138,9 +138,10 @@
 				</div>
 				<div class="container">
 					<div class="main-titile">
-						<h1>KONTAKT</h1>
-						<p>Nutzen Sie das Kontaktformular, um mit uns in Verbindung zu treten.
-						 Natürlich sind wir auch gerne telefonisch für Sie erreichbar.</p>
+						<div class="kont-text">
+							<h1>KONTAKT</h1>
+							<p>Nutzen Sie das Kontaktformular, um mit uns in Verbindung zu treten. Natürlich sind wir auch gerne telefonisch für Sie erreichbar.</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -157,27 +158,44 @@
 									<p>12345 Musterstadt</p>
 									<br>
 									<p><a href="tel:+01234567891">T: 01234 - 56 78 91</a></p>
-									<p><a class="red-color" href="mailto:info@wiens-engineering.de">info@wiens-engineering.de</a></p>
+									<p><a href="mailto:info@wiens-engineering.de">info@wiens-engineering.de</a></p>
 									<p><a href="http://www.wiens-engineering.de/">www.wiens-engineering.de</a></p>
 									<p><a href="http://facebook.com/wiensengineering/">facebook.com/wiensengineering</a></p>
 								</div>
 							</div>
 						</div>
 						<div class="kontaktformular">
-							<form action="">
-								<div class="block-inputs">
-									<h4>kontaktformular</h4>
-									<div class="wrap-input">
-										<input type="text" placeholder="Name*"></inpit>
-										<input type="text" placeholder="E-Mail-Adresse*"></inpit>
-										<input type="text" placeholder="Telefon"></inpit>
-										<input type="text" placeholder="Betreff"></inpit>
-									</div>
-								</div>
-								<div class="block-textarea">
-									<textarea name="" id="" placeholder="Nachricht verfassen*"></textarea>
-									<button><b>senden</b></button>
-								</div>
+							<h4>kontaktformular</h4>
+							<form  method="post"  action="/kontakt/" novalidate="novalidate">
+							    <div class="wpforms-field-container">
+							        <div>
+							        	<!-- <label>Einzeiliger Text <span>*</span></label> -->
+							        	<input  placeholder="Name*" required="" aria-required="true">
+							        	<label 	class="wpforms-error" for="">Dieses Feld ist erforderlich.</label>
+							        </div>
+							        <div>
+							        	<!-- <label>E-Mail<span">*</span></label> -->
+							        	<input type="email" placeholder="E-Mail-Adresse*" required="" aria-required="true">
+							        	<label class="wpforms-error" for="">Dieses Feld ist erforderlich.</label>
+							        </div>
+							        <div>
+							        	<!-- <label>Zahlen</label> -->
+							        	<input type="number" name="wpforms[fields][4]" placeholder="Telefon">
+							        	<label class="wpforms-error" for="">Dieses Feld ist erforderlich.</label>
+							        </div>
+							        <div>
+							        	<!-- <label">Einzeiliger Text</label> -->
+							        	<input type="text" name="" placeholder="Betreff">
+							        	<label class="wpforms-error" for="">Dieses Feld ist erforderlich.</label>
+							        </div>
+							        <div>
+							        	<!-- <label>Textabsatz<span>*</span></label> -->
+							        	<textarea name="" placeholder="Nachricht verfassen*"  required="" aria-required="true"></textarea>
+							        </div>
+							    </div>
+							    <div class="submit">
+							        <button type="submit" name=""value="wpforms-submit">senden</button>
+							    </div>
 							</form>
 						</div>
 					</div>

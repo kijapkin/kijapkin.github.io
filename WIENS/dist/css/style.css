@@ -656,7 +656,7 @@ input.lupe {
   .switch a:hover {
     background: rgba(0, 0, 0, 0.3);
     color: #bf0c1a; }
-  .switch li.active a {
+  .switch li.current-lang a {
     background: rgba(0, 0, 0, 0.3);
     color: #bf0c1a; }
 
@@ -697,8 +697,14 @@ input.lupe {
       border-right: 1px solid rgba(255, 255, 255, 0.2);
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       border-left: 1px solid rgba(255, 255, 255, 0.2); }
+      .header-bottom-strip ul li.current-menu-item {
+        /* background: rgba(200,15,20,.3); */ }
+        .header-bottom-strip ul li.current-menu-item a {
+          text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+          font-weight: bold;
+          color: #26292a; }
       .header-bottom-strip ul li:hover {
-        background: rgba(200, 15, 20, 0.3); }
+        /* background: rgba(200,15,20,.3); */ }
       .header-bottom-strip ul li a {
         padding: 0 24px;
         font-size: 15px;
@@ -1214,6 +1220,9 @@ section.slider .ul-menu {
       border-right: 1px solid #525658; }
       section.slider .ul-menu ul li:last-child {
         border-right: none; }
+      section.slider .ul-menu ul li.active a {
+        font-weight: bold;
+        color: #c60b1b; }
       section.slider .ul-menu ul li a {
         -webkit-align-self: center;
         -ms-flex-item-align: center;
@@ -1228,65 +1237,65 @@ section.slider .ul-menu {
 
 section.cards {
   background: #ebebeb;
-  padding-bottom: 75px;
   -webkit-box-shadow: 0 4px 0 rgba(10, 10, 10, 0.2);
-  box-shadow: 0 4px 0 rgba(10, 10, 10, 0.2);
-  position: relative;
-  z-index: 100; }
+  box-shadow: 0 4px 0 rgba(10, 10, 10, 0.2); }
   section.cards .block-cards {
+    padding-top: 64px;
+    padding-bottom: 130px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 54px; }
-    @media (max-width: 1300px) {
-      section.cards .block-cards {
-        grid-template-columns: repeat(3, 1fr); } }
-    @media (max-width: 998px) {
-      section.cards .block-cards {
-        grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 600px) {
-      section.cards .block-cards {
-        grid-template-columns: 1fr; } }
-    section.cards .block-cards .card {
-      padding: 64px 0;
-      width: 260px;
-      margin: 0 auto; }
-      section.cards .block-cards .card img {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #adadad; }
-      section.cards .block-cards .card h3 {
-        font-size: 16px;
-        padding: 20px 0 10px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 115px 53px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    section.cards .block-cards .card .pic img {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #adadad; }
+    section.cards .block-cards .card .block-text {
+      padding: 0 8px;
+      display: grid;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      grid-template-columns: 148px auto 50px; }
+      section.cards .block-cards .card .block-text h3 {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 14px 0 4px;
         text-transform: uppercase;
-        color: #3c3c3b; }
-      section.cards .block-cards .card p.disc {
+        color: #3c3c3b;
+        grid-area: 1/1/2/-1; }
+      section.cards .block-cards .card .block-text p {
         font-size: 14px;
         color: #575756;
+        line-height: 26px;
+        padding-bottom: 45px;
         text-align: justify;
-        line-height: 28px;
-        padding-bottom: 45px; }
-      section.cards .block-cards .card .down-block p {
+        font-weight: normal;
+        grid-area: 2/1/3/-1; }
+      section.cards .block-cards .card .block-text a > h4 {
+        font-size: 14px;
+        font-weight: normal;
         border-right: 2px solid #939393;
         color: #575756;
-        display: inline-block;
         padding-right: 18px;
-        margin-bottom: 18px; }
-      section.cards .block-cards .card .down-block img.quotes {
-        height: 20px;
-        width: 20px;
-        padding: 0;
-        border: 0;
-        position: relative;
-        top: 5px;
-        left: 15px; }
-      section.cards .block-cards .card .down-block img.eye {
-        height: 20px;
-        width: 28px;
-        padding: 0;
-        border: 0;
-        position: relative;
-        top: 5px;
-        left: 30px; }
+        font-weight: normal; }
+      section.cards .block-cards .card .block-text a {
+        justify-self: end;
+        display: grid;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+    section.cards .block-cards .card .line {
+      max-width: 100%;
+      border-bottom: 1px solid #ccc;
+      -webkit-box-shadow: 0 1px 0 #fff;
+      box-shadow: 0 1px 0 #fff;
+      padding-top: 12px; }
 
 /* *************************************** */
 /* ========--ANSPRECHPARTNER--========== */
@@ -1304,7 +1313,7 @@ section.cards {
   box-shadow: 0 1px 1px #fff;
   margin: 37px auto; }
 
-.main-titile p.anspre {
+.main-titile p {
   color: #525658;
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -1318,17 +1327,17 @@ section.cards {
   line-height: 37px;
   word-spacing: .3px; }
   @media (max-width: 1200px) {
-    .main-titile p.anspre {
+    .main-titile p {
       -webkit-column-count: 2;
       -moz-column-count: 2;
       column-count: 2; } }
   @media (max-width: 800px) {
-    .main-titile p.anspre {
+    .main-titile p {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1;
       line-height: 25px; } }
-  .main-titile p.anspre span {
+  .main-titile p span {
     color: #bd0c1a; }
 
 section.portrait {
@@ -1458,29 +1467,23 @@ section.portrait {
   text-align: center; }
   .main-titile h1 {
     padding-bottom: 5px; }
-
-.ul-menu-anfahrt {
-  display: grid;
-  grid-gap: 8px;
-  color: #525658;
-  padding-bottom: 40px; }
-  .ul-menu-anfahrt li a {
-    color: #525658; }
-    .ul-menu-anfahrt li a:after {
-      padding: 8px;
-      content: "\2022"; }
-  .ul-menu-anfahrt li:first-child {
-    margin-right: 5px;
-    font-weight: bold; }
-  .ul-menu-anfahrt li:last-child a:after {
-    content: none; }
-  .ul-menu-anfahrt ul.two li:after {
-    padding: 8px;
-    content: "\2022"; }
-  .ul-menu-anfahrt ul.two li:last-child:after {
-    content: none; }
-  .ul-menu-anfahrt ul.two li:first-child:after {
-    content: none; }
+  .main-titile .ul-menu-anfahrt {
+    display: grid;
+    grid-row-gap: 8px;
+    color: #525658;
+    padding-bottom: 40px; }
+    .main-titile .ul-menu-anfahrt .one h4, .main-titile .ul-menu-anfahrt .two h4 {
+      display: inline-block;
+      font-weight: normal; }
+    .main-titile .ul-menu-anfahrt .one ul, .main-titile .ul-menu-anfahrt .two ul {
+      display: inline-block; }
+      .main-titile .ul-menu-anfahrt .one ul li, .main-titile .ul-menu-anfahrt .two ul li {
+        color: #525658; }
+        .main-titile .ul-menu-anfahrt .one ul li:after, .main-titile .ul-menu-anfahrt .two ul li:after {
+          padding: 8px;
+          content: "\2022"; }
+        .main-titile .ul-menu-anfahrt .one ul li:first-child:after, .main-titile .ul-menu-anfahrt .one ul li:last-child:after, .main-titile .ul-menu-anfahrt .two ul li:first-child:after, .main-titile .ul-menu-anfahrt .two ul li:last-child:after {
+          content: " "; }
 
 section.navigation {
   margin: 0;
@@ -1496,25 +1499,17 @@ section.navigation {
   padding: 70px 10px 105px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "adress map";
-  grid-gap: 40px; }
+  grid-template-areas: "adress map" "text map";
+  grid-gap: 35px 40px; }
   @media (max-width: 1199px) {
     .wrapper-navigation {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "map" "adress"; } }
-  @media (max-width: 650px) {
-    .wrapper-navigation {
-      grid-template-rows: 1fr 2fr; } }
-  @media (max-width: 426px) {
-    .wrapper-navigation {
-      grid-template-rows: 1fr 4fr; } }
+      /* grid-template-rows: auto 100% auto; */
+      grid-template-areas: "adress" "map" "text"; } }
   .wrapper-navigation .block-adress {
     grid-area: adress; }
     .wrapper-navigation .block-adress .form {
-      text-align: left;
-      padding-bottom: 30px; }
+      text-align: left; }
       .wrapper-navigation .block-adress .form form input {
         margin-right: 8px;
         margin-bottom: 8px;
@@ -1541,13 +1536,6 @@ section.navigation {
       @media (max-width: 480px) {
         .wrapper-navigation .block-adress .form {
           text-align: left; } }
-    .wrapper-navigation .block-adress .text {
-      grid-gap: 30px;
-      text-align: left; }
-      .wrapper-navigation .block-adress .text p {
-        line-height: 28px;
-        color: #525658;
-        font-size: 13px; }
   .wrapper-navigation .block-map {
     grid-area: map;
     border: 5px solid #d9d9d9;
@@ -1556,21 +1544,32 @@ section.navigation {
     .wrapper-navigation .block-map .map {
       position: relative;
       width: 100%;
-      height: 100%;
+      min-height: 400px;
       overflow: hidden;
       -webkit-box-shadow: 0px 0px 4px rgba(111, 111, 111, 0.8);
       box-shadow: 0px 0px 4px rgba(111, 111, 111, 0.8); }
       .wrapper-navigation .block-map .map iframe {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0; }
+        min-height: 100%;
+        width: 100%; }
+  .wrapper-navigation .block-text {
+    display: grid;
+    grid-area: text;
+    grid-gap: 30px;
+    text-align: left; }
+    .wrapper-navigation .block-text p {
+      line-height: 28px;
+      color: #525658;
+      font-size: 13px; }
 
 /* *************************************** */
 /* ========--KONTAKT--========== */
+.kont-text p {
+  text-align: center;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  padding: 0; }
+
 section.kontakt {
   margin: 0;
   padding: 0;
@@ -1584,7 +1583,7 @@ section.kontakt {
     text-align: center;
     padding: 76px 20px 134px;
     display: grid;
-    grid-gap: 50px;
+    grid-column-gap: 50px;
     grid-template-columns: minmax(190px, 380px) auto; }
     section.kontakt .block-kontakt h4 {
       font-size: 13px;
@@ -1608,24 +1607,28 @@ section.kontakt {
         color: #000;
         font-size: 13px;
         line-height: 24px; }
-        section.kontakt .block-kontakt .anschrift .inner-ans p a:hover {
-          text-decoration: underline; }
-    section.kontakt .block-kontakt .kontaktformular form {
+        section.kontakt .block-kontakt .anschrift .inner-ans p a {
+          -webkit-transition: all .1s ease;
+          -o-transition: all .1s ease;
+          transition: all .1s ease; }
+          section.kontakt .block-kontakt .anschrift .inner-ans p a:hover {
+            color: #c70a1c;
+            text-shadow: 0 0 1px #c70a1c; }
+    section.kontakt .block-kontakt .kontaktformular {
       display: grid;
-      grid-gap: 50px;
-      grid-template-columns: minmax(300px, 380px) minmax(280px, 380px); }
-      @media (max-width: 992px) {
-        section.kontakt .block-kontakt .kontaktformular form {
-          grid-template-columns: 1fr 1fr; } }
-      @media (max-width: 560px) {
-        section.kontakt .block-kontakt .kontaktformular form {
-          grid-template-columns: auto; } }
-      section.kontakt .block-kontakt .kontaktformular form .block-inputs {
-        text-align: left; }
-        section.kontakt .block-kontakt .kontaktformular form .block-inputs .wrap-input {
-          display: grid;
-          grid-gap: 16px; }
-          section.kontakt .block-kontakt .kontaktformular form .block-inputs .wrap-input input {
+      text-align: left; }
+      section.kontakt .block-kontakt .kontaktformular form .wpforms-field-container {
+        display: grid;
+        grid-template-columns: minmax(300px, 380px) minmax(280px, 380px);
+        grid-column-gap: 42px; }
+        @media (max-width: 720px) {
+          section.kontakt .block-kontakt .kontaktformular form .wpforms-field-container {
+            grid-template-columns: 1fr; } }
+        section.kontakt .block-kontakt .kontaktformular form .wpforms-field-container div {
+          min-width: 260px;
+          height: 56px; }
+          section.kontakt .block-kontakt .kontaktformular form .wpforms-field-container div input {
+            color: #525658;
             width: 100%;
             padding: 8px 22px;
             -webkit-border-radius: 3px;
@@ -1634,26 +1637,35 @@ section.kontakt {
             -webkit-box-shadow: 0 1px 1px #555;
             box-shadow: 0 1px 1px #555;
             font-size: 14px; }
-      section.kontakt .block-kontakt .kontaktformular form .block-textarea {
-        text-align: right;
-        padding-top: 60px; }
-        section.kontakt .block-kontakt .kontaktformular form .block-textarea textarea {
-          padding: 8px 12px;
-          color: #525658;
-          width: 100%;
-          min-height: 177px;
-          resize: none;
-          -webkit-border-radius: 3px;
-          border-radius: 3px;
-          border: none;
-          -webkit-box-shadow: 0 1px 1px #555;
-          box-shadow: 0 1px 1px #555;
-          font-size: 14px; }
-        section.kontakt .block-kontakt .kontaktformular form .block-textarea button {
+          section.kontakt .block-kontakt .kontaktformular form .wpforms-field-container div label {
+            font-size: 12px;
+            color: red;
+            opacity: .6; }
+        section.kontakt .block-kontakt .kontaktformular form .wpforms-field-container div:last-child {
+          grid-area: 1/2/5/3;
+          margin-bottom: 20px; }
+          @media (max-width: 720px) {
+            section.kontakt .block-kontakt .kontaktformular form .wpforms-field-container div:last-child {
+              grid-area: 5/1/span 1/span 1; } }
+          section.kontakt .block-kontakt .kontaktformular form .wpforms-field-container div:last-child textarea {
+            padding: 8px 12px;
+            color: #525658;
+            width: 100%;
+            min-height: 200px;
+            resize: none;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            border: none;
+            -webkit-box-shadow: 0 1px 1px #555;
+            box-shadow: 0 1px 1px #555;
+            font-size: 14px; }
+      section.kontakt .block-kontakt .kontaktformular form .submit {
+        text-align: right; }
+        section.kontakt .block-kontakt .kontaktformular form .submit button {
           background: #fff;
           color: #444444;
           font-size: 14px;
-          margin-top: 26px;
+          margin-top: 10px;
           padding: 6px 22px;
           -webkit-border-radius: 3px;
           border-radius: 3px;
@@ -1666,8 +1678,12 @@ section.kontakt {
 
 /* *************************************** */
 /* ========--IMPRESSUM--========== */
-p.impress {
+.impressum-titile p {
+  color: #525658;
+  text-align: center;
   text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: 5px;
   font-size: 14px; }
 
 section.impressum {
@@ -1679,27 +1695,27 @@ section.impressum {
   box-shadow: 0 2px 0 rgba(10, 10, 10, 0.2);
   position: relative;
   z-index: 100; }
-  section.impressum .wrapper-blocks {
+  section.impressum .impressum-articles {
     text-align: center;
     padding: 85px 0 190px; }
+    section.impressum .impressum-articles :nth-child(4) {
+      margin-top: 105px; }
     @media (max-width: 700px) {
-      section.impressum .wrapper-blocks {
+      section.impressum .impressum-articles {
         padding-bottom: 100px; } }
-    section.impressum .wrapper-blocks h2 {
+    section.impressum .impressum-articles h2 {
       text-transform: uppercase;
       margin-bottom: 50px;
       color: #3c3c3b;
       font-weight: bold;
       font-size: 15px; }
-    section.impressum .wrapper-blocks p {
+    section.impressum .impressum-articles p {
       color: #484847;
       font-size: 15px;
       text-align: center; }
       @media (max-width: 700px) {
-        section.impressum .wrapper-blocks p {
+        section.impressum .impressum-articles p {
           text-align: justify; } }
-    section.impressum .wrapper-blocks .rechtliche {
-      margin-bottom: 105px; }
 
 .footer {
   width: 100%;
@@ -1709,12 +1725,8 @@ section.impressum {
     height: 100%;
     width: 100%;
     text-align: center;
-    overflow: hidden;
-    /* margin-top: 40px; */ }
+    overflow: hidden; }
     .footer .footer-main-bg .container .row {
-      /* 
-				padding-left: -15px;
-				padding-right: -15px; */
       margin-left: -15px;
       margin-right: -15px; }
       .footer .footer-main-bg .container .row .emblem {

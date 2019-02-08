@@ -90,7 +90,7 @@ input.lupe{
 		background: rgba(0,0,0,.3);
 		color: #bf0c1a;
 	}
-	li.active a{
+	li.current-lang a{
 		background: rgba(0,0,0,.3);
 		color: #bf0c1a;
 	}
@@ -118,8 +118,16 @@ input.lupe{
 		flex-wrap: wrap;
 		text-align: center;
 		li{
+			&.current-menu-item{
+				/* background: rgba(200,15,20,.3); */
+				a{
+					text-shadow: 1px 1px 0 rgba(255,255,255,.3);
+					font-weight: bold;
+					color: #26292a;
+				}
+			}
 			&:hover{
-				background: rgba(200,15,20,.3);
+				/* background: rgba(200,15,20,.3); */
 			}
 			flex: 1 1 auto;
 			transition: all .3s ease;
