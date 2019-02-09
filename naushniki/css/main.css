@@ -76,7 +76,8 @@ h1, h2, h3 {
     padding: 40px 10px;
     margin: 0 auto;
     position: relative;
-}/* after_qbici */
+}
+
 h2.title {
     text-align: center;
     font-size: 34px;
@@ -349,7 +350,19 @@ form.m1-form .button-m{
     margin: 0 auto;
     padding: 0 0 20px;
 }
-
+.video {
+    position:relative;
+    padding-bottom:56.25%;/*пропорции видео 16:9 */
+    padding-top:25px;
+    height:0;
+}
+.video iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
 .b3 {
     height: 640px;
     background: url(../img/b3.html) center top no-repeat;
@@ -413,6 +426,7 @@ form.m1-form .button-m{
 .b4 {
     background: url(../img/bg-r3.jpg) repeat;
     color: #fff;
+    padding: 20px 0;
 }
 .b4 h2.title {
     padding: 0 0 40px 480px;
@@ -664,6 +678,9 @@ form.m1-form .button-m{
     font-size: 16px;
 }
 
+.b6-ch .rev-item img{
+    /* display: none; */
+}
 
 .vis-mob {display: none;}
 .vis-w {display: block;}
@@ -769,7 +786,6 @@ form.m1-form .button-m{
         margin-top: 50px;
     }
 	
-	
 	.b6-g .rev-item{
 		float: left;
 		width: 100%;
@@ -800,134 +816,140 @@ form.m1-form .button-m{
 	.b6-ch .rev-item>img{
 		margin-top: 20px;
 	}
-    
 }
-/* bizlife_inc */
 @media only screen and (max-width: 639px) {
-        .section {
-            width: 320px;
-        }
-        .topline a.right{
-            display: none;
-        }
+    .section {
+        width: 320px;
+        padding: 30px 10px 0;
+    }
+    .topline a.right{
+        display: none;
+    }
 
-        .topline {
-            text-align: center;
-        }
-
-        
-        
-        h2.title {
-            font-size: 26px;
-            line-height: 1.3em;
-        }
-        .b1 {
-            height: auto;
-            padding-bottom: 40px;
-            background: url(../img/b1-320.jpg) 50% 0 no-repeat #423e4d;
-        }
-        #end-block {
-            height: auto;
-            padding-bottom: 40px;
-            background: url(../img/b1-320-2.jpg) 50% 0 no-repeat #423e4d;
-        }
-        .b1 h1{
-            font-size: 30px;
-            text-align: center;
-        }
-        .b1 .b1-title{
-            padding: 30px 0 0;
-        }
-        .b1 h2{
-            padding: 20px 0 0;
-            text-align: center;
-        }
-        .b1 h2>span{
-            font-size: 22px;
-        }
-        .b1 .b1-title>p{
-            display: none;
-        }
-        .b1 .sale {
-            margin: 410px 0 0;
-        }
-        .b1 .btnHead .left{
-            float: none;
-        }
-        .b1 .btnHead .right{
-            float: none;
-            width: 180px;
-            margin: 10px auto 0;
-        }
-        /* michael-k90 */
-        .b2 ul.sup-1 li {
-            float: none;
-            width: auto;
-            padding: 0 10px 40px;
-        }
-        .b2-2 .photo-cont>img{
-            display: none;
-        }
-        .b2-2 .photo-cont{
-            width: 100%;
-            height: 780px;
-            background: url(../img/b2-img-m.jpg) 50% 0 no-repeat;
-        }
-        .b3 {
-            height: auto;
-            padding-bottom: 40px;
-            background: url(../img/b3-320.html) 50% 0 no-repeat #060606;
-        }
-        .b3 p {
-            margin: 0 0 20px 0;
-            font-size: 18px;
-            line-height: 24px;
-        }
-        .b3 .itemBlock {
-            margin-top: 390px;
-        }
-        .b3 .itemBlock ul {
-            width: 100%;
-            float: none;
-            text-align: left;
-        }
-        .b3 .itemBlock ul.right{
-            text-align: left;
-            padding-bottom: 10px;
-        }
-        .b3 .itemBlock ul li{
-            padding: 15px 10px;
-        }
-        .b3 .itemBlock ul li:last-child {
-            border-bottom: 1px solid rgba(255, 24, 0, 0.3);
-        }
-        .b3 .itemBlock ul.right li:last-child{
-            border-bottom: 0;
-        }
-        .b3 .itemBlock ul li span {
-            display: inline-block;
-            margin-right: 10px;
-            text-transform: none;
-        }   
-        .video-container {
-            width: 300px;
-            height: 190px;
-        }
-        .b4 .deliv li{
-            float: none;
-            width: auto;
-        }
-        .end-block .percent{
-            font-size: 20px;
-            text-align: center;
-        }
-        .end-block .btnHead .right{
-            margin-top: 20px;
-        } 
-        .vis-w{
-            display: none;
-        }
-        .vis-mob{
-            display: block;
-        }
+    .topline {
+        text-align: center;
+    }
+    
+    h2.title {
+        font-size: 26px;
+        line-height: 1.3em;
+    }
+    .b1 {
+        height: auto;
+        padding-bottom: 40px;
+        background: url(../img/b1-320.jpg) 50% 0 no-repeat #423e4d;
+    }
+    #end-block {
+        height: auto;
+        padding-bottom: 40px;
+        background: url(../img/b1-320-2.jpg) 50% 0 no-repeat #423e4d;
+    }
+    .b1 h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    .b1 h1 span{
+        font-size: 20px;
+    }
+    .b1 .b1-title{
+        margin-top: -40px;
+    }
+    .b1 h2{
+        padding: 20px 0 0;
+        text-align: center;
+    }
+    .b1 h2>span{
+        font-size: 22px;
+    }
+    .b1 .b1-title>p{
+        display: none;
+    }
+    .b1 .sale {
+        margin: 410px 0 0;
+    }
+    .b1 .btnHead .left{
+        float: none;
+    }
+    .b1 .btnHead .right{
+        float: none;
+        width: 180px;
+        margin: 10px auto 0;
+    }
+    /* michael-k90 */
+    .b2 ul.sup-1 li {
+        float: none;
+        width: auto;
+        padding: 0 10px 40px;
+    }
+    .b2-2 .photo-cont>img{
+        display: none;
+    }
+    .b2-2 .photo-cont{
+        width: 100%;
+        height: 780px;
+        background: url(../img/b2-img-m.jpg) 50% 0 no-repeat;
+    }
+    .b3 {
+        height: auto;
+        padding-bottom: 40px;
+        background: url(../img/b3-320.html) 50% 0 no-repeat #060606;
+    }
+    .b3 p {
+        margin: 0 0 20px 0;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .b3 .itemBlock {
+        margin-top: 390px;
+    }
+    .b3 .itemBlock ul {
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+    .b3 .itemBlock ul.right{
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    .b3 .itemBlock ul li{
+        padding: 15px 10px;
+    }
+    .b3 .itemBlock ul li:last-child {
+        border-bottom: 1px solid rgba(255, 24, 0, 0.3);
+    }
+    .b3 .itemBlock ul.right li:last-child{
+        border-bottom: 0;
+    }
+    .b3 .itemBlock ul li span {
+        display: inline-block;
+        margin-right: 10px;
+        text-transform: none;
+    }   
+    .video-container {
+        width: 300px;
+        height: 190px;
+    }
+    .b4 .deliv li{
+        float: none;
+        width: auto;
+    }
+    .b4 .button-m{
+        margin-bottom: 30px;
+    }
+    .end-block .percent{
+        font-size: 20px;
+        text-align: center;
+    }
+    .end-block .btnHead .right{
+        margin-top: 20px;
+    } 
+    .vis-w{
+        display: none;
+    }
+    .vis-mob{
+        display: block;
+    }
+    .b6-h .button-m{
+        margin-bottom: 30px;
+    }
 }        
