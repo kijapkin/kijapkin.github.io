@@ -1,9 +1,69 @@
-$('.block-slider-system-profile').slick({
+$('.slider-main-top').slick({
   dots: false,
-  prevArrow: $('.prew-profile'),
-  nextArrow: $('.next-profile'),
-
+  prevArrow: $('.arrow-prew-main'),
+  nextArrow: $('.arrow-next-main'),
 });
+
+$('.slider-block-cards').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  prevArrow: $(''),
+  nextArrow: $(''),
+   responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      }
+    },
+  ]
+});
+
+$('.block-slider-system-profile').slick({
+ dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  prevArrow: $(''),
+  nextArrow: $(''),
+   responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      }
+    },
+  ]
+});
+
 $('.block-slider-system-divider').slick({
   dots: true,
   infinite: true,
@@ -22,7 +82,7 @@ $('.slider-works').slick({
   nextArrow: $('.next'),
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1300,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
