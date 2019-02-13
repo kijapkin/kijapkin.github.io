@@ -1,0 +1,134 @@
+section.clients-section{
+	background: #E5E5E5;
+	padding: 28px 120px 80px;
+	@media (max-width: 768px) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	ul{
+		@media (max-width: 768px) {
+			margin-left: 12px;
+		}
+		li{
+			display: inline-block;
+			a{
+				text-decoration: underline;
+				color: #007DFF;
+			}
+			&::before{
+				text-decoration: none;
+				content: "\00B7";
+				color: #007DFF; 
+				margin-right: 4px;
+			}
+			&:first-child::before{
+				display: none;
+			}
+			&:last-child::before{
+				color: #0A1E33;
+			}
+		}
+	}
+	h1{
+		font-family: Montserrat;
+		font-weight: 800;
+		font-size: 64px;
+		line-height: 68px;
+		color: #0A1E33;
+		margin: 0;
+		margin-bottom: 27px;
+		@media (max-width: 768px) {
+			margin-left: 12px;
+		}
+		@media (max-width: 500px) {
+			font-family: 'PT Sans';
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 32px;
+			margin-bottom: 6px;
+		}
+	}
+	h2{
+		font-family: Montserrat;
+		font-weight: 800;
+		font-size: 40px;
+		color: #0A1E33;
+		margin: 0;
+		margin-bottom: 10px;
+		@media (max-width: 768px) {
+			margin-left: 12px;
+		}
+		@media (max-width: 500px) {
+			font-family: 'PT Sans';
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 32px;
+			margin-bottom: 17px;
+		}
+		a{
+			color: #007DFF;
+			text-decoration: underline;
+		}
+	}
+	.block-cards-clients{
+		display: grid;
+	    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	    margin-bottom: 32px;
+	    @media (max-width: 992px) {
+	    	margin-bottom: 24px;
+	    }
+		.card{
+			&:hover .img>.subtitles{
+				height: 100%;
+			}
+			.img{
+				height: 400px;
+				position: relative;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				.subtitles{
+					display: grid;
+					align-items: center;
+					padding-left: 20px;
+					position: absolute;
+					bottom: 0;
+					background: rgba(10, 30, 51, 0.8);
+					width: 100%;
+					height: 112px;
+					transition: all .2s ease .1s;
+					h5{
+						color: #fff;
+						font-size: 16px;
+						line-height: 24px;
+						font-weight: bold;
+						align-self: end;
+					}
+					p{
+						color: #fff;
+						font-size: 16px;
+						line-height: 24px;
+						font-weight: normal;
+						align-self: start;
+					}
+				}
+			}
+		}
+		.display-none{
+			@media (max-width: 880px) {
+				display: none;
+			}
+		}
+	}
+	.button{
+		width: 240px;
+		padding: 12px 20px;
+		border-radius: 4px;
+		border: 1px solid #0A1E33;
+		text-align: center;
+		margin: 0 auto;
+		a{
+			color: #0A1E33;
+		}
+	}
+}
