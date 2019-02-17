@@ -366,15 +366,15 @@ src="https://www.facebook.com/tr?id=2227486000635228&ev=PageView
                     <span class="new bold">1275 грн</span>
                 </div> 
                 <div class="btnHead clearfix" id="zakaz">
-                    <form class="m1-form" action="send.php" 
+                    <form class="m1-form" action="mail.php" 
                             method="POST" 
                             name="order-form"
                             accepted-charset="utf-8">
-                        <div><input type="text" name="name" placeholder="Ваше имя" required=""></div>
-                        <div><input type="tel" name="phone" id="phone" placeholder="Ваш номер телефона" required=""></div>
-                        <div><button class="button-m">Оформить заказ</button></div>
+                        <div><input type="text" class="form-control" name="user_name" placeholder="Ваше имя" required=""></div>
+                        <div><input type="tel" class="form-control" name=""user_phone" placeholder="Ваш номер телефона" required=""></div>
+                        <div><button type="submit" class="button-m">Оформить заказ</button></div>
                     </form>
-                    </div>
+                 </div>
             </div>       
         </div>
     </div>
