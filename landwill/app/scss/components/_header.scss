@@ -168,7 +168,14 @@
 					background-color: #007DFF;
 					padding-top: 12px;
 					padding-bottom: 12px;
-					// border-radius: 4px;
+					border-radius: 4px;
+					transition: all .1s ease;
+					&:hover{
+						background: #1CADFF;
+					}
+					&:active{
+						background: #004F9F;
+					}
 				}
 				@media (max-width: 720px) {
 				}
@@ -201,7 +208,7 @@
 				}
 			}
 			ul{
-				text-align: center;
+				text-align: left;
 				max-width: 950px;
 				margin: 0 auto;
 				display: flex;
@@ -212,7 +219,8 @@
 					z-index: 1;
 					padding: 0;
 					margin: 0;
-					
+					transition: all .5s ease;
+					cursor: pointer;
 					a{
 						padding: 0 15px;
 						position: relative;
@@ -228,28 +236,29 @@
 					}
 					&:hover{
 						ul{
-							max-height: 1000px;
+							max-height: 800px;
 							max-width: 500px;
 							overflow: visible;
 						}
 					}
 					ul{
-						transition: all .8s ease;
 						display: inline-block;
 						position: absolute;
 						left: 0;
-						// width: 240px;
+						width: 240px;
 						max-height: 0;
 						max-width: 0;
+						padding-top: 14px;
 						overflow: hidden;
-						background-color: rgba(35, 35, 35, 0.95);
+						transition: all .2s ease-in-out;
 						li{
+							background-color: rgba(35, 35, 35, 0.95);
+							overflow: hidden;
+							height: 100%;
 							a{
+								transition: all .2s ease;
 								display: block;
-								padding: 12px 8px;
-								margin-bottom: 8px;
-								/* background-color: rgba(35, 35, 35, 0.95); */
-								// border-radius: 4px;
+								padding: 12px 15px;
 								color: #E6ECF2;
 								&:hover{
 									background-color: #1CADFF;
@@ -281,6 +290,8 @@
 				width: 320px;
 				background: rgba(35, 35, 35, 0.95);
 				> ul{
+					background-color: inherit;
+					position: absolute;
 					display: inline-block;
 					float: left;
 					width: 100%;
@@ -293,10 +304,10 @@
 						width: 100%;
 						text-align: left;
 						padding: 10px 20px;
-						&:first-child{padding-top: 26px;		}
-						&:last-child{ padding-bottom: 26px;		}
+						&:first-child{padding-top: 26px;	}
+						&:last-child{ padding-bottom: 26px;	}
 						&:hover ul{
-							max-height: 1000;
+							max-height: 1000px;
 							opacity: 1;
 						}
 						a{
@@ -315,17 +326,20 @@
 							max-height: 0;
 							opacity: 0;
 							overflow: hidden;
-							background: transparent;
+							background-color: transparent;
 							li{
+								background-color: transparent;
 								display: inline-block;
 								float: left;
 								width: 100%;
 								overflow: hidden;
 								line-height: 0;
-								padding: 5px 10px;
 								a{
+									padding: 5px 10px;
+									width: 100%;
+									height: 100%;
+									display: block;
 									font-size: 20px;
-									padding: 0px 0px;
 									line-height: 1;
 								}
 							}

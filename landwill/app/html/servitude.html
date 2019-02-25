@@ -1,0 +1,239 @@
+//= templates/head.html
+<div class="wrapper front">
+	//= templates/header.html
+	<div class="wrapper_content">
+		<div class="middle clearfix">
+			
+			<section class="section-servitude">
+				<div class="top-menu">
+					<div class="top-menu">
+						<ul>
+							<li><a href="home.html">Главная</a></li>
+							<li>Услуга</li>
+						</ul>
+					</div>
+				</div>
+				<h1>Услуга</h1>
+				<div class="img" style="background-image: url(../images/service-main.jpg);"></div>
+				<div class="block-text-form">
+					<div class="text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra enim nec ante elementum posuere at id nibh. Suspendisse maximus justo ut dapibus molestie. Duis accumsan, lacus eu dapibus accumsan, felis diam pellentesque purus, finibus pellentesque tortor enim et odio. Aenean blandit lorem ultrices urna rutrum commodo. Aliquam sollicitudin dignissim lorem, sit amet interdum odio blandit eu. Donec purus sapien, tincidunt a pellentesque eget, maximus nec ante. Sed eu felis eget ipsum interdum blandit. Curabitur malesuada facilisis lorem, nec pulvinar nunc mattis ac. </p>
+						<p>Curabitur vitae est ut urna suscipit consectetur. Nam congue justo vitae ex accumsan ultrices. Nulla metus augue, sagittis in pharetra commodo, vestibulum tempor odio. Nullam vel nisi ornare, egestas quam eu, dapibus lacus. Vivamus tincidunt cursus ultrices. Nam malesuada sollicitudin tortor, ut varius sem condimentum in. Nulla non felis a ipsum congue commodo. Vivamus dapibus mattis nisi a congue. Nam egestas aliquam ipsum, placerat malesuada mauris maximus vel. Phasellus semper mauris tristique velit mattis, at interdum elit semper. Duis facilisis pretium dui non egestas. Phasellus hendrerit libero nec molestie scelerisque. Vestibulum rutrum, orci scelerisque pulvinar fringilla, justo dolor tincidunt nibh, id venenatis tortor nisi in justo. In tincidunt convallis neque eu ultricies.</p>
+					</div>
+					<div class="form-service">
+						<form action="#" method="GET" id = "leave_request">
+							<h3>Оставьте заявку на бесплатный замер</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+							<input type="number" name="phone" placeholder="Ваш номер телефона">
+							<button type="submit">Оставить заявку</button>
+						</form>
+					</div>
+				</div>
+				<div class="block-video">
+				</div>
+				<div class="calculator" id = "window-cost-calculator">
+					<div class="container">
+						<form action="#" method="GET">
+							<div class="block-calculator">
+								<h2>Калькулятор стоимости окон</h2>
+								<div class="block-left">
+									<div class="type">
+										<h3>Тип окна</h3>
+										<div class="radio-buttons" id = "change-type-window">
+											<label>
+												<input type="radio" name="type-window" value="1" hidden checked>
+												<span>
+													<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M80 0V80H0V0H80ZM79 79V1H1V79H79Z" fill="#007DFF"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M76 4V76H4V4H76ZM75 75V5H5V75H75Z" fill="#0A1E33" fill-opacity="0.2"/>
+													</svg>
+													<p>Глухое</p>
+												</span>
+											</label>
+											<label>
+												<input type="radio" name="type-window" value="1.2" hidden>
+												<span>
+													<svg width="40" height="80" viewBox="0 0 40 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1H39V79H1V1ZM40 0V80H0V0H40Z" fill="#007DFF"/>
+														<path d="M37 38V42H38V38H37Z" fill="#007DFF"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5H35V75H5V5ZM36 4V76H4V4H36Z" fill="#0A1E33" fill-opacity="0.2"/>
+													</svg>
+													<p>Одностворчатое</p>
+												</span>
+											</label>
+											<label>
+												<input type="radio" name="type-window" value="1.4" hidden>
+												<span>
+													<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43 38V42H42V38H43Z" fill="#007DFF"/>
+														<path d="M37 38V42H38V38H37Z" fill="#007DFF"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M80 0V80H0V0H80ZM79 1H40.573V79H79V1ZM1 1H39.427V79H1V1Z" fill="#007DFF"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5H35V75H5V5ZM36 4V76H4V4H36Z" fill="#0A1E33" fill-opacity="0.2"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M45 5H75V75H45V5ZM76 4V76H44V4H76Z" fill="#0A1E33" fill-opacity="0.2"/>
+													</svg>
+													<p>Двухстворчатое</p>
+												</span>
+											</label>
+											<label>
+												<input type="radio" name="type-window" value="1.8" hidden data-selected = "false">
+												<span>
+													<svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M83.1803 38V42H82.1311V38H83.1803Z" fill="#007DFF"/>
+														<path d="M37 38V42H38V38H37Z" fill="#007DFF"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M120 0V80H0V0H120ZM80 1H40V79H80V1ZM119 1H81V79H119V1ZM1 1H39V79H1V1Z" fill="#007DFF"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5H35V75H5V5ZM36 4V76H4V4H36Z" fill="#0A1E33" fill-opacity="0.2"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M44.0303 5H76L75.9697 75H44.0303V5ZM77 4V76H43V4H77Z" fill="#0A1E33" fill-opacity="0.2"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M85 5H115V75H85V5ZM116 4V76H84V4H116Z" fill="#0A1E33" fill-opacity="0.2"/>
+													</svg>
+													<p>Трёхстворчатое</p>
+												</span>
+											</label>
+										</div>
+									</div>
+
+									<div class="house" id = "change-type-home">
+										<h3>Дом</h3>
+										<div class="radio-buttons">
+											<label>
+												<input type="radio" name="type-home" value="1.1" hidden checked><span>Панельный</span>
+											</label>
+											<label>
+												<input type="radio" name="type-home" value="1" hidden><span>Кирпичный</span>
+											</label>
+										</div>
+									</div>
+									<div class="options">
+										<h3>Параметры</h3>
+										<div class="wrapper-option-buttons">
+											<div class="button">
+												<span>Ширина</span>
+												<input id="width-window" type="number" name="width" value="1300" placeholder="1300">
+												<span>см</span>
+											</div>
+											<div class="button">
+												<span>Высота</span>
+												<input id = "height-window" type="number" name="size" value="1400" placeholder="1400">
+												<span>см</span>
+											</div>
+										</div>
+									</div>
+									<div class="approximately-price">
+										<h3>Примерная цена</h3>
+										<div class="wrap">
+											<div class="output-price">14 700 ₽</div>
+											<a class = "button" href="#order_measurements">Заказать замер</a>
+										</div>
+										<p>Это приблизительная цена рассчитанная по заданным параметрам, реальная цена может отличаться, вы можете <a href="#">проконсультироваться со специалистом</a>, чтобы уточнить детали</p>
+									</div>
+								</div>
+								<div class="block-right">
+									<div class="wrapper-window">
+										<div class="window-calculator">
+											<div class="polzunok-vertical"
+												data-max-height = "2000"
+												data-min-height = "1000"
+												data-default = "1400">
+												<div class="circle"><span>1400 см</span></div>
+												<div class="transparent-price-top"><span>2000 см</span></div>
+												<div class="transparent-price-bottom"><span>1000 см</span></div>
+											</div>
+											<div class="window">
+												<img src="../images/window-calculator.jpg" alt="img" width="377" height="440">
+											</div>
+											<div class="polzunok-horizontal"
+												data-max-width = "2000"
+												data-min-width = "1000"
+												data-default = "1300">
+												<div class="circle"><span>1300 см</span></div>
+												<div class="transparent-price-left"><span>1000 см</span></div>
+												<div class="transparent-price-right"><span>2000 см</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="work-performed">
+					<div class="work-performed-block">
+						<h2>Выполненные работы</h2>
+						<div class="view-all"><a href="#">Смотреть все 280</a></div>		
+					</div>
+					<div class="wrapper-slider-works">
+						<div class="slider-works">
+							<div class="img-block">
+								<div class="img" style = "background-image: url('../images/img-slide-works-1.jpg')">
+									<div class="adress">
+										<h5>Автосалон "Mitsubishi Motors»"</h5>
+										<span>пр. Комсомольский, 7</span>
+									</div>
+								</div>
+								<a href="#"></a>
+							</div>
+							<div class="img-block">
+								<div class="img" style = "background-image: url('../images/img-slide-works-2.jpg')">
+									<div class="adress">
+										<h5>Автосалон "Mitsubishi Motors»"</h5>
+										<span>пр. Комсомольский, 7</span>
+									</div>
+								</div> 
+								<a href="#"></a>
+							</div>
+							<div class="img-block">
+								<div class="img" style = "background-image: url('../images/img-slide-works-3.jpg')">
+									<div class="adress">
+										<h5>Автосалон "Mitsubishi Motors»"</h5>
+										<span>пр. Комсомольский, 7</span>
+									</div>
+								</div> 
+								<a href="#"></a>
+							</div>
+							<div class="img-block">
+								<div class="img" style = "background-image: url('../images/img-slide-works-4.jpg')">
+									<div class="adress">
+										<h5>Автосалон "Mitsubishi Motors»"</h5>
+										<span>пр. Комсомольский, 7</span>
+									</div>
+								</div> 
+								<a href="#"></a>
+							</div>
+							<div class="img-block">
+								<div class="img" style = "background-image: url('../images/img-slide-works-1.jpg')">
+									<div class="adress">
+										<h5>Автосалон "Mitsubishi Motors»"</h5>
+										<span>пр. Комсомольский, 7</span>
+									</div>
+								</div>
+								<a href="#"></a>
+							</div>
+						</div>
+						<div class="arrows-slider-works">
+							<div class="prew">
+								<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.14512 0.300786C9.52658 -0.100262 10.1614 -0.100262 10.5562 0.300786C10.9377 0.688285 10.9377 1.33321 10.5562 1.71981L3.40108 8.98835H27.0121C27.5625 8.98925 28 9.43366 28 9.99277C28 10.5519 27.5625 11.0107 27.0121 11.0107H3.40108L10.5562 18.2657C10.9377 18.6668 10.9377 19.3126 10.5562 19.6992C10.1614 20.1003 9.52569 20.1003 9.14512 19.6992L0.296093 10.71C-0.0986977 10.3225 -0.0986977 9.67754 0.296093 9.29094L9.14512 0.300786Z" fill="#0A1E33"/>
+								</svg>
+							</div>
+							<div class="next">
+								<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M18.8549 0.300786C18.4734 -0.100262 17.8386 -0.100262 17.4438 0.300786C17.0623 0.688285 17.0623 1.33321 17.4438 1.71981L24.5989 8.98835H0.987869C0.437472 8.98925 0 9.43366 0 9.99277C0 10.5519 0.437472 11.0107 0.987869 11.0107H24.5989L17.4438 18.2657C17.0623 18.6668 17.0623 19.3126 17.4438 19.6992C17.8386 20.1003 18.4743 20.1003 18.8549 19.6992L27.7039 10.71C28.0987 10.3225 28.0987 9.67754 27.7039 9.29094L18.8549 0.300786Z" fill="#0A1E33"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="view-all-bottom"><a href="#">Смотреть все 280</a></div>
+				</div>
+				<div class="container">
+					<div class="form-servit-bottom">
+						<form action="" id = "free_application">
+							<h3>Оставьте бесплатную заявку</h3>
+							<input type="number" name = "phone" placeholder="Ваш номер телефона" required>
+							<button type="submit">Оставить заявку</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+//= templates/footer.html

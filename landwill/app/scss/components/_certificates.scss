@@ -6,33 +6,7 @@ section.certificates-section{
 		padding-right: 0;
 		padding-bottom: 58px;
 	}
-	ul{
-		@media (max-width: 768px) {
-			margin-left: 12px;
-		}
-		li{
-			@media (max-width: 500px) {
-				font-size: 14px;
-			}
-			display: inline-block;
-			a{
-				text-decoration: underline;
-				color: #007DFF;
-			}
-			&::before{
-				text-decoration: none;
-				content: "\00B7";
-				color: #007DFF; 
-				margin-right: 4px;
-			}
-			&:first-child::before{
-				display: none;
-			}
-			&:last-child::before{
-				color: #0A1E33;
-			}
-		}
-	}
+	
 	h1{
 		font-family: Montserrat;
 		font-weight: 800;
@@ -127,7 +101,6 @@ section.certificates-section{
 		}
 	}
 	.block-awards{
-	    margin-bottom: 80px;
 	    @media (max-width: 992px) {
 	    	margin-bottom: 0;
 	    }
@@ -160,7 +133,7 @@ section.certificates-section{
 					height: 100%;
 				}
 				.img{
-					height: 400px;
+					// height: 400px;
 					position: relative;
 					background-repeat: no-repeat;
 					background-position: center;

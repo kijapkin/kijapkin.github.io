@@ -4,13 +4,17 @@
 	<title>Landwill</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<!-- <link rel="shortcut icon" href="/images/favicon.png" type="image/png"> -->
 	<!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="../css/jquery.formstyler.theme.css"> -->
+	<link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="../css/jquery.formstyler.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&amp;subset=cyrillic" rel="stylesheet">
+	
 </head>
 <body>
 <div class="wrapper front">
@@ -30,10 +34,10 @@
 							<div><p>Томск &#160;</p><a href="tel:83822525500">8 3822 <span>52-55-00</span></a></div>
 							<div><p>Северск &#160;</p><a href="tel:83823533377">8 3823 <span>53-33-77</span></a></div>
 							<div>Пн-пт <span>10:00-19:00,</span>&#160; сб <span>10:00-15:00, </span>&#160; вс <span>выходной</span></div>
-							<div><a href="#"><span><img src="../images/phone.svg" alt=""></span>Заказать звонок</a></div>
+							<div><a href="#request_call"><span><img src="../images/phone.svg" alt=""></span>Заказать звонок</a></div>
 						</div>
 						<div class="button-measurer">
-							<a href="#">Вызвать замерщика</a>
+							<a href="#call_measurer">Вызвать замерщика</a>
 						</div>
 					</div>
 					<div class="divider"></div>
@@ -42,30 +46,36 @@
 							<li><a href="windows.html">Окна</a></li>
 							<li><a href="#">Услуги</a>
 								<ul>
-									<li><a href="#">Установка окон</a></li>
-									<li><a href="#">Остекление</a></li>
-									<li><a href="#">Услуга</a></li>
+									<li><a href="service.html">Установка окон</a></li>
+									<li><a href="glazing.html">Остекление</a></li>
+									<li><a href="servitude.html">Услуга</a></li>
 								</ul>
 								<a href="#" class="arrow-down"></a>
 							</li>
-							<li><a href="#">Цены</a></li>
-							<li><a href="#">Компания</a>
+							<li><a href="prices.html">Цены</a></li>
+							<li><a>Компания</a>
 								<ul>
 									<li><a href="faq.html">Часто задаваемые вопросы</a></li>
-									<li><a href="partners.html">Партнёры</a></li>
+									<li><a href="partners.html">Партнёры</a>
+										<ul>
+											<li><a href="veka.html">Veka</a></li>
+										</ul>
+									</li>
 									<li><a href="clients.html">Заказчики</a></li>
 									<li><a href="certificates.html">Сертификаты и награды</a></li>
 									<li><a href="works.html">Выполненные работы</a></li>
+									<li><a href="about-company.html">О компании</a></li>
 								</ul>
 								<a href="#" class="arrow-down"></a>
 							</li>
-							<li><a href="news.html">Новости и статьи</a>
+							<li><a>Новости и статьи</a>
 								<ul>
+									<li><a href="news.html">Новости</a>
 									<li><a href="article.html">Мультифункциональный пакет</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Отзывы</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="testimonials.html">Отзывы</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
 						</ul>
 						<div class="cross" id = "clouse-menu">
 							<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -86,11 +96,13 @@
 	<div class="wrapper_content">
 		<div class="middle clearfix">
 			<section class="certificates-section">
-				<ul>
-					<li><a href="index.html">Главная</a></li>
-					<li><a href="#">Компания</a></li>
-					<li>Сертификаты и награды</li>
-				</ul>
+				<div class="top-menu">
+					<ul>
+						<li><a href="home.html">Главная</a></li>
+						<li><a href="#">Компания</a></li>
+						<li>Сертификаты и награды</li>
+					</ul>
+				</div>
 				<h1>Сертификаты и награды</h1>
 				<div class="block-certificates">
 					<h2>Сертификаты</h2>
@@ -172,10 +184,10 @@
 						</a>
 					</div>
 					<div class="block-towns-tel">
-						<p>Томск</p><p>8 3822 <span>52-55-00</span></p>
-						<p>Северск</p><p>8 3823 <span>53-33-77</span></p>
-						<p>Томск</p><p>8 3822 <span>52-55-00</span></p>
-						<p>Северск</p><p>8 3823 <span>53-33-77</span></p>
+						<p>Томск</p><p><a href="tel:83822525500">8 3822 <span>52-55-00</span></a></p>
+						<p>Северск</p><p><a href="tel:83823533377">8 3823 <span>53-33-77</span></a></p>
+						<p>Томск</p><p><a href="tel:83822525500">8 3822 <span>52-55-00</span></a></p>
+						<p>Северск</p><p><a href="tel:83823533377">8 3823 <span>53-33-77</span></a></p>
 					</div>
 					<div class="schedule">
 						<p>Пн-пт</p><p><span>10:00 - 19:00</span></p>
@@ -194,7 +206,7 @@
 						<a href="#"><img src="../images/icon-vk.svg" alt="vkontakte"></a>
 					</div>
 					<div class="button-become-client">
-						<a href="#">Стать клиентом</a>
+						<a href="#become_customer">Стать клиентом</a>
 					</div>
 				</div>
 				<div class="copyrights">
@@ -203,8 +215,163 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal-form" style="display: none;">
+		<div id="order_measurements" class = "measurements-block">
+			<h2>Заказать замер</h2>
+			<form action="#" method="GET" id = "measurements">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+		<div id="call_measurer" class = "measurements-block">
+			<h2>Вызвать замерщика</h2>
+			<form action="#" method="GET" id = "measurer">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Вызвать</button>
+				</div>
+			</form>
+		</div>
+		<div id="request_call" class = "measurements-block">
+			<h2>Заказать звонок</h2>
+			<form action="#" method="GET" id = "request">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+		<div id="become_customer" class = "measurements-block">
+			<h2>Стать клиентом</h2>
+			<form action="#" method="GET" id = "customer">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Подать заявку</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="order-window" class = "measurements-block">
+			<h2>Ваш заказ.</h2>
+			<form action="#" method="GET" id = "price-order">
+				<div class="parce-choice">
+					<div class="name">Veka Euroline</div>
+					<input class="price" name = "type-deaf" type="text" disabled>
+				</div>
+				<div class="parce-choice">
+					<div class="name">Veka Softline</div>
+					<input class="price" name = "type-folding" type="text" disabled>
+				</div>
+				<div class="parce-choice">
+					<div class="name">WHS Halo 60</div>
+					<input class="price" name = "type-swivel"  type="text" disabled>
+				</div>
+				<div class="parce-bloc">
+					<div class="name">Тип окна</div>
+					<input type="text" name = "type-name" class = "name-type">
+					<input class="type" type="text" id = "type">
+				</div>
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="order-balcony" class = "measurements-block">
+			<h2>Стать клиентом</h2>
+			<form action="#" method="GET" id = "balcony">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Подать заявку</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="gull_review" class = "measurements-block">
+			<h2>Написать отзыв</h2>
+			<form action="#" method="GET" id = "review">
+
+				<div class="input-contact">
+					<div class="name">
+						<input type="name" name = "name" required placeholder="Ваше имя">
+					</div>
+					<div class="contact">
+						<input type="email" name = "email" placeholder="Ваш e-mail">
+					</div>
+				</div>
+				<div class="textarea">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="text">
+					<p>Нажимая кнопку «Отправить» вы принимаете <a href="#">соглашение об обработке персональных данных</a></p>
+				</div>
+				<div class="button">
+					<button type="submit">Оставить отзыв</button>
+				</div>
+			</form>
+		</div>
+
+
+	</div>
+
 	<script src="../js/jquery.js"></script>
 	<script src="../js/slick.min.js"></script>
+	<script src="../js/jquery-ui-v1.12.1.js"></script>
+	<script src="../js/jquery.fancybox.min.js"></script>
+	<script src="../js/jquery.validate.min.js"></script>
+	<script src="../js/jquery.formstyler.js"></script>
 	<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyAsgajRdZv5H2LGoHO8BXbyVZq2CLMZNxE"></script> -->
 	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 	<script src="../js/main.js"></script>

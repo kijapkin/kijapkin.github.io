@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Landwill</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- <link rel="shortcut icon" href="/images/favicon.png" type="image/png"> -->
+	<!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="../css/jquery.formstyler.theme.css"> -->
+	<link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="../css/jquery.formstyler.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&amp;subset=cyrillic" rel="stylesheet">
+	
+</head>
+<body>
+<div class="wrapper front">
+	<header class="header">
+		<div class="wrapper">
+			<div class="wrapper-header">
+				<div class="container">
+					<div class="block-logo-info">
+						<div class="burger-menu" id = "control-menu"><a href="#"><img src="../images/burger-menu.svg" alt="" width="35"></a></div>
+						<div class="logo">
+							<a href="home.html">
+								<img src="../images/logo-pic.svg" alt="img">
+								<img src="../images/logo-title.svg" alt="img">
+							</a>
+						</div>
+						<div class="block-info">
+							<div><p>Томск &#160;</p><a href="tel:83822525500">8 3822 <span>52-55-00</span></a></div>
+							<div><p>Северск &#160;</p><a href="tel:83823533377">8 3823 <span>53-33-77</span></a></div>
+							<div>Пн-пт <span>10:00-19:00,</span>&#160; сб <span>10:00-15:00, </span>&#160; вс <span>выходной</span></div>
+							<div><a href="#request_call"><span><img src="../images/phone.svg" alt=""></span>Заказать звонок</a></div>
+						</div>
+						<div class="button-measurer">
+							<a href="#call_measurer">Вызвать замерщика</a>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="menu" id = "menu">
+						<ul>
+							<li><a href="windows.html">Окна</a></li>
+							<li><a href="#">Услуги</a>
+								<ul>
+									<li><a href="service.html">Установка окон</a></li>
+									<li><a href="glazing.html">Остекление</a></li>
+									<li><a href="servitude.html">Услуга</a></li>
+								</ul>
+								<a href="#" class="arrow-down"></a>
+							</li>
+							<li><a href="prices.html">Цены</a></li>
+							<li><a>Компания</a>
+								<ul>
+									<li><a href="faq.html">Часто задаваемые вопросы</a></li>
+									<li><a href="partners.html">Партнёры</a>
+										<ul>
+											<li><a href="veka.html">Veka</a></li>
+										</ul>
+									</li>
+									<li><a href="clients.html">Заказчики</a></li>
+									<li><a href="certificates.html">Сертификаты и награды</a></li>
+									<li><a href="works.html">Выполненные работы</a></li>
+									<li><a href="about-company.html">О компании</a></li>
+								</ul>
+								<a href="#" class="arrow-down"></a>
+							</li>
+							<li><a>Новости и статьи</a>
+								<ul>
+									<li><a href="news.html">Новости</a>
+									<li><a href="article.html">Мультифункциональный пакет</a></li>
+								</ul>
+							</li>
+							<li><a href="testimonials.html">Отзывы</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+						<div class="cross" id = "clouse-menu">
+							<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect width="31" height="31" fill="url(#pattern0)"/>
+								<defs>
+								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#image0" transform="scale(0.015625)"/>
+								</pattern>
+								<image id="image0" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACS0lEQVR4nO2aTU9TQRSGB/gzLtmoIIgKYYkSJFTBKhKMoFs/IhqBqH/HhT/FP8GCGPmwRpHLw4IaS5m57bXnzNzbnGfZ9N7zvk8nTTt3nDMMwzAMwzAMo1uAAWAgdQ4JBoteAMw653adc9+Bx/KRCucZBr4An4FLMQbu8I8T4In60HCWy8BeS56vMYa2CkgmAbjSVh7gIMbgu8BxSgnAVWCfi7yLFaCWSgIwEij/SXt2e5DoEoBR4MBT/qPWzE6BokkArgXKf5CeVTSYugRgDDj0lN+WmtETmhKA8UD5LYHocmhIAK5XovxfJCUAE8APT/lNjexiSEgAbgTKv9fMLkYvEoCbQMNTPs6PHCn+RwJwK1D+bczsYhSRAEwCPz3lN1JkF6MbCcBUoPyblNnFyJMATAfKv06dW5QcCb885V+lzqtCQEI7L1PnVKWDhBex8xTeExSg4ZzLPK/jnNuPnCUuwAzwO2f5J91jVAW4HSifdHstCjnlnwP3+loCcAc48hR81vKe/pQAzAbKr3ve218SgLlA+bWca/pDQrP8H0+Rp11cW20JnD048ZUvsiFyv5ISgPley7fcq1oSgIVA+dUe7lkNCTnlVwTuXW4J+P/cZAieHQAWSykB/zd2BiwrzCqXhMDSzIBHijPLIQFYCpR/GGF2Wgk5y74eJYALfgAnaJ9ZAga5eDghAx6oDvZn8Uk4BIY0hw5x/mHlMbCkNrBznnYJugKaQ+ucHU76BtRUh3WXp9bMshdtJVKyg5Jly2MYhmEYhmEYFeAUWreZiUnxDS0AAAAASUVORK5CYII="/>
+								</defs>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper_content">
+		<div class="middle clearfix">
+			<section class="section-contacts">
+				<div class="top-menu">
+					<ul>
+						<li><a href="home.html">Главная</a></li>
+						<li>Контакты</li>
+					</ul>
+				</div>
+				<h1>Контакты</h1>
+				<div class="inner-block">
+					<div class="map">
+						<img src="../images/map-company-veka.png" alt="img">
+					</div>
+					<div class="adress-block">
+						<div class="town">
+							<h4>Томск</h4>
+							<div class="location">
+								<h5>пр. Комсомольский, 77</h5>
+								<h6>Менеджер — Жирова Рената Евгеньевна</h6>
+								<div class="schedule">
+									<h6>График работы</h6>
+									<p>Пн-Пт</p>
+									<p>09:00–18:00</p>
+									<p>Сб</p>
+									<p>09:00–14:00</p>
+								</div>
+								<div class="phones">
+									<h6>Телефоны</h6>
+									<p>8 (3822) 52-25-00</p>
+									<p>8-903-955-71-27</p>
+								</div>
+							</div>
+							<div class="location">
+								<h5>ул. Киевская, 13</h5>
+								<h6>Менеджер — Исаева Анна Николаевна</h6>
+								<div class="schedule">
+									<h6>График работы</h6>
+									<p>Пн-Пт</p>
+									<p>10:00–19:00</p>
+									<p>Сб, Вс</p>
+									<p>Выходной</p>
+								</div>
+								<div class="phones">
+									<h6>Телефоны</h6>
+									<p>8 (3822) 44-22-80</p>
+									<p>8-909-543-02-29</p>
+								</div>
+							</div>
+							<div class="location">
+								<h5>пр. Мира, 46</h5>
+								<h6>торговый центр «Громада», 2 этаж</h6>
+								<div class="schedule">
+									<h6>График работы</h6>
+									<p>Пн-Пт</p>
+									<p>10:00–19:00</p>
+									<p>Сб, Вс</p>
+									<p>Выходной</p>
+								</div>
+								<div class="phones">
+									<h6>Телефоны</h6>
+									<p>8 (3822) 47-37-37</p>
+								</div>
+							</div>
+						</div>
+						<div class="town">
+							<h4>Северск</h4>
+							<div class="location">
+								<h5>ул. Калинина, 157 А</h5>
+								<h6>торговый центр «ГРАНД», 3 этаж</h6>
+								<div class="schedule">
+									<h6>График работы</h6>
+									<p>Пн-Пт</p>
+									<p>10:00–19:00</p>
+									<p>Сб</p>
+									<p>10:00–15:00</p>
+								</div>
+								<div class="phones">
+									<h6>Телефоны</h6>
+									<p>8 (3823) 53-33-77</p>
+									<p>8-903-955-42-52</p>
+								</div>
+							</div>
+						</div>
+						<div class="town">
+							<h4>Завод в Томске</h4>
+							<div class="location">
+								<h5>ул. Угрюмова, 15 А</h5>
+								<h6>торговый центр «ГРАНД», 3 этаж</h6>
+								<p>Эл. почта</p>
+								<a href="mailto:landwill_plus@mail.ru">landwill_plus@mail.ru</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="requisites">
+						<h4>Реквизиты</h4>
+						<h5>ООО «Производственная компания ЛЭНДВИЛЛ»</h5>
+						<h6>Юридический адрес Россия, 634015, г. Томск, ул. Угрюмова, 15</h6>
+						<div class="requ-info">
+							<p>ОГРН</p>
+							<p>1157017012327</p>
+							<p>ИНН</p>
+							<p>7017380836, КПП 701701001</p>
+							<p>РС</p>
+							<p>40702 810 5230 1000 0658</p>
+							<p>Кор. счет</p>
+							<p>30101 810 6000 0000 0774</p>
+							<p>БИК</p>
+							<p>045004774</p>
+						</div>
+						<p>в Новосибирском филиале АО «АЛЬФА - БАНК», г. Новосибирск</p>
+					</div>
+					<div class="form-questions">
+						<h4>Остались вопросы?</h4>
+						<p>Если вы хотите задать какой-то вопрос нашим  специалистам, воспользуйтесь формой ниже</p>
+						<form action="#" method="GET" id = "form-contacts">
+							<div class="user-name">
+								<label for="">Имя</label>
+								<input type="text" name = "firstname" placeholder="Как к вам обращаться" required>
+							</div>
+							<div class="email">
+								<label for="">Эл.почта</label>
+								<input type="mail" name = "email" placeholder="Куда отправить ответ" required>
+							</div>
+							<div class="textarea">
+								<label for="">Текст сообщения</label>
+								<textarea name="" id="" cols="30" rows="10"></textarea>
+							</div>
+							<button type="submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</div>
+</div>
+	<footer class="footer clearfix">
+		<div class="wrapper">
+			<div class="container">
+				<div class="block-footer-content">
+					<div class="logo">
+						<a href="#">
+							<img src="../images/logo-pic.svg" alt="logo">
+							<img src="../images/logo-title.svg" alt="logo">
+						</a>
+					</div>
+					<div class="block-towns-tel">
+						<p>Томск</p><p><a href="tel:83822525500">8 3822 <span>52-55-00</span></a></p>
+						<p>Северск</p><p><a href="tel:83823533377">8 3823 <span>53-33-77</span></a></p>
+						<p>Томск</p><p><a href="tel:83822525500">8 3822 <span>52-55-00</span></a></p>
+						<p>Северск</p><p><a href="tel:83823533377">8 3823 <span>53-33-77</span></a></p>
+					</div>
+					<div class="schedule">
+						<p>Пн-пт</p><p><span>10:00 - 19:00</span></p>
+						<p>сб</p><p><span>10:00 - 15:00</span></p>
+						<p>вс</p><p><span>выходной</span></p>
+					</div>
+					<div class="block-contact-details">
+						<p>8-903-955-71-27</p>
+						<a href="mailto:landwill_plus@mail.ru">landwill_plus@mail.ru</a>
+						<p>634000, Томск, пр. Комсомольский, 77</p>
+					</div>
+					<div class="block-social-icons">
+						<a href="#"><img src="../images/icon-ok.svg" alt="odnoklassniki"></a>
+						<a href="#"><img src="../images/icon-fb.svg" alt="facebook"></a>
+						<a href="#"><img src="../images/icon-insta.svg" alt="instagram"></a>
+						<a href="#"><img src="../images/icon-vk.svg" alt="vkontakte"></a>
+					</div>
+					<div class="button-become-client">
+						<a href="#become_customer">Стать клиентом</a>
+					</div>
+				</div>
+				<div class="copyrights">
+					<p>&copy; Landwill, 2018 - пластиковые окна в Томске</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal-form" style="display: none;">
+		<div id="order_measurements" class = "measurements-block">
+			<h2>Заказать замер</h2>
+			<form action="#" method="GET" id = "measurements">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+		<div id="call_measurer" class = "measurements-block">
+			<h2>Вызвать замерщика</h2>
+			<form action="#" method="GET" id = "measurer">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Вызвать</button>
+				</div>
+			</form>
+		</div>
+		<div id="request_call" class = "measurements-block">
+			<h2>Заказать звонок</h2>
+			<form action="#" method="GET" id = "request">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+		<div id="become_customer" class = "measurements-block">
+			<h2>Стать клиентом</h2>
+			<form action="#" method="GET" id = "customer">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Подать заявку</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="order-window" class = "measurements-block">
+			<h2>Ваш заказ.</h2>
+			<form action="#" method="GET" id = "price-order">
+				<div class="parce-choice">
+					<div class="name">Veka Euroline</div>
+					<input class="price" name = "type-deaf" type="text" disabled>
+				</div>
+				<div class="parce-choice">
+					<div class="name">Veka Softline</div>
+					<input class="price" name = "type-folding" type="text" disabled>
+				</div>
+				<div class="parce-choice">
+					<div class="name">WHS Halo 60</div>
+					<input class="price" name = "type-swivel"  type="text" disabled>
+				</div>
+				<div class="parce-bloc">
+					<div class="name">Тип окна</div>
+					<input type="text" name = "type-name" class = "name-type">
+					<input class="type" type="text" id = "type">
+				</div>
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="order-balcony" class = "measurements-block">
+			<h2>Стать клиентом</h2>
+			<form action="#" method="GET" id = "balcony">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Подать заявку</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="gull_review" class = "measurements-block">
+			<h2>Написать отзыв</h2>
+			<form action="#" method="GET" id = "review">
+
+				<div class="input-contact">
+					<div class="name">
+						<input type="name" name = "name" required placeholder="Ваше имя">
+					</div>
+					<div class="contact">
+						<input type="email" name = "email" placeholder="Ваш e-mail">
+					</div>
+				</div>
+				<div class="textarea">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="text">
+					<p>Нажимая кнопку «Отправить» вы принимаете <a href="#">соглашение об обработке персональных данных</a></p>
+				</div>
+				<div class="button">
+					<button type="submit">Оставить отзыв</button>
+				</div>
+			</form>
+		</div>
+
+
+	</div>
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/jquery-ui-v1.12.1.js"></script>
+	<script src="../js/jquery.fancybox.min.js"></script>
+	<script src="../js/jquery.validate.min.js"></script>
+	<script src="../js/jquery.formstyler.js"></script>
+	<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyAsgajRdZv5H2LGoHO8BXbyVZq2CLMZNxE"></script> -->
+	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+	<script src="../js/main.js"></script>
+</body>
+</html>

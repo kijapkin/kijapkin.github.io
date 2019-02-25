@@ -32,9 +32,9 @@
 										<img src="../images/window.png" alt="window">
 									</div>
 									<div class="form">
-										<form action="">
-											<input type="tel" name="tel" placeholder="Ваш номер телефона">
-											<button>Оставить заявку</button>
+										<form action="" id = "application_0">
+											<input type="number" name="phone" placeholder="Ваш номер телефона" required>
+											<button type="submit">Оставить заявку</button>
 										</form>
 									</div>
 								</div>
@@ -50,9 +50,9 @@
 										<img src="../images/window.png" alt="window">
 									</div>
 									<div class="form">
-										<form action="">
-											<input type="tel" name="tel" placeholder="Ваш номер телефона">
-											<button>Оставить заявку</button>
+										<form action="" id = "application_1">
+											<input type="number" name="phone" placeholder="Ваш номер телефона" required>
+											<button type="submit">Оставить заявку</button>
 										</form>
 									</div>
 								</div>
@@ -60,7 +60,7 @@
 						</div>
 					</div>
 				</section>
-
+	
 				<section class="about-company">
 					<div class="container">
 					<div class="title-our-service"><h2>Наши услуги</h2></div>
@@ -78,10 +78,10 @@
 					</div>
 					<div class="container">
 						<div class="form">
-							<form action="">
+							<form action="" id = "free_application">
 								<h3>Оставьте бесплатную заявку</h3>
-								<input type="tel" placeholder="Ваш номер телефона">
-								<button>Оставить заявку</button>
+								<input type="number" name = "phone" placeholder="Ваш номер телефона" required>
+								<button type="submit">Оставить заявку</button>
 							</form>
 						</div>
 					</div>
@@ -133,7 +133,7 @@
 									<a href="#">Смотреть все</a>
 								</div>
 							</div>
-
+				
 							<div class="slider-wrap" id = "slidert-two-top">
 								<div class="prew-profile-top" style="opacity: 0; display: none;">
 									<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -312,17 +312,20 @@
 						</div>
 					</div>
 				</section>
+
+				
 				<section class="common-wrapper" id = "window-cost-calculator">
-					<section class="calculator">
+					<div class="calculator">
 						<div class="container">
+						<form action="#" method="GET">
 							<div class="block-calculator">
 								<h2>Калькулятор стоимости окон</h2>
 								<div class="block-left">
 									<div class="type">
 										<h3>Тип окна</h3>
-										<div class="radio-buttons">
+										<div class="radio-buttons" id = "change-type-window">
 											<label>
-												<input type="radio" name="type-window" hidden checked >
+												<input type="radio" name="type-window" value="1" hidden checked>
 												<span>
 													<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path fill-rule="evenodd" clip-rule="evenodd" d="M80 0V80H0V0H80ZM79 79V1H1V79H79Z" fill="#007DFF"/>
@@ -332,7 +335,7 @@
 												</span>
 											</label>
 											<label>
-												<input type="radio" name="type-window" hidden>
+												<input type="radio" name="type-window" value="1.2" hidden>
 												<span>
 													<svg width="40" height="80" viewBox="0 0 40 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1H39V79H1V1ZM40 0V80H0V0H40Z" fill="#007DFF"/>
@@ -343,7 +346,7 @@
 												</span>
 											</label>
 											<label>
-												<input type="radio" name="type-window" hidden>
+												<input type="radio" name="type-window" value="1.4" hidden>
 												<span>
 													<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M43 38V42H42V38H43Z" fill="#007DFF"/>
@@ -356,7 +359,7 @@
 												</span>
 											</label>
 											<label>
-												<input type="radio" name="type-window" hidden>
+												<input type="radio" name="type-window" value="1.8" hidden data-selected = "false">
 												<span>
 													<svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M83.1803 38V42H82.1311V38H83.1803Z" fill="#007DFF"/>
@@ -371,36 +374,39 @@
 											</label>
 										</div>
 									</div>
-									<div class="house">
+
+									<div class="house" id = "change-type-home">
 										<h3>Дом</h3>
 										<div class="radio-buttons">
 											<label>
-												<input type="radio" name="type-home" hidden checked><span>Панельный</span>
+												<input type="radio" name="type-home" value="1.1" hidden checked><span>Панельный</span>
 											</label>
 											<label>
-												<input type="radio" name="type-home" hidden><span>Кирпичный</span>
+												<input type="radio" name="type-home" value="1" hidden><span>Кирпичный</span>
 											</label>
 										</div>
 									</div>
 									<div class="options">
 										<h3>Параметры</h3>
-										<div class="button">
-											<span>Ширина</span>
-											<input id = "width-window" type="number" name="width" placeholder="1300">
-											<span>см</span>
-										</div>
-										<div class="button">
-											<span>Высота</span>
-											<input id = "height-window" type="number" name="size" placeholder="1400">
-											<span>см</span>
+										<div class="wrapper-option-buttons">
+											<div class="button">
+												<span>Ширина</span>
+												<input id="width-window" type="number" name="width" value="1300" placeholder="1300">
+												<span>см</span>
+											</div>
+											<div class="button">
+												<span>Высота</span>
+												<input id = "height-window" type="number" name="size" value="1400" placeholder="1400">
+												<span>см</span>
+											</div>
 										</div>
 									</div>
 									<div class="approximately-price">
 										<h3>Примерная цена</h3>
-										<form action="">
+										<div class="wrap">
 											<div class="output-price">14 700 ₽</div>
-											<button type="submit">Заказать замер</button>
-										</form>
+											<a class = "button" href="#order_measurements">Заказать замер</a>
+										</div>
 										<p>Это приблизительная цена рассчитанная по заданным параметрам, реальная цена может отличаться, вы можете <a href="#">проконсультироваться со специалистом</a>, чтобы уточнить детали</p>
 									</div>
 								</div>
@@ -412,32 +418,26 @@
 												data-min-height = "1000"
 												data-default = "1400">
 												<div class="circle"><span>1400 см</span></div>
-												<div class="transparent-price-top">
-													<span>2000 см</span>
-												</div>
-												<div class="transparent-price-bottom">
-													<span>1000 см</span>
-												</div>
+												<div class="transparent-price-top"><span>2000 см</span></div>
+												<div class="transparent-price-bottom"><span>1000 см</span></div>
 											</div>
-											<div class="window"><img src="../images/window-calculator.jpg" alt="img" width="377" height="440"></div>
+											<div class="window">
+												<img src="../images/window-calculator.jpg" alt="img" width="377" height="440">
+											</div>
 											<div class="polzunok-horizontal"
-													data-max-width = "2000"
-													data-min-width = "1000"
-													data-default = "1300">
+												data-max-width = "2000"
+												data-min-width = "1000"
+												data-default = "1300">
 												<div class="circle"><span>1300 см</span></div>
-												<div class="transparent-price-left">
-													<span>1000 см</span>
-												</div>
-												<div class="transparent-price-right">
-													<span>2000 см</span>
-												</div>
+												<div class="transparent-price-left"><span>1000 см</span></div>
+												<div class="transparent-price-right"><span>2000 см</span></div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</section>
+						</form>
+					</div>
 					<section class="work-performed">
 						<div class="container">
 							<div class="work-performed-block">
@@ -759,11 +759,15 @@
 										<a href="news.html"></a>
 									</div>
 								</div>
-								<div class="view-all-bottom"><a href="#">Показать больше</a></div>
 							</div>
+							<div class="view-all-bottom"><a href="#">Показать больше</a></div>
 						</div>
 					</section>
 				</section>
+				
+
+
+
 			</div>
 		</div>
 	</div>

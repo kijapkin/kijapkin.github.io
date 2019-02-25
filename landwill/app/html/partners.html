@@ -5,36 +5,38 @@
 		<div class="middle clearfix">
 
 			<section class="partners">
-				<ul>
-					<li><a href="home.html">Главная</a></li>
-					<li><a href="#">Компания</a></li>
-					<li>Партнёры</li>
-				</ul>
+				<div class="top-menu">
+					<ul>
+						<li><a href="home.html">Главная</a></li>
+						<li><a href="#">Компания</a></li>
+						<li>Партнёры</li>
+					</ul>
+				</div>
 				<h1>Партнёры</h1>
 				<div class="block-partners">
 					<div class="partner">
-						<div class="img"><img src="../images/partner-logo-roto.jpg" alt="img"></div>
+						<div class="img-partner"><img src="../images/partner-logo-roto.jpg" alt="img"></div>
 						<div class="block-text">
 							<p>Имя Roto во всем мире ассоциируется с инновациями, индивидуально подобранными решениями и надежностью, которые увеличивают функциональность и уют при помощи окон и дверей в доме. </p>
 						</div>
 						<a href="#"></a>
 					</div>
 					<div class="partner">
-						<div class="img"><img src="../images/partner-logo-veka.jpg" alt="img"></div>
+						<div class="img-partner"><img src="../images/partner-logo-veka.jpg" alt="img"></div>
 						<div class="block-text">
 							<p>Veka — одна из крупнейших компаний в области разработки и производства оконных и дверных профилей из специального высококачественного пластика, а также пластин из вспененного ПВХ.</p>
 						</div>
 						<a href="veka.html"></a>
 					</div>
 					<div class="partner">
-						<div class="img"><img src="../images/partner-logo-danke.jpg" alt="img"></div>
+						<div class="img-partner"><img src="../images/partner-logo-danke.jpg" alt="img"></div>
 						<div class="block-text">
 							<p>Торговая марка, под которой выпускается подоконники Premium, Standart, Komfort класса с акриловым покрытием Elesgo (DTS, Германия). Подоконник производится на предприятиях Компании «Клинценбау».</p>
 						</div>
 						<a href="#"></a>
 					</div>
 					<div class="partner">
-						<div class="img"><img src="../images/partner-logo-alutech.jpg" alt="img"></div>
+						<div class="img-partner"><img src="../images/partner-logo-alutech.jpg" alt="img"></div>
 						<div class="block-text">
 							<p>Группа компании Алютех – лидер рынка роллетных систем, ведущий производитель алюминиевых профильных систем и секционных ворот .</p>
 						</div>
@@ -53,20 +55,23 @@
 					<div class="block-form">
 								<div class="arrow"></div>
 						<h3>Оставьте контакты для начала сотрудничества</h3>
-						<form action="">
-							<input type="text" placeholder="Название компании">
+						<form action="" id = "form-cooperation">
+							<input type="text" name = "company" placeholder="Название компании" required>
 							<div class="wrapper-select">
 								<select name="activity">
-									<option>Вид деятельности</option>
-									<option>Первый</option>
-									<option>Второй</option>
-									<option>Третий</option>
-									<option>Четвертый</option>
-									<option>Пятый</option>
+									<option value="">Вид деятельности</option>
+									<option value="">Первый</option>
+									<option value="">Второй</option>
+									<option value="">Третий</option>
+									<option value="">Четвертый</option>
+									<option value="">Пятый</option>
 								</select>
+								<svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 4L0 0H8L4 4Z" fill="#0A1E33" fill-opacity="0.8"/>
+								</svg>
 							</div>
 							<textarea name="text" id="" cols="30" rows="10" aria-required="true" placeholder="Комментарий"></textarea>
-							<input type="tel" placeholder="Ваш номер телефона">
+							<input type="number" name = "phone" placeholder="Ваш номер телефона" required>
 							<input type="mailto:landwill@gmail.com" placeholder="Электронная почта">
 							<button type="submit">Оставить заявку</button>
 						</form>

@@ -5,30 +5,7 @@ section.testimonials-section{
 		padding-left: 0;
 		padding-right: 0;
 	}
-	ul{
-		@media (max-width: 768px) {
-			margin-left: 12px;
-		}
-		li{
-			display: inline-block;
-			a{
-				text-decoration: underline;
-				color: #007DFF;
-			}
-			&::before{
-				text-decoration: none;
-				content: "\00B7";
-				color: #007DFF; 
-				margin-right: 4px;
-			}
-			&:first-child::before{
-				display: none;
-			}
-			&:last-child::before{
-				color: #0A1E33;
-			}
-		}
-	}
+	
 	.top-strip{
 		display: grid;
 		grid-template-columns: auto auto;
@@ -57,9 +34,6 @@ section.testimonials-section{
 		}
 		.button-feedback{
 			width: 240px;
-			padding: 12px 20px;
-			border-radius: 4px;
-			border: 1px solid #0A1E33;
 			text-align: center;
 			justify-self: end;
 			@media (max-width: 992px) {
@@ -67,7 +41,17 @@ section.testimonials-section{
 				margin-left: 12px;
 			}
 			a{
+				border: 1px solid #0A1E33;
+				border-radius: 4px;
+				width: 100%;
+				padding: 12px 0;
+				display: block;
 				color: #0A1E33;
+				transition: .3s;
+				&:hover{
+					background: #0A1E33;
+					color: #ccfef0;
+				}
 			}
 		}
 	}
@@ -75,11 +59,11 @@ section.testimonials-section{
 		.block-img{
 			display: grid;
 			grid-template-columns: auto 288px;
-			grid-template-rows: 480px;
 			grid-column-gap: 16px;
 			margin-bottom: 24px;
 			@media (max-width: 600px) {
 				grid-template-columns: auto;
+				grid-template-rows: auto auto;
 			}
 			&:nth-child(even){
 				grid-template-columns: 288px auto;
@@ -97,6 +81,7 @@ section.testimonials-section{
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
+				min-height: 100%;
 			}
 			.card{
 				background-color: #fff;
@@ -238,18 +223,139 @@ section.testimonials-section{
 		}
 	}
 	.button{
-		width: 240px;
-		padding: 12px 20px;
-		border-radius: 4px;
-		border: 1px solid #0A1E33;
 		text-align: center;
 		justify-self: end;
+		width: 240px;
 		margin: 24px auto 0;
 		@media (max-width: 768px) {
 			margin-top: 37px;
 		}
 		a{
+			border-radius: 4px;
+			border: 1px solid #0A1E33;
+			padding: 12px 0;
+			display: block;
 			color: #0A1E33;
+			transition: .3s;
+			&:hover{
+				background: #0A1E33;
+				color: #ccfef0;
+			}
+		}
+	}
+}
+#gull_review{
+	padding: 33px 44px 47px;
+	width: 652px;
+	@media(max-width: 768px){
+		width: 90%;
+	}
+	@media(max-width: 425px){
+		width: 100%;
+		padding: 23px 34px 37px;
+	}
+	form{
+		margin-top: 29px;
+	}
+	.input-contact{
+		display: inline-block;
+		float: left;
+		width: 100%;
+		margin-bottom: 24px;
+		@media(max-width: 768px){
+			margin-bottom: 15px;
+		}
+	}
+	.name, .contact{
+		display: inline-block;
+		float: left;
+		width: 50%;
+		@media(max-width: 768px){
+			width: 100%;
+		}
+	} 
+	.name{
+		padding-right: 15px;
+		@media(max-width: 768px){
+			padding-right: 0;
+			margin-bottom: 15px;
+		}
+	}
+	.contact{
+		padding-left: 15px;
+		@media(max-width: 768px){
+			padding-left: 0;
+		}
+	}
+	.textarea{
+		display: inline-block;
+		float: left;
+		width: 100%;
+		margin-bottom: 16px;
+		height: 123px;
+
+	}
+	.text{
+		display: inline-block;
+		float: left;
+		width: 100%;
+		font-family: 'PT Sans';
+		font-family: normal;
+		font-style: normal;
+		font-size: 14px;
+		color: #000000;
+		margin-bottom: 29px;
+		p{
+			font-family: 'PT Sans';
+			font-family: normal;
+			font-style: normal;
+			font-size: 14px;
+		}
+		a{
+			font-family: 'PT Sans';
+			font-family: normal;
+			font-style: normal;
+			font-size: 14px;
+			cursor: pointer;
+			color: #007DFF;
+		}
+	}
+	.button{
+		display: inline-block;
+		float: left;
+		width: 100%;
+		@media(max-width: 425px){
+			text-align: center
+		}
+		button{
+			display: inline-block;
+			width: 271px;
+			background: #007DFF;
+			border-radius: 4px;
+			font-family: "PT Sans";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			text-align: center;
+			color: #E6ECF2;
+			padding: 12px;
+			border: 0px;
+			transition: .3s;
+			&:hover{
+				background: #1CADFF;
+				color: #E6ECF2;
+			}
+			&:active{
+				background: #004F9F;
+				color: #E6ECF2;
+			}
+			@media(max-width: 425px){
+				width: 100%;
+			}
+		}
+		button[display]{
+			background: rgba(10, 30, 51, 0.2);
+			color: rgba(10, 30, 51, 0.2);
 		}
 	}
 }

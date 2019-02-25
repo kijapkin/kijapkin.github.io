@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Landwill</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- <link rel="shortcut icon" href="/images/favicon.png" type="image/png"> -->
+	<!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="../css/jquery.formstyler.theme.css"> -->
+	<link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="../css/jquery.formstyler.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&amp;subset=cyrillic" rel="stylesheet">
+	
+</head>
+<body>
+<div class="wrapper front">
+	<header class="header">
+		<div class="wrapper">
+			<div class="wrapper-header">
+				<div class="container">
+					<div class="block-logo-info">
+						<div class="burger-menu" id = "control-menu"><a href="#"><img src="../images/burger-menu.svg" alt="" width="35"></a></div>
+						<div class="logo">
+							<a href="home.html">
+								<img src="../images/logo-pic.svg" alt="img">
+								<img src="../images/logo-title.svg" alt="img">
+							</a>
+						</div>
+						<div class="block-info">
+							<div><p>Томск &#160;</p><a href="tel:83822525500">8 3822 <span>52-55-00</span></a></div>
+							<div><p>Северск &#160;</p><a href="tel:83823533377">8 3823 <span>53-33-77</span></a></div>
+							<div>Пн-пт <span>10:00-19:00,</span>&#160; сб <span>10:00-15:00, </span>&#160; вс <span>выходной</span></div>
+							<div><a href="#request_call"><span><img src="../images/phone.svg" alt=""></span>Заказать звонок</a></div>
+						</div>
+						<div class="button-measurer">
+							<a href="#call_measurer">Вызвать замерщика</a>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="menu" id = "menu">
+						<ul>
+							<li><a href="windows.html">Окна</a></li>
+							<li><a href="#">Услуги</a>
+								<ul>
+									<li><a href="service.html">Установка окон</a></li>
+									<li><a href="glazing.html">Остекление</a></li>
+									<li><a href="servitude.html">Услуга</a></li>
+								</ul>
+								<a href="#" class="arrow-down"></a>
+							</li>
+							<li><a href="prices.html">Цены</a></li>
+							<li><a>Компания</a>
+								<ul>
+									<li><a href="faq.html">Часто задаваемые вопросы</a></li>
+									<li><a href="partners.html">Партнёры</a>
+										<ul>
+											<li><a href="veka.html">Veka</a></li>
+										</ul>
+									</li>
+									<li><a href="clients.html">Заказчики</a></li>
+									<li><a href="certificates.html">Сертификаты и награды</a></li>
+									<li><a href="works.html">Выполненные работы</a></li>
+									<li><a href="about-company.html">О компании</a></li>
+								</ul>
+								<a href="#" class="arrow-down"></a>
+							</li>
+							<li><a>Новости и статьи</a>
+								<ul>
+									<li><a href="news.html">Новости</a>
+									<li><a href="article.html">Мультифункциональный пакет</a></li>
+								</ul>
+							</li>
+							<li><a href="testimonials.html">Отзывы</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+						<div class="cross" id = "clouse-menu">
+							<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect width="31" height="31" fill="url(#pattern0)"/>
+								<defs>
+								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#image0" transform="scale(0.015625)"/>
+								</pattern>
+								<image id="image0" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACS0lEQVR4nO2aTU9TQRSGB/gzLtmoIIgKYYkSJFTBKhKMoFs/IhqBqH/HhT/FP8GCGPmwRpHLw4IaS5m57bXnzNzbnGfZ9N7zvk8nTTt3nDMMwzAMwzAMo1uAAWAgdQ4JBoteAMw653adc9+Bx/KRCucZBr4An4FLMQbu8I8T4In60HCWy8BeS56vMYa2CkgmAbjSVh7gIMbgu8BxSgnAVWCfi7yLFaCWSgIwEij/SXt2e5DoEoBR4MBT/qPWzE6BokkArgXKf5CeVTSYugRgDDj0lN+WmtETmhKA8UD5LYHocmhIAK5XovxfJCUAE8APT/lNjexiSEgAbgTKv9fMLkYvEoCbQMNTPs6PHCn+RwJwK1D+bczsYhSRAEwCPz3lN1JkF6MbCcBUoPyblNnFyJMATAfKv06dW5QcCb885V+lzqtCQEI7L1PnVKWDhBex8xTeExSg4ZzLPK/jnNuPnCUuwAzwO2f5J91jVAW4HSifdHstCjnlnwP3+loCcAc48hR81vKe/pQAzAbKr3ve218SgLlA+bWca/pDQrP8H0+Rp11cW20JnD048ZUvsiFyv5ISgPley7fcq1oSgIVA+dUe7lkNCTnlVwTuXW4J+P/cZAieHQAWSykB/zd2BiwrzCqXhMDSzIBHijPLIQFYCpR/GGF2Wgk5y74eJYALfgAnaJ9ZAga5eDghAx6oDvZn8Uk4BIY0hw5x/mHlMbCkNrBznnYJugKaQ+ucHU76BtRUh3WXp9bMshdtJVKyg5Jly2MYhmEYhmEYFeAUWreZiUnxDS0AAAAASUVORK5CYII="/>
+								</defs>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper_content">
+		<div class="middle clearfix">
+			
+			<section class="section-prices">
+				<div class="top-menu">
+					<ul>
+						<li><a href="home.html">Главная</a></li>
+						<li>Цены</li>
+					</ul>
+				</div>
+				<h1>Цены</h1>
+				<div class="main-block-prices" id = "window-cost-calculator">
+
+					<div class="calculator">
+						<div class="container">
+						<form action="#" method="GET">
+							<div class="block-calculator">
+								<h2>Калькулятор стоимости окон</h2>
+								<div class="block-left">
+									<div class="type">
+										<h3>Тип окна</h3>
+										<div class="radio-buttons" id = "change-type-window">
+											<label>
+												<input type="radio" name="type-window" value="1" hidden checked>
+												<span>
+													<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M80 0V80H0V0H80ZM79 79V1H1V79H79Z" fill="#007DFF"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M76 4V76H4V4H76ZM75 75V5H5V75H75Z" fill="#0A1E33" fill-opacity="0.2"/>
+													</svg>
+													<p>Глухое</p>
+												</span>
+											</label>
+											<label>
+												<input type="radio" name="type-window" value="1.2" hidden>
+												<span>
+													<svg width="40" height="80" viewBox="0 0 40 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1H39V79H1V1ZM40 0V80H0V0H40Z" fill="#007DFF"/>
+														<path d="M37 38V42H38V38H37Z" fill="#007DFF"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5H35V75H5V5ZM36 4V76H4V4H36Z" fill="#0A1E33" fill-opacity="0.2"/>
+													</svg>
+													<p>Одностворчатое</p>
+												</span>
+											</label>
+											<label>
+												<input type="radio" name="type-window" value="1.4" hidden>
+												<span>
+													<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43 38V42H42V38H43Z" fill="#007DFF"/>
+														<path d="M37 38V42H38V38H37Z" fill="#007DFF"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M80 0V80H0V0H80ZM79 1H40.573V79H79V1ZM1 1H39.427V79H1V1Z" fill="#007DFF"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5H35V75H5V5ZM36 4V76H4V4H36Z" fill="#0A1E33" fill-opacity="0.2"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M45 5H75V75H45V5ZM76 4V76H44V4H76Z" fill="#0A1E33" fill-opacity="0.2"/>
+													</svg>
+													<p>Двухстворчатое</p>
+												</span>
+											</label>
+											<label>
+												<input type="radio" name="type-window" value="1.8" hidden data-selected = "false">
+												<span>
+													<svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M83.1803 38V42H82.1311V38H83.1803Z" fill="#007DFF"/>
+														<path d="M37 38V42H38V38H37Z" fill="#007DFF"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M120 0V80H0V0H120ZM80 1H40V79H80V1ZM119 1H81V79H119V1ZM1 1H39V79H1V1Z" fill="#007DFF"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5H35V75H5V5ZM36 4V76H4V4H36Z" fill="#0A1E33" fill-opacity="0.2"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M44.0303 5H76L75.9697 75H44.0303V5ZM77 4V76H43V4H77Z" fill="#0A1E33" fill-opacity="0.2"/>
+														<path fill-rule="evenodd" clip-rule="evenodd" d="M85 5H115V75H85V5ZM116 4V76H84V4H116Z" fill="#0A1E33" fill-opacity="0.2"/>
+													</svg>
+													<p>Трёхстворчатое</p>
+												</span>
+											</label>
+										</div>
+									</div>
+
+									<div class="house" id = "change-type-home">
+										<h3>Дом</h3>
+										<div class="radio-buttons">
+											<label>
+												<input type="radio" name="type-home" value="1.1" hidden checked><span>Панельный</span>
+											</label>
+											<label>
+												<input type="radio" name="type-home" value="1" hidden><span>Кирпичный</span>
+											</label>
+										</div>
+									</div>
+									<div class="options">
+										<h3>Параметры</h3>
+										<div class="wrapper-option-buttons">
+											<div class="button">
+												<span>Ширина</span>
+												<input id="width-window" type="number" name="width" value="1300" placeholder="1300">
+												<span>см</span>
+											</div>
+											<div class="button">
+												<span>Высота</span>
+												<input id = "height-window" type="number" name="size" value="1400" placeholder="1400">
+												<span>см</span>
+											</div>
+										</div>
+									</div>
+									<div class="approximately-price">
+										<h3>Примерная цена</h3>
+										<div class="wrap">
+											<div class="output-price">14 700 ₽</div>
+											<a class = "button" href="#order_measurements">Заказать замер</a>
+										</div>
+										<p>Это приблизительная цена рассчитанная по заданным параметрам, реальная цена может отличаться, вы можете <a href="#">проконсультироваться со специалистом</a>, чтобы уточнить детали</p>
+									</div>
+								</div>
+								<div class="block-right">
+									<div class="wrapper-window">
+										<div class="window-calculator">
+											<div class="polzunok-vertical"
+												data-max-height = "2000"
+												data-min-height = "1000"
+												data-default = "1400">
+												<div class="circle"><span>1400 см</span></div>
+												<div class="transparent-price-top"><span>2000 см</span></div>
+												<div class="transparent-price-bottom"><span>1000 см</span></div>
+											</div>
+											<div class="window">
+												<img src="../images/window-calculator.jpg" alt="img" width="377" height="440">
+											</div>
+											<div class="polzunok-horizontal"
+												data-max-width = "2000"
+												data-min-width = "1000"
+												data-default = "1300">
+												<div class="circle"><span>1300 см</span></div>
+												<div class="transparent-price-left"><span>1000 см</span></div>
+												<div class="transparent-price-right"><span>2000 см</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="house-bottom" id = "select-type-home">
+						<h3>Дом</h3>
+						<div class="radio-buttons">
+							<label>
+								<input type="radio" name="type-home" value="0" hidden checked><span>Панельный</span>
+							</label>
+							<label>
+								<input type="radio" name="type-home" value="1" hidden><span>Кирпичный</span>
+							</label>
+						</div>
+					</div>
+					<div class="type-window show" data-type = "0">
+						<h2>Тип окна</h2>
+						<div class="total-price">
+							<div class="block-columm-title">
+								<div class="type-balc"><h3>Тип окна</h3></div>
+								<div class="type-balc"><h3>Veka Euroline</h3></div>
+								<div class="type-balc"><h3>Veka Softline</h3></div>
+								<div class="type-balc"><h3>WHS Halo 60</h3></div>
+							</div>
+							<div class="wrapper-column-price" id="windows-slider">
+								<div class="block-columm-price">
+									<div class="block">
+										<img src="../images/win1.png" alt="img">
+										<h3>Одностворчатое окно</h3>
+										<h3>90×140</h3>
+										<div class="select-option">
+											<select name="choice" id="">
+												<option value="deaf">Глухая</option>
+												<option value="folding">Откидная</option>
+												<option value="swivel">Поворотная</option>
+											</select>
+											<i></i>
+										</div>
+									</div>
+									<div class="numb" 
+											title="Veka Euroline"
+											data-deaf = "16 500 ₽"
+											data-folding = "17 000 ₽"
+											data-swivel = "18 500 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="Veka Softline"
+											data-deaf = "16 540 ₽"
+											data-folding = "17 200 ₽"
+											data-swivel = "18 600 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="WHS Halo 60"
+											data-deaf = "16 700 ₽"
+											data-folding = "17 300 ₽"
+											data-swivel = "18 700 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<a href="#order-window" class = "button">Заказать</a>
+								</div>
+								<div class="block-columm-price">
+									<div class="block">
+										<img src="../images/win2.png" alt="img">
+										<h3>Двустворчатое окно</h3>
+										<h3>130×140</h3>
+										<div class="select-option">
+											<select name="choice" id="">
+												<option value="deaf">Глухая</option>
+												<option value="folding">Откидная</option>
+												<option value="swivel">Поворотная</option>
+											</select>
+											<i></i>
+										</div>
+									</div>
+									<div class="numb" 
+											title="Veka Euroline"
+											data-deaf = "16 500 ₽"
+											data-folding = "17 000 ₽"
+											data-swivel = "18 500 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="Veka Softline"
+											data-deaf = "16 540 ₽"
+											data-folding = "17 200 ₽"
+											data-swivel = "18 600 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="WHS Halo 60"
+											data-deaf = "16 700 ₽"
+											data-folding = "17 300 ₽"
+											data-swivel = "18 700 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<a href="#order-window" class = "button">Заказать</a>
+								</div>
+								<div class="block-columm-price">
+									<div class="block">
+										<img src="../images/win3.png" alt="img">
+										<h3>Трехстворчатое окно</h3>
+										<h3>210×140</h3>
+										<div class="select-option">
+											<select name="choice" id="">
+												<option value="deaf">Глухая</option>
+												<option value="folding">Откидная</option>
+												<option value="swivel">Поворотная</option>
+											</select>
+											<i></i>
+										</div>
+									</div>
+									<div class="numb" 
+											title="Veka Euroline"
+											data-deaf = "16 500 ₽"
+											data-folding = "17 000 ₽"
+											data-swivel = "18 500 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="Veka Softline"
+											data-deaf = "16 540 ₽"
+											data-folding = "17 200 ₽"
+											data-swivel = "18 600 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="WHS Halo 60"
+											data-deaf = "16 700 ₽"
+											data-folding = "17 300 ₽"
+											data-swivel = "18 700 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<a href="#order-window" class = "button">Заказать</a>
+								</div>
+							</div>
+							<div class="arrows-windows">
+								<div class="window-prew"></div>
+								<div class="window-next"></div>
+							</div>
+						</div>
+					</div>
+					<div class="type-balcony show" data-type = "0">
+						<h2>Тип балкона</h2>
+						<div class="total-price">
+							<div class="block-columm-title">
+								<div class="type-balc">
+									<h3>Тип балкона</h3>
+								</div>
+								<div class="type-balc">
+									<h3>Veka Euroline</h3>
+									<div class="specification">
+										<div class="img-specification"><img src="../images/balc-softline.jpg" alt="img"></div>
+										<div class="text">
+											<h5>Характеристики</h5>
+											<ul>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="type-balc">
+									<h3>Veka Softline</h3>
+									<div class="specification">
+										<div class="img-specification"><img src="../images/balc-softline.jpg" alt="img"></div>
+										<div class="text">
+											<h5>Характеристики</h5>
+											<ul>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="type-balc">
+									<h3>WHS Halo 60</h3>
+									<div class="specification" style="display: grid;">
+										<div class="img-specification"><img src="../images/balc-softline.jpg" alt="img"></div>
+										<div class="text">
+											<h5>Характеристики</h5>
+											<ul>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="wrapper-column-price" id="balconies-slider">
+								<div class="block-columm-price">
+									<div class="block">
+										<img src="../images/balcony1.png" alt="img">
+										<h3>Балконный блок</h3>
+										<h3>80×142 + 70×216</h3>
+										<div class="select-option">
+											<select name="choice" id="">
+												<option value="deaf">Глухая</option>
+												<option value="folding">Откидная</option>
+												<option value="swivel">Поворотная</option>
+											</select>
+											<i></i>
+										</div>
+									</div>
+									<div class="numb" 
+											title="Veka Euroline"
+											data-deaf = "16 500 ₽"
+											data-folding = "17 000 ₽"
+											data-swivel = "18 500 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="Veka Softline"
+											data-deaf = "16 540 ₽"
+											data-folding = "17 200 ₽"
+											data-swivel = "18 600 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="WHS Halo 60"
+											data-deaf = "16 700 ₽"
+											data-folding = "17 300 ₽"
+											data-swivel = "18 700 ₽">
+											<p>16 500 ₽</p>
+									</div>
+								</div>
+								<div class="block-columm-price">
+									<div class="block">
+										<img src="../images/balcony2.png" alt="img">
+										<h3>Балконный блок</h3>
+										<h3>146×142 + 70×216</h3>
+										<div class="select-option">
+											<select name="choice" id="">
+												<option value="deaf">Глухая</option>
+												<option value="folding">Откидная</option>
+												<option value="swivel">Поворотная</option>
+											</select>
+											<i></i>
+										</div>
+									</div>
+									<div class="numb" 
+											title="Veka Euroline"
+											data-deaf = "16 500 ₽"
+											data-folding = "17 000 ₽"
+											data-swivel = "18 500 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="Veka Softline"
+											data-deaf = "16 540 ₽"
+											data-folding = "17 200 ₽"
+											data-swivel = "18 600 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="WHS Halo 60"
+											data-deaf = "16 700 ₽"
+											data-folding = "17 300 ₽"
+											data-swivel = "18 700 ₽">
+											<p>16 500 ₽</p>
+									</div>
+								</div>
+								<div class="block-columm-price">
+									<div class="block">
+										<img src="../images/balcony3.png" alt="img">
+										<h3>Балконный блок</h3>
+										<h3>60×142 + 70×216</h3>
+										<div class="select-option">
+											<select name="choice" id="">
+												<option value="deaf">Глухая</option>
+												<option value="folding">Откидная</option>
+												<option value="swivel">Поворотная</option>
+											</select>
+											<i></i>
+										</div>
+									</div>
+									<div class="numb" 
+											title="Veka Euroline"
+											data-deaf = "16 500 ₽"
+											data-folding = "17 000 ₽"
+											data-swivel = "18 500 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="Veka Softline"
+											data-deaf = "16 540 ₽"
+											data-folding = "17 200 ₽"
+											data-swivel = "18 600 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="WHS Halo 60"
+											data-deaf = "16 700 ₽"
+											data-folding = "17 300 ₽"
+											data-swivel = "18 700 ₽">
+											<p>16 500 ₽</p>
+									</div>
+								</div>
+							</div>
+							<div class="arrows-balcony">
+								<div class="balcony-prew"></div>
+								<div class="balcony-next"></div>
+							</div>
+						</div>
+						<div class="wrapper-button">
+							<a href="#order-balcony" class = "button">Заказать</a>
+						</div>
+					</div>
+					<div class="type-window hidden" data-type = "1" satyle = "opacity: 0">
+						<h2>Тип окна</h2>
+						<div class="total-price">
+							<div class="block-columm-title">
+								<div class="type-balc"><h3>Тип окна</h3></div>
+								<div class="type-balc"><h3>Veka Euroline</h3></div>
+								<div class="type-balc"><h3>Veka Softline</h3></div>
+								<div class="type-balc"><h3>WHS Halo 60</h3></div>
+							</div>
+							<div class="wrapper-column-price" id="windows-slider">
+								<div class="block-columm-price">
+									<div class="block">
+										<img src="../images/win1.png" alt="img">
+										<h3>Одностворчатое окно</h3>
+										<h3>90×140</h3>
+										<div class="select-option">
+											<select name="choice" id="">
+												<option value="deaf">Глухая</option>
+												<option value="folding">Откидная</option>
+												<option value="swivel">Поворотная</option>
+											</select>
+											<i></i>
+										</div>
+									</div>
+									<div class="numb" 
+											title="Veka Euroline"
+											data-deaf = "16 500 ₽"
+											data-folding = "17 000 ₽"
+											data-swivel = "18 500 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="Veka Softline"
+											data-deaf = "16 540 ₽"
+											data-folding = "17 200 ₽"
+											data-swivel = "18 600 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="WHS Halo 60"
+											data-deaf = "16 700 ₽"
+											data-folding = "17 300 ₽"
+											data-swivel = "18 700 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<a href="#order-window" class = "button">Заказать</a>
+								</div>
+								<div class="block-columm-price">
+									<div class="block">
+										<img src="../images/win2.png" alt="img">
+										<h3>Двустворчатое окно</h3>
+										<h3>130×140</h3>
+										<div class="select-option">
+											<select name="choice" id="">
+												<option value="deaf">Глухая</option>
+												<option value="folding">Откидная</option>
+												<option value="swivel">Поворотная</option>
+											</select>
+											<i></i>
+										</div>
+									</div>
+									<div class="numb" 
+											title="Veka Euroline"
+											data-deaf = "16 500 ₽"
+											data-folding = "17 000 ₽"
+											data-swivel = "18 500 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="Veka Softline"
+											data-deaf = "16 540 ₽"
+											data-folding = "17 200 ₽"
+											data-swivel = "18 600 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="WHS Halo 60"
+											data-deaf = "16 700 ₽"
+											data-folding = "17 300 ₽"
+											data-swivel = "18 700 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<a href="#order-window" class = "button">Заказать</a>
+								</div>
+								<div class="block-columm-price">
+									<div class="block">
+										<img src="../images/win3.png" alt="img">
+										<h3>Трехстворчатое окно</h3>
+										<h3>210×140</h3>
+										<div class="select-option">
+											<select name="choice" id="">
+												<option value="deaf">Глухая</option>
+												<option value="folding">Откидная</option>
+												<option value="swivel">Поворотная</option>
+											</select>
+											<i></i>
+										</div>
+									</div>
+									<div class="numb" 
+											title="Veka Euroline"
+											data-deaf = "16 500 ₽"
+											data-folding = "17 000 ₽"
+											data-swivel = "18 500 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="Veka Softline"
+											data-deaf = "16 540 ₽"
+											data-folding = "17 200 ₽"
+											data-swivel = "18 600 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="WHS Halo 60"
+											data-deaf = "16 700 ₽"
+											data-folding = "17 300 ₽"
+											data-swivel = "18 700 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<a href="#order-window" class = "button">Заказать</a>
+								</div>
+							</div>
+							<div class="arrows-windows">
+								<div class="window-prew"></div>
+								<div class="window-next"></div>
+							</div>
+						</div>
+					</div>
+					<div class="type-balcony hidden" data-type = "1" satyle = "opacity: 0">
+						<h2>Тип балкона</h2>
+						<div class="total-price">
+							<div class="block-columm-title">
+								<div class="type-balc">
+									<h3>Тип балкона</h3>
+								</div>
+								<div class="type-balc">
+									<h3>Veka Euroline</h3>
+									<div class="specification">
+										<div class="img-specification"><img src="../images/balc-softline.jpg" alt="img"></div>
+										<div class="text">
+											<h5>Характеристики</h5>
+											<ul>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="type-balc">
+									<h3>Veka Softline</h3>
+									<div class="specification">
+										<div class="img-specification"><img src="../images/balc-softline.jpg" alt="img"></div>
+										<div class="text">
+											<h5>Характеристики</h5>
+											<ul>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="type-balc">
+									<h3>WHS Halo 60</h3>
+									<div class="specification" style="display: grid;">
+										<div class="img-specification"><img src="../images/balc-softline.jpg" alt="img"></div>
+										<div class="text">
+											<h5>Характеристики</h5>
+											<ul>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+												<li>5-камерный профиль 70мм</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="wrapper-column-price" id="balconies-slider">
+								<div class="block-columm-price">
+									<div class="block">
+										<img src="../images/balcony1.png" alt="img">
+										<h3>Балконный блок</h3>
+										<h3>80×142 + 70×216</h3>
+										<div class="select-option">
+											<select name="choice" id="">
+												<option value="">Глухая</option>
+												<option value="">Откидная</option>
+												<option value="">Поворотная</option>
+											</select>
+											<i></i>
+										</div>
+									</div>
+									<div class="numb" 
+											title="Veka Euroline"
+											data-deaf = "16 500 ₽"
+											data-folding = "17 000 ₽"
+											data-swivel = "18 500 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="Veka Softline"
+											data-deaf = "16 540 ₽"
+											data-folding = "17 200 ₽"
+											data-swivel = "18 600 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="WHS Halo 60"
+											data-deaf = "16 700 ₽"
+											data-folding = "17 300 ₽"
+											data-swivel = "18 700 ₽">
+											<p>16 500 ₽</p>
+									</div>
+								</div>
+								<div class="block-columm-price">
+									<div class="block">
+										<img src="../images/balcony2.png" alt="img">
+										<h3>Балконный блок</h3>
+										<h3>146×142 + 70×216</h3>
+										<div class="select-option">
+											<select name="choice" id="">
+												<option value="">Глухая</option>
+												<option value="">Откидная</option>
+												<option value="">Поворотная</option>
+											</select>
+											<i></i>
+										</div>
+									</div>
+									<div class="numb" 
+											title="Veka Euroline"
+											data-deaf = "16 500 ₽"
+											data-folding = "17 000 ₽"
+											data-swivel = "18 500 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="Veka Softline"
+											data-deaf = "16 540 ₽"
+											data-folding = "17 200 ₽"
+											data-swivel = "18 600 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="WHS Halo 60"
+											data-deaf = "16 700 ₽"
+											data-folding = "17 300 ₽"
+											data-swivel = "18 700 ₽">
+											<p>16 500 ₽</p>
+									</div>
+								</div>
+								<div class="block-columm-price">
+									<div class="block">
+										<img src="../images/balcony3.png" alt="img">
+										<h3>Балконный блок</h3>
+										<h3>60×142 + 70×216</h3>
+										<div class="select-option">
+											<select name="choice" id="">
+												<option value="">Глухая</option>
+												<option value="">Откидная</option>
+												<option value="">Поворотная</option>
+											</select>
+											<i></i>
+										</div>
+									</div>
+									<div class="numb" 
+											title="Veka Euroline"
+											data-deaf = "16 500 ₽"
+											data-folding = "17 000 ₽"
+											data-swivel = "18 500 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="Veka Softline"
+											data-deaf = "16 540 ₽"
+											data-folding = "17 200 ₽"
+											data-swivel = "18 600 ₽">
+											<p>16 500 ₽</p>
+									</div>
+									<div class="numb" 
+											title="WHS Halo 60"
+											data-deaf = "16 700 ₽"
+											data-folding = "17 300 ₽"
+											data-swivel = "18 700 ₽">
+											<p>16 500 ₽</p>
+									</div>
+								</div>
+							</div>
+							<div class="arrows-balcony">
+								<div class="balcony-prew"></div>
+								<div class="balcony-next"></div>
+							</div>
+						</div>
+						<div class="wrapper-button">
+							<a href="#order-balcony" class = "button">Заказать</a>
+						</div>
+					</div>
+					<div class="prices-table">
+						<h2>Таблица цен</h2>
+						<div class="aluminum-construction">
+							<div class="title-row">
+								<div class="row-table">
+									<h3>Алюминиевые конструкции</h3>
+									<h3>Стоимость</h3>
+								</div>
+							</div>
+							<div class="table">
+								<div class="row-table">
+									<p>Проектирование (замер-съёмка, проектирование в формате КМ-КМД)</p>
+									<p>от 4 190 руб./м2</p>
+								</div>
+								<div class="row-table">
+									<p>Проектирование (замер-съёмка, проектирование в формате КМ-КМД)</p>
+									<p>от 500 руб.</p>
+								</div>
+								<div class="row-table">
+									<p>Открывающиеся блоки (окна распашные, поворотно-откидные и тд), с фурнитурой</p>
+									<p>от 5 000 руб./м2</p>
+								</div>
+								<div class="row-table">
+									<p>Стеклопакеты (проект, изготовление), в зависимости от требований, 1- и 2-х камерные, тонированные и тд</p>
+									<p>от 1 500 руб./м2</p>
+								</div>
+							</div>
+						</div>
+						<div class="accessories">
+							<div class="title-row">
+								<div class="row-table">
+									<h3>Алюминиевые конструкции</h3>
+									<h3>Стоимость</h3>
+								</div>
+							</div>
+							<div class="table">
+								<div class="row-table">
+									<p>Откосы</p>
+									<p>от 1 000 руб./п.м.</p>
+								</div>
+								<div class="row-table">
+									<p>Отливы</p>
+									<p>от 220 руб./п.м.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+	<footer class="footer clearfix">
+		<div class="wrapper">
+			<div class="container">
+				<div class="block-footer-content">
+					<div class="logo">
+						<a href="#">
+							<img src="../images/logo-pic.svg" alt="logo">
+							<img src="../images/logo-title.svg" alt="logo">
+						</a>
+					</div>
+					<div class="block-towns-tel">
+						<p>Томск</p><p><a href="tel:83822525500">8 3822 <span>52-55-00</span></a></p>
+						<p>Северск</p><p><a href="tel:83823533377">8 3823 <span>53-33-77</span></a></p>
+						<p>Томск</p><p><a href="tel:83822525500">8 3822 <span>52-55-00</span></a></p>
+						<p>Северск</p><p><a href="tel:83823533377">8 3823 <span>53-33-77</span></a></p>
+					</div>
+					<div class="schedule">
+						<p>Пн-пт</p><p><span>10:00 - 19:00</span></p>
+						<p>сб</p><p><span>10:00 - 15:00</span></p>
+						<p>вс</p><p><span>выходной</span></p>
+					</div>
+					<div class="block-contact-details">
+						<p>8-903-955-71-27</p>
+						<a href="mailto:landwill_plus@mail.ru">landwill_plus@mail.ru</a>
+						<p>634000, Томск, пр. Комсомольский, 77</p>
+					</div>
+					<div class="block-social-icons">
+						<a href="#"><img src="../images/icon-ok.svg" alt="odnoklassniki"></a>
+						<a href="#"><img src="../images/icon-fb.svg" alt="facebook"></a>
+						<a href="#"><img src="../images/icon-insta.svg" alt="instagram"></a>
+						<a href="#"><img src="../images/icon-vk.svg" alt="vkontakte"></a>
+					</div>
+					<div class="button-become-client">
+						<a href="#become_customer">Стать клиентом</a>
+					</div>
+				</div>
+				<div class="copyrights">
+					<p>&copy; Landwill, 2018 - пластиковые окна в Томске</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal-form" style="display: none;">
+		<div id="order_measurements" class = "measurements-block">
+			<h2>Заказать замер</h2>
+			<form action="#" method="GET" id = "measurements">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+		<div id="call_measurer" class = "measurements-block">
+			<h2>Вызвать замерщика</h2>
+			<form action="#" method="GET" id = "measurer">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Вызвать</button>
+				</div>
+			</form>
+		</div>
+		<div id="request_call" class = "measurements-block">
+			<h2>Заказать звонок</h2>
+			<form action="#" method="GET" id = "request">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+		<div id="become_customer" class = "measurements-block">
+			<h2>Стать клиентом</h2>
+			<form action="#" method="GET" id = "customer">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Подать заявку</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="order-window" class = "measurements-block">
+			<h2>Ваш заказ.</h2>
+			<form action="#" method="GET" id = "price-order">
+				<div class="parce-choice">
+					<div class="name">Veka Euroline</div>
+					<input class="price" name = "type-deaf" type="text" disabled>
+				</div>
+				<div class="parce-choice">
+					<div class="name">Veka Softline</div>
+					<input class="price" name = "type-folding" type="text" disabled>
+				</div>
+				<div class="parce-choice">
+					<div class="name">WHS Halo 60</div>
+					<input class="price" name = "type-swivel"  type="text" disabled>
+				</div>
+				<div class="parce-bloc">
+					<div class="name">Тип окна</div>
+					<input type="text" name = "type-name" class = "name-type">
+					<input class="type" type="text" id = "type">
+				</div>
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="order-balcony" class = "measurements-block">
+			<h2>Стать клиентом</h2>
+			<form action="#" method="GET" id = "balcony">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Подать заявку</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="gull_review" class = "measurements-block">
+			<h2>Написать отзыв</h2>
+			<form action="#" method="GET" id = "review">
+
+				<div class="input-contact">
+					<div class="name">
+						<input type="name" name = "name" required placeholder="Ваше имя">
+					</div>
+					<div class="contact">
+						<input type="email" name = "email" placeholder="Ваш e-mail">
+					</div>
+				</div>
+				<div class="textarea">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="text">
+					<p>Нажимая кнопку «Отправить» вы принимаете <a href="#">соглашение об обработке персональных данных</a></p>
+				</div>
+				<div class="button">
+					<button type="submit">Оставить отзыв</button>
+				</div>
+			</form>
+		</div>
+
+
+	</div>
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/jquery-ui-v1.12.1.js"></script>
+	<script src="../js/jquery.fancybox.min.js"></script>
+	<script src="../js/jquery.validate.min.js"></script>
+	<script src="../js/jquery.formstyler.js"></script>
+	<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyAsgajRdZv5H2LGoHO8BXbyVZq2CLMZNxE"></script> -->
+	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+	<script src="../js/main.js"></script>
+</body>
+</html>

@@ -138,6 +138,13 @@
 						text-align: center;
 						background-color: #007DFF;
 						border-radius: 4px;
+						transition: all .1s ease;
+						&:hover{
+							background: #1CADFF;
+						}
+						&:active{
+							background: #004F9F;
+						}
 					}
 					@media (max-width: 612px) {
 						justify-self: center;

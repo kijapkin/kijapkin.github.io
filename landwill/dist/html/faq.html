@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Landwill</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- <link rel="shortcut icon" href="/images/favicon.png" type="image/png"> -->
+	<!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="../css/jquery.formstyler.theme.css"> -->
+	<link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="../css/jquery.formstyler.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&amp;subset=cyrillic" rel="stylesheet">
+	
+</head>
+<body>
+<div class="wrapper front">
+	<header class="header">
+		<div class="wrapper">
+			<div class="wrapper-header">
+				<div class="container">
+					<div class="block-logo-info">
+						<div class="burger-menu" id = "control-menu"><a href="#"><img src="../images/burger-menu.svg" alt="" width="35"></a></div>
+						<div class="logo">
+							<a href="home.html">
+								<img src="../images/logo-pic.svg" alt="img">
+								<img src="../images/logo-title.svg" alt="img">
+							</a>
+						</div>
+						<div class="block-info">
+							<div><p>Томск &#160;</p><a href="tel:83822525500">8 3822 <span>52-55-00</span></a></div>
+							<div><p>Северск &#160;</p><a href="tel:83823533377">8 3823 <span>53-33-77</span></a></div>
+							<div>Пн-пт <span>10:00-19:00,</span>&#160; сб <span>10:00-15:00, </span>&#160; вс <span>выходной</span></div>
+							<div><a href="#request_call"><span><img src="../images/phone.svg" alt=""></span>Заказать звонок</a></div>
+						</div>
+						<div class="button-measurer">
+							<a href="#call_measurer">Вызвать замерщика</a>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="menu" id = "menu">
+						<ul>
+							<li><a href="windows.html">Окна</a></li>
+							<li><a href="#">Услуги</a>
+								<ul>
+									<li><a href="service.html">Установка окон</a></li>
+									<li><a href="glazing.html">Остекление</a></li>
+									<li><a href="servitude.html">Услуга</a></li>
+								</ul>
+								<a href="#" class="arrow-down"></a>
+							</li>
+							<li><a href="prices.html">Цены</a></li>
+							<li><a>Компания</a>
+								<ul>
+									<li><a href="faq.html">Часто задаваемые вопросы</a></li>
+									<li><a href="partners.html">Партнёры</a>
+										<ul>
+											<li><a href="veka.html">Veka</a></li>
+										</ul>
+									</li>
+									<li><a href="clients.html">Заказчики</a></li>
+									<li><a href="certificates.html">Сертификаты и награды</a></li>
+									<li><a href="works.html">Выполненные работы</a></li>
+									<li><a href="about-company.html">О компании</a></li>
+								</ul>
+								<a href="#" class="arrow-down"></a>
+							</li>
+							<li><a>Новости и статьи</a>
+								<ul>
+									<li><a href="news.html">Новости</a>
+									<li><a href="article.html">Мультифункциональный пакет</a></li>
+								</ul>
+							</li>
+							<li><a href="testimonials.html">Отзывы</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+						<div class="cross" id = "clouse-menu">
+							<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect width="31" height="31" fill="url(#pattern0)"/>
+								<defs>
+								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#image0" transform="scale(0.015625)"/>
+								</pattern>
+								<image id="image0" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACS0lEQVR4nO2aTU9TQRSGB/gzLtmoIIgKYYkSJFTBKhKMoFs/IhqBqH/HhT/FP8GCGPmwRpHLw4IaS5m57bXnzNzbnGfZ9N7zvk8nTTt3nDMMwzAMwzAMo1uAAWAgdQ4JBoteAMw653adc9+Bx/KRCucZBr4An4FLMQbu8I8T4In60HCWy8BeS56vMYa2CkgmAbjSVh7gIMbgu8BxSgnAVWCfi7yLFaCWSgIwEij/SXt2e5DoEoBR4MBT/qPWzE6BokkArgXKf5CeVTSYugRgDDj0lN+WmtETmhKA8UD5LYHocmhIAK5XovxfJCUAE8APT/lNjexiSEgAbgTKv9fMLkYvEoCbQMNTPs6PHCn+RwJwK1D+bczsYhSRAEwCPz3lN1JkF6MbCcBUoPyblNnFyJMATAfKv06dW5QcCb885V+lzqtCQEI7L1PnVKWDhBex8xTeExSg4ZzLPK/jnNuPnCUuwAzwO2f5J91jVAW4HSifdHstCjnlnwP3+loCcAc48hR81vKe/pQAzAbKr3ve218SgLlA+bWca/pDQrP8H0+Rp11cW20JnD048ZUvsiFyv5ISgPley7fcq1oSgIVA+dUe7lkNCTnlVwTuXW4J+P/cZAieHQAWSykB/zd2BiwrzCqXhMDSzIBHijPLIQFYCpR/GGF2Wgk5y74eJYALfgAnaJ9ZAga5eDghAx6oDvZn8Uk4BIY0hw5x/mHlMbCkNrBznnYJugKaQ+ucHU76BtRUh3WXp9bMshdtJVKyg5Jly2MYhmEYhmEYFeAUWreZiUnxDS0AAAAASUVORK5CYII="/>
+								</defs>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper_content">
+		<div class="middle clearfix">
+			
+			<section class="section-faq">
+				<div class="top-menu">
+					<ul>
+						<li><a href="home.html">Главная</a></li>
+						<li><a href="company.html">Компания</a></li>
+						<li>Часто задаваемые вопросы</li>
+					</ul>
+				</div>
+				<h1>Часто задаваемые вопросы</h1>
+				<div class="main-block-text">
+					<div class="block-text" data-swich = "false">
+						<h3>ПВХ - что же это такое?</h3>
+						<p>Поливинилхлорид - коротко ПВХ - термопластический искусственный материал, получаемый из природного сырья: поваренной соли и нефти. Через различные стадии производства получают порошок ПВХ. ПВХ является одной из самых подходящих, широко распространенной в промышленности и быту пластмассой с высокой устойчивостью.</p>
+						<div class="control-block" data-swich = "false">
+							<i class="pointer"></i>
+							<span data-hidden = "Скрыть" data-show = "Подробнее">Подробнее</span>
+						</div>
+					</div>
+					<div class="block-text" data-swich = "false">
+						<h3>Зачем для обмера окон ПВХ приглашать специалиста?</h3>
+						<p>Вызов специалиста на замер является обязательным этапом работы. Неправильный монтаж может свести на нет все ожидания владельцев новых пластиковых окон. Замер окна ПВХ - это то, с чего начинается работа по установке окон. Поэтому важно, чтобы не только установка окон ПВХ, но и обмер производился специалистом. Мастер-сервис по замеру компании Лэндвилл выезжает на замер проемов под окна ПВХ в любое удобное для Вас время совершенно бесплатно. Специалист готов не только снять замеры предполагаемых окон, но и объяснить все нюансы выбора металлопластиковых окон. </p>
+						<div class="control-block" data-swich = "false">
+							<i class="pointer"></i>
+							<span data-hidden = "Скрыть" data-show = "Подробнее">Подробнее</span>
+						</div>
+					</div>
+					<div class="block-text" data-swich = "false">
+						<h3>Как ухаживать за поверхностью пластикового окна?</h3>
+						<p>Не торопитесь покупать фирменные средства «по уходу за пластиковыми окнами»– они весьма дороги, но цена их не всегда оправданы. Мы советуем для ухода за оконными рамами использовать мягкую ткань и привычные в домашнем хозяйстве чистящие и моющие средства. Не используйте только порошковые пасты и эмульсии, а также агрессивные растворители. Для суперзагрязнений: Cosmofen, VEKANOL-Reiniger.  Периодичность определяется Вашими требованиями к чистоте.</p>
+						<div class="control-block" >
+							<i class="pointer"></i>
+							<span data-hidden = "Скрыть" data-show = "Подробнее">Подробнее</span>
+						</div>
+					</div>
+					<div class="block-text" data-swich = "false">
+						<h3>Как ухаживать за уплотнениями?</h3>
+						<p>Если на Ваших уплотнениях производитель окон не экономил, то достаточно будет очищать их просто мыльным раствором в течение десятилетий. Промыли? Обязательно протрите насухо! Никаких растворителей, концентрированных чистящих средств и масляных субстанций! Для любителей правил: VEKA – Dichtungspflege. Периодичность: раз в полгода.</p>
+						<div class="control-block">
+							<i class="pointer"></i>
+							<span data-hidden = "Скрыть" data-show = "Подробнее">Подробнее</span>
+						</div>
+					</div>
+					<div class="block-text" data-swich = "false">
+						<h3>Как ухаживать за фурнитурой?</h3>
+						<p>Для службы фурнитуры в течение нескольких десятилетий необходимо смазывать ее специальной смазкой. Можно использовать русский аналог. Фирменные средства: VEKA-Spezialfett и распыляемая VEKA-Spruhol.</p>
+						<div class="control-block">
+							<i class="pointer"></i>
+							<span data-hidden = "Скрыть" data-show = "Подробнее">Подробнее</span>
+						</div>
+					</div>
+					<div class="block-text" data-swich = "false">
+						<h3>Как ухаживать за стеклами?</h3>
+						<p>Пользуйтесь средствами для очистки стекла, которыми Вы привыкли чистить Ваши прежние окна. После очистки стекол обязательно протрите уплотнения стеклопакета и поверхность пластика.</p>
+						<div class="control-block">
+							<i class="pointer"></i>
+							<span data-hidden = "Скрыть" data-show = "Подробнее">Подробнее</span>
+						</div>
+					</div>
+					<div class="block-text" data-swich = "false">
+						<h3>Почему запотевают окна ПВХ?</h3>
+						<p>Конденсат, скапливающийся на пластиковых окнах — неприятность, с которой нередко сталкиваются после установки новых окон ПВХ. Новые окна ПВХ не только изменяют интерьер жилища, но и в корне изменяют условия вентеляции, теплообмена и микроклимота в квартире. С заменой старых окон, значительно повышается гермитизация оконного проема и, как следствие, понижается «естественный» обмен (циркуляция) воздуха в помещении. Конденсата не было на окнах потому что деревянные окна пропускали воздух и, таким образом, поддерживалась нормальная влажность в помещении. Излишняя влажность на новых окнах ПВХ конденсируется на большей поверхности окна (стеклопакет). Основной причиной запотевания окон является большая влажность воздуха в изолируем помещении. Влага в помещениях выделяется из различных источников, главным из которых является человек; в результате его дыхания влажность воздуха существеннно повышается. Большие объемы влаги выделяются в результате стирки, готовки, уборки помещения и принятия душа.  Дополнительными источниками влагообразования являются комнатные растения. Таким образом, в помещениях накапливается влага (особенно на кухне), которая выпадает на самых холодных участках наружных ограждающих конструкций, т.е. на стеклопакетах, в виде запотевания и конденсата, а при сильных морозах, вдоль алюминиевой рамки — наледи. </p>
+						<div class="control-block">
+							<i class="pointer"></i>
+							<span data-hidden = "Скрыть" data-show = "Подробнее">Подробнее</span>
+						</div>
+					</div>
+					<div class="block-text" data-swich = "false">
+						<h3>Как избежать выпадения конденсата?</h3>
+						<p>Какие бы современные технические нововведения не предлагались к окну, самый простой способ борьбы с конденсатом (проверенный на практике) — проветривание. Регулярное проветривание избавит вас от конденсата. В зависимости от влажности воздуха следует делать интервалы проветривания больше либо меньше. Исходя из условий комфортности, влажность в помещение должна быть не более 55%. Достаточно открывать окно на 15 минут утром и вечером. Зимой Вы сами можете легко контролировать продолжительность проветривания. Когда Вы открываете окно, внешнее стекло сразу запотевает. Как только этот конденсат исчезнит, можете опять закрывать окно. За это время воздух заменится, а стены и мебель еще не охлодятся. А также для предотвращения возникновения запотевания на внутренней поверхности стекла не перекрывайте поток теплого воздуха от радиаторов отопления к стеклу, обращайте внимание на то, чтобы шторы и жалюзи не препятствовали прохождению теплого воздуха к окну. </p>
+						<div class="control-block">
+							<i class="pointer"></i>
+							<span data-hidden = "Скрыть" data-show = "Подробнее">Подробнее</span>
+						</div>
+					</div>
+					<div class="block-text" data-swich = "false">
+						<h3>Как производится крепеж москитной сетки к пластиковым окнам? </h3>
+						<p>Для того чтобы верно установить москитную сетку, Вам нужно:</p>
+						<ul>
+							<li>Придерживая москитную сетку за специальные ручки, вывести ее наружу проема окна;</li>
+							<li>Сначала вставить верхнюю часть сетки в верхние уголки и только после этого опустить сеть в нижние.</li>
+						</ul>
+						<p>Для демонтажа сетки, который рекомендуется проводить на зимний период, необходимо проделать все то же само, только в обратной последовательности.</p>
+						<div class="control-block">
+							<i class="pointer"></i>
+							<span data-hidden = "Скрыть" data-show = "Подробнее">Подробнее</span>
+						</div>
+					</div>
+				</div>
+				<div class="block-form-quetions">
+					<h2>Не нашли ответа на свой вопрос?</h2>
+					<p>Оставьте ваш номер телефона, специалист перезвонит в течение нескольких минут и подробно ответит на все ваши вопросы.</p>
+					<div class="form">
+						<form action="#" method="GET" id = "leave_question">
+							<input type="number" name="phone" placeholder="Ваш номер телефона">
+							<button type="submit">Оставить заявку</button>
+						</form>
+					</div>
+					<div class="img-girl">
+						<img src="../images/girl.png" alt="img">
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+	<footer class="footer clearfix">
+		<div class="wrapper">
+			<div class="container">
+				<div class="block-footer-content">
+					<div class="logo">
+						<a href="#">
+							<img src="../images/logo-pic.svg" alt="logo">
+							<img src="../images/logo-title.svg" alt="logo">
+						</a>
+					</div>
+					<div class="block-towns-tel">
+						<p>Томск</p><p><a href="tel:83822525500">8 3822 <span>52-55-00</span></a></p>
+						<p>Северск</p><p><a href="tel:83823533377">8 3823 <span>53-33-77</span></a></p>
+						<p>Томск</p><p><a href="tel:83822525500">8 3822 <span>52-55-00</span></a></p>
+						<p>Северск</p><p><a href="tel:83823533377">8 3823 <span>53-33-77</span></a></p>
+					</div>
+					<div class="schedule">
+						<p>Пн-пт</p><p><span>10:00 - 19:00</span></p>
+						<p>сб</p><p><span>10:00 - 15:00</span></p>
+						<p>вс</p><p><span>выходной</span></p>
+					</div>
+					<div class="block-contact-details">
+						<p>8-903-955-71-27</p>
+						<a href="mailto:landwill_plus@mail.ru">landwill_plus@mail.ru</a>
+						<p>634000, Томск, пр. Комсомольский, 77</p>
+					</div>
+					<div class="block-social-icons">
+						<a href="#"><img src="../images/icon-ok.svg" alt="odnoklassniki"></a>
+						<a href="#"><img src="../images/icon-fb.svg" alt="facebook"></a>
+						<a href="#"><img src="../images/icon-insta.svg" alt="instagram"></a>
+						<a href="#"><img src="../images/icon-vk.svg" alt="vkontakte"></a>
+					</div>
+					<div class="button-become-client">
+						<a href="#become_customer">Стать клиентом</a>
+					</div>
+				</div>
+				<div class="copyrights">
+					<p>&copy; Landwill, 2018 - пластиковые окна в Томске</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal-form" style="display: none;">
+		<div id="order_measurements" class = "measurements-block">
+			<h2>Заказать замер</h2>
+			<form action="#" method="GET" id = "measurements">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+		<div id="call_measurer" class = "measurements-block">
+			<h2>Вызвать замерщика</h2>
+			<form action="#" method="GET" id = "measurer">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Вызвать</button>
+				</div>
+			</form>
+		</div>
+		<div id="request_call" class = "measurements-block">
+			<h2>Заказать звонок</h2>
+			<form action="#" method="GET" id = "request">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+		<div id="become_customer" class = "measurements-block">
+			<h2>Стать клиентом</h2>
+			<form action="#" method="GET" id = "customer">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Подать заявку</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="order-window" class = "measurements-block">
+			<h2>Ваш заказ.</h2>
+			<form action="#" method="GET" id = "price-order">
+				<div class="parce-choice">
+					<div class="name">Veka Euroline</div>
+					<input class="price" name = "type-deaf" type="text" disabled>
+				</div>
+				<div class="parce-choice">
+					<div class="name">Veka Softline</div>
+					<input class="price" name = "type-folding" type="text" disabled>
+				</div>
+				<div class="parce-choice">
+					<div class="name">WHS Halo 60</div>
+					<input class="price" name = "type-swivel"  type="text" disabled>
+				</div>
+				<div class="parce-bloc">
+					<div class="name">Тип окна</div>
+					<input type="text" name = "type-name" class = "name-type">
+					<input class="type" type="text" id = "type">
+				</div>
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Заказать</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="order-balcony" class = "measurements-block">
+			<h2>Стать клиентом</h2>
+			<form action="#" method="GET" id = "balcony">
+				<div class="input-block">
+					<input name = "firstname" type="text" placeholder="Ваше имя" required>
+				</div>
+				<div class="input-block">
+					<input name = "phone" type="number" placeholder="Ваш номер телефона" required>
+				</div>
+				<div class="textarea-block">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="button-block">
+					<button type = "submit">Подать заявку</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="gull_review" class = "measurements-block">
+			<h2>Написать отзыв</h2>
+			<form action="#" method="GET" id = "review">
+
+				<div class="input-contact">
+					<div class="name">
+						<input type="name" name = "name" required placeholder="Ваше имя">
+					</div>
+					<div class="contact">
+						<input type="email" name = "email" placeholder="Ваш e-mail">
+					</div>
+				</div>
+				<div class="textarea">
+					<textarea name="text" id="" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="text">
+					<p>Нажимая кнопку «Отправить» вы принимаете <a href="#">соглашение об обработке персональных данных</a></p>
+				</div>
+				<div class="button">
+					<button type="submit">Оставить отзыв</button>
+				</div>
+			</form>
+		</div>
+
+
+	</div>
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/jquery-ui-v1.12.1.js"></script>
+	<script src="../js/jquery.fancybox.min.js"></script>
+	<script src="../js/jquery.validate.min.js"></script>
+	<script src="../js/jquery.formstyler.js"></script>
+	<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyAsgajRdZv5H2LGoHO8BXbyVZq2CLMZNxE"></script> -->
+	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+	<script src="../js/main.js"></script>
+</body>
+</html>
