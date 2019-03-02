@@ -26,11 +26,8 @@ $(function(){
       case 10: fMonth="ноября"; break;
       case 11: fMonth="декабря"; break;
     }
-
-
     // Вывод
     $('.m1-date').html(" "+Day+"&nbsp;"+fMonth+"&nbsp;"+Year+"&nbsp;г." );
-    
     $('.rev-slider').slick({
       infinite: false,
       autoplay: false,
