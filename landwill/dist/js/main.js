@@ -6,6 +6,27 @@ $(document).ready(function(){
     nextArrow: $('.arrow-next-main'),
   });
 
+  if($(".works-section").length != 0){
+    console.log("works-section");
+    $("a.gallery").fancybox({
+      "padding" : 20, // отступ контента от краев окна
+      "imageScale" : false, // Принимает значение true - контент(изображения) масштабируется по размеру окна, или false - окно вытягивается по размеру контента. По умолчанию - TRUE
+      "zoomOpacity" : false,  // изменение прозрачности контента во время анимации (по умолчанию false)
+      "zoomSpeedIn" : 1000, // скорость анимации в мс при увеличении фото (по умолчанию 0)
+      "zoomSpeedOut" : 1000,  // скорость анимации в мс при уменьшении фото (по умолчанию 0)
+      "zoomSpeedChange" : 1000, // скорость анимации в мс при смене фото (по умолчанию 0)
+      "frameWidth" : 700,  // ширина окна, px (425px - по умолчанию)
+      "frameHeight" : 600, // высота окна, px(355px - по умолчанию)
+      "overlayShow" : true, // если true затеняят страницу под всплывающим окном. (по умолчанию true). Цвет задается в jquery.fancybox.css - div#fancy_overlay 
+      "overlayOpacity" : 0.8,  // Прозрачность затенения  (0.3 по умолчанию)
+      "hideOnContentClick" :false, // Если TRUE  закрывает окно по клику по любой его точке (кроме элементов навигации). Поумолчанию TRUE   
+      "centerOnScroll" : false // Если TRUE окно центрируется на экране, когда пользователь прокручивает страницу   
+    });
+
+  }
+
+
+
   $('.slider-block-cards').slick({
     dots: true,
     infinite: true,
@@ -365,19 +386,6 @@ $(document).ready(function(){
     });
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
- //----------new----------
   if($("#installation_windows").length != 0){
     $("#installation_windows").validate({
       rules: {
@@ -473,7 +481,6 @@ $(document).ready(function(){
     });
   };
 
-  //Стилизация select
   if($(".main-block-prices .select-option").length != 0){
     $('.select-option select').styler({
       onSelectOpened : function(){
@@ -607,12 +614,8 @@ $(document).ready(function(){
       },
     });
   };
-   //----------new----------
 
-
-
-  // ferst ----------------
-    if($(".block-form-quetions").length != 0){
+  if($(".block-form-quetions").length != 0){
       console.log(true);
       $("#leave_question").validate({
         rules: {
@@ -634,13 +637,6 @@ $(document).ready(function(){
         },
       });
     };
-
-
-
-  // ferst ----------------   
-
-
-
 
    if($("#become_customer").length != 0){
     $("a[href=#become_customer]").fancybox({
@@ -667,113 +663,149 @@ $(document).ready(function(){
       },
     });
   }
-});
 
- // partners
+
+
+
   if($("#form-cooperation").length != 0){
-      console.log(true);
-      $("#form-cooperation").validate({
-        rules: {
-          company: "required",
-          phone: "required",
-          company: {
-            required: true,
-            minlength: 3
-          },
-          phone: {
-            minlength: 8,
-            required: true,
-          },
+    $("#form-cooperation").validate({
+      rules: {
+        company: "required",
+        phone: "required",
+        company: {
+          required: true,
+          minlength: 3
         },
-        messages: {
-          company: {
-            required: "",
-            minlength: ""
-          },
-          phone: {
-            required: "",
-            minlength: ""
-          },
+        phone: {
+          minlength: 8,
+          required: true,
         },
-        submitHandler: function(event) {
-          /*формирование ajax запрос */
-          return false;
+      },
+      messages: {
+        company: {
+          required: "",
+          minlength: ""
         },
-      });
+        phone: {
+          required: "",
+          minlength: ""
+        },
+      },
+      submitHandler: function(event) {
+        /*формирование ajax запрос */
+        return false;
+      },
+    });
+  };
+
+  if($("a[href='#gull_review']").length != 0){
+    $("a[href='#gull_review'").fancybox({
+      showCloseButton : false,
+      enableEscapeButton : false
+    });
+
+    $("#review").validate({
+      rules: {
+        firstname: "required",
+        email : "required",
+        firstname: {
+          required: true,
+          minlength: 3
+        },
+        email: {
+          required: true,
+          email: true
+        },
+      },
+      messages: {
+        firstname: {
+          required: "",
+          minlength: ""
+        },
+        email: "",
+      },
+      submitHandler: function(event) {
+        /*формирование ajax запрос */
+        return false;
+      },
+    });
+  };
+
+  if($("#form-contacts").length != 0 ){
+    $("#form-contacts").validate({
+      rules: {
+        firstname: "required",
+        email: "required",
+        firstname: {
+          required: true,
+          minlength: 3
+        },
+        email: {
+          required: true,
+          email: true
+        },
+      },
+      messages: {
+        firstname: {
+          required: "",
+          minlength: ""
+        },
+        email: "Не вірна адреса пошти",
+      },
+      submitHandler: function(event) {
+        /*формирование ajax запрос */
+        return false;
+      },
+    });
+  }
+
+
+  $('#vertical-range').on('mousemove click',function() { 
+    var textBlock = $(".vertical-count");
+    var inputHeight = $("#height-window");
+      /*var inputVerticalText = $(".vertical-count");
+      var inputVertical = $("#vertical-range");
+      var minHeight = inputVertical.attr('min');
+      var maxHeight = inputVertical.attr('max');
+      var defaultHeigh = inputVertical.attr('value');
+      var inputHeight = $("#height-window");
+      var countResult = maxHeight - minHeight;
+      var positionDefault = ((defaultHeigh - minHeight) * 96)/(maxHeight - minHeight);
+      inputVerticalText.css("bottom", positionDefault+"%");
+      inputVerticalText.val($(this).val());
+      inputHeight.val($(this).val());
+      var textBlock = $("vertical-count");
+      var inputWidth = $("#height-window");*/
+      var data = {};
+      data = {
+        min : $(this).context.min,
+        max : $(this).context.max,
+        value : $(this).context.value,
+      };
+      inputHeight.val(data.value);
+      textBlock.text(data.value + " см");
+      position = ((data.value - data.min) * 96)/(data.max -data.min);
+      textBlock.css("bottom", position+"%");
+      costCalculation();
+  });
+
+  $('#horizontal-range').on('mousemove click',function() { 
+    var textBlock = $(".horizontal-count");
+    var inputWidth = $("#width-window");
+    var data = {};
+    data = {
+      min : $(this).context.min,
+      max : $(this).context.max,
+      value : $(this).context.value,
     };
-    // partners
+    inputWidth.val(data.value);
+    textBlock.text(data.value + " см");
+    position = ((data.value - data.min) * 96)/(data.max -data.min);
+    textBlock.css("left", position+"%");
+    costCalculation();
+  });
 
-    //testimonials
-
-    if($("a[href='#gull_review']").length != 0){
-      $("a[href='#gull_review'").fancybox({
-        showCloseButton : false,
-        enableEscapeButton : false
-      });
-
-      $("a[href='#gull_review']").validate({
-        rules: {
-          company: "required",
-          phone: "required",
-          company: {
-            required: true,
-            minlength: 3
-          },
-          phone: {
-            minlength: 8,
-            required: true,
-          },
-        },
-        messages: {
-          company: {
-            required: "",
-            minlength: ""
-          },
-          phone: {
-            required: "",
-            minlength: ""
-          },
-        },
-        submitHandler: function(event) {
-          /*формирование ajax запрос */
-          return false;
-        },
-      });
-    };
-    //testimonials
-
-    //contacts
-
-    if($("#form-contacts").length != 0 ){
-      $("#form-contacts").validate({
-        rules: {
-          firstname: "required",
-          email: "required",
-          firstname: {
-            required: true,
-            minlength: 3
-          },
-          email: {
-            required: true,
-            email: true
-          },
-        },
-        messages: {
-          firstname: {
-            required: "",
-            minlength: ""
-          },
-          email: "Не вірна адреса пошти",
-        },
-        submitHandler: function(event) {
-          /*формирование ajax запрос */
-          return false;
-        },
-      });
-    }
-    //contacts
-    
-
+});
 
 function faqListBlock(){
   var sectionBlock = $(".section-faq");
@@ -1032,34 +1064,38 @@ function windowCostCalculator(){
 
   var bloc = $("#window-cost-calculator");
   if(bloc.length < 1){ return false };
-  var maxHeight = $("#window-cost-calculator .polzunok-vertical").data("max-height");
-  var minHeight = $("#window-cost-calculator .polzunok-vertical").data("min-height");
-  var defaultHeight = $("#window-cost-calculator .polzunok-vertical").data("default");
+
+  var maxHeight = $("#vertical-range").attr("max");
+  var minHeight = $("#vertical-range").attr("min");
+  var defaultHeight = $("#vertical-range").val();
+  var positionHeight = $("#vertical-range");
   
-  var maxWidth = $("#window-cost-calculator .polzunok-horizontal").data("max-width");
-  var minWidth = $("#window-cost-calculator .polzunok-horizontal").data("min-width");
-  var defaultWidth = $("#window-cost-calculator .polzunok-horizontal").data("default");
+  var maxWidth = $("#horizontal-range").attr("max");
+  var minWidth = $("#horizontal-range").attr("min");
+  var defaultWidth = $("#horizontal-range").val();
+  var positionWidth = $("#horizontal-range");
+
+  /*var positionHeight = $("#window-cost-calculator .polzunok-vertical .circle");*/
   
-  var positionHeight = $("#window-cost-calculator .polzunok-vertical .circle");
-  var positionWidth = $("#window-cost-calculator .polzunok-horizontal .circle");
-  var positionHeightText =  $("#window-cost-calculator .polzunok-vertical .circle span");
-  var positionWidthText =  $("#window-cost-calculator .polzunok-horizontal .circle span");
+  var positionHeightText =  $("#window-cost-calculator .vertical-count");
+  var positionWidthText =  $("#window-cost-calculator .horizontal-count");
 
   inputWidth = $("#width-window");
   inputHeight = $("#height-window");
   var defaultH;
   var defaultW;
 
-  defaultH = (defaultHeight*100)/maxHeight;
-  /*defaultW = ((defaultWidth - minWidth)*100)/(maxWidth - minWidth);*/
-  defaultW = (defaultWidth*100)/maxWidth;
+  defaultH = ((defaultHeight - minHeight)*96)/(maxHeight - minHeight);
+  defaultW = ((defaultWidth - minWidth)*96)/(maxWidth - minWidth);
+  positionHeightText.css("bottom", defaultH+"%");
+  positionWidthText.css("left", defaultW+"%");
 
-  positionHeight.css("bottom", defaultH + "%");
-  positionWidth.css("left", defaultW + "%");
+  positionHeightText.text(defaultHeight+" см");
+  positionWidthText.text(defaultWidth+" см");
 
   inputWidth.change(function() {
     var count;
-    var result;
+    var resultProc;
     var maxWidthBoulenCount;
     var minWidthBoulenCount;
     var countHeight;
@@ -1068,82 +1104,70 @@ function windowCostCalculator(){
     countWidth = count
     if(maxWidth > count || maxWidth == count){
       maxWidthBoulenCount = true;
-    }else{ maxWidthBoulenCount = false; };
+    }else{ maxWidthBoulenCount = false;  };
 
     if(minWidth < count || minWidth == count){
       minWidthBoulenCount = true;
-    }else{ minWidthBoulenCount = false };
+    }else{ minWidthBoulenCount = false};
   
     if( maxWidthBoulenCount && minWidthBoulenCount ){
-
-      result  = ((count - minWidth)*100)/(maxWidth - minWidth);
-      positionWidthText.text(count);
-      positionWidth.animate({
-        left : result + "%",
-      }, 500);
-      positionWidth.css("left", result + "%");
+      resultProc  = ((count - minWidth)*96)/(maxWidth - minWidth);
+      positionWidthText.text(count+" см");
+      positionWidth.val(count);
+      positionWidthText.css("left", resultProc+"%");
     };
-    if(maxWidth < count){
-      positionWidthText.text(maxWidth);
-      inputWidth.val(maxWidth);
-      countWidth = maxWidth;
-      positionWidth.animate({
-        left : 100 + "%",
-      }, 500);
-    }
-    if(minWidth > count){
-      positionWidthText.text(minWidth);
+
+    if(parseInt(count) < parseInt(minWidth)){
+      positionWidthText.text(minWidth+" см");
       inputWidth.val(minWidth);
-      countWidth = minWidth;
-      positionWidth.animate({
-        left : 0 + "%",
-      }, 500);
+      positionWidth.val(minWidth);
+      positionWidthText.css("left", "0%");
+    }
+    if(parseInt(maxWidth) < parseInt(count)){
+      positionWidthText.text(maxWidth+" см");
+      inputWidth.val(maxWidth);
+      positionWidth.val(maxWidth);
+      positionWidthText.css("left", "96%");
     }
     costCalculation();
   });
  
   inputHeight.change(function() {
     var count;
-    var result;
+    var resultProc;
     var maxHeightBoulenCount;
     var minHeightBoulenCount;
-    
+    var countHeight;
+    var countHeight;
     count = inputHeight.val()
-    countHeight = count;
+    countHeight = count
     if(maxHeight > count || maxHeight == count){
       maxHeightBoulenCount = true;
-    }else{ maxHeightBoulenCount = false; };
+    }else{ maxHeightBoulenCount = false;  };
 
     if(minHeight < count || minHeight == count){
       minHeightBoulenCount = true;
-    }else{ minHeightBoulenCount = false };
-
-    if( maxHeightBoulenCount & minHeightBoulenCount ){
-      result  = ((count - minHeight)*100)/(maxHeight - minHeight);
-      positionHeightText.text(count);
-      positionHeight.animate({
-        bottom : result + "%",
-      }, 500);
-      positionHeight.css("bottom", result + "%");
+    }else{ minHeightBoulenCount = false};
+  
+    if( maxHeightBoulenCount && minHeightBoulenCount ){
+      resultProc  = ((count - minHeight)*96)/(maxHeight - minHeight);
+      positionHeightText.text(count+" см");
+      positionHeight.val(count);
+      positionHeightText.css("bottom", resultProc+"%");
     };
-    if(maxHeight < count){
-      positionHeightText.text(maxHeight);
-      inputHeight.val(maxHeight);
-      countHeight = maxHeight;
-      positionHeight.animate({
-        bottom : 100 + "%",
-      }, 500);
 
-    }
-    if(minHeight > count){
-      positionHeightText.text(minHeight);
+    if(parseInt(count) < parseInt(minHeight)){
+      positionHeightText.text(minHeight+" см");
       inputHeight.val(minHeight);
-      countHeight = minHeight;
-      positionHeight.animate({
-        bottom : 0 + "%",
-      }, 500);
+      positionHeight.val(minHeight);
+      positionHeightText.css("bottom", "0%");
     }
-
+    if(parseInt(maxHeight) < parseInt(count)){
+      positionHeightText.text(maxHeight+" см");
+      inputHeight.val(maxHeight);
+      positionHeight.val(maxHeight);
+      positionHeightText.css("bottom", "96%");
+    }
     costCalculation();
   });
 };
@@ -1221,5 +1245,3 @@ function windowSize(){
       });
   }
 };
-
-

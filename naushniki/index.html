@@ -17,20 +17,10 @@
     <link rel="stylesheet" href="css/slick.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
 
-    <script src="../ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    	
-	<link rel="stylesheet" href="yved/style.css" type="text/css" />
-	<script>
-		function randomInteger(min, max) {
-			var rand = min + Math.random() * (max + 1 - min);
-			rand = Math.floor(rand);
-			return rand;
-		}
-	</script>	
-	
-	<script type="text/javascript">
-		var day=new Date,month=new Array(12);month[0]="января",month[1]="февраля",month[2]="марта",month[3]="апреля",month[4]="мая",month[5]="июня",month[6]="июля",month[7]="августа",month[8]="сентября",month[9]="октября",month[10]="ноября",month[11]="декабря";var month2=new Array(12);month2[0]="Январь",month2[1]="Февраль",month2[2]="Март",month2[3]="Апрель",month2[4]="Май",month2[5]="Июнь",month2[6]="Июль",month2[7]="Август",month2[8]="Сентябрь",month2[9]="Октябрь",month2[10]="Ноябрь",month2[11]="Декабрь";
-	</script>
+    <!-- <script src="../ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/scripts.js"></script>
+	<link rel="stylesheet" href="yved/style.css" type="text/css" />	
 	
 	<style>
 		.present { display: block; }
@@ -358,8 +348,9 @@ src="https://www.facebook.com/tr?id=2227486000635228&ev=PageView
                     <div class="section clearfix">
 			<div class="percent">Действует акция! <span>Cкидка -25%<span></div> 
             <div class="sale">
-				<div class="timer clearfix" style="margin-bottom: 20px;">
-					<p style="margin-top: 20px;">До конца акции осталось:</p>
+                <div class="timer clearfix" style="margin-bottom: 20px;">
+                    <p style="margin-top: 20px;">До конца акции осталось:</p>
+                    <div class="m1-date"></div>
 				</div>
                  <div class="price clearfix">
                     <span class="old">1700 грн</span>
@@ -508,3 +499,15 @@ src="https://www.facebook.com/tr?id=2227486000635228&ev=PageView
 	</div>
 </body>
 </html>
+
+<script type="text/javascript">
+        var day=new Date,month=new Array(12);month[0]="января",month[1]="февраля",month[2]="марта",month[3]="апреля",month[4]="мая",month[5]="июня",month[6]="июля",month[7]="августа",month[8]="сентября",month[9]="октября",month[10]="ноября",month[11]="декабря";var month2=new Array(12);month2[0]="Январь",month2[1]="Февраль",month2[2]="Март",month2[3]="Апрель",month2[4]="Май",month2[5]="Июнь",month2[6]="Июль",month2[7]="Август",month2[8]="Сентябрь",month2[9]="Октябрь",month2[10]="Ноябрь",month2[11]="Декабрь";
+</script>
+
+<script>
+    function randomInteger(min, max) {
+        var rand = min + Math.random() * (max + 1 - min);
+        rand = Math.floor(rand);
+        return rand;
+    }
+</script>

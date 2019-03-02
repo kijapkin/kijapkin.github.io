@@ -1,3 +1,7 @@
+.m1-date{
+
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -212,10 +216,10 @@ h2.title {
 	float: left;
 }
 .b1 .timer p {
-	color: white;
-	text-align: center;
-	font-size: 17px;
-	margin-bottom: 5px;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 5px;
 }
 .price .new:before {
     content: '';
