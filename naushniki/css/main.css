@@ -1,3 +1,18 @@
+.block-imgs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-rows: repeat(3,250px);
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+.img{
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    transition: .5s;
+}
+
 #CDT {
     font-size: 20px;
     color: #eee;
@@ -973,21 +988,6 @@ form.m1-form .button-m{
         width: 100%;
         height: 780px;
         background: url(../img/b2-img-m.jpg) 50% 0 no-repeat;
-    }
-    
-    .galerea-photo{
-        outline: 2px dashed red;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 10px;
-    }
-    .galerea-photo .img{
-        width: 200px;
-        height: 150px;
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-position: center;
     }
 
     .b3 {
