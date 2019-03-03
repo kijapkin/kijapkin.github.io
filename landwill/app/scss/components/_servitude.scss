@@ -378,7 +378,7 @@ section.section-servitude{
 						.wrap{
 							display: grid;
 							align-items: center;
-							grid-template-columns: auto auto;
+							grid-template-columns: 220px auto;
 							@media (max-width: 768px) {
 								grid-template-columns: auto;
 								justify-items: center;
