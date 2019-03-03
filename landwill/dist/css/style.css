@@ -6607,7 +6607,7 @@ section.section-prices {
           -webkit-align-items: center;
           -ms-flex-align: center;
           align-items: center;
-          grid-template-columns: auto auto; }
+          grid-template-columns: 220px auto; }
           @media (max-width: 768px) {
             section.section-prices .main-block-prices .calculator form .block-calculator .block-left .approximately-price .wrap {
               grid-template-columns: auto;
