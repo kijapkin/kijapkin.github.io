@@ -1035,8 +1035,18 @@ section.section-prices{
 		}
 		
 		.type-window.hidden, .type-balcony.hidden{
-			display: none;
+			/* display: none; */
+			height: 0;
+			overflow: hidden;
+			margin: 0;
 		}
+		.type-window.show, .type-balcony.show{
+			/* display: none; */
+			height: auto;
+			margin: 0;
+		}
+
+
 		.prices-table{
 			h2{
 				margin-bottom: 30px;

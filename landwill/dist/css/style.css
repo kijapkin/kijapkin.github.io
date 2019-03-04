@@ -7362,7 +7362,14 @@ section.section-prices {
           section.section-prices .main-block-prices .type-balcony .wrapper-button .button:active {
             background: #004F9F; }
     section.section-prices .main-block-prices .type-window.hidden, section.section-prices .main-block-prices .type-balcony.hidden {
-      display: none; }
+      /* display: none; */
+      height: 0;
+      overflow: hidden;
+      margin: 0; }
+    section.section-prices .main-block-prices .type-window.show, section.section-prices .main-block-prices .type-balcony.show {
+      /* display: none; */
+      height: auto;
+      margin: 0; }
     section.section-prices .main-block-prices .prices-table h2 {
       margin-bottom: 30px;
       padding-left: 50px;
