@@ -20,6 +20,14 @@
     margin: 10px auto 30px;
     font-weight: bold;
 }
+@media (max-width: 768px) {
+    #CDT{
+        margin-left: 15px;
+    }
+    .end-block p{
+        margin-left: 17px;
+    }
+}
 
 #CDT .number-wrapper {
     margin: 8px;
