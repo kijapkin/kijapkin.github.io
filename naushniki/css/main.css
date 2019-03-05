@@ -31,22 +31,24 @@
     height: 100%;
     margin-bottom: 20px;
     text-align: center;
-    outline: 1px dashed #fff;
+    /*outline: 1px dashed #fff;*/
 }
 #CDT .number-wrapper {
     /*margin: 8px;*/
-    padding-left: 8px;
-    padding-right: 8px;
+    /*padding-left: 8px;*/
+    /*padding-right: 8px;*/
+    margin-left: 8px;
+    margin-right: 8px;
     -moz-box-shadow: 0 5px 8px #000000;
     -webkit-box-shadow: 0 5px 8px #000000;
     box-shadow: 0 5px 8px #000000;
     position: relative;
-    outline: 1px dashed #fff;
+    /*outline: 1px dashed #fff;*/
     
 }
 
 #CDT .number {
-    outline: 4px dashed red;
+    /*outline: 4px dashed red;*/
     display: inline-block;
     *display: inline;
     *zoom: 1;
@@ -100,7 +102,7 @@
 } 
        
 .caption {
-    outline: 2px solid #000;
+    /*outline: 2px solid #000;*/
     font-family: tahoma;
    font-size: 12px;
    font-weight: normal;
@@ -902,7 +904,7 @@ form.m1-form .button-m{
         padding-top: 5px;
     }
     .end-block .sale{
-        margin-top: 50px;
+        margin-top: 20px;
     }
 	
 	.b6-g .rev-item{
