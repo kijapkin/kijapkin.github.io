@@ -16,14 +16,14 @@
 #CDT {
     font-size: 20px;
     color: #eee;
-    text-align: center;
+    /*text-align: center;*/
     margin: 10px auto 30px;
     font-weight: bold;
-    width: 100%;
+    width: 350px;
 }
 @media (max-width: 768px) {
     #CDT{
-        margin-left: 10px;
+        margin-left: 15px;
     }
     .end-block p{
         margin-left: 17px;
