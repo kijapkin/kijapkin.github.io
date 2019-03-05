@@ -19,7 +19,7 @@
     text-align: center;
     margin: 0;
     font-weight: bold;
-    width: 100%;
+    width: 300px;
     margin-bottom: 20px;
 }
 #CDT .number-wrapper {
@@ -316,6 +316,7 @@ h2.title {
 	text-align: center;
 	font-size: 17px;
 	margin-bottom: 15px;
+    padding-left: 24px;
     width: 100%;
 }
 .price .new:before {
