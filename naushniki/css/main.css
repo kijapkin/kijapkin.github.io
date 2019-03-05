@@ -729,7 +729,7 @@ form.m1-form .button-m{
     text-align: center;
 }
 .end-block{
-    height: 617px;
+    min-height: 617px;
 }
 .end-block .percent{
     padding: 0;
