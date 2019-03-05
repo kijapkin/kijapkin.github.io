@@ -1,3 +1,9 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .block-imgs{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -19,18 +25,25 @@
     text-align: center;
     margin: 0;
     font-weight: bold;
-    width: 360px;
+    width: 100%;
     margin-bottom: 20px;
+    text-align: center;
+    outline: 1px dashed #fff;
 }
 #CDT .number-wrapper {
-    margin: 8px;
+    /*margin: 8px;*/
+    padding-left: 8px;
+    padding-right: 8px;
     -moz-box-shadow: 0 5px 8px #000000;
     -webkit-box-shadow: 0 5px 8px #000000;
     box-shadow: 0 5px 8px #000000;
     position: relative;
+    outline: 1px dashed #fff;
+    
 }
 
 #CDT .number {
+    outline: 4px dashed red;
     display: inline-block;
     *display: inline;
     *zoom: 1;
@@ -71,9 +84,8 @@
     text-shadow: 0 2px 3px #000000;
 }
        
-#CDT .line {
+ #CDT .line {
     position: absolute;
-    width: 100%;
     height: 1px;
     top: 52%;
     left: 0;
@@ -82,9 +94,10 @@
     -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-}
+} 
        
 .caption {
+    outline: 2px solid #000;
     font-family: tahoma;
    font-size: 12px;
    font-weight: normal;
