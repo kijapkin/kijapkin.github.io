@@ -19,8 +19,7 @@
     text-align: center;
     margin: 0;
     font-weight: bold;
-    width: 320px;
-    /*margin-top: 10px;*/
+    width: 100%;
     margin-bottom: 20px;
 }
 #CDT .number-wrapper {
@@ -316,8 +315,8 @@ h2.title {
 	color: white;
 	text-align: center;
 	font-size: 17px;
-	margin-bottom: 5px;
-    margin-left: 20px;
+	margin-bottom: 15px;
+    width: 100%;
 }
 .price .new:before {
     content: '';
@@ -809,10 +808,10 @@ form.m1-form .button-m{
     }
     .b1-title {
         width: auto;
-        padding: 40px 0 0;
+        padding: 40px 0 0 0;
     }
     .b1 .sale{
-        margin: 50px 0 0;
+        margin: 50px 0 0 0;
     }
 	.b1 .btnHead .right{
 		margin-top: -100px;
