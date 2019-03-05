@@ -612,14 +612,14 @@ form.m1-form .button-m{
     color: #da0d0d;
 }
 .b6 .rev-slider{
-    
+    text-align: left;
 }
 .b6 .rev-item{
-    /*float: left;*/
-    width: 310px;
-    margin: 0 auto;
     text-align: center;
+    width: 300px;
+    margin: 0 auto;
     outline: none;
+    display: inline-block;
 }
 .b6 .rev-item>img{
     display: block;
