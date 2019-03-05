@@ -24,8 +24,11 @@
     color: #eee;
     text-align: center;
     margin: 0;
+    margin-left: -10px;
+    padding: 0;
     font-weight: bold;
-    width: 100%;
+    width: 320px;
+    height: 100%;
     margin-bottom: 20px;
     text-align: center;
     outline: 1px dashed #fff;
