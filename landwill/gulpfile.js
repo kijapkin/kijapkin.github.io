@@ -47,7 +47,7 @@ var  path = {
 // server connect
 gulp.task('connect', function() {
   connect.server({
-    port: 8888,
+    port: 3010,
     root: 'dist',
     livereload: true
   });
