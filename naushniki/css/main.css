@@ -615,7 +615,7 @@ form.m1-form .button-m{
     
 }
 .b6 .rev-item{
-    float: left;
+    /*float: left;*/
     width: 310px;
     margin: 0 auto;
     text-align: center;
