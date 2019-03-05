@@ -16,20 +16,13 @@
 #CDT {
     font-size: 20px;
     color: #eee;
-    /*text-align: center;*/
-    margin: 10px auto 30px;
+    text-align: center;
+    margin: 0;
     font-weight: bold;
-    width: 350px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-@media (max-width: 768px) {
-    #CDT{
-        margin-left: 15px;
-    }
-    .end-block p{
-        margin-left: 17px;
-    }
-}
-
 #CDT .number-wrapper {
     margin: 8px;
     -moz-box-shadow: 0 5px 8px #000000;
@@ -324,6 +317,7 @@ h2.title {
 	text-align: center;
 	font-size: 17px;
 	margin-bottom: 5px;
+    margin-left: 20px;
 }
 .price .new:before {
     content: '';
