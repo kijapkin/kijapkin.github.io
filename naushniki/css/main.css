@@ -979,7 +979,8 @@ form.m1-form .button-m{
     }
     .b1 h2{
         padding: 20px 0 0;
-        text-align: center;
+        /*text-align: center;*/
+        padding-left: 20px;
     }
     .b1 h2>span{
         font-size: 22px;
