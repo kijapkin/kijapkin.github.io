@@ -967,7 +967,9 @@ form.m1-form .button-m{
     }
     .b1 h1{
         font-size: 26px;
-        text-align: center;
+        /*text-align: center;*/
+        text-align: left;
+        padding-left: 20px;
     }
     .b1 h1 span{
         /*font-size: 20px;*/
