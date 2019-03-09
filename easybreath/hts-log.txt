@@ -1,0 +1,28 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 07 Mar 2019 16:49:30 at https://easybreath.com.ua/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qYC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "ru, en, *" -Y https://easybreath.com.ua/ -O1 "D:\Drop-Saits\easybreath" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:56:11	Error: 	"Not Found" (404) at link https://easybreath.com.ua/PUT (from https://easybreath.com.ua/)
+16:56:12	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://easybreath.com.ua/)
+16:56:12	Error: 	"Not Found" (404) at link https://easybreath.com.ua/"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAECAYAAACHtL/sAAAAC0lEQVQYlWNgGAUAAQQAASbV+Y4AAAAASUVORK5CYII=" (from https://easybreath.com.ua/)
+16:56:12	Error: 	"Not Found" (404) at link https://easybreath.com.ua/"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAADCAYAAACasY9UAAAADElEQVQImWNgGPIAAADDAAEwCHgWAAAAAElFTkSuQmCC" (from https://easybreath.com.ua/)
+16:56:12	Error: 	"Not Found" (404) at link https://easybreath.com.ua/"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAGCAYAAADKfB7nAAAADUlEQVQYlWNgGAUDDwABhgAB9RtMjAAAAABJRU5ErkJggg==" (from https://easybreath.com.ua/)
+16:56:12	Warning: 	Retry after error -4 (Incorrect length (55311 Bytes, 467485 expected)) at link u0.filesonload.ru/a9d7e97e1a2e580ffaaa5f81619c8ac1/d7c5930616d1d2ab8be6f853cad85133.png (from https://easybreath.com.ua/)
+16:56:12	Error: 	"Not Found" (404) at link https://easybreath.com.ua/"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAD0lEQVQokWNgGAWjgAoAAAJJAAHgPOv0AAAAAElFTkSuQmCC" (from https://easybreath.com.ua/)
+16:56:12	Error: 	"Not Found" (404) at link https://easybreath.com.ua/"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAEklEQVQ4jWNgGAWjYBSMAggAAAQQAAF/TXiOAAAAAElFTkSuQmCC" (from https://easybreath.com.ua/)
+16:56:12	Error: 	"Not Found" (404) at link https://easybreath.com.ua/"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAYAAABr5z2BAAAAE0lEQVQokWNgGAWjYBQwMDAwAAADDAABQwnasQAAAABJRU5ErkJggg==" (from https://easybreath.com.ua/)
+16:56:12	Error: 	"Not Found" (404) at link https://easybreath.com.ua/"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAYAAADwdn+XAAAAD0lEQVQokWNgGAWjgIEBAAIIAAHQKWGuAAAAAElFTkSuQmCC" (from https://easybreath.com.ua/)
+16:56:12	Error: 	"Not Found" (404) at link https://easybreath.com.ua/"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAHCAYAAAABIM1CAAAADklEQVQYlWNgGAXDAAAAAccAAQ0FKjQAAAAASUVORK5CYII=" (from https://easybreath.com.ua/)
+16:56:12	Error: 	"Not Found" (404) at link https://easybreath.com.ua/"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAAD0lEQVQokWNgGAWjYFgAAALLAAE1F/nlAAAAAElFTkSuQmCC" (from https://easybreath.com.ua/)
+16:56:12	Error: 	"Not Found" (404) at link https://easybreath.com.ua/"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANCAYAAACgu+4kAAAAEUlEQVQokWNgGAWjYBRQBQAAA00AAVY21ZYAAAAASUVORK5CYII=" (from https://easybreath.com.ua/)
+16:56:12	Error: 	"Not Found" (404) at link https://easybreath.com.ua/"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAD0lEQVQokWNgGAWjYDAAAAKKAAH8FhyQAAAAAElFTkSuQmCC" (from https://easybreath.com.ua/)
+16:56:12	Error: 	"Not Found" (404) at link https://easybreath.com.ua/"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAAEUlEQVQokWNgGAWjYBQMEwAAA88AAbIAVQUAAAAASUVORK5CYII=" (from https://easybreath.com.ua/)
+16:57:31	Warning: 	Found for googleads.g.doubleclick.net/pagead/viewthroughconversion/926995682/?value=0&guid=ON&script=0
+16:57:31	Warning: 	File has moved from googleads.g.doubleclick.net/pagead/viewthroughconversion/926995682/?value=0&guid=ON&script=0 to http://www.google.com/pagead/1p-user-list/926995682/?value=0&guid=ON&script=0&cdct=2&is_vtc=1&random=3830281791
+
+HTTrack Website Copier/3.49-2 mirror complete in 8 minutes 37 seconds : 228 links scanned, 208 files written (27184745 bytes overall) [13257139 bytes received at 25642 bytes/sec], 17679698 bytes transferred using HTTP compression in 88 files, ratio 20%, 2.8 requests per connection
+(14 errors, 3 warnings, 0 messages)
