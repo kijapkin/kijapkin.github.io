@@ -68,6 +68,7 @@ position: relative;
 body .av-special-heading .av-special-heading-tag{
 padding:0;
 margin:0;
+margin-bottom: 30px;
 float:left;
 }
 
@@ -3125,7 +3126,7 @@ Image
 ====================================================================================================================================================== */
 .avia-image-container{display:block; position: relative; max-width: 100%;}
 .avia-image-container-inner, .avia_image, .av-image-caption-overlay{border-radius: 3px; display:block; position: relative; max-width: 100%;}
-.avia-image-container.avia-align-center{display:block; margin: 0 auto 10px auto;  text-align: center;  clear: both;}
+.avia-image-container.avia-align-center{display:block; margin: 30px auto;  text-align: center;  clear: both;}
 .avia-image-container.avia-align-center .avia-image-container-inner{margin:0 auto; display:inline-block; vertical-align:bottom}
 .avia-image-container.avia-align-left{display:block; float:left; margin-right: 15px; margin-top: 5px;}
 .avia-image-container.avia-align-right{display:block; float:right; margin-left: 15px; margin-top: 5px;}
@@ -3372,6 +3373,7 @@ animation:         avia_appear 0.9s 1 cubic-bezier(0.175, 0.885, 0.320, 1.275); 
 opacity: 1;
 -webkit-transform:	scale(1);
 transform:			scale(1);
+margin-top: 30px;
 }
 
 .av-hover-grow{overflow: hidden; }
