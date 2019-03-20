@@ -476,6 +476,7 @@ form.m1-form .button-m{
     padding-bottom:56.25%;/*пропорции видео 16:9 */
     padding-top:25px;
     height:0;
+    margin-bottom: 10px;
 }
 .video iframe {
     position:absolute;

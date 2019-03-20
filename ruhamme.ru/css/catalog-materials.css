@@ -1,0 +1,78 @@
+section.catalog-materials *{
+	list-style: none;
+	text-decoration: none;
+}
+
+section.catalog-materials{
+	padding: 40px 0;
+}
+section.catalog-materials .container{
+}
+section.catalog-materials ul.nav{
+	display: block;
+	width: 100%;
+	padding: 8px 15px;
+	margin-bottom: 20px;
+	margin-top: 0;
+	border-radius: 4px;
+	background: #ebebeb;
+}
+section.catalog-materials ul.nav li{
+	display: inline-block;
+}
+section.catalog-materials ul.nav a{
+	color: #555555;
+	background: #ebebeb;
+	font-size: 14px;
+	line-height: 1;
+}
+section.catalog-materials ul.nav> li + li::before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}
+section.catalog-materials .block-items{
+	border: 1px solid #d3d4d6;
+	padding: 15px; 
+	width: 100%;
+	border-radius: 4px;
+	display: grid;
+	grid-gap: 40px 0;
+	justify-content: space-between;
+	grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+}
+section.catalog-materials .block-items .main-item{
+	padding: 0;
+	display: grid;
+	justify-content: ;
+	align-content: start;
+}
+section.catalog-materials .block-items .main-item > li{
+	margin-bottom: 5px;
+}
+section.catalog-materials .block-items .main-item  li{
+	transition: .2s;
+}
+section.catalog-materials .block-items .main-item  li:hover{
+	text-shadow: 0 0 1px #111;
+}
+section.catalog-materials .block-items .main-item  li a{
+	color: #555555;
+	font-size: 14px;
+}
+section.catalog-materials .block-items .main-item  li a::before{
+	content: '\25b8';
+	color: #555555;
+	margin-right: 3px;
+}
+section.catalog-materials .block-items .main-item > li a{
+	color: #555555;
+	font-weight: bold;
+	padding-left: 15px;
+}
+section.catalog-materials .block-items .main-item > li a::before{
+	content: none;
+}
+section.catalog-materials .block-items .main-item-1{
+	padding: 0;
+}
