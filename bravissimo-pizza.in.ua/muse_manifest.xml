@@ -1,0 +1,106 @@
+<manifest alg="2" build="2015.2.1.352" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="bravissimo-pizza1.com" resolutions="1x" timestamp="1542629785071">
+  <folder name="css">
+    <file name="site_global.css" crc="3916556066"/>
+    <file name="master_______-a.css" crc="4058098530" ref="index:index_ua"/>
+    <file name="nomq_preview_master_______-a.css" crc="3824530138" ref="index:index_ua"/>
+    <file name="index.css" crc="4038540331" ref="index"/>
+    <file name="nomq_index.css" crc="4057437453" ref="index"/>
+    <file name="iefonts_index.css" crc="3824530138" ref="index"/>
+    <file name="index_ua.css" crc="4155961588" ref="index_ua"/>
+    <file name="nomq_index_ua.css" crc="45470601" ref="index_ua"/>
+    <file name="iefonts_index_ua.css" crc="3824530138" ref="index_ua"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="169078940" ref="index:index_ua"/>
+    <file name="museutils.js" crc="3851988764" ref="index:index_ua"/>
+    <file name="whatinput.js" crc="86476730" ref="index:index_ua"/>
+    <file name="museconfig.js" crc="4242129463" ref="index:index_ua"/>
+    <file name="pie.js" crc="3831537696" ref="index:index_ua"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="index:index_ua"/>
+    <file name="jquery.watch.js" crc="3842844514" ref="index:index_ua"/>
+    <file name="jquery.scrolleffects.js" crc="511146689" ref="index:index_ua"/>
+    <file name="jquery.museresponsive.js" crc="516761069" ref="index:index_ua"/>
+    <file name="require.js" crc="4108833657" ref="index:index_ua"/>
+  </folder>
+  <folder name="images">
+    <file name="пицца-favicon.ico" crc="4224174090" ref="index"/>
+    <file name="logo_pizza-ieu9003-fr.png" crc="3801344331" ref="index:index_ua"/>
+    <file name="logo_pizza.jpg" crc="486182796" ref="index:index_ua"/>
+    <file name="bg-1.jpg" crc="3820450799" ref="index"/>
+    <file name="smartphone.png" crc="2899448" ref="index:index_ua"/>
+    <file name="logistics-delivery-truck-in-movement (2)-ieu14847-fr.png" crc="3909302961" ref="index:index_ua"/>
+    <file name="logistics-delivery-truck-in-movement (2).png" crc="3909302961" ref="index:index_ua"/>
+    <file name="handshake (1).png" crc="4290871981" ref="index:index_ua"/>
+    <file name="pizza22.jpg" crc="506338866" ref="index:index_ua"/>
+    <file name="с курицей и креветками-ieu18758-10-r-fr.png" crc="369113024" ref="index"/>
+    <file name="с курицей и креветками.jpg" crc="4014618062" ref="index"/>
+    <file name="pizza11.jpg" crc="268561174" ref="index:index_ua"/>
+    <file name="барбекю-ieu18767-10-r-fr.png" crc="4001825761" ref="index"/>
+    <file name="барбекю.jpg" crc="4117878357" ref="index"/>
+    <file name="к-пиву-ieu848-fr.png" crc="377659700" ref="index:index_ua"/>
+    <file name="к-пиву.jpg" crc="330683556" ref="index:index_ua"/>
+    <file name="к пиву.jpg" crc="3895976632" ref="index"/>
+    <file name="охотничья1.jpg" crc="245024167" ref="index:index_ua"/>
+    <file name="охотничья.jpg" crc="35530391" ref="index"/>
+    <file name="грибная.jpg" crc="353830474" ref="index:index_ua"/>
+    <file name="грибная2.jpg" crc="4289600371" ref="index"/>
+    <file name="капричоза1-ieu842-fr.png" crc="4043943330" ref="index:index_ua"/>
+    <file name="капричоза1.jpg" crc="236323575" ref="index:index_ua"/>
+    <file name="капричиоза.jpg" crc="3905305775" ref="index"/>
+    <file name="греческая.jpg" crc="463903424" ref="index:index_ua"/>
+    <file name="греческая2.jpg" crc="4018307156" ref="index"/>
+    <file name="с-крурицей1-ieu832-fr.png" crc="187332627" ref="index:index_ua"/>
+    <file name="с-крурицей1.jpg" crc="4286064466" ref="index:index_ua"/>
+    <file name="с курицей.jpg" crc="458152584" ref="index"/>
+    <file name="пепперони1-ieu857-fr.png" crc="3792803560" ref="index:index_ua"/>
+    <file name="пепперони1.jpg" crc="4235975496" ref="index:index_ua"/>
+    <file name="пепперони.jpg" crc="378892516" ref="index"/>
+    <file name="маргорита1.jpg" crc="4064246426" ref="index:index_ua"/>
+    <file name="маргарита.jpg" crc="3917062597" ref="index"/>
+    <file name="сырная-ieu1054-fr.png" crc="3908317690" ref="index:index_ua"/>
+    <file name="сырная.jpg" crc="326263200" ref="index:index_ua"/>
+    <file name="сырная1.jpg" crc="4256618576" ref="index"/>
+    <file name="шинка1-ieu5488-fr.png" crc="4030704380" ref="index:index_ua"/>
+    <file name="шинка1.jpg" crc="295797159" ref="index:index_ua"/>
+    <file name="с ветчиной.jpg" crc="326757849" ref="index"/>
+    <file name="з салямі та помідорами.jpg" crc="3922931629" ref="index"/>
+    <file name="с салями и помидорами.jpg" crc="124905923" ref="index"/>
+    <file name="фирменная2.jpg" crc="4096899873" ref="index:index_ua"/>
+    <file name="фирменная.jpg" crc="117306376" ref="index"/>
+    <file name="курица-и-грибы-ieu4305-fr.png" crc="3953730446" ref="index:index_ua"/>
+    <file name="курица-и-грибы.jpg" crc="4166120195" ref="index:index_ua"/>
+    <file name="с курицей и грибами.jpg" crc="3880849132" ref="index"/>
+    <file name="с-телятиной-ieu12027-fr.png" crc="3808952230" ref="index:index_ua"/>
+    <file name="с-телятиной.jpg" crc="329445730" ref="index:index_ua"/>
+    <file name="с телятиной.jpg" crc="253593229" ref="index"/>
+    <file name="logo_pizza-ieu9003-fr2.png" crc="4160200535" ref="index"/>
+    <file name="к пиву-ieu1680-10-r-fr.png" crc="4033964188" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index:index_ua"/>
+    <file name="пицца-укр-favicon.ico" crc="4224174090" ref="index_ua"/>
+    <file name="з-телятиною-і-огірками.jpg" crc="193890807" ref="index_ua"/>
+    <file name="logo_pizza-ieu8945-fr.png" crc="63979444" ref="index_ua"/>
+    <file name="alladiavola.jpg" crc="3786408265" ref="index_ua"/>
+    <file name="піца-з-куркою та креветками-ieu19638-9-r-fr.png" crc="89924874" ref="index_ua"/>
+    <file name="піца-з-куркою та креветками.jpg" crc="7546906" ref="index_ua"/>
+    <file name="барбекю-ieu19652-9-r-fr.png" crc="81865268" ref="index_ua"/>
+    <file name="барбекю2.jpg" crc="115711387" ref="index_ua"/>
+    <file name="до-пива.jpg" crc="4281077936" ref="index_ua"/>
+    <file name="мисливська.jpg" crc="4222057848" ref="index_ua"/>
+    <file name="з-грибами.jpg" crc="3906213668" ref="index_ua"/>
+    <file name="капрічіоза.jpg" crc="534367139" ref="index_ua"/>
+    <file name="грецька.jpg" crc="458218475" ref="index_ua"/>
+    <file name="піца-з-куркою.jpg" crc="285524540" ref="index_ua"/>
+    <file name="перрероні.jpg" crc="4263457578" ref="index_ua"/>
+    <file name="маргарита2.jpg" crc="197854145" ref="index_ua"/>
+    <file name="з-сиром.jpg" crc="3938243047" ref="index_ua"/>
+    <file name="з-шинкою.jpg" crc="3881273679" ref="index_ua"/>
+    <file name="з салямі та помідорами2.jpg" crc="3922931629" ref="index_ua"/>
+    <file name="з-салямі-та-помідорами.jpg" crc="3876357851" ref="index_ua"/>
+    <file name="фірмова.jpg" crc="3852631324" ref="index_ua"/>
+    <file name="піца-з-куркою та грибами.jpg" crc="284465651" ref="index_ua"/>
+    <file name="до-пива-ieu6683-9-r-fr.png" crc="4035218570" ref="index_ua"/>
+    <file name="грецька-ieu6642-9-r-fr.png" crc="277140620" ref="index_ua"/>
+  </folder>
+  <file name="index.html" crc="3942414704" seo="true" mt="1542627736096" redirect="true"/>
+  <file name="index_ua.html" crc="149336943" seo="true" mt="1542627345816" redirect="true"/>
+</manifest>
