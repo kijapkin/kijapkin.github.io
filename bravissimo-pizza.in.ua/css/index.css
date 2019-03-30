@@ -4119,10 +4119,6 @@ print {
 }
 .img-coctail img{
     height: 150px;
-    transition: .3s;
-}
-.img-coctail img:hover{
-    transform: scale(1.1);
 }
 .description{
     cursor: pointer;
