@@ -4119,6 +4119,10 @@ print {
 }
 .img-coctail img{
     height: 150px;
+    transition: .3s;
+}
+.img-coctail img:hover{
+    transform: scale(1.1);
 }
 .description{
     cursor: pointer;
@@ -4151,7 +4155,7 @@ print {
 .description .text-2{
     display: none;
     text-align: left;
-
+    transition: .5s;
 }
 .description:hover .text-2{
     display: grid;
