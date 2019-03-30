@@ -4098,12 +4098,65 @@ print {
  /*-- drinks --*/
 
 #drinks{
-	outline: 2px dashed red;
-}
-#drinks h3{
-	color: #fff;
+	/*outline: 1px dashed red;*/
 }
 .block-drinks{
+    margin: 30px auto;
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 1fr 1fr;
+    grid-gap: 80px 10px;
+}
+.item-drink{
+    display: grid;
+    grid-template-columns: 150px auto;
+    /*outline: 4px dashed yellow;*/
+}
+.img-coctail{
+    /*outline: 5px dashed red;*/
+    display: grid;
+    justify-items: center;
+
+}
+.img-coctail img{
+    height: 150px;
+}
+.description{
+    cursor: pointer;
+    padding: 28px 14px;
+    display: grid;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #eee;
+    width: 283px;
+    justify-self: center;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0px 0px 8px 1px #ccc;
+    box-shadow: inset 0px 0px 8px 1px #ccc;
+    /*padding: 20px;*/
+    color: #fff;
+    text-align: center;
+    transition: .5s;
+}
+.description h4{
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.description li{
+    font-size: 16px;
+}
+.description .text-2{
+    display: none;
+    text-align: left;
+
+}
+.description:hover .text-2{
+    display: grid;
+    justify-content: center;
+}
+.description:hover .text-1{
+    display: none;
 }
