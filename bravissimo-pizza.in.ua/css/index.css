@@ -4114,15 +4114,15 @@ print {
 .img-coctail{
     /*outline: 5px dashed red;*/
     display: grid;
-    justify-items: center;
 
 }
 .img-coctail img{
     height: 150px;
+    justify-self: end;
 }
 .description{
     cursor: pointer;
-    padding: 28px 14px;
+    padding: 12px;
     display: grid;
     -ms-align-items: center;
     align-items: center;
@@ -4143,7 +4143,8 @@ print {
 .description h4{
     font-size: 24px;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    line-height: 1;
 }
 .description li{
     font-size: 16px;
