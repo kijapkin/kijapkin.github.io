@@ -609,7 +609,8 @@ a {
           -o-transition: .2s;
           transition: .2s; }
           .header #header-wrapper .header-block-right .block-tel a:hover {
-            font-weight: bold; }
+            font-weight: bold;
+            text-decoration: underline; }
 
 .home-content {
   padding-top: 70px; }
@@ -682,51 +683,79 @@ a {
             font-size: 26px; }
         .home-content .block-main-text .container .right-block .delivery {
           margin-top: 50px; }
-  .home-content .block-main-working {
+  .home-content .main-content {
     background-color: #3C201A;
     text-align: center;
     padding: 40px 0;
     border-bottom: 2px solid red; }
-    .home-content .block-main-working h2 {
-      font-size: 26px;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: lighter;
-      text-transform: uppercase; }
-    .home-content .block-main-working .block-cards-working {
-      margin-top: 30px;
-      display: grid;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      justify-items: center;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 40px; }
-      .home-content .block-main-working .block-cards-working .card {
-        width: 160px;
-        height: 100px;
-        border: 1px solid #fff;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
+    .home-content .main-content .block-scheme-working {
+      border-bottom: 1px solid #fff;
+      padding-bottom: 70px; }
+      .home-content .main-content .block-scheme-working h2 {
+        font-size: 26px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        text-transform: uppercase; }
+      .home-content .main-content .block-scheme-working .block-cards-working {
+        margin-top: 30px;
         display: grid;
         -webkit-box-align: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
         justify-items: center;
-        padding: 10px;
-        -webkit-transition: .3s;
-        -o-transition: .3s;
-        transition: .3s; }
-        .home-content .block-main-working .block-cards-working .card:hover {
-          -webkit-transform: scale(1.1);
-          -ms-transform: scale(1.1);
-          transform: scale(1.1); }
-        .home-content .block-main-working .block-cards-working .card img {
-          width: 50px;
-          height: 50px; }
-        .home-content .block-main-working .block-cards-working .card p {
-          font-size: 12px; }
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px; }
+        .home-content .main-content .block-scheme-working .block-cards-working .card {
+          width: 160px;
+          height: 100px;
+          border: 1px solid #fff;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          display: grid;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          justify-items: center;
+          padding: 10px;
+          -webkit-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s; }
+          .home-content .main-content .block-scheme-working .block-cards-working .card:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+          .home-content .main-content .block-scheme-working .block-cards-working .card img {
+            width: 50px;
+            height: 50px; }
+          .home-content .main-content .block-scheme-working .block-cards-working .card p {
+            font-size: 12px; }
+    .home-content .main-content .block-text-drinks {
+      margin-top: 30px; }
+      .home-content .main-content .block-text-drinks h2 {
+        font-size: 26px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        text-transform: uppercase; }
+      .home-content .main-content .block-text-drinks .block-prices-beer {
+        margin-top: 30px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, minmax(150px, 1fr)); }
+        .home-content .main-content .block-text-drinks .block-prices-beer .price-beer {
+          padding: 20px;
+          border: 1px solid #fff;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          -webkit-transition: .2s;
+          -o-transition: .2s;
+          transition: .2s;
+          overflow: hidden; }
+          .home-content .main-content .block-text-drinks .block-prices-beer .price-beer:hover {
+            background-color: #fff; }
+            .home-content .main-content .block-text-drinks .block-prices-beer .price-beer:hover p {
+              color: #000; }
 
 .footer {
   width: 100%;
