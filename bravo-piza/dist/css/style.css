@@ -589,9 +589,14 @@ a {
         .header #header-wrapper .header-block-right .block-tel a {
           color: #fff;
           display: block;
-          font-size: 17px; }
+          font-size: 17px;
+          -webkit-transition: .2s;
+          -o-transition: .2s;
+          transition: .2s; }
           .header #header-wrapper .header-block-right .block-tel a:last-child {
             color: #FF142E; }
+          .header #header-wrapper .header-block-right .block-tel a:hover {
+            font-weight: bold; }
 
 .home-content {
   padding-top: 70px; }
