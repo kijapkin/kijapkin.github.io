@@ -28,12 +28,19 @@
 			justify-self: end;
 			align-self: center;
 			margin-right: 40px;
+			display: grid;
+			grid-template-columns: auto auto;
+			p{
+				text-align: right;
+				color: #475993;
+			}
 			a{
 			display: grid;
 				img{
 					align-self: center;
-					width: 50px;
-					height: 50px;
+					width: 40px;
+					height: 40px;
+					margin-left: 10px;
 				}						
 			}
 		}
@@ -43,7 +50,7 @@
 			.block-tel{
 				align-self: center;
 				display: grid;
-				grid-template-columns: auto auto;
+				grid-template-columns: auto;
 				grid-column-gap: 20px;
 				a{
 					color: #fff;
