@@ -612,6 +612,12 @@ a {
             font-weight: bold;
             text-decoration: underline; }
 
+h2 {
+  font-size: 26px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase; }
+
 .home-content {
   padding-top: 70px; }
   .home-content .top-home-strip img {
@@ -662,9 +668,9 @@ a {
               transition: .3s;
               text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; }
               .home-content .block-main-text .container .left-block .title-text span:nth-child(2):hover {
-                -webkit-transform: scale(1.1) rotate(5deg);
-                -ms-transform: scale(1.1) rotate(5deg);
-                transform: scale(1.1) rotate(5deg); }
+                -webkit-transform: scale(1.1) rotate(-5deg);
+                -ms-transform: scale(1.1) rotate(-5deg);
+                transform: scale(1.1) rotate(-5deg); }
             .home-content .block-main-text .container .left-block .title-text span:nth-child(3) {
               padding-top: 20px; }
       .home-content .block-main-text .container .right-block {
@@ -691,11 +697,6 @@ a {
     .home-content .main-content .block-scheme-working {
       border-bottom: 1px solid #fff;
       padding-bottom: 70px; }
-      .home-content .main-content .block-scheme-working h2 {
-        font-size: 26px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: lighter;
-        text-transform: uppercase; }
       .home-content .main-content .block-scheme-working .block-cards-working {
         margin-top: 30px;
         display: grid;
@@ -732,12 +733,9 @@ a {
           .home-content .main-content .block-scheme-working .block-cards-working .card p {
             font-size: 12px; }
     .home-content .main-content .block-text-drinks {
-      margin-top: 30px; }
-      .home-content .main-content .block-text-drinks h2 {
-        font-size: 26px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: lighter;
-        text-transform: uppercase; }
+      margin-top: 40px;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 70px; }
       .home-content .main-content .block-text-drinks .block-prices-beer {
         margin-top: 30px;
         display: grid;
@@ -756,6 +754,26 @@ a {
             background-color: #fff; }
             .home-content .main-content .block-text-drinks .block-prices-beer .price-beer:hover p {
               color: #000; }
+    .home-content .main-content .block-pizzas {
+      margin-top: 40px;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 70px; }
+      .home-content .main-content .block-pizzas .pizzas-prices {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px; }
+        .home-content .main-content .block-pizzas .pizzas-prices .item-pizza {
+          display: grid;
+          grid-column-gap: 15px;
+          grid-template-columns: 1fr 2fr; }
+          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza img {
+            -webkit-border-radius: 50%;
+            border-radius: 50%; }
+          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-piz {
+            border: 1px solid #fff;
+            -webkit-border-radius: 5px;
+            border-radius: 5px; }
 
 .footer {
   width: 100%;

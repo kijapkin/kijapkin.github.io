@@ -1,3 +1,9 @@
+h2{
+	font-size: 26px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
 .home-content{
 	padding-top: 70px;
 	.top-home-strip{
@@ -48,7 +54,7 @@
 							transition: .3s;
 							text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 							&:hover{
-								transform: scale(1.1) rotate(5deg);
+								transform: scale(1.1) rotate(-5deg);
 							}
 						}
 						&:nth-child(3){
@@ -93,12 +99,6 @@
 		.block-scheme-working{
 			border-bottom: 1px solid #fff;
 			padding-bottom: 70px;
-			h2{
-				font-size: 26px;
-				font-family: 'Open Sans', sans-serif;
-				font-weight: lighter;
-				text-transform: uppercase;
-			}
 			.block-cards-working{
 				margin-top: 30px;
 				display: grid;
@@ -130,13 +130,9 @@
 			}
 		}
 		.block-text-drinks{
-			margin-top: 30px;
-			h2{
-				font-size: 26px;
-				font-family: 'Open Sans', sans-serif;
-				font-weight: lighter;
-				text-transform: uppercase;
-			}
+			margin-top: 40px;
+			border-bottom: 1px solid #fff;
+			padding-bottom: 70px;
 			.block-prices-beer{
 				margin-top: 30px;
 				display: grid;
@@ -153,6 +149,29 @@
 						p{
 							color: #000;
 						}
+					}
+				}
+			}
+		}
+		.block-pizzas{
+			margin-top: 40px;
+			border-bottom: 1px solid #fff;
+			padding-bottom: 70px;
+			.pizzas-prices{
+				margin-top: 30px;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 20px;
+				.item-pizza{
+					display: grid;
+					grid-column-gap: 15px;
+					grid-template-columns: 1fr 2fr;
+					img{
+						border-radius: 50%;
+					}
+					.description-piz{
+						border: 1px solid #fff;
+						border-radius: 5px;
 					}
 				}
 			}
