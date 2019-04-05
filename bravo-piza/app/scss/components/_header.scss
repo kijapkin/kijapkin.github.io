@@ -1,6 +1,6 @@
 .header{
 	background-color: #3C201A;
-	padding: 20px 0;
+	padding: 5px 0;
 	color: #fff;
 	border-bottom: 1px solid #929292;
 	position: fixed;
@@ -17,9 +17,7 @@
 					img{
 						display: inline-block;
 						align-self: center;
-						border-radius: 10px;
-						border: 1px solid #888;
-						padding: 1px;
+						border-radius: 3px;
 					}
 				}
 			}
@@ -40,12 +38,12 @@
 			display: grid;
 				img{
 					align-self: center;
-					width: 40px;
-					height: 40px;
+					width: 30px;
+					height: 30px;
 					margin-left: 10px;
-					transition: .5s ease-out .1s;
+					transition: .1s;
 					&:hover{
-						transform: rotate(360deg);
+						transform: scale(1.2);
 					}
 				}						
 			}
@@ -55,8 +53,7 @@
 			display: grid;
 			.block-tel{
 				align-self: center;
-				display: grid;
-				grid-template-columns: auto;
+				display: inline-grid;
 				grid-column-gap: 20px;
 				a{
 					color: #fff;
