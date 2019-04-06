@@ -581,7 +581,8 @@ a {
           -ms-transform: scale(1.2);
           transform: scale(1.2); }
         .header #header-wrapper .links-pizzas-drinks a:hover p {
-          text-shadow: 0 0 4px #fff; }
+          text-shadow: 0 0 4px #fff;
+          text-decoration: underline; }
         .header #header-wrapper .links-pizzas-drinks a p {
           width: 80px;
           text-align: right;
@@ -708,16 +709,25 @@ a {
               padding-top: 20px; }
         .home-content .block-main-text .container .left-block .links-pizzas-drinks a {
           margin-right: 10px; }
+          .home-content .block-main-text .container .left-block .links-pizzas-drinks a:first-child img {
+            -webkit-transition: .3s ease-in-out;
+            -o-transition: .3s ease-in-out;
+            transition: .3s ease-in-out; }
+          .home-content .block-main-text .container .left-block .links-pizzas-drinks a:first-child img:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+          .home-content .block-main-text .container .left-block .links-pizzas-drinks a:last-child img {
+            -webkit-transition: 1s ease-in-out;
+            -o-transition: 1s ease-in-out;
+            transition: 1s ease-in-out; }
+          .home-content .block-main-text .container .left-block .links-pizzas-drinks a:last-child img:hover {
+            -webkit-transform: rotate(160deg);
+            -ms-transform: rotate(160deg);
+            transform: rotate(160deg); }
           .home-content .block-main-text .container .left-block .links-pizzas-drinks a img {
-            -webkit-transition: all .2s;
-            -o-transition: all .2s;
-            transition: all .2s;
             height: 140px;
             width: auto; }
-            .home-content .block-main-text .container .left-block .links-pizzas-drinks a img:hover {
-              -webkit-transform: scale(1.1);
-              -ms-transform: scale(1.1);
-              transform: scale(1.1); }
       .home-content .block-main-text .container .right-block {
         font-size: 24px;
         font-family: 'Open Sans', sans-serif; }

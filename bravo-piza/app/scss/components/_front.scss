@@ -59,13 +59,21 @@
 				.links-pizzas-drinks{
 					a{
 						margin-right: 10px;
+						&:first-child img{
+							transition: .3s ease-in-out;
+						}
+						&:first-child img:hover{
+							transform: scale(1.2);
+						}
+						&:last-child img{
+							transition: 1s ease-in-out;
+						}
+						&:last-child img:hover{
+							transform: rotate(160deg);
+						}
 						img{
-							transition: all .2s;
 							height: 140px;
 							width: auto;
-							&:hover{
-								transform: scale(1.1);
-							}
 						}
 					}
 				}
