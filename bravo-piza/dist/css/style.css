@@ -538,6 +538,12 @@ a {
 .slick-arrow.slick-hidden {
   display: none; }
 
+h2, h3, h4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .header {
   padding: 5px 0;
   color: #fff;
@@ -887,7 +893,11 @@ a {
           .home-content .main-content .block-text-drinks .block-prices-beer .price-beer:hover {
             background-color: #fff; }
             .home-content .main-content .block-text-drinks .block-prices-beer .price-beer:hover p {
-              color: #000; }
+              color: #000;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none; }
     .home-content .main-content .block-pizzas h2,
     .home-content .main-content .block-drinks h2 {
       padding-top: 100px;
