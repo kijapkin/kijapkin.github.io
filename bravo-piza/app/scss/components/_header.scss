@@ -1,7 +1,7 @@
 .header{
 	padding: 5px 0;
 	color: #fff;
-	border-bottom: 1px solid #929292;
+	border-bottom: 2px solid red;
 	position: fixed;
 	z-index: 9999;
 	width: 100%;
@@ -32,6 +32,7 @@
 				color: #475993;
 				line-height: 16px;
 				align-self: center;
+				user-select: none;
 			}
 			a{
 			display: grid;

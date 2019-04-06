@@ -405,7 +405,7 @@ th {
   padding: 0; }
 
 .middle {
-  padding-bottom: 235px; }
+  padding-bottom: 135px; }
 
 html {
   height: 100%; }
@@ -541,7 +541,7 @@ a {
 .header {
   padding: 5px 0;
   color: #fff;
-  border-bottom: 1px solid #929292;
+  border-bottom: 2px solid red;
   position: fixed;
   z-index: 9999;
   width: 100%; }
@@ -573,7 +573,11 @@ a {
         line-height: 16px;
         -webkit-align-self: center;
         -ms-flex-item-align: center;
-        align-self: center; }
+        align-self: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
       .header #header-wrapper .header-block-midle a {
         display: grid; }
         .header #header-wrapper .header-block-midle a img {
@@ -608,21 +612,13 @@ a {
             font-weight: bold;
             text-decoration: underline; }
 
-h2 {
-  font-size: 26px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: lighter;
-  text-transform: uppercase; }
-
 .home-content {
   padding-top: 70px; }
-  .home-content .top-home-strip img {
+  .home-content .top-home-strip {
     position: fixed;
-    z-index: -10;
-    width: 100%;
-    height: 100%; }
+    z-index: -10; }
   .home-content .block-main-text {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
     border-bottom: 2px solid red; }
     .home-content .block-main-text .container {
       padding: 80px 0;
@@ -639,7 +635,7 @@ h2 {
         .home-content .block-main-text .container .left-block .lang a {
           display: block;
           text-align: center;
-          border: 1px solid #888;
+          border: 1px solid #aaa;
           width: 50px;
           padding: 2px 0;
           color: #fff;
@@ -649,6 +645,8 @@ h2 {
           transition: .2s; }
           .home-content .block-main-text .container .left-block .lang a:hover {
             background-color: #3C201A; }
+          .home-content .block-main-text .container .left-block .lang a:nth-child(2) {
+            display: none; }
         .home-content .block-main-text .container .left-block .title-text {
           align-self: start;
           display: grid; }
@@ -702,7 +700,7 @@ h2 {
         justify-items: center;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 40px; }
-        .home-content .main-content .block-scheme-working .block-cards-working .card {
+        .home-content .main-content .block-scheme-working .block-cards-working .card-working {
           width: 160px;
           height: 100px;
           border: 1px solid #fff;
@@ -715,21 +713,31 @@ h2 {
           align-items: center;
           justify-items: center;
           padding: 10px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
           -webkit-transition: .3s;
           -o-transition: .3s;
           transition: .3s; }
-          .home-content .main-content .block-scheme-working .block-cards-working .card:hover {
+          .home-content .main-content .block-scheme-working .block-cards-working .card-working:hover {
             -webkit-transform: scale(1.1);
             -ms-transform: scale(1.1);
             transform: scale(1.1); }
-          .home-content .main-content .block-scheme-working .block-cards-working .card img {
+          .home-content .main-content .block-scheme-working .block-cards-working .card-working img {
             width: 50px;
             height: 50px; }
-          .home-content .main-content .block-scheme-working .block-cards-working .card p {
+          .home-content .main-content .block-scheme-working .block-cards-working .card-working p {
             font-size: 12px; }
     .home-content .main-content .block-text-drinks {
       margin-top: 40px;
       padding-bottom: 70px; }
+      .home-content .main-content .block-text-drinks h2 {
+        font-size: 40px;
+        font-weight: normal;
+        font-style: italic;
+        font-family: 'Pacifico', cursive; }
       .home-content .main-content .block-text-drinks .block-prices-beer {
         margin-top: 30px;
         display: grid;
@@ -753,6 +761,17 @@ h2 {
     .home-content .main-content .block-drinks {
       margin-top: 40px;
       padding-bottom: 70px; }
+      .home-content .main-content .block-pizzas h2,
+      .home-content .main-content .block-drinks h2 {
+        font-size: 40px;
+        font-weight: normal;
+        font-style: italic;
+        font-family: 'Pacifico', cursive;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        color: red;
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; }
       .home-content .main-content .block-pizzas .pizzas-prices,
       .home-content .main-content .block-pizzas .drinks-prices,
       .home-content .main-content .block-drinks .pizzas-prices,
@@ -957,8 +976,8 @@ h2 {
 
 .footer {
   width: 100%;
-  margin: -235px auto 0;
-  height: 235px;
+  margin: -135px auto 0;
+  height: 135px;
   position: relative;
   display: grid;
   -webkit-box-align: center;
