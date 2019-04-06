@@ -815,24 +815,24 @@ a {
     text-align: center;
     padding: 40px 0;
     border-bottom: 2px solid red; }
-    .home-content .main-content .block-scheme-working {
-      padding-bottom: 70px; }
-      .home-content .main-content .block-scheme-working h2 {
-        font-size: 40px;
-        font-weight: normal;
-        font-style: italic;
-        font-family: 'Pacifico', cursive; }
-      .home-content .main-content .block-scheme-working .block-cards-working {
-        margin-top: 30px;
-        display: grid;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        justify-items: center;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 40px; }
-        .home-content .main-content .block-scheme-working .block-cards-working .card-working {
+    .home-content .main-content .block-scheme-working h2 {
+      font-size: 40px;
+      font-weight: normal;
+      font-style: italic;
+      font-family: 'Pacifico', cursive; }
+    .home-content .main-content .block-scheme-working .block-cards-working {
+      margin-top: 30px;
+      display: grid;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-column-gap: 20px; }
+      .home-content .main-content .block-scheme-working .block-cards-working .wrap-card-work {
+        margin-bottom: 40px; }
+        .home-content .main-content .block-scheme-working .block-cards-working .wrap-card-work .card-working {
           width: 160px;
           height: 100px;
           border: 1px solid #fff;
@@ -845,6 +845,7 @@ a {
           align-items: center;
           justify-items: center;
           padding: 10px;
+          margin-top: 20px;
           cursor: pointer;
           -webkit-user-select: none;
           -moz-user-select: none;
@@ -853,14 +854,14 @@ a {
           -webkit-transition: .3s;
           -o-transition: .3s;
           transition: .3s; }
-          .home-content .main-content .block-scheme-working .block-cards-working .card-working:hover {
+          .home-content .main-content .block-scheme-working .block-cards-working .wrap-card-work .card-working:hover {
             -webkit-transform: scale(1.1);
             -ms-transform: scale(1.1);
             transform: scale(1.1); }
-          .home-content .main-content .block-scheme-working .block-cards-working .card-working img {
+          .home-content .main-content .block-scheme-working .block-cards-working .wrap-card-work .card-working img {
             width: 50px;
             height: 50px; }
-          .home-content .main-content .block-scheme-working .block-cards-working .card-working p {
+          .home-content .main-content .block-scheme-working .block-cards-working .wrap-card-work .card-working p {
             font-size: 12px; }
     .home-content .main-content .block-text-drinks {
       margin-top: 40px; }
@@ -873,9 +874,9 @@ a {
         margin-top: 30px;
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: repeat(3, minmax(150px, 1fr)); }
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
         .home-content .main-content .block-text-drinks .block-prices-beer .price-beer {
-          padding: 20px 0;
+          padding: 5px 10px;
           border: 1px solid #fff;
           -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -886,8 +887,7 @@ a {
           .home-content .main-content .block-text-drinks .block-prices-beer .price-beer:hover {
             background-color: #fff; }
             .home-content .main-content .block-text-drinks .block-prices-beer .price-beer:hover p {
-              color: #000;
-              font-weight: bold; }
+              color: #000; }
     .home-content .main-content .block-pizzas h2,
     .home-content .main-content .block-drinks h2 {
       padding-top: 100px;
@@ -926,6 +926,18 @@ a {
         grid-template-columns: auto 280px;
         grid-column-gap: 10px;
         justify-self: center; }
+        @media (max-width: 500px) {
+          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza,
+          .home-content .main-content .block-pizzas .pizzas-prices .item-drink,
+          .home-content .main-content .block-pizzas .drinks-prices .item-pizza,
+          .home-content .main-content .block-pizzas .drinks-prices .item-drink,
+          .home-content .main-content .block-drinks .pizzas-prices .item-pizza,
+          .home-content .main-content .block-drinks .pizzas-prices .item-drink,
+          .home-content .main-content .block-drinks .drinks-prices .item-pizza,
+          .home-content .main-content .block-drinks .drinks-prices .item-drink {
+            grid-template-columns: 290px;
+            grid-template-rows: auto 160px;
+            grid-row-gap: 20px; } }
         .home-content .main-content .block-pizzas .pizzas-prices .item-pizza:hover img,
         .home-content .main-content .block-pizzas .pizzas-prices .item-drink:hover img,
         .home-content .main-content .block-pizzas .drinks-prices .item-pizza:hover img,
@@ -952,6 +964,16 @@ a {
           -o-transition: 1s ease-in-out;
           transition: 1s ease-in-out;
           height: 170px; }
+          @media (max-width: 500px) {
+            .home-content .main-content .block-pizzas .pizzas-prices .item-pizza img,
+            .home-content .main-content .block-pizzas .pizzas-prices .item-drink img,
+            .home-content .main-content .block-pizzas .drinks-prices .item-pizza img,
+            .home-content .main-content .block-pizzas .drinks-prices .item-drink img,
+            .home-content .main-content .block-drinks .pizzas-prices .item-pizza img,
+            .home-content .main-content .block-drinks .pizzas-prices .item-drink img,
+            .home-content .main-content .block-drinks .drinks-prices .item-pizza img,
+            .home-content .main-content .block-drinks .drinks-prices .item-drink img {
+              justify-self: center; } }
         .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card,
         .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card,
         .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card,
@@ -1095,13 +1117,24 @@ a {
             .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .front p,
             .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .back p {
               font-style: italic; }
+    @media (max-width: 360px) {
+      .home-content .main-content .block-drinks h2 {
+        font-size: 30px; } }
     .home-content .main-content .block-drinks .drinks-prices .item-drink:hover img {
       -webkit-transform: scale(1.3);
       -ms-transform: scale(1.3);
       transform: scale(1.3); }
+      @media (max-width: 500px) {
+        .home-content .main-content .block-drinks .drinks-prices .item-drink:hover img {
+          -webkit-transform: none;
+          -ms-transform: none;
+          transform: none; } }
     .home-content .main-content .block-drinks .drinks-prices .item-drink .img-drink {
       display: grid;
       margin-right: 30px; }
+      @media (max-width: 500px) {
+        .home-content .main-content .block-drinks .drinks-prices .item-drink .img-drink {
+          margin-right: 0; } }
       .home-content .main-content .block-drinks .drinks-prices .item-drink .img-drink img {
         -webkit-transition: .8s;
         -o-transition: .8s;
