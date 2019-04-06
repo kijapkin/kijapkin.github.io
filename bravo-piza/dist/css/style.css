@@ -563,52 +563,72 @@ a {
         border-radius: 3px; }
     .header #header-wrapper .links-pizzas-drinks {
       display: grid;
-      grid-template-columns: auto auto; }
+      grid-template-columns: auto auto;
+      grid-column-gap: 16px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
       .header #header-wrapper .links-pizzas-drinks a {
-        margin-right: 10px; }
+        display: grid;
+        grid-template-columns: auto auto;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .header #header-wrapper .links-pizzas-drinks a:hover img {
+          -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          transform: scale(1.2); }
+        .header #header-wrapper .links-pizzas-drinks a p {
+          width: 80px;
+          text-align: right;
+          margin-right: 6px;
+          font-family: 'Indie Flower', cursive;
+          line-height: 14px;
+          font-weight: normal; }
         .header #header-wrapper .links-pizzas-drinks a img {
           -webkit-transition: all .2s;
           -o-transition: all .2s;
           transition: all .2s;
           height: 50px;
           width: auto; }
-          .header #header-wrapper .links-pizzas-drinks a img:hover {
-            -webkit-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            transform: scale(1.2); }
     .header #header-wrapper .block-social {
       justify-self: end;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
       align-self: center;
-      margin-right: 40px;
-      display: grid;
-      grid-template-columns: auto auto; }
-      .header #header-wrapper .block-social p {
-        text-align: right;
-        color: #475993;
-        line-height: 16px;
-        -webkit-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none; }
+      margin-right: 40px; }
       .header #header-wrapper .block-social a {
-        display: grid; }
-        .header #header-wrapper .block-social a img {
+        display: grid;
+        grid-template-columns: auto auto;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .header #header-wrapper .block-social a:hover img {
+          -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          transform: scale(1.2); }
+        .header #header-wrapper .block-social a p {
+          font-family: 'Indie Flower', cursive;
+          text-align: right;
+          color: #475993;
+          line-height: 16px;
           -webkit-align-self: center;
           -ms-flex-item-align: center;
           align-self: center;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+        .header #header-wrapper .block-social a img {
           width: 30px;
           height: 30px;
           margin-left: 10px;
           -webkit-transition: .1s;
           -o-transition: .1s;
           transition: .1s; }
-          .header #header-wrapper .block-social a img:hover {
-            -webkit-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            transform: scale(1.2); }
     .header #header-wrapper .block-tel {
       display: grid;
       align-self: center;
@@ -756,8 +776,7 @@ a {
           .home-content .main-content .block-scheme-working .block-cards-working .card-working p {
             font-size: 12px; }
     .home-content .main-content .block-text-drinks {
-      margin-top: 40px;
-      padding-bottom: 70px; }
+      margin-top: 40px; }
       .home-content .main-content .block-text-drinks h2 {
         font-size: 40px;
         font-weight: normal;
@@ -782,209 +801,206 @@ a {
             .home-content .main-content .block-text-drinks .block-prices-beer .price-beer:hover p {
               color: #000;
               font-weight: bold; }
-    .home-content .main-content .block-pizzas,
-    .home-content .main-content .block-drinks {
-      margin-top: 40px;
-      padding-bottom: 70px; }
-      .home-content .main-content .block-pizzas h2,
-      .home-content .main-content .block-drinks h2 {
-        font-size: 40px;
-        font-weight: normal;
-        font-style: italic;
-        font-family: 'Pacifico', cursive;
-        -webkit-transition: .3s;
-        -o-transition: .3s;
-        transition: .3s;
-        color: red;
-        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; }
-      .home-content .main-content .block-pizzas .pizzas-prices,
-      .home-content .main-content .block-pizzas .drinks-prices,
-      .home-content .main-content .block-drinks .pizzas-prices,
-      .home-content .main-content .block-drinks .drinks-prices {
-        margin-top: 70px;
+    .home-content .main-content .block-pizzas h2,
+    .home-content .main-content .block-drinks h2 {
+      padding-top: 100px;
+      font-size: 40px;
+      font-weight: normal;
+      font-style: italic;
+      font-family: 'Pacifico', cursive;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      color: red;
+      text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; }
+    .home-content .main-content .block-pizzas .pizzas-prices,
+    .home-content .main-content .block-pizzas .drinks-prices,
+    .home-content .main-content .block-drinks .pizzas-prices,
+    .home-content .main-content .block-drinks .drinks-prices {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 50px 20px; }
+      .home-content .main-content .block-pizzas .pizzas-prices .item-pizza,
+      .home-content .main-content .block-pizzas .pizzas-prices .item-drink,
+      .home-content .main-content .block-pizzas .drinks-prices .item-pizza,
+      .home-content .main-content .block-pizzas .drinks-prices .item-drink,
+      .home-content .main-content .block-drinks .pizzas-prices .item-pizza,
+      .home-content .main-content .block-drinks .pizzas-prices .item-drink,
+      .home-content .main-content .block-drinks .drinks-prices .item-pizza,
+      .home-content .main-content .block-drinks .drinks-prices .item-drink {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 50px 20px; }
-        .home-content .main-content .block-pizzas .pizzas-prices .item-pizza,
-        .home-content .main-content .block-pizzas .pizzas-prices .item-drink,
-        .home-content .main-content .block-pizzas .drinks-prices .item-pizza,
-        .home-content .main-content .block-pizzas .drinks-prices .item-drink,
-        .home-content .main-content .block-drinks .pizzas-prices .item-pizza,
-        .home-content .main-content .block-drinks .pizzas-prices .item-drink,
-        .home-content .main-content .block-drinks .drinks-prices .item-pizza,
-        .home-content .main-content .block-drinks .drinks-prices .item-drink {
+        grid-template-columns: auto 280px;
+        grid-column-gap: 10px; }
+        .home-content .main-content .block-pizzas .pizzas-prices .item-pizza:hover img,
+        .home-content .main-content .block-pizzas .pizzas-prices .item-drink:hover img,
+        .home-content .main-content .block-pizzas .drinks-prices .item-pizza:hover img,
+        .home-content .main-content .block-pizzas .drinks-prices .item-drink:hover img,
+        .home-content .main-content .block-drinks .pizzas-prices .item-pizza:hover img,
+        .home-content .main-content .block-drinks .pizzas-prices .item-drink:hover img,
+        .home-content .main-content .block-drinks .drinks-prices .item-pizza:hover img,
+        .home-content .main-content .block-drinks .drinks-prices .item-drink:hover img {
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+        .home-content .main-content .block-pizzas .pizzas-prices .item-pizza img,
+        .home-content .main-content .block-pizzas .pizzas-prices .item-drink img,
+        .home-content .main-content .block-pizzas .drinks-prices .item-pizza img,
+        .home-content .main-content .block-pizzas .drinks-prices .item-drink img,
+        .home-content .main-content .block-drinks .pizzas-prices .item-pizza img,
+        .home-content .main-content .block-drinks .pizzas-prices .item-drink img,
+        .home-content .main-content .block-drinks .drinks-prices .item-pizza img,
+        .home-content .main-content .block-drinks .drinks-prices .item-drink img {
+          -webkit-border-radius: 50%;
+          border-radius: 50%;
+          justify-self: end;
+          -webkit-transition: 1s ease-in-out;
+          -o-transition: 1s ease-in-out;
+          transition: 1s ease-in-out;
+          height: 170px; }
+        .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card,
+        .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card,
+        .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card,
+        .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card,
+        .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card,
+        .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card,
+        .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card,
+        .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card {
+          padding: 6px;
           display: grid;
-          grid-template-columns: auto 280px;
-          grid-column-gap: 10px; }
-          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza:hover img,
-          .home-content .main-content .block-pizzas .pizzas-prices .item-drink:hover img,
-          .home-content .main-content .block-pizzas .drinks-prices .item-pizza:hover img,
-          .home-content .main-content .block-pizzas .drinks-prices .item-drink:hover img,
-          .home-content .main-content .block-drinks .pizzas-prices .item-pizza:hover img,
-          .home-content .main-content .block-drinks .pizzas-prices .item-drink:hover img,
-          .home-content .main-content .block-drinks .drinks-prices .item-pizza:hover img,
-          .home-content .main-content .block-drinks .drinks-prices .item-drink:hover img {
-            -webkit-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-            transform: rotate(90deg); }
-          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza img,
-          .home-content .main-content .block-pizzas .pizzas-prices .item-drink img,
-          .home-content .main-content .block-pizzas .drinks-prices .item-pizza img,
-          .home-content .main-content .block-pizzas .drinks-prices .item-drink img,
-          .home-content .main-content .block-drinks .pizzas-prices .item-pizza img,
-          .home-content .main-content .block-drinks .pizzas-prices .item-drink img,
-          .home-content .main-content .block-drinks .drinks-prices .item-pizza img,
-          .home-content .main-content .block-drinks .drinks-prices .item-drink img {
-            -webkit-border-radius: 50%;
-            border-radius: 50%;
-            justify-self: end;
-            -webkit-transition: 1s ease-in-out;
-            -o-transition: 1s ease-in-out;
-            transition: 1s ease-in-out;
-            height: 170px; }
-          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card,
-          .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card,
-          .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card,
-          .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card,
-          .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card,
-          .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card,
-          .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card,
-          .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card {
-            padding: 6px;
-            display: grid;
-            position: relative;
-            -webkit-perspective: 1000px;
-            perspective: 1000px; }
-            .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card:hover .back,
-            .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card:hover .back,
-            .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card:hover .back,
-            .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card:hover .back,
-            .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card:hover .back,
-            .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card:hover .back,
-            .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card:hover .back,
-            .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card:hover .back {
-              -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg); }
-            .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card:hover .front,
-            .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card:hover .front,
-            .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card:hover .front,
-            .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card:hover .front,
-            .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card:hover .front,
-            .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card:hover .front,
-            .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card:hover .front,
-            .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card:hover .front {
-              -webkit-transform: rotateY(180deg);
-              transform: rotateY(180deg); }
+          position: relative;
+          -webkit-perspective: 1000px;
+          perspective: 1000px; }
+          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card:hover .back,
+          .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card:hover .back,
+          .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card:hover .back,
+          .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card:hover .back,
+          .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card:hover .back,
+          .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card:hover .back,
+          .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card:hover .back,
+          .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card:hover .back {
+            -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg); }
+          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card:hover .front,
+          .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card:hover .front,
+          .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card:hover .front,
+          .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card:hover .front,
+          .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card:hover .front,
+          .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card:hover .front,
+          .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card:hover .front,
+          .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card:hover .front {
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .front h3,
+          .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .front h3,
+          .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .front h3,
+          .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .front h3,
+          .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .front h3,
+          .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .front h3,
+          .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .front h3,
+          .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .front h3 {
+            color: #000; }
+          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .front ul li,
+          .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .front ul li,
+          .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .front ul li,
+          .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .front ul li,
+          .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .front ul li,
+          .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .front ul li,
+          .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .front ul li,
+          .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .front ul li {
+            color: #000;
+            font-weight: bold; }
+          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .back,
+          .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .back,
+          .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .back,
+          .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .back,
+          .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .back,
+          .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .back,
+          .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .back,
+          .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .back {
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+            .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .back p,
+            .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .back p,
+            .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .back p,
+            .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .back p,
+            .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .back p,
+            .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .back p,
+            .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .back p,
+            .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .back p {
+              font-weight: normal;
+              font-size: 14px;
+              padding: 10px; }
+          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .front,
+          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .back,
+          .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .front,
+          .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .back,
+          .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .front,
+          .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .back,
+          .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .front,
+          .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .back,
+          .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .front,
+          .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .back,
+          .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .front,
+          .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .back,
+          .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .front,
+          .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .back,
+          .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .front,
+          .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .back {
+            position: absolute;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            -webkit-transition: .6s ease-out;
+            -o-transition: .6s ease-out;
+            transition: .6s ease-out;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            display: grid; }
             .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .front h3,
+            .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .back h3,
             .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .front h3,
+            .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .back h3,
             .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .front h3,
+            .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .back h3,
             .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .front h3,
+            .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .back h3,
             .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .front h3,
+            .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .back h3,
             .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .front h3,
+            .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .back h3,
             .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .front h3,
-            .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .front h3 {
-              color: #000; }
-            .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .front ul li,
-            .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .front ul li,
-            .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .front ul li,
-            .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .front ul li,
-            .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .front ul li,
-            .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .front ul li,
-            .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .front ul li,
-            .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .front ul li {
-              color: #000;
-              font-weight: bold; }
-            .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .back,
-            .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .back,
-            .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .back,
-            .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .back,
-            .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .back,
-            .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .back,
-            .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .back,
-            .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .back {
-              -webkit-transform: rotateY(180deg);
-              transform: rotateY(180deg); }
-              .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .back p,
-              .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .back p,
-              .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .back p,
-              .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .back p,
-              .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .back p,
-              .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .back p,
-              .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .back p,
-              .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .back p {
-                font-weight: normal;
-                font-size: 14px;
-                padding: 10px; }
-            .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .front,
-            .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .back,
-            .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .front,
-            .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .back,
-            .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .front,
-            .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .back,
-            .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .front,
-            .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .back,
-            .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .front,
-            .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .back,
-            .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .front,
-            .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .back,
-            .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .front,
-            .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .back,
-            .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .front,
-            .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .back {
-              position: absolute;
-              -webkit-backface-visibility: hidden;
-              backface-visibility: hidden;
-              width: 100%;
-              height: 100%;
-              top: 0;
-              left: 0;
-              -webkit-transition: .6s ease-out;
-              -o-transition: .6s ease-out;
-              transition: .6s ease-out;
-              -webkit-border-radius: 10px;
-              border-radius: 10px;
-              display: grid; }
-              .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .front h3,
-              .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .back h3,
-              .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .front h3,
-              .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .back h3,
-              .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .front h3,
-              .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .back h3,
-              .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .front h3,
-              .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .back h3,
-              .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .front h3,
-              .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .back h3,
-              .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .front h3,
-              .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .back h3,
-              .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .front h3,
-              .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .back h3,
-              .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .front h3,
-              .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .back h3 {
-                font-style: italic;
-                font-weight: bold;
-                font-size: 22px;
-                border-bottom: 1px solid;
-                -webkit-align-self: start;
-                -ms-flex-item-align: start;
-                align-self: start;
-                padding: 6px 0; }
-              .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .front p,
-              .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .back p,
-              .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .front p,
-              .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .back p,
-              .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .front p,
-              .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .back p,
-              .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .front p,
-              .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .back p,
-              .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .front p,
-              .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .back p,
-              .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .front p,
-              .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .back p,
-              .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .front p,
-              .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .back p,
-              .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .front p,
-              .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .back p {
-                font-style: italic; }
+            .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .back h3,
+            .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .front h3,
+            .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .back h3 {
+              font-style: italic;
+              font-weight: bold;
+              font-size: 22px;
+              border-bottom: 1px solid;
+              -webkit-align-self: start;
+              -ms-flex-item-align: start;
+              align-self: start;
+              padding: 6px 0; }
+            .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .front p,
+            .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .back p,
+            .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .front p,
+            .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card .back p,
+            .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .front p,
+            .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card .back p,
+            .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .front p,
+            .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card .back p,
+            .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .front p,
+            .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card .back p,
+            .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .front p,
+            .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card .back p,
+            .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .front p,
+            .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card .back p,
+            .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .front p,
+            .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .back p {
+              font-style: italic; }
     .home-content .main-content .block-drinks .drinks-prices .item-drink:hover img {
       -webkit-transform: scale(1.3);
       -ms-transform: scale(1.3);

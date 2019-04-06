@@ -22,15 +22,27 @@
 		.links-pizzas-drinks{
 			display: grid;
 			grid-template-columns: auto auto;
+			grid-column-gap: 16px;
+			align-items: center;
 			a{
-				margin-right: 10px;
+				display: grid;
+				grid-template-columns: auto auto;
+				align-items: center;
+				&:hover img{
+					transform: scale(1.2);
+				}
+				p{
+					width: 80px;
+					text-align: right;
+					margin-right: 6px;
+					font-family: 'Indie Flower', cursive;
+					line-height: 14px;
+					font-weight: normal;
+				}
 				img{
 					transition: all .2s;
 					height: 50px;
 					width: auto;
-					&:hover{
-						transform: scale(1.2);
-					}
 				}
 			}
 		}
@@ -38,27 +50,27 @@
 			justify-self: end;
 			align-self: center;
 			margin-right: 40px;
-			display: grid;
-			grid-template-columns: auto auto;
-			p{
-				text-align: right;
-				color: #475993;
-				line-height: 16px;
-				align-self: center;
-				user-select: none;
-			}
 			a{
-			display: grid;
-				img{
+				display: grid;
+				grid-template-columns: auto auto;
+				align-items: center;
+				&:hover img{
+					transform: scale(1.2);
+				}
+				p{
+					font-family: 'Indie Flower', cursive;
+					text-align: right;
+					color: #475993;
+					line-height: 16px;
 					align-self: center;
+					user-select: none;
+				}
+				img{
 					width: 30px;
 					height: 30px;
 					margin-left: 10px;
 					transition: .1s;
-					&:hover{
-						transform: scale(1.2);
-					}
-				}						
+				}							
 			}
 		}
 		.block-tel{
