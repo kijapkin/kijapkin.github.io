@@ -28,8 +28,13 @@
 				display: grid;
 				grid-template-columns: auto auto;
 				align-items: center;
-				&:hover img{
-					transform: scale(1.2);
+				&:hover{
+					img{
+						transform: scale(1.2);
+					}
+					p{
+						text-shadow: 0 0 4px #fff;
+					}
 				}
 				p{
 					width: 80px;
@@ -38,9 +43,10 @@
 					font-family: 'Indie Flower', cursive;
 					line-height: 14px;
 					font-weight: normal;
+					transition: .2s;
 				}
 				img{
-					transition: all .2s;
+					transition: .2s;
 					height: 50px;
 					width: auto;
 				}

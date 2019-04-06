@@ -580,17 +580,22 @@ a {
           -webkit-transform: scale(1.2);
           -ms-transform: scale(1.2);
           transform: scale(1.2); }
+        .header #header-wrapper .links-pizzas-drinks a:hover p {
+          text-shadow: 0 0 4px #fff; }
         .header #header-wrapper .links-pizzas-drinks a p {
           width: 80px;
           text-align: right;
           margin-right: 6px;
           font-family: 'Indie Flower', cursive;
           line-height: 14px;
-          font-weight: normal; }
+          font-weight: normal;
+          -webkit-transition: .2s;
+          -o-transition: .2s;
+          transition: .2s; }
         .header #header-wrapper .links-pizzas-drinks a img {
-          -webkit-transition: all .2s;
-          -o-transition: all .2s;
-          transition: all .2s;
+          -webkit-transition: .2s;
+          -o-transition: .2s;
+          transition: .2s;
           height: 50px;
           width: auto; }
     .header #header-wrapper .block-social {
