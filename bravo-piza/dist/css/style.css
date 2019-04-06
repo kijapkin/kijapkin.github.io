@@ -740,6 +740,11 @@ a {
     border-bottom: 2px solid red; }
     .home-content .main-content .block-scheme-working {
       padding-bottom: 70px; }
+      .home-content .main-content .block-scheme-working h2 {
+        font-size: 40px;
+        font-weight: normal;
+        font-style: italic;
+        font-family: 'Pacifico', cursive; }
       .home-content .main-content .block-scheme-working .block-cards-working {
         margin-top: 30px;
         display: grid;
