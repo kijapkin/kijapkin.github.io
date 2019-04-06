@@ -551,23 +551,38 @@ a {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr auto; }
-    .header #header-wrapper .header-block-left .logo a {
+    grid-template-columns: 1fr auto 1fr auto; }
+    .header #header-wrapper .logo a {
       display: grid; }
-      .header #header-wrapper .header-block-left .logo a img {
+      .header #header-wrapper .logo a img {
         display: inline-block;
         -webkit-align-self: center;
         -ms-flex-item-align: center;
         align-self: center;
         -webkit-border-radius: 3px;
         border-radius: 3px; }
-    .header #header-wrapper .header-block-midle {
+    .header #header-wrapper .links-pizzas-drinks {
+      display: grid;
+      grid-template-columns: auto auto; }
+      .header #header-wrapper .links-pizzas-drinks a {
+        margin-right: 10px; }
+        .header #header-wrapper .links-pizzas-drinks a img {
+          -webkit-transition: all .2s;
+          -o-transition: all .2s;
+          transition: all .2s;
+          height: 50px;
+          width: auto; }
+          .header #header-wrapper .links-pizzas-drinks a img:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+    .header #header-wrapper .block-social {
       justify-self: end;
       align-self: center;
       margin-right: 40px;
       display: grid;
       grid-template-columns: auto auto; }
-      .header #header-wrapper .header-block-midle p {
+      .header #header-wrapper .block-social p {
         text-align: right;
         color: #475993;
         line-height: 16px;
@@ -578,9 +593,9 @@ a {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none; }
-      .header #header-wrapper .header-block-midle a {
+      .header #header-wrapper .block-social a {
         display: grid; }
-        .header #header-wrapper .header-block-midle a img {
+        .header #header-wrapper .block-social a img {
           -webkit-align-self: center;
           -ms-flex-item-align: center;
           align-self: center;
@@ -590,27 +605,25 @@ a {
           -webkit-transition: .1s;
           -o-transition: .1s;
           transition: .1s; }
-          .header #header-wrapper .header-block-midle a img:hover {
+          .header #header-wrapper .block-social a img:hover {
             -webkit-transform: scale(1.2);
             -ms-transform: scale(1.2);
             transform: scale(1.2); }
-    .header #header-wrapper .header-block-right {
-      text-align: right;
-      display: grid; }
-      .header #header-wrapper .header-block-right .block-tel {
-        align-self: center;
-        display: inline-grid;
-        grid-column-gap: 20px; }
-        .header #header-wrapper .header-block-right .block-tel a {
-          color: #fff;
-          display: block;
-          font-size: 17px;
-          -webkit-transition: .2s;
-          -o-transition: .2s;
-          transition: .2s; }
-          .header #header-wrapper .header-block-right .block-tel a:hover {
-            font-weight: bold;
-            text-decoration: underline; }
+    .header #header-wrapper .block-tel {
+      display: grid;
+      align-self: center;
+      display: inline-grid;
+      grid-column-gap: 20px; }
+      .header #header-wrapper .block-tel a {
+        color: #fff;
+        display: block;
+        font-size: 17px;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+        .header #header-wrapper .block-tel a:hover {
+          font-weight: bold;
+          text-decoration: underline; }
 
 .home-content {
   padding-top: 70px; }
@@ -618,10 +631,10 @@ a {
     position: fixed;
     z-index: -10; }
   .home-content .block-main-text {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 2px solid red; }
     .home-content .block-main-text .container {
-      padding: 80px 0;
+      padding: 40px 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 150px; }
@@ -633,20 +646,20 @@ a {
         align-items: center;
         justify-items: center; }
         .home-content .block-main-text .container .left-block .lang a {
-          display: block;
           text-align: center;
           border: 1px solid #aaa;
           width: 50px;
-          padding: 2px 0;
+          padding: 2px 10px;
           color: #fff;
-          display: block;
           -webkit-transition: .2s;
           -o-transition: .2s;
           transition: .2s; }
           .home-content .block-main-text .container .left-block .lang a:hover {
             background-color: #3C201A; }
-          .home-content .block-main-text .container .left-block .lang a:nth-child(2) {
-            display: none; }
+          .home-content .block-main-text .container .left-block .lang a:focus {
+            border: 1px solid #FF1734;
+            color: #FF1734;
+            background-color: #3C201A; }
         .home-content .block-main-text .container .left-block .title-text {
           align-self: start;
           display: grid; }
@@ -668,6 +681,18 @@ a {
                 transform: scale(1.1) rotate(-5deg); }
             .home-content .block-main-text .container .left-block .title-text span:nth-child(3) {
               padding-top: 20px; }
+        .home-content .block-main-text .container .left-block .links-pizzas-drinks a {
+          margin-right: 10px; }
+          .home-content .block-main-text .container .left-block .links-pizzas-drinks a img {
+            -webkit-transition: all .2s;
+            -o-transition: all .2s;
+            transition: all .2s;
+            height: 140px;
+            width: auto; }
+            .home-content .block-main-text .container .left-block .links-pizzas-drinks a img:hover {
+              -webkit-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+              transform: scale(1.1); }
       .home-content .block-main-text .container .right-block {
         font-size: 24px;
         font-family: 'Open Sans', sans-serif; }
@@ -776,7 +801,7 @@ a {
       .home-content .main-content .block-pizzas .drinks-prices,
       .home-content .main-content .block-drinks .pizzas-prices,
       .home-content .main-content .block-drinks .drinks-prices {
-        margin-top: 50px;
+        margin-top: 70px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 50px 20px; }
