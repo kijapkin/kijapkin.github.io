@@ -9,13 +9,20 @@
 		display: grid;
 		align-items: center;
 		grid-template-columns: 1fr auto 1fr auto;
+		@media (max-width: 500px) {
+			grid-template-columns: auto 1fr auto;
+		}
 		.logo{
 			a{
 				display: grid;
+				&:hover img{
+					box-shadow: 0 0 5px #fff;
+				}
 				img{
 					display: inline-block;
 					align-self: center;
 					border-radius: 3px;
+					transition: .2s;
 				}
 			}
 		}
@@ -24,6 +31,12 @@
 			grid-template-columns: auto auto;
 			grid-column-gap: 16px;
 			align-items: center;
+			@media (max-width: 650px) {
+				padding-left: 20px;
+			}
+			@media (max-width: 500px) {
+				display: none;
+			}
 			a{
 				display: grid;
 				grid-template-columns: auto auto;
@@ -45,6 +58,9 @@
 					line-height: 14px;
 					font-weight: normal;
 					transition: .2s;
+					@media (max-width: 992px) {
+						display: none;
+					}
 				}
 				img{
 					transition: .2s;
@@ -57,6 +73,9 @@
 			justify-self: end;
 			align-self: center;
 			margin-right: 40px;
+			@media (max-width: 380px) {
+				display: none;
+			}
 			a{
 				display: grid;
 				grid-template-columns: auto auto;
@@ -71,6 +90,9 @@
 					line-height: 16px;
 					align-self: center;
 					user-select: none;
+					@media (max-width: 650px) {
+						display: none;
+					}
 				}
 				img{
 					width: 30px;
@@ -85,11 +107,18 @@
 			align-self: center;
 			display: inline-grid;
 			grid-column-gap: 20px;
+			@media (max-width: 500px) {
+				justify-items: end;
+			}
 			a{
 				color: #fff;
 				display: block;
 				font-size: 17px;
 				transition: .2s;
+				@media (max-width: 650px) {
+					font-size: 16px;
+					line-height: 20px;
+				}
 				&:hover{
 					font-weight: bold;
 					text-decoration: underline;
