@@ -1126,9 +1126,9 @@ a {
       transform: scale(1.3); }
       @media (max-width: 500px) {
         .home-content .main-content .block-drinks .drinks-prices .item-drink:hover img {
-          -webkit-transform: none;
-          -ms-transform: none;
-          transform: none; } }
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1); } }
     .home-content .main-content .block-drinks .drinks-prices .item-drink .img-drink {
       display: grid;
       margin-right: 30px; }
