@@ -189,7 +189,8 @@
 				}
 			}
 		}
-		.block-text-drinks{
+		.block-text-beers,
+		.block-ingredients{
 			margin-top: 40px;
 			h2{
 				font-size: 40px;
@@ -321,6 +322,29 @@
 								font-style: italic;
 							}
 						}
+					}
+				}
+			}
+		}
+		// ***ingredients*** //
+		.block-ingredients{
+			h2{
+				font-size: 28px;
+			}
+			.block-prices-ingredients{
+				margin-top: 20px;
+				display: grid;
+				grid-gap: 10px 20px;
+				grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+				p{
+					padding: 5px 10px;
+					border: 1px solid #fff;
+					border-radius: 5px;
+					transition: .3s;
+					overflow: hidden;
+					&:hover{
+						background-color: #fff;
+						color: #000;
 					}
 				}
 			}

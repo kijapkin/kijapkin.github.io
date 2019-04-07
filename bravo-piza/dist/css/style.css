@@ -869,19 +869,23 @@ h2, h3, h4 {
             height: 50px; }
           .home-content .main-content .block-scheme-working .block-cards-working .wrap-card-work .card-working p {
             font-size: 12px; }
-    .home-content .main-content .block-text-drinks {
+    .home-content .main-content .block-text-beers,
+    .home-content .main-content .block-ingredients {
       margin-top: 40px; }
-      .home-content .main-content .block-text-drinks h2 {
+      .home-content .main-content .block-text-beers h2,
+      .home-content .main-content .block-ingredients h2 {
         font-size: 40px;
         font-weight: normal;
         font-style: italic;
         font-family: 'Pacifico', cursive; }
-      .home-content .main-content .block-text-drinks .block-prices-beer {
+      .home-content .main-content .block-text-beers .block-prices-beer,
+      .home-content .main-content .block-ingredients .block-prices-beer {
         margin-top: 30px;
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
-        .home-content .main-content .block-text-drinks .block-prices-beer .price-beer {
+        .home-content .main-content .block-text-beers .block-prices-beer .price-beer,
+        .home-content .main-content .block-ingredients .block-prices-beer .price-beer {
           padding: 5px 10px;
           border: 1px solid #fff;
           -webkit-border-radius: 5px;
@@ -890,9 +894,11 @@ h2, h3, h4 {
           -o-transition: .3s;
           transition: .3s;
           overflow: hidden; }
-          .home-content .main-content .block-text-drinks .block-prices-beer .price-beer:hover {
+          .home-content .main-content .block-text-beers .block-prices-beer .price-beer:hover,
+          .home-content .main-content .block-ingredients .block-prices-beer .price-beer:hover {
             background-color: #fff; }
-            .home-content .main-content .block-text-drinks .block-prices-beer .price-beer:hover p {
+            .home-content .main-content .block-text-beers .block-prices-beer .price-beer:hover p,
+            .home-content .main-content .block-ingredients .block-prices-beer .price-beer:hover p {
               color: #000;
               -webkit-user-select: none;
               -moz-user-select: none;
@@ -1127,6 +1133,25 @@ h2, h3, h4 {
             .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .front p,
             .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card .back p {
               font-style: italic; }
+    .home-content .main-content .block-ingredients h2 {
+      font-size: 28px; }
+    .home-content .main-content .block-ingredients .block-prices-ingredients {
+      margin-top: 20px;
+      display: grid;
+      grid-gap: 10px 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+      .home-content .main-content .block-ingredients .block-prices-ingredients p {
+        padding: 5px 10px;
+        border: 1px solid #fff;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        overflow: hidden; }
+        .home-content .main-content .block-ingredients .block-prices-ingredients p:hover {
+          background-color: #fff;
+          color: #000; }
     @media (max-width: 360px) {
       .home-content .main-content .block-drinks h2 {
         font-size: 30px; } }
