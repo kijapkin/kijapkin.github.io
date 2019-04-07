@@ -549,7 +549,7 @@ h2, h3, h4 {
   color: #fff;
   border-bottom: 2px solid red;
   position: fixed;
-  z-index: 9999;
+  z-index: 8000;
   width: 100%; }
   .header #header-wrapper {
     display: grid;
@@ -896,7 +896,10 @@ h2, h3, h4 {
           overflow: hidden; }
           .home-content .main-content .block-text-beers .block-prices-beer .price-beer:hover,
           .home-content .main-content .block-ingredients .block-prices-beer .price-beer:hover {
-            background-color: #fff; }
+            background-color: #fff;
+            background-position: center;
+            -webkit-background-size: contain;
+            background-size: contain; }
             .home-content .main-content .block-text-beers .block-prices-beer .price-beer:hover p,
             .home-content .main-content .block-ingredients .block-prices-beer .price-beer:hover p {
               color: #000;
@@ -904,6 +907,52 @@ h2, h3, h4 {
               -moz-user-select: none;
               -ms-user-select: none;
               user-select: none; }
+    .home-content .main-content .form {
+      width: 150px;
+      height: 150px;
+      margin: 70px auto 0;
+      -webkit-background-size: cover;
+      background-size: cover;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-transition: .1s;
+      -o-transition: .1s;
+      transition: .1s;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      .home-content .main-content .form:hover {
+        -webkit-box-shadow: 0 0 20px  #fff;
+        box-shadow: 0 0 20px  #fff; }
+      .home-content .main-content .form a {
+        color: #000;
+        font-family: 'Pacifico', cursive;
+        font-size: 26px;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+    .home-content .main-content #form-popap {
+      width: 300px;
+      height: 180px;
+      background-color: #444;
+      border: 2px solid #ccc;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      margin: 0 auto;
+      display: block;
+      z-index: 9999; }
+      .home-content .main-content #form-popap p {
+        font-size: 20px; }
     .home-content .main-content .block-pizzas h2,
     .home-content .main-content .block-drinks h2 {
       padding-top: 100px;
