@@ -957,6 +957,15 @@ h2, h3, h4 {
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
+      @media (max-width: 678px) {
+        .home-content .main-content #form-popap {
+          -webkit-transform: none;
+          -ms-transform: none;
+          transform: none;
+          top: 80px;
+          left: 0;
+          right: 0;
+          padding: 10px; } }
       .home-content .main-content #form-popap p {
         font-family: 'Pacifico', cursive;
         font-size: 24px; }
@@ -964,10 +973,13 @@ h2, h3, h4 {
         margin-top: 20px;
         background-color: #fff;
         width: 100%;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding: 5px 0;
         color: #000;
         text-align: center; }
+        @media (max-width: 678px) {
+          .home-content .main-content #form-popap form input {
+            margin-top: 10px;
+            padding: 3px 0; } }
       .home-content .main-content #form-popap form button {
         margin-top: 20px;
         border: none;
@@ -978,6 +990,9 @@ h2, h3, h4 {
         -webkit-transition: .1s;
         -o-transition: .1s;
         transition: .1s; }
+        @media (max-width: 678px) {
+          .home-content .main-content #form-popap form button {
+            margin-top: 10px; } }
         .home-content .main-content #form-popap form button:hover {
           -webkit-box-shadow: 0 0 10px #777;
           box-shadow: 0 0 10px #777; }

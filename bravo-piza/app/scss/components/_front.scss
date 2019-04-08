@@ -248,6 +248,7 @@
 
 		// ***popap*** //
 		#form-popap{
+			// display: none;
 			min-width: 300px;
 			max-width: 500px;
 			background-color: rgba(0,0,0,.8);
@@ -260,6 +261,13 @@
 			top: 250px;
 			left: 50%;
 			transform: translate(-50%, -50%);
+			@media (max-width: 678px) {
+				transform: none;
+				top: 80px;
+				left: 0;
+				right: 0;
+				padding: 10px;
+			}
 			p{
 				// text-align: left;
 				font-family: 'Pacifico', cursive;
@@ -270,10 +278,13 @@
 					margin-top: 20px;
 					background-color: #fff;
 					width: 100%;
-					padding-top: 5px;
-					padding-bottom: 5px;
+					padding: 5px 0;
 					color: #000;
 					text-align: center;
+					@media (max-width: 678px) {
+						margin-top: 10px;
+						padding: 3px 0;
+					}
 					&::placeholder{
 					}
 				}
@@ -284,6 +295,9 @@
 					background-color: #FF1734;
 					border-radius: 5px;
 					transition: .1s;
+					@media (max-width: 678px) {
+						margin-top: 10px;
+					}
 					&:hover{
 						box-shadow: 0 0 10px #777;
 					}
