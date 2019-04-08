@@ -942,22 +942,33 @@ h2, h3, h4 {
         -ms-flex-align: center;
         align-items: center; }
     .home-content .main-content #form-popap {
-      width: 500px;
-      height: 400px;
-      background-color: rgba(0, 0, 0, 0.85);
+      width: 600px;
+      background-color: rgba(0, 0, 0, 0.7);
       border: 2px solid #ccc;
-      -webkit-border-radius: 10px;
-      border-radius: 10px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
       margin: 0 auto;
       padding: 40px;
       position: fixed;
       z-index: 9999;
-      top: 50%;
+      top: 200px;
       left: 50%;
-      margin-left: -250px;
-      margin-top: -200px; }
+      margin-left: -250px; }
       .home-content .main-content #form-popap p {
-        font-size: 20px; }
+        font-family: 'Pacifico', cursive;
+        font-size: 30px; }
+      .home-content .main-content #form-popap form input {
+        margin-top: 20px;
+        background-color: #fff;
+        width: 100%;
+        height: 50px;
+        color: #000; }
+        .home-content .main-content #form-popap form input::-webkit-input-placeholder {
+          padding-left: 40px; }
+        .home-content .main-content #form-popap form input::-ms-input-placeholder {
+          padding-left: 40px; }
+        .home-content .main-content #form-popap form input::placeholder {
+          padding-left: 40px; }
     .home-content .main-content .block-pizzas h2,
     .home-content .main-content .block-drinks h2 {
       padding-top: 100px;
