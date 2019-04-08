@@ -907,7 +907,7 @@ h2, h3, h4 {
               -moz-user-select: none;
               -ms-user-select: none;
               user-select: none; }
-    .home-content .main-content .form {
+    .home-content .main-content .button-order-now {
       width: 150px;
       height: 150px;
       margin: 70px auto 0;
@@ -927,10 +927,10 @@ h2, h3, h4 {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none; }
-      .home-content .main-content .form:hover {
+      .home-content .main-content .button-order-now:hover {
         -webkit-box-shadow: 0 0 20px  #fff;
         box-shadow: 0 0 20px  #fff; }
-      .home-content .main-content .form a {
+      .home-content .main-content .button-order-now a {
         color: #000;
         font-family: 'Pacifico', cursive;
         font-size: 26px;
@@ -942,15 +942,20 @@ h2, h3, h4 {
         -ms-flex-align: center;
         align-items: center; }
     .home-content .main-content #form-popap {
-      width: 300px;
-      height: 180px;
-      background-color: #444;
+      width: 500px;
+      height: 400px;
+      background-color: rgba(0, 0, 0, 0.85);
       border: 2px solid #ccc;
       -webkit-border-radius: 10px;
       border-radius: 10px;
       margin: 0 auto;
-      display: block;
-      z-index: 9999; }
+      padding: 40px;
+      position: fixed;
+      z-index: 9999;
+      top: 50%;
+      left: 50%;
+      margin-left: -250px;
+      margin-top: -200px; }
       .home-content .main-content #form-popap p {
         font-size: 20px; }
     .home-content .main-content .block-pizzas h2,
