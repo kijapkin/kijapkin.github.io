@@ -965,13 +965,25 @@ h2, h3, h4 {
         background-color: #fff;
         width: 100%;
         height: 50px;
-        color: #000; }
-        .home-content .main-content #form-popap form input::-webkit-input-placeholder {
-          padding-left: 40px; }
-        .home-content .main-content #form-popap form input::-ms-input-placeholder {
-          padding-left: 40px; }
-        .home-content .main-content #form-popap form input::placeholder {
-          padding-left: 40px; }
+        color: #000;
+        text-align: center; }
+      .home-content .main-content #form-popap form button {
+        margin-top: 20px;
+        border: none;
+        padding: 10px 40px;
+        background-color: #FF1734;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-transition: .1s;
+        -o-transition: .1s;
+        transition: .1s; }
+        .home-content .main-content #form-popap form button:hover {
+          -webkit-box-shadow: 0 0 10px #777;
+          box-shadow: 0 0 10px #777; }
+        .home-content .main-content #form-popap form button:active {
+          -webkit-transform: scale(0.98);
+          -ms-transform: scale(0.98);
+          transform: scale(0.98); }
     .home-content .main-content .block-pizzas h2,
     .home-content .main-content .block-drinks h2 {
       padding-top: 100px;
