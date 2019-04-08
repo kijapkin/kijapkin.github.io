@@ -248,21 +248,22 @@
 
 		// ***popap*** //
 		#form-popap{
-			width: 600px;
-			background-color: rgba(0,0,0,.7);
+			min-width: 300px;
+			max-width: 600px;
+			background-color: rgba(0,0,0,.9);
 			border: 2px solid #ccc;
-			border-radius: 50px;
+			border-radius: 30px;
 			margin: 0 auto;
 			padding: 40px;
 			position: fixed;
 			z-index: 9999;
-			top: 200px;
+			top: 300px;
 			left: 50%;
-			margin-left: -250px;
+			transform: translate(-50%, -50%);
 			p{
 				// text-align: left;
 				font-family: 'Pacifico', cursive;
-				font-size: 30px;
+				font-size: 24px;
 			}
 			form{
 				input{

@@ -942,21 +942,24 @@ h2, h3, h4 {
         -ms-flex-align: center;
         align-items: center; }
     .home-content .main-content #form-popap {
-      width: 600px;
-      background-color: rgba(0, 0, 0, 0.7);
+      min-width: 300px;
+      max-width: 600px;
+      background-color: rgba(0, 0, 0, 0.9);
       border: 2px solid #ccc;
-      -webkit-border-radius: 50px;
-      border-radius: 50px;
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
       margin: 0 auto;
       padding: 40px;
       position: fixed;
       z-index: 9999;
-      top: 200px;
+      top: 300px;
       left: 50%;
-      margin-left: -250px; }
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
       .home-content .main-content #form-popap p {
         font-family: 'Pacifico', cursive;
-        font-size: 30px; }
+        font-size: 24px; }
       .home-content .main-content #form-popap form input {
         margin-top: 20px;
         background-color: #fff;
