@@ -1,0 +1,12 @@
+index.html - Главная
+about.html - О нас
+club.html - Страница клуба
+clubs.html - Страница списка клубов 
+desc.html - Описание
+faq.html - Как играть?
+profile.html - Профиль
+profile_history.html - Профиль (История операций)
+profile_settings.html -Профиль (Настройки(редактирование профиля)
+schedule.html - Турниры
+
+list.html - Список всех страниц

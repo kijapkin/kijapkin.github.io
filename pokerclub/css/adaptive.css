@@ -1,0 +1,358 @@
+
+@media screen and (max-width:1900px) {
+	section.content:before {
+		left: -15% !important;
+	}
+	section.content:after {
+		right: -15% !important;
+	}
+}
+
+@media screen and (max-width:1500px) {
+	section.content:before {
+		left: -20% !important;
+	}
+	section.content:after {
+		right: -20% !important;
+	}
+}
+
+@media screen and (max-width:1360px) {
+	.content-box {
+	    padding: 0 20px;
+	}
+	section.content:before {
+		left: -25% !important;
+	}
+	section.content:after {
+		right: -25% !important;
+	}
+}
+
+
+
+@media screen and (max-width:769px) {
+	section.content > .container {
+		position: relative;
+		top: 0 !important;
+
+	}
+	section.content.home {
+	    top: 0;
+	    margin-bottom: 0;
+	}
+	.title h1 span {
+		background-image: none !important;
+	}
+	section.title {
+	    background-size: cover;
+	    background-position: center center;
+	    min-height: 190px;
+	    margin-bottom: -35px;
+	}
+	section.content {
+		background-size: cover;
+		padding-bottom: 10px;
+	}
+	.content-box {
+		padding: 15px;
+		margin-bottom: 20px;
+	}
+	.content-box .offers .item-content {
+	    -webkit-flex-wrap: wrap;
+	    -moz-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	    -o-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	    padding: 8px 12px;
+	    height: auto;
+	}
+	.content-box .item-title {
+	    line-height: 1.5;
+	}
+	.content-box .item-date {
+		margin-top: 5px;
+	}
+
+	h1 {
+	    font-size: 22px;
+	}
+	h2 {
+		font-size: 20px;
+		margin-top: 20px;
+	}
+	.topline, .botline, header {
+	    height: auto;
+	}
+	.topline, .botline {
+	    padding: 10px 10px 15px 10px;
+	}
+	.menu-profile {
+	    justify-content: center;
+	    margin-top: 10px;
+	}
+	.menu-profile input {
+	    max-width: 85px !important;
+	}
+	header .topline.row ul.menu {
+		margin: 0;
+	    position: absolute;
+	    right: 0;
+	    top: 45px;
+	    width: 50%;
+	    height: auto;
+		z-index: 999;
+		background: #000000e6;
+	    text-align: center;
+	    display: none;
+	}
+	header ul.menu li {
+		line-height: 2.5;
+	}
+	.menu-btn {
+		display: inline-block;
+		cursor: pointer;
+	}
+	.news .item {
+		margin-bottom: 30px;
+	}
+
+	footer .menu {
+		margin: 20px 0 !important;
+	}
+	footer ul.menu li {
+	    width: 100%;
+	    line-height: 1.2;
+	}
+	.copyright {
+		padding: 10px;
+	}
+	footer {
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	}
+	section.content:before,
+	section.content:after {
+		display: none;
+	}
+
+	.row > div.item,
+	section.content.faq .screens,
+	section.content.faq .download-btns {
+	    display: block;
+	    width: 100%;
+	    margin-bottom: 20px;
+	    max-width: 100%;
+	    height: auto;
+	   
+	}
+
+	section.content.faq .item.screen {
+	    margin-bottom: 20px;
+	}
+	.tourney-items .item-title,
+	.tourney-items .item-desc {
+		height: auto;
+	}
+
+	.clubs-cats-list {
+	    justify-content: center;
+	}
+
+	.clubs-cats-list.row .item {
+		display: flex;
+	    width: 45%;
+	    margin-bottom: 5px;
+	    max-width: 100%;
+	    margin-left: 10px;
+	    justify-content: flex-start;
+	    height: 30px;
+	    padding-left: 10px;
+	}
+
+	.clubs-cats-list.row .item a {
+		width: 100%;
+		height: 100%;
+	}
+
+	.club-info.row {
+		-webkit-flex-direction: column-reverse;
+		-moz-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-o-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+
+	.content-box.club-info-box h2 {
+		margin-top: 30px !important;
+	}
+	.content-box .club-desc-box {
+		padding-right: 0 !important;
+	}
+	.item-buttons {
+		justify-content: center;
+	}
+	.item-buttons .btn {
+		margin: 0 10px;
+	}
+
+	section.content.home .content-box:first-child {
+		padding-top: 5px !important;
+	}
+
+	section.content .content-box {
+    	margin-bottom: 0;
+    }
+
+	.play-btn {
+		right: 0;
+	}
+
+	.tourney-items .btn {
+		margin: 0 auto;
+    	display: block;
+	}
+
+	h1:after {
+	    text-shadow: 0px 2px 4px #000000c7, 0px -2px 4px #00000094;
+	    color: transparent;
+	}
+
+	aside.profile-menu {
+	    max-width: 100%;
+	    width: 100%;
+	}
+
+    .profile-row {
+    	-webkit-flex: 100%;
+    	-moz-flex: 100%;
+    	-ms-flex: 100%;
+    	-o-flex: 100%;
+    	flex: 100%;
+    }
+
+    .profile-row .profile-menu ul {
+    	display: flex;
+	    -ms-align-items: center;
+	    align-items: center;
+	    justify-content: space-around;
+    }
+
+    aside.profile-menu li:not(.active):before {
+    	display: none;
+    }
+
+    section.content.profile .content-box {
+    	margin-bottom: 0 !important;
+    }
+    section.content .content-box.profile-tabs {
+    	display: block;
+    	padding: 8px 0;
+    }
+   .profile-avatar-box img {
+	    max-width: 49px;
+	    max-width: 49px;
+	    padding-right: 0;
+	    margin-right: 10px;
+
+	}
+	aside.profile-menu li a {
+	    font-size: 12px;
+	    padding: 12px 8px;
+	}
+	section.content.profile {
+		padding-top: 0;
+	}
+	.menu-profile.auth {
+		justify-content: center;
+	}
+
+	section.content .content-box.profile-tabs {
+		padding: 0;
+
+	}
+	section.content .profile-content-wrapper {
+		padding-left: 0 !important;
+	}
+
+	section.content .content-box.tabs-header {
+		padding-right: 0 !important;
+    	padding-left: 0 !important;
+	}
+
+	.content-box-item-wrapper {
+		padding-right: 0 !important;
+	}
+
+	.clubs-info-list-wrapper {
+	    -webkit-flex: 100%;
+	    -moz-flex: 100%;
+	    -ms-flex: 100%;
+	    -o-flex: 100%;
+	    flex: 100%;
+	    padding-left: 0 !important;
+	}
+	section.content.profile .btn {
+	    max-width: 80%;
+	    margin: 0 auto !important;
+	    margin-bottom: 30px !important;
+	}
+	section.content.profile .profile-tabs .item {
+		padding: 8px 20px !important;
+	}
+	.topline ul.menu li a, .botline ul.menu li a, .topline ul.menu li, .botline ul.menu li {
+	    display: block;
+	    height: auto;
+	}
+	.form-settings .row,
+	.form-settings-col {
+	    display: block;
+	    width: 100%;
+	}
+	.form-settings-col {
+		display: block;
+		width: 100%;
+	}
+	.form-settings .form-settings-item .form-input .btn {
+	    margin-top: 8px !important;
+	}
+	.form-settings .row > .form-settings-col:last-child {
+		margin-top: 30px;
+	}
+	section.content.profile .content-box-item.padding-full {
+	    padding: 20px 20px 22px 20px !important;
+	}
+
+	table tr td, 
+	table tr th {
+		padding: 13px 0;
+	    font-size: 12px;
+	    padding: 6px;
+	}
+	table tr th {
+	    font-size: 10px !important;
+	}
+	.form-settings .form-settings-item .settings-value {
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.form-settings .form-settings-item .form-input {
+		margin-top: 10px;
+		padding-left: 0 !important;
+	}
+	.form-settings .form-settings-item .form-input .btn {
+	   
+	    margin: 0 !important;
+	     margin-top: 8px !important;
+	}
+
+	.profile-upload-image {
+	    margin-top: 0;
+	}
+	section.content.profile .btn {
+	    font-size: 15px;
+	}
+}
