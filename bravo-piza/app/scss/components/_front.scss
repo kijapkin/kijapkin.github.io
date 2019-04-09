@@ -246,13 +246,13 @@
 			}
 		}
 
-		// ***popap*** //
+		// ***PopUp*** //
 		#form-popap{
-			// display: none;
+			display: none;
 			min-width: 300px;
 			max-width: 500px;
 			background-color: rgba(0,0,0,.8);
-			border: 2px solid #ccc;
+			border: 1px solid #ccc;
 			border-radius: 30px;
 			margin: 0 auto;
 			padding: 15px 30px;
@@ -269,7 +269,6 @@
 				padding: 10px;
 			}
 			p{
-				// text-align: left;
 				font-family: 'Pacifico', cursive;
 				font-size: 24px;
 			}
@@ -277,7 +276,7 @@
 				input{
 					margin-top: 20px;
 					background-color: #fff;
-					width: 100%;
+					// width: 100%;
 					padding: 5px 0;
 					color: #000;
 					text-align: center;
@@ -364,7 +363,7 @@
 						&:hover .back{
 							transform: rotateY(360deg);
 						}
-						&:hover .front{
+						&:focus .front{
 							transform: rotateY(180deg);
 						}
 						.front{

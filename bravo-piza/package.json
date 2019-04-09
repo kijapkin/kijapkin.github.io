@@ -25,5 +25,8 @@
     "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.11",
     "vinyl-ftp": "^0.6.0"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
   }
 }

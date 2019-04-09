@@ -942,10 +942,11 @@ h2, h3, h4 {
         -ms-flex-align: center;
         align-items: center; }
     .home-content .main-content #form-popap {
+      display: none;
       min-width: 300px;
       max-width: 500px;
       background-color: rgba(0, 0, 0, 0.8);
-      border: 2px solid #ccc;
+      border: 1px solid #ccc;
       -webkit-border-radius: 30px;
       border-radius: 30px;
       margin: 0 auto;
@@ -972,7 +973,6 @@ h2, h3, h4 {
       .home-content .main-content #form-popap form input {
         margin-top: 20px;
         background-color: #fff;
-        width: 100%;
         padding: 5px 0;
         color: #000;
         text-align: center; }
@@ -1109,14 +1109,14 @@ h2, h3, h4 {
           .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card:hover .back {
             -webkit-transform: rotateY(360deg);
             transform: rotateY(360deg); }
-          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card:hover .front,
-          .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card:hover .front,
-          .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card:hover .front,
-          .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card:hover .front,
-          .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card:hover .front,
-          .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card:hover .front,
-          .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card:hover .front,
-          .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card:hover .front {
+          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card:focus .front,
+          .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card:focus .front,
+          .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card:focus .front,
+          .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card:focus .front,
+          .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card:focus .front,
+          .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card:focus .front,
+          .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card:focus .front,
+          .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card:focus .front {
             -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg); }
           .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .front h3,

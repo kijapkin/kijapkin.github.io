@@ -1,0 +1,17 @@
+#!/bin/bash
+#_*_ coding: utf-8 _*_ 
+
+echo "Введите заголовок комита:";
+
+read str
+
+#echo $str
+
+git pull
+
+git add .
+git commit -m "$str"
+git push -u origin master
+
+wget http://sync/kameya.php
+rm -f kameya.php
