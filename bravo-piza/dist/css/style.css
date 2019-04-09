@@ -1109,14 +1109,14 @@ h2, h3, h4 {
           .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card:hover .back {
             -webkit-transform: rotateY(360deg);
             transform: rotateY(360deg); }
-          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card:focus .front,
-          .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card:focus .front,
-          .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card:focus .front,
-          .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card:focus .front,
-          .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card:focus .front,
-          .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card:focus .front,
-          .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card:focus .front,
-          .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card:focus .front {
+          .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card:hover .front,
+          .home-content .main-content .block-pizzas .pizzas-prices .item-drink .description-card:hover .front,
+          .home-content .main-content .block-pizzas .drinks-prices .item-pizza .description-card:hover .front,
+          .home-content .main-content .block-pizzas .drinks-prices .item-drink .description-card:hover .front,
+          .home-content .main-content .block-drinks .pizzas-prices .item-pizza .description-card:hover .front,
+          .home-content .main-content .block-drinks .pizzas-prices .item-drink .description-card:hover .front,
+          .home-content .main-content .block-drinks .drinks-prices .item-pizza .description-card:hover .front,
+          .home-content .main-content .block-drinks .drinks-prices .item-drink .description-card:hover .front {
             -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg); }
           .home-content .main-content .block-pizzas .pizzas-prices .item-pizza .description-card .front h3,

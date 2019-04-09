@@ -363,7 +363,7 @@
 						&:hover .back{
 							transform: rotateY(360deg);
 						}
-						&:focus .front{
+						&:hover .front{
 							transform: rotateY(180deg);
 						}
 						.front{
