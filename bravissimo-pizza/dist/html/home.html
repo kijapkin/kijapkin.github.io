@@ -1,6 +1,39 @@
-//= templates/head.html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Пиццерия Bravissimo</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../../images/logo-pizza.png" type="image/png">
+	<!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<body>
 <div class="wrapper front">
-	//= templates/header.html
+	<header class="header" style="background-color: #3C201A;">
+		<div class="container">
+			<div id="header-wrapper">
+				<div class="logo">
+					<a href="#home"><img src="../images/logo-pizza.png" alt="logo"></a>
+				</div>
+				<div class="links-pizzas-drinks">
+					<a href="#section-drinks"><p>перейти к напиткам</p><img src="../images/coctail-8.png" alt=""></a>				
+					<a href="#section-pizzas"><p>перейти к пицам</p><img src="../images/pizza-link.png" alt=""></a>
+				</div>
+				<div class="block-social">
+						<a href="https://www.facebook.com/pizza.bravissimo" target="_blank"><p>мы в <br/>фейсбуке</p><img src="../images/facebook.png" alt=""></a>
+				</div>
+				<div class="block-tel">
+					<a href="tel:+380685957172">+38 (068) 595 71 72</a>
+					<a href="tel:+380660829029">+38 (066) 082 90 29</a>
+					<a href="tel:+380730703900">+38 (073) 070 39 00</a>
+				</div>
+			</div>
+		</div>
+	</header>
 	<div class="wrapper_content">
 		<div class="middle clearfix">
 			<section class="home-content" id="home">
@@ -90,9 +123,8 @@
 
 						<!-- ---PopAp--- -->
 						<div id="form-popap">
-							<p>Напишите, что вы хотите заказать, свое имя, номер телефона и мы свяжемся с Вами в ближайшее время</p>
+							<p>Напишите свое имя и номер телефона и мы свяжемся с Вами в ближайшее время</p>
 						<form action="">
-							<input type="text" placeholder="Напишите ваш заказ">
 							<input type="text" placeholder="Имя">
 							<input type="text" placeholder="Номер телефона">
 							<button>Отправить</button>
@@ -528,4 +560,17 @@
 		</div>
 	</div>
 </div>
-//= templates/footer.html
+	<footer class="footer clearfix" style="background-color: #3C201A;">
+		<div class="footer_content container">
+			<div class="wrapper-footer">
+				<p>&copy; Copyright 2017-2019 Bravissimopizza</p>
+			</div>
+		</div>
+	</footer>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyAsgajRdZv5H2LGoHO8BXbyVZq2CLMZNxE"></script> -->
+	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+	<script src="../js/main.js"></script>
+</body>
+</html>
