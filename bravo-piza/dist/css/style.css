@@ -688,9 +688,9 @@ h2, h3, h4 {
         padding-top: 40px;
         width: 170px;
         right: -20px;
-        -webkit-transition: .4s ease-out;
-        -o-transition: .4s ease-out;
-        transition: .4s ease-out; }
+        -webkit-transition: .2s ease-out;
+        -o-transition: .2s ease-out;
+        transition: .2s ease-out; }
         .header #header-wrapper .block-phones .numbers-phones .wrap-border {
           padding: 15px 5px; }
           @media (max-width: 500px) {
