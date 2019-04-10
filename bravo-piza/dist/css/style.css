@@ -685,6 +685,7 @@ h2, h3, h4 {
       .header #header-wrapper .block-phones .numbers-phones {
         display: none;
         position: absolute;
+        padding-top: 40px;
         width: 170px;
         right: -20px;
         -webkit-transition: .4s ease-in-out;
