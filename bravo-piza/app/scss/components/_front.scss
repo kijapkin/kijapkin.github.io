@@ -58,14 +58,9 @@
 							font-family: 'Pacifico', cursive;
 							transition: .3s;
 							text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-							@media (max-width: 440px) {
+							transform: scale(1.1) rotate(-5deg);
+							@media (max-width: 490px) {
 								font-size: 50px;
-							}
-							&:hover{
-								transform: scale(1.1) rotate(-5deg);
-								@media (max-width: 768px) {
-									transform: none;
-								}
 							}
 						}
 						&:nth-child(3){
@@ -90,7 +85,7 @@
 							transition: 1s ease-in-out;
 						}
 						&:last-child img:hover{
-							transform: rotate(160deg);
+							transform: rotate(90deg);
 						}
 						img{
 							height: 140px;
@@ -138,6 +133,26 @@
 				.delivery{
 					margin-top: 50px;
 				}
+				.block-social{
+					margin-top: 50px;
+					a{
+						display: inline-grid;
+						grid-template-columns: 70px auto;
+						p{
+							font-family: 'Indie Flower', cursive;
+							align-self: center;
+							text-align: left;
+							color: #475993;
+							line-height: 14px;
+							user-select: none;
+						}
+						img{
+							width: 50px;
+							height: 50px;
+							transition: .1s;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -171,7 +186,7 @@
 						align-items: center;
 						justify-items: center;
 						padding: 10px;
-						margin-top: 20px;
+						margin-top: 10px;
 						cursor: pointer;
 						user-select: none;
 						transition: .3s;
@@ -225,7 +240,7 @@
 		.button-order-now{
 			width: 150px;
 			height: 150px;
-			margin: 70px auto 0;
+			margin: 20px auto 0;
 			background-size: cover;
 			border-radius: 50%;
 			align-items: center;
@@ -247,7 +262,7 @@
 		}
 
 		// ***PopUp*** //
-		#form-popap{
+		.form-popup{
 			display: none;
 			min-width: 300px;
 			max-width: 500px;
@@ -255,7 +270,7 @@
 			border: 1px solid #ccc;
 			border-radius: 15px;
 			margin: 0 auto;
-			padding: 25px;
+			padding: 20px;
 			position: fixed;
 			z-index: 9999;
 			top: 250px;
@@ -270,8 +285,9 @@
 			}
 			p{
 				font-family: 'Pacifico', cursive;
-				font-size: 24px;
+				font-size: 20px;
 				margin-bottom: 10px;
+				line-height: 20px;
 			}
 			form{
 				display: grid;
@@ -312,12 +328,18 @@
 			}
 		}
 
+		.popup-2{
+			top: 550px;
+			display: grid;
+			display: none;
+		}
+
 		// ************PIZZAS********** //
 
 		.block-pizzas,
 		.block-drinks{
 			h2{
-				padding-top: 100px;
+				padding-top: 80px;
 				font-size: 40px;
 				font-weight: normal;
 			    font-style: italic;
@@ -330,7 +352,7 @@
 			}
 			.pizzas-prices,
 			.drinks-prices{
-				margin-top: 70px;
+				margin-top: 30px;
 				display: grid;
 				grid-template-columns: auto auto;
 				grid-gap: 50px 20px;
@@ -346,7 +368,7 @@
 					@media (max-width: 500px) {
 						grid-template-columns: 290px;
 						grid-template-rows: auto 160px;
-						grid-row-gap: 20px;
+						grid-row-gap: 10px;
 					}
 					&:hover img{
 						transform: rotate(90deg);
