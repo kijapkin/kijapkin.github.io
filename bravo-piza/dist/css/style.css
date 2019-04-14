@@ -949,7 +949,7 @@ h2, h3, h4 {
         margin-bottom: 20px; }
         @media (max-width: 450px) {
           .home-content .main-content .news-articles h2 {
-            font-size: 32px; } }
+            font-size: 40px; } }
       .home-content .main-content .news-articles .block-news-articles {
         border: 1px solid #fff;
         -webkit-border-radius: 5px;
