@@ -5,8 +5,8 @@ let popup 			= document.getElementById('formPopup'),
 	popupButton.onclick = function(){
 		popup.style.display="block";
 	};
-	window.onclick = function (event) {
-		if(event.target == popup){
+	window.onclick = function(e){
+		if(e.target==popup){
 			popup.style.display="none";
 		}
 	}
