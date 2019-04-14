@@ -203,7 +203,6 @@
 		padding: 40px 0;
 		border-bottom: 2px solid red;
 		.block-scheme-working{
-			// padding-bottom: 70px;
 			h2{
 				font-size: 40px;
 				font-weight: normal;
@@ -278,8 +277,6 @@
 				}
 			}
 		}
-		// ***form*** //
-
 		// ***PopUp*** //
 		#formPopup{
 			display: none;
@@ -327,13 +324,10 @@
 				}
 				button{
 					border: none;
-					padding: 10px 40px;
+					padding: 6px 0;
 					background-color: #FF1734;
-					border-radius: 5px;
+					border-radius:  0 0 10px 10px;
 					transition: .1s;
-					@media (max-width: 678px) {
-						margin-top: 10px;
-					}
 					&:hover{
 						box-shadow: 0 0 10px #fff;
 					}
