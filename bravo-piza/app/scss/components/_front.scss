@@ -7,6 +7,7 @@
 	.block-main-text{
 		background-color: rgba(0,0,0,.4);
 		border-bottom: 2px solid red;
+
 		// ****popupButton****
 		#popupButton{
 			position: fixed;
@@ -21,6 +22,7 @@
 			transition: .1s;
 			cursor: pointer;
 			user-select: none;
+			box-shadow: 0 0 20px #000;
 			@media (max-width: 650px) {
 				width: 80px;
 				height: 80px;
