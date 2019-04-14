@@ -901,7 +901,11 @@ h2, h3, h4 {
         .home-content .block-main-text .container .right-block .delivery {
           margin-top: 50px; }
         .home-content .block-main-text .container .right-block .block-social {
-          margin-top: 50px; }
+          margin-top: 50px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
           .home-content .block-main-text .container .right-block .block-social a {
             padding-right: 22px;
             -webkit-border-radius: 10px;
