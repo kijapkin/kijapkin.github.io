@@ -933,6 +933,24 @@ h2, h3, h4 {
     text-align: center;
     padding: 40px 0;
     border-bottom: 2px solid red; }
+    .home-content .main-content .news-articles {
+      margin-bottom: 40px; }
+      .home-content .main-content .news-articles h2 {
+        font-size: 50px;
+        font-weight: normal;
+        font-style: italic;
+        font-family: 'Pacifico', cursive;
+        margin-bottom: 20px; }
+        @media (max-width: 450px) {
+          .home-content .main-content .news-articles h2 {
+            font-size: 32px; } }
+      .home-content .main-content .news-articles .block-news-articles {
+        border: 1px solid #fff;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        min-height: 100px;
+        padding: 20px;
+        text-align: justify; }
     .home-content .main-content .block-scheme-working h2 {
       font-size: 40px;
       font-weight: normal;
