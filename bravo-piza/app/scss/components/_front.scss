@@ -44,6 +44,17 @@
 				}
 			}
 		}
+		// ****QR****
+		.img-qr{
+			position: fixed;
+			@media (max-width: 600px) {
+				display: none;
+			}
+			img{
+				width: 80px;
+				height: 80px;
+			}
+		}
 		.container{
 			padding: 40px 0;
 			display: grid;
