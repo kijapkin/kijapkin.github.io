@@ -1,15 +1,36 @@
 .footer {
 	width: 100%;
-	margin: -135px auto 0;
-	height: 135px;
+	margin: -235px auto 0;
+	height: 235px;
 	position: relative;
 	display: grid;
 	align-items: center;
 	.wrapper-footer{
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		grid-template-columns: auto auto auto;
+		grid-column-gap: 40px;
+		@media (max-width: 867px) {
+			grid-template-columns: auto;
+			grid-row-gap: 30px;
+			text-align: center;
+		}
+		.footer-adress h4,
+		.footer-adress p,{
+			text-align: left;
+			@media (max-width: 867px) {
+				text-align: center;
+			}
+		}
 		p{
 			text-align: center;
 			color: #fff;
 			font-size: 11px;
+		}
+		.footer-shedule h4,
+		.footer-shedule p{
+			text-align: center;
 		}
 	}
 }

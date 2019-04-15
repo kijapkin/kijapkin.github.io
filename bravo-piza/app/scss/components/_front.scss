@@ -530,7 +530,7 @@
 			}
 		}
 		.qr-code{
-			// background-color: #444;
+			user-select: none;
 			text-align: center;
 			max-width: 390px;
 			height: 151px;
@@ -569,7 +569,7 @@
 				@media (max-width: 380px) {
 					text-align: center;
 				}
-				span:first-child{
+				a{
 					color: #248100;
 					font-weight: bold;
 				}

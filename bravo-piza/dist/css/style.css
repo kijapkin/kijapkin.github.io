@@ -405,7 +405,7 @@ th {
   padding: 0; }
 
 .middle {
-  padding-bottom: 135px; }
+  padding-bottom: 235px; }
 
 html {
   height: 100%; }
@@ -1383,6 +1383,10 @@ h2, h3, h4 {
         -webkit-border-radius: 0;
         border-radius: 0; }
     .home-content .main-content .qr-code {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
       text-align: center;
       max-width: 390px;
       height: 151px;
@@ -1424,21 +1428,48 @@ h2, h3, h4 {
         @media (max-width: 380px) {
           .home-content .main-content .qr-code p {
             text-align: center; } }
-        .home-content .main-content .qr-code p span:first-child {
+        .home-content .main-content .qr-code p a {
           color: #248100;
           font-weight: bold; }
 
 .footer {
   width: 100%;
-  margin: -135px auto 0;
-  height: 135px;
+  margin: -235px auto 0;
+  height: 235px;
   position: relative;
   display: grid;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
-  .footer .wrapper-footer p {
-    text-align: center;
-    color: #fff;
-    font-size: 11px; }
+  .footer .wrapper-footer {
+    display: grid;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 40px; }
+    @media (max-width: 867px) {
+      .footer .wrapper-footer {
+        grid-template-columns: auto;
+        grid-row-gap: 30px;
+        text-align: center; } }
+    .footer .wrapper-footer .footer-adress h4,
+    .footer .wrapper-footer .footer-adress p {
+      text-align: left; }
+      @media (max-width: 867px) {
+        .footer .wrapper-footer .footer-adress h4,
+        .footer .wrapper-footer .footer-adress p {
+          text-align: center; } }
+    .footer .wrapper-footer p {
+      text-align: center;
+      color: #fff;
+      font-size: 11px; }
+    .footer .wrapper-footer .footer-shedule h4,
+    .footer .wrapper-footer .footer-shedule p {
+      text-align: center; }
