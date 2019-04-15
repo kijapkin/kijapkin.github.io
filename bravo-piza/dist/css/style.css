@@ -1457,7 +1457,7 @@ h2, h3, h4 {
     @media (max-width: 867px) {
       .footer .wrapper-footer {
         grid-template-columns: auto;
-        grid-row-gap: 30px;
+        grid-row-gap: 20px;
         text-align: center; } }
     .footer .wrapper-footer .footer-adress h4,
     .footer .wrapper-footer .footer-adress p {
