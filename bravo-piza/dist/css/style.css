@@ -1453,7 +1453,7 @@ h2, h3, h4 {
     -ms-flex-pack: center;
     justify-content: center;
     grid-template-columns: auto auto auto;
-    grid-column-gap: 40px; }
+    grid-column-gap: 38px; }
     @media (max-width: 867px) {
       .footer .wrapper-footer {
         grid-template-columns: auto;
