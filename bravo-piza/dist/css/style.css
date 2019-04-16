@@ -732,6 +732,85 @@ h2, h3, h4 {
   .home-content .block-main-text {
     background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 2px solid red; }
+    .home-content .block-main-text #formPopup {
+      display: none;
+      min-width: 300px;
+      max-width: 500px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 1px solid #ccc;
+      -webkit-border-radius: 15px;
+      border-radius: 15px;
+      margin: 0 auto;
+      padding: 20px;
+      position: fixed;
+      z-index: 9999;
+      top: 250px;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      @media (max-width: 678px) {
+        .home-content .block-main-text #formPopup {
+          -webkit-transform: none;
+          -ms-transform: none;
+          transform: none;
+          top: 80px;
+          left: 0;
+          right: 0;
+          padding: 10px; } }
+      .home-content .block-main-text #formPopup .toogleClose {
+        display: grid;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: right;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        right: 5px;
+        top: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid #fff; }
+      .home-content .block-main-text #formPopup p {
+        font-family: 'Pacifico', cursive;
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 20px; }
+      .home-content .block-main-text #formPopup form {
+        display: grid;
+        grid-gap: 5px; }
+        .home-content .block-main-text #formPopup form textarea {
+          resize: none;
+          color: #000;
+          padding: 6px;
+          text-align: center; }
+        .home-content .block-main-text #formPopup form input {
+          background-color: #fff;
+          padding: 5px 0;
+          color: #000;
+          text-align: center; }
+          @media (max-width: 678px) {
+            .home-content .block-main-text #formPopup form input {
+              padding: 3px 0; } }
+        .home-content .block-main-text #formPopup form button {
+          border: none;
+          padding: 6px 0;
+          background-color: #FF1734;
+          -webkit-border-radius: 0 0 10px 10px;
+          border-radius: 0 0 10px 10px;
+          -webkit-transition: .1s;
+          -o-transition: .1s;
+          transition: .1s; }
+          .home-content .block-main-text #formPopup form button:hover {
+            -webkit-box-shadow: 0 0 10px #fff;
+            box-shadow: 0 0 10px #fff; }
+          .home-content .block-main-text #formPopup form button:active {
+            -webkit-transform: scale(0.98);
+            -ms-transform: scale(0.98);
+            transform: scale(0.98); }
     .home-content .block-main-text #popupButton {
       position: fixed;
       z-index: 9000;
@@ -966,6 +1045,10 @@ h2, h3, h4 {
         min-height: 100px;
         padding: 20px;
         text-align: justify; }
+        .home-content .main-content .news-articles .block-news-articles img {
+          max-width: 300px;
+          float: left;
+          padding-right: 10px; }
     .home-content .main-content .block-scheme-working h2 {
       font-size: 40px;
       font-weight: normal;
@@ -1052,82 +1135,6 @@ h2, h3, h4 {
               -moz-user-select: none;
               -ms-user-select: none;
               user-select: none; }
-    .home-content .main-content #formPopup {
-      display: none;
-      min-width: 300px;
-      max-width: 500px;
-      background-color: rgba(0, 0, 0, 0.8);
-      border: 1px solid #ccc;
-      -webkit-border-radius: 15px;
-      border-radius: 15px;
-      margin: 0 auto;
-      padding: 20px;
-      position: fixed;
-      z-index: 9999;
-      top: 250px;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
-      @media (max-width: 678px) {
-        .home-content .main-content #formPopup {
-          -webkit-transform: none;
-          -ms-transform: none;
-          transform: none;
-          top: 80px;
-          left: 0;
-          right: 0;
-          padding: 10px; } }
-      .home-content .main-content #formPopup .toogleClose {
-        display: grid;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        text-align: right;
-        padding: 7px;
-        position: absolute;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        right: 0px;
-        top: 0px; }
-      .home-content .main-content #formPopup p {
-        font-family: 'Pacifico', cursive;
-        font-size: 20px;
-        margin-bottom: 10px;
-        line-height: 20px; }
-      .home-content .main-content #formPopup form {
-        display: grid;
-        grid-gap: 5px; }
-        .home-content .main-content #formPopup form textarea {
-          resize: none;
-          color: #000;
-          padding: 6px;
-          text-align: center; }
-        .home-content .main-content #formPopup form input {
-          background-color: #fff;
-          padding: 5px 0;
-          color: #000;
-          text-align: center; }
-          @media (max-width: 678px) {
-            .home-content .main-content #formPopup form input {
-              padding: 3px 0; } }
-        .home-content .main-content #formPopup form button {
-          border: none;
-          padding: 6px 0;
-          background-color: #FF1734;
-          -webkit-border-radius: 0 0 10px 10px;
-          border-radius: 0 0 10px 10px;
-          -webkit-transition: .1s;
-          -o-transition: .1s;
-          transition: .1s; }
-          .home-content .main-content #formPopup form button:hover {
-            -webkit-box-shadow: 0 0 10px #fff;
-            box-shadow: 0 0 10px #fff; }
-          .home-content .main-content #formPopup form button:active {
-            -webkit-transform: scale(0.98);
-            -ms-transform: scale(0.98);
-            transform: scale(0.98); }
     .home-content .main-content .block-pizzas h2,
     .home-content .main-content .block-drinks h2 {
       padding-top: 80px;
