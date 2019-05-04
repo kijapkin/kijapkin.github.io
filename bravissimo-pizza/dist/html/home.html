@@ -17,19 +17,30 @@
 		<div class="container">
 			<div id="header-wrapper">
 				<div class="logo">
-					<a href="#home"><img src="../images/logo-pizza.png" alt="logo"></a>
+					<a href="#home"><img src="../images/logo-pizza-2.png" alt="logo"></a>
 				</div>
 				<div class="links-pizzas-drinks">
 					<a href="#section-drinks"><p>перейти к напиткам</p><img src="../images/coctail-8.png" alt=""></a>				
 					<a href="#section-pizzas"><p>перейти к пицам</p><img src="../images/pizza-link.png" alt=""></a>
 				</div>
 				<div class="block-social">
-						<a href="https://www.facebook.com/pizza.bravissimo" target="_blank"><p>мы в <br/>фейсбуке</p><img src="../images/facebook.png" alt=""></a>
+					<a href="https://www.facebook.com/pizza.bravissimo" target="_blank">
+						<p>мы в фейсбуке</p>
+						<img src="../images/facebook.png" alt="">
+					</a>
 				</div>
-				<div class="block-tel">
-					<a href="tel:+380685957172">+38 (068) 595 71 72</a>
-					<a href="tel:+380660829029">+38 (066) 082 90 29</a>
-					<a href="tel:+380730703900">+38 (073) 070 39 00</a>
+				<div class="block-phones">
+					<div class="img-phone">
+						<p>позвоните сейчас</p>
+						<img src="../images/smartphone.png" alt="">
+					</div>
+					<div class="numbers-phones">
+						<div class="wrap-border">
+							<a href="tel:+380685957172">+38 (068) 595 71 72</a>
+							<a href="tel:+380660829029">+38 (066) 082 90 29</a>
+							<a href="tel:+380730703900">+38 (073) 070 39 00</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -39,6 +50,25 @@
 			<section class="home-content" id="home">
 				<div class="top-home-strip" style="background-image: url(../images/bg-img.jpg); width: 100%; height: 100%; background-size: cover; background-position: bottom center; background-repeat: no-repeat;"></div>
 				<div class="block-main-text">
+
+					<!-- ---formPopup--- -->
+					<div id="formPopup">
+						<div class="toogleClose">&#10060;</div>
+						<p>Напишите, что вы хотите заказать, свое имя и номер телефона и мы свяжемся с Вами в ближайшее время</p>
+						<form action="">
+							<textarea name="" id="text-order" cols="30" rows="2" placeholder="Напишите ваш заказ"></textarea>
+							<input type="text" placeholder="Имя">
+							<input type="text" placeholder="Номер телефона">
+							<button>Отправить</button>
+						</form>
+					</div>
+
+					<!-- ---popupButton--- -->
+					<div id="popupButton" style="background-image: url(../images/form.jpg);">
+						<a href="#">Заказать<br>сейчас</a>
+					</div>
+					<!-- -----qr----- -->
+					<div class="img-qr"><img src="../images/qr.jpg" alt=""></div>
 					<div class="container">
 						<div class="left-block">
 							<div class="lang">
@@ -72,11 +102,26 @@
 								<h4>Доставка:</h4>
 								<p>Стоимость доставки уточняйте при заказе по указанным телефонам</p>
 							</div>
+							<div class="block-social">
+								<a href="https://www.facebook.com/pizza.bravissimo" target="_blank">
+									<img src="../images/facebook.png" alt="">
+									<p>мы в фейсбуке</p>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="main-content" style="background-color: #3C201A;">
 					<div class="container">
+
+						<!-- -----NEWS-ARTICLES----- -->
+						<div class="news-articles">
+							<h2>Новости и Акции</h2>
+							<div class="block-news-articles">
+								<img src="../images/bg-img.jpg" alt="">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi aliquid vero, culpa eum numquam, facere provident hic eveniet explicabo repellat nisi maiores in quis blanditiis sit dignissimos beatae amet. Porro minus consectetur reiciendis. Vitae vero earum esse ullam quod dolore, nemo quas amet nisi aliquid deserunt maiores, nam dignissimos alias quos voluptates officia! Quae aperiam suscipit accusamus culpa fuga velit obcaecati deserunt soluta, corrupti aliquid repudiandae dicta nam minima possimus ratione tenetur, debitis error libero odio, similique accusantium adipisci rem voluptatum. Autem aperiam deleniti amet non optio consectetur nesciunt, quidem ipsam ratione omnis praesentium sint quas blanditiis nisi quibusdam reprehenderit error dicta! Animi, officia non sequi deserunt dicta! Suscipit esse voluptatibus, ad, soluta quasi tempore id exercitationem ullam aliquid magnam architecto. Labore quia, aliquid consequatur eaque, ducimus tenetur veritatis tempore repudiandae, facilis amet, qui sint optio illo beatae doloremque doloribus corporis modi recusandae ab corrupti eligendi. Aspernatur totam necessitatibus sequi, provident nostrum! Atque id quas veritatis consequuntur quo obcaecati fugit distinctio nisi nulla. Officiis est blanditiis, maiores. Voluptatem dolorum consectetur unde explicabo impedit. Quis deserunt ducimus ex dolor, culpa blanditiis sed omnis iste animi nobis, quaerat quo qui. Perferendis placeat mollitia magnam nam praesentium tempora similique sit nostrum ratione.</p>
+							</div>
+						</div>
 
 						<!-- -----WORKING----- -->
 						<div class="block-scheme-working">
@@ -114,21 +159,6 @@
 									<p>1 литр - 28 грн</p>
 								</div>
 							</div>
-						</div>
-
-						<!-- ---form--- -->
-						<div class="button-order-now" style="background-image: url(../images/form.jpg);">
-							<a href="#">Заказать<br>сейчас</a>
-						</div>
-
-						<!-- ---PopAp--- -->
-						<div id="form-popap">
-							<p>Напишите свое имя и номер телефона и мы свяжемся с Вами в ближайшее время</p>
-						<form action="">
-							<input type="text" placeholder="Имя">
-							<input type="text" placeholder="Номер телефона">
-							<button>Отправить</button>
-						</form>
 						</div>
 
 						<!-- -----PIZZAS----- -->
@@ -408,12 +438,6 @@
 								<p>Огурцы маринованные / 50 г - 7 грн</p>
 							</div>
 						</div>
-
-						<!-- ---button-order-now--- -->
-						<div class="button-order-now" style="background-image: url(../images/form.jpg);">
-							<a href="#">Заказать<br>сейчас</a>
-						</div>
-
 						<!-- -----DRINKS----- -->
 						<div class="block-drinks" id="section-drinks">
 							<h2>Прохладительные напитки</h2>
@@ -548,12 +572,12 @@
 								</div>
 							</div>
 						</div>
-
-						<!-- ---button-order-now--- -->
-						<div class="button-order-now" style="background-image: url(../images/form.jpg);">
-							<a href="#">Заказать<br>сейчас</a>
+						<!-- -----QR-CODE----- -->
+						<div class="qr-code">
+							<div class="img-qr"><img src="../images/qr.jpg" alt="qr-code"></div>
+							<p>Вы можете оплатить заказ через <a href="https://privatbank.ua/ru/udalenniy-banking/privat24" target="_blank">Приват 24</a> воспользововшись QR-кодом</p>
 						</div>
-
+						</div>
 					</div>
 				</div>
 			</section>
@@ -563,7 +587,19 @@
 	<footer class="footer clearfix" style="background-color: #3C201A;">
 		<div class="footer_content container">
 			<div class="wrapper-footer">
+				<div class="shedule footer-shedule">
+					<h4>Время работы:</h4>
+					<p>Пн. - Пт. 11.00 - 21.30</p>
+					<p>Сб.  - Вс. 10.00 - 21.30</p>
+				</div>
 				<p>&copy; Copyright 2017-2019 Bravissimopizza</p>
+				<div class="adress footer-adress">
+					<h4>Адрес:</h4>
+					<p>пгт. Калиновка,</p>
+					<p>Васильковский  р-н,</p>
+					<p>Киевская область,</p>
+					<p>ул. Центральная, 36</p>
+				</div>
 			</div>
 		</div>
 	</footer>

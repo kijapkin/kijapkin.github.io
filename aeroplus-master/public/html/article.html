@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>aeroplus</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="shortcut icon" href="/images/favicon.png" type="image/png"> -->
+		<link rel="stylesheet" href="../css/fontawesome.css">
+		<link rel="stylesheet" href="../css/slick.css">
+		<link rel="stylesheet" href="../css/slick-theme.css">
+		<link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+
+		<link rel="stylesheet" href="../css/jquery.formstyler.css">
+		<link rel="stylesheet" href="../css/jquery.formstyler.theme.css">
+		
+		<link rel="stylesheet" href="../css/style.css">
+
+	</head>
+	<bod>
+<header class = "home-header-wrap">
+	<div class="home-header">
+		<div class="container">
+			<div class="header-content">
+				<div class="header-logotipe">
+					<img src="../images/header-logo.png" alt="">
+				</div>
+				<div class="menu-mini">
+					<i class="fas fa-bars">
+						<div class="count-loved-round"></div>
+					</i>
+				</div>
+				<div class="menu-search-favorite-cabinet">
+					<div class="header-search-favorite-cabinet">
+						<form action="search" method="POST" id="header-search">
+							<input id="autocomplete" type="type" placeholder="Я шукаю: кондиціонер">
+							<button></button>
+							<div class="clear"></div>
+							<div class="open-search-list" style = "display: none;">
+								<ul>
+									<li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/36" id="ui-id-2" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-3" tabindex="-1"><img src="/images/img_description.jpg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-4" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">175 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/44" id="ui-id-5" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-6" tabindex="-1"><img src="/uploads/1/2019-01/f4t1dcmHeVdWMFr6EyhGh0pbHmFYbxiZSIIUOneI.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-7" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">1000 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/46" id="ui-id-8" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-9" tabindex="-1"><img src="/uploads/1/2019-01/SmRgdsyHAFxPJT0g7zVdySAsUVCi1GwRcEweBra8.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-10" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">6540 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/47" id="ui-id-11" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-12" tabindex="-1"><img src="/uploads/1/2019-01/VLroABnpsygsFj35yDyaKKM7osIxshPo9g3K07hT.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-13" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">5000 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/49" id="ui-id-14" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-15" tabindex="-1"><img src="/uploads/1/2019-01/ozPDGLFazDfPRalPlgxGhdt8HXVJWEF40HGUB8BP.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-16" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">1580 грн.</div></div></li>
+								</ul>
+							</div>
+							<div class="header-empty-search" style = "opacity: 0">
+								<div class="image-block">
+									<div class="search-blue"></div>
+								</div>
+								<div class="text">По вашому запиту нічого не знайдено</div>
+							</div> 
+						</form>
+						<div class="favorite-cabinet">
+							<div class="cabinet">
+								<a href="#" data-text= "Кабінет">
+									<i class="fas fa-user"></i>
+								</a>
+							</div>
+							<div class="favorite">
+								<a href="#" data-text= "Улюблені">
+									<i class="far fa-heart">
+										<div class="count-loved-round"></div>
+									</i>
+								</a>
+								<div class="drop-down-favorite" id = "show-favorite">
+									<div class="triangle"></div>
+										<div class="list-block">
+											<!-- блок показу улюблені -->
+											<div class="none-products hidden">
+												<i class = "like-icon"></i><span>Немає збережених товарів</span>
+											</div>
+											<div class="drop-down-list-favorite hidden">
+												<ul>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+												</ul>
+												<div class="bootm-text">
+													<span>Додано в улюблені</span>
+												</div>
+											</div>
+											<!-- блок показу улюблені -->
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<ul class="main-menu">
+						<li class = "active"><a href="#">Наші послуги</a></li>
+						<li>
+							<a href="#">Товари</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li>
+							<a href="#">Галарея</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li>
+							<a href="#">Про нас</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+<div class="wrapper" id = "body-top">
+	<main>
+		<article class="article">
+			<div class="container">
+				<section class="title-text-photo">
+					<div class="date-title-text-soc">
+						<div class="date">22 Січня, 2019</div>
+						<h1>Заголовок статті на один два рядка</h1>
+						<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись. Вже давно відомо, що читабельний зміст буде заважати зосередитись…</p>
+						<div class="soc-list">
+							<span>Поділитися на Facebook</span>
+							<ul>
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+								<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="photo-wrap" style="background-image: url('../images/article-photo-top.jpg')"></div>
+				</section>
+			</div>
+			<div class="container-article">
+				<div class="article-content">
+					<p>Існує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт жартівливих вставок або змішування слів, які навіть не виглядають правдоподібно. Якщо ви збираєтесь використовувати Lorem Ipsum, ви маєте упевнитись в тому, що всередині тексту не приховано нічого, що могло б викликати у читача конфуз. Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед заданих послідовностей Lorem Ipsum. Принципова відмінність цього генератора робить його першим справжнім генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини та цілий набір моделей речень - це дозволяє генерувати Lorem Ipsum, який виглядає осмислено. Таким чином, згенерований Lorem Ipsum не міститиме повторів, жартів, нехарактерних для латини слів і т.ін.</p>
+					<img src="../images/article_photo_1.jpg" alt="Опис для одної картинки">
+					<h6 class="title-image">Опис для одної картинки</h6>
+					<h2>Заголовок</h2>
+					<p>Існує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт жартівливих вставок або змішування слів, які навіть не виглядають правдоподібно. Якщо ви збираєтесь використовувати Lorem Ipsum, ви маєте упевнитись в тому, що всередині тексту не приховано нічого, що могло б викликати у читача конфуз. Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед заданих послідовностей Lorem Ipsum. Принципова відмінність цього генератора робить його першим справжнім генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини та цілий набір моделей речень - це дозволяє генерувати Lorem Ipsum, який виглядає осмислено. Таким чином, згенерований Lorem Ipsum не міститиме повторів, жартів, нехарактерних для латини слів і т.ін. Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед заданих послідовностей Lorem Ipsum. Принципова відмінність цього генератора робить його першим справжнім генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини та цілий набір моделей речень - це дозволяє генерувати Lorem Ipsum, який виглядає осмислено. Таким чином, згенерований Lorem Ipsum не міститиме повторів, жартів, нехарактерних для латини слів і т.ін.</p>
+					<p>Існує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт жартівливих вставок або змішування слів, які навіть не виглядають правдоподібно. Якщо ви збираєтесь використовувати Lorem Ipsum, ви маєте упевнитись в тому, що всередині тексту не приховано нічого, що могло б викликати у читача конфуз. Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед заданих послідовностей Lorem Ipsum.</p>
+					<div class="image-two-wrap">
+						<div class="image-two">
+							<div class="img-block">
+								<img src="../images/article_two_1.jpg" alt="">
+								<h6 class="title-image">Опис для одної картинки на один <br>або два рядки</h6>
+							</div>
+							<div class="img-block">
+								<img src="../images/article_two_1.jpg" alt="">
+								<h6 class="title-image">Опис для одної картинки на один <br>або два рядки</h6>
+							</div>
+						</div>
+					</div>
+					<p>Існує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт жартівливих вставок або змішування слів, які навіть не виглядають правдоподібно. Якщо ви збираєтесь використовувати Lorem Ipsum, ви маєте упевнитись в тому, що всередині тексту не приховано нічого, що могло б викликати у читача конфуз. Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед заданих послідовностей Lorem Ipsum.</p>
+					<section class="section-text-one-gallery">
+						<div class="text-one-gallery">
+							<div class="one-gallery" data-speed = "5000"> <!--data-count - вказати кількість зображень -->
+								<div class="image">
+									<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 1">
+								</div>
+								<div class="image">
+									<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 2">
+								</div>
+								<div class="image">
+									<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 3">
+								</div>
+								<div class="image">
+									<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 4">
+								</div>
+								<div class="image">
+									<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 5">
+								</div>
+								<div class="image">
+									<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 6">
+								</div>
+								<div class="image">
+									<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 7">
+								</div>
+								<div class="image">
+									<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 8">
+								</div>
+								<div class="image">
+									<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 9">
+								</div>
+								<div class="image">
+									<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 10">
+								</div>
+								<div class="image">
+									<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 11">
+								</div>
+							</div>
+							<div class="one-gallery-settings">
+									<div class="count">
+										<span class="current">01</span> / 
+										<span class="total-number">00</span> 
+									</div>
+									<div class="position">
+										<span class="line"></span>
+									</div>
+									<div class="control">
+										<span class="prev"></span>
+										<span class="next"></span>
+									</div>
+							</div>
+							<div class="name-image-active">
+								<span>Заголовок до фотогфафії 1</span>
+							</div>
+						</div>
+					</section>
+					<p>Існує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт жартівливих вставок або змішування слів, які навіть не виглядають правдоподібно. Якщо ви збираєтесь використовувати Lorem Ipsum, ви маєте упевнитись в тому, що всередині тексту не приховано нічого, що могло б викликати у читача конфуз. Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед заданих послідовностей Lorem Ipsum. Принципова відмінність цього генератора робить його першим справжнім генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини та цілий набір моделей речень - це дозволяє генерувати Lorem Ipsum, який виглядає осмислено. Таким чином, згенерований Lorem Ipsum не міститиме повторів, жартів, нехарактерних для латини слів і т.ін. Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед заданих послідовностей Lorem Ipsum. Принципова відмінність цього генератора робить його першим справжнім генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини та цілий набір моделей речень - це дозволяє генерувати Lorem Ipsum, який виглядає осмислено. Таким чином, згенерований Lorem Ipsum не міститиме повторів, жартів, нехарактерних для латини слів і т.ін.</p>
+				</div>
+			</div>
+			<div class="drop_up">
+				<a href = "#body-top" class="round scrollto" id = "drop_up">&#8249</a>
+			</div>
+		</article>
+		
+	</main>
+
+</div>
+		<footer class="footer-wrap">
+		<!-- http://vioagency.com.ua/ -->
+			<div class="container">
+				<div class="footer">
+					<div class="left">
+						<p>Інженерно-монтажна організація Аероплюс. Всі права захищені</p>
+					</div>
+					<div class="right">
+						<span>Розроблено <a class = "hover-line" href="http://vioagency.com.ua/" target="_blanck">VIOagency</a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB55s_HCIM3COosq89bsgJOOVh6fBDTts8"></script>
+		<script src="../js/slick.min.js"></script>
+		<script src="../js/jquery.fancybox.min.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
+		<script src="../js/jquery.validate.min.js"></script>
+		<script src="../js/jquery.formstyler.min.js"></script>
+		<!-- <script src="../js/jquery.ui.touch-punch.min.js"></script> -->
+		
+		<script src="../js/main.js"></script>
+	</body>
+</html>

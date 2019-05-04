@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>aeroplus</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="shortcut icon" href="/images/favicon.png" type="image/png"> -->
+		<link rel="stylesheet" href="../css/fontawesome.css">
+		<link rel="stylesheet" href="../css/slick.css">
+		<link rel="stylesheet" href="../css/slick-theme.css">
+		<link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+
+		<link rel="stylesheet" href="../css/jquery.formstyler.css">
+		<link rel="stylesheet" href="../css/jquery.formstyler.theme.css">
+		
+		<link rel="stylesheet" href="../css/style.css">
+
+	</head>
+	<bod>
+<header class = "home-header-wrap">
+	<div class="home-header">
+		<div class="container">
+			<div class="header-content">
+				<div class="header-logotipe">
+					<img src="../images/header-logo.png" alt="">
+				</div>
+				<div class="menu-mini">
+					<i class="fas fa-bars">
+						<div class="count-loved-round"></div>
+					</i>
+				</div>
+				<div class="menu-search-favorite-cabinet">
+					<div class="header-search-favorite-cabinet">
+						<form action="search" method="POST" id="header-search">
+							<input id="autocomplete" type="type" placeholder="Я шукаю: кондиціонер">
+							<button></button>
+							<div class="clear"></div>
+							<div class="open-search-list" style = "display: none;">
+								<ul>
+									<li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/36" id="ui-id-2" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-3" tabindex="-1"><img src="/images/img_description.jpg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-4" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">175 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/44" id="ui-id-5" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-6" tabindex="-1"><img src="/uploads/1/2019-01/f4t1dcmHeVdWMFr6EyhGh0pbHmFYbxiZSIIUOneI.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-7" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">1000 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/46" id="ui-id-8" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-9" tabindex="-1"><img src="/uploads/1/2019-01/SmRgdsyHAFxPJT0g7zVdySAsUVCi1GwRcEweBra8.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-10" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">6540 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/47" id="ui-id-11" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-12" tabindex="-1"><img src="/uploads/1/2019-01/VLroABnpsygsFj35yDyaKKM7osIxshPo9g3K07hT.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-13" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">5000 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/49" id="ui-id-14" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-15" tabindex="-1"><img src="/uploads/1/2019-01/ozPDGLFazDfPRalPlgxGhdt8HXVJWEF40HGUB8BP.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-16" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">1580 грн.</div></div></li>
+								</ul>
+							</div>
+							<div class="header-empty-search" style = "opacity: 0">
+								<div class="image-block">
+									<div class="search-blue"></div>
+								</div>
+								<div class="text">По вашому запиту нічого не знайдено</div>
+							</div> 
+						</form>
+						<div class="favorite-cabinet">
+							<div class="cabinet">
+								<a href="#" data-text= "Кабінет">
+									<i class="fas fa-user"></i>
+								</a>
+							</div>
+							<div class="favorite">
+								<a href="#" data-text= "Улюблені">
+									<i class="far fa-heart">
+										<div class="count-loved-round"></div>
+									</i>
+								</a>
+								<div class="drop-down-favorite" id = "show-favorite">
+									<div class="triangle"></div>
+										<div class="list-block">
+											<!-- блок показу улюблені -->
+											<div class="none-products hidden">
+												<i class = "like-icon"></i><span>Немає збережених товарів</span>
+											</div>
+											<div class="drop-down-list-favorite hidden">
+												<ul>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+												</ul>
+												<div class="bootm-text">
+													<span>Додано в улюблені</span>
+												</div>
+											</div>
+											<!-- блок показу улюблені -->
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<ul class="main-menu">
+						<li class = "active"><a href="#">Наші послуги</a></li>
+						<li>
+							<a href="#">Товари</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li>
+							<a href="#">Галарея</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li>
+							<a href="#">Про нас</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+<div class="wrapper diamond-drilling">
+	<main class = "page-main-wrap">
+		<div class="container">
+			<aside class = "page-aside-wrap">
+				<div class="aside-title">
+					<h2>Наші послуги</h2>
+					<div class="current-count">
+						<span class="current">1</span> / <span class="count">4</span> <!-- тут потрыбно прописати кылькість блоків у слайдері -->
+					</div>
+				</div>
+				
+				<div class="list-services" data-speed = "4000">
+					<div class="li-block" style="background-image: url('../images/page-conditioning.png')">
+						<div class="li-wrap">
+							<div class="li-title">
+								<span>Кондиціонування</span>
+							</div>
+							<div class="li-linck-wrap">
+								<a href="#" class = "hover-line">Детальніше</a>
+							</div>
+						</div>
+						<a href="#" class = "linck-page"></a> <!-- дублюється попередній лінк  -->
+					</div>
+					<div class="li-block" style="background-image: url('../images/page-ventilation.png')">
+						<div class="li-wrap">
+							<div class="li-title">
+								<span>Вентиляція</span>
+							</div>
+							<div class="li-linck-wrap">
+								<a href="#" class = "hover-line">Детальніше</a>
+							</div>
+						</div>
+						<a href="#" class = "linck-page"></a>
+					</div>
+					<div class="li-block" style="background-image: url('../images/page-heating.png')">
+						<div class="li-wrap">
+							<div class="li-title">
+								<span>Опалення</span>
+							</div>
+							<div class="li-linck-wrap">
+								<a href="#" class = "hover-line">Детальніше</a>
+							</div>
+						</div>
+						<a href="#" class = "linck-page"></a>
+					</div>
+					<div class="li-block active" style="background-image: url('../images/page-diamond-drilling.png')">
+						<div class="li-wrap">
+							<div class="li-title">
+								<span>Алмазне <br>свердління</span>
+							</div>
+							<div class="li-linck-wrap">
+								<a href="#" class = "hover-line">Детальніше</a>
+							</div>
+						</div>
+						<a href="#" class = "linck-page"></a>
+					</div>
+				</div>
+
+				<div class="aside-text-link-blok">
+					<a class = "hover-line" href="#">Сервісне та гарантійне обслуговування</a>
+				</div>
+			</aside>
+			<article class = "page-article-wrap">
+				<section class = "section-title-file-text">
+					<div class="title-file">
+						<title>Алмазне свердління</title>
+						<div class="file">
+							<i class="far fa-file-pdf"></i>
+							<a class = "hover-line" href="#">Розцінки</a>
+						</div>
+					</div>
+					<div class="text">
+						<p>Алмазне свердління – це технологічний процес створення циліндричного отвору в будівельних матеріалах, таких як камінь, бетон, цегла, залізо та інші, із застосуванням алмазного інструменту. Також називається алмазним бурінням і широко застосовується в будівництві.</p>
+					</div>
+				</section>
+				<section class="section-title-round-list">
+					<title>Чому алмазне свердління від Аероплюс</title>
+					<ul>
+						<li>
+							<span>1</span>
+							<div class="li-text">
+								<p>Практикуємо комплексний підхід до інженерних рішень: від проекту до виконання </p>
+							</div>
+						</li>
+						<li>
+							<span>2</span>
+							<div class="li-text">
+								<p>Здійснюємо життєвий супровід готових проектів в Івано-Франківську і області</p>
+							</div>
+						</li>
+						<li>
+							<span>3</span>
+							<div class="li-text">
+								<p>Виконуємо отвори діаметром від 32 мм до 400 мм</p>
+							</div>
+						</li>
+						<li>
+							<span>4</span>
+							<div class="li-text">
+								<p>Гарантуємо якість виконаних робіт</p>
+							</div>
+						</li>
+						<li>
+							<span>5</span>
+							<div class="li-text">
+								<p>Найкраща ціна на алмазне свердління в Івано-Франківську</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="section-feedback-horizon">
+					<span class="title">Скористайтеся перевагами алмазного свердління за доступною ціною. Звертайтеся до нас</span>
+					<form action="" method="POST" id = "feedback-horizon">
+						<div class="input-name-phone">
+							<div class="input">
+								<input 
+									id="username"
+									name="username"
+									type="text"
+									placeholder="Ваше ім'я"
+									data-error = "Введіть ваше ім’я."
+									data-minlenght = "Ваше ім'я закоротке."
+									>
+								<label class="error" for="username"></label>
+							</div>
+							<div class="input">
+								<input 
+									id="phone"
+									name="phone"
+									type="number"
+									placeholder="Номер телефону"
+									data-error = "Введіть ваш номер."
+									data-minlenght = "Не вірний номер."
+									>
+								<label class="error" for="phone"></label>
+							</div>
+						</div>
+						<div class="button-block">
+							<button>Залишити заявку</button>
+							<div class="feedback-server-text"> <!-- при true добавити active -->
+								<span>Ваш запит прийнятий</span>
+							</div>
+						</div>
+					</form>
+				</section>
+			</article>
+		</div>
+	</main>
+
+</div>
+		<footer class="footer-wrap">
+		<!-- http://vioagency.com.ua/ -->
+			<div class="container">
+				<div class="footer">
+					<div class="left">
+						<p>Інженерно-монтажна організація Аероплюс. Всі права захищені</p>
+					</div>
+					<div class="right">
+						<span>Розроблено <a class = "hover-line" href="http://vioagency.com.ua/" target="_blanck">VIOagency</a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB55s_HCIM3COosq89bsgJOOVh6fBDTts8"></script>
+		<script src="../js/slick.min.js"></script>
+		<script src="../js/jquery.fancybox.min.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
+		<script src="../js/jquery.validate.min.js"></script>
+		<script src="../js/jquery.formstyler.min.js"></script>
+		<!-- <script src="../js/jquery.ui.touch-punch.min.js"></script> -->
+		
+		<script src="../js/main.js"></script>
+	</body>
+</html>

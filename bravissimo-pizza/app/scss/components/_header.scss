@@ -1,23 +1,28 @@
 h2,h3,h4{user-select: none};
 .header{
-	padding: 5px 0;
+	padding: 10px 0;
 	color: #fff;
 	border-bottom: 2px solid red;
 	position: fixed;
 	z-index: 8000;
 	width: 100%;
+	user-select: none;
 	#header-wrapper{
 		display: grid;
 		align-items: center;
-		grid-template-columns: 1fr auto 1fr auto;
-		@media (max-width: 500px) {
-			grid-template-columns: auto 1fr auto;
+		align-justify: center;
+		grid-template-columns: auto auto auto auto;
+		grid-column-gap: 20px;
+		@media (max-width: 360px) {
+			grid-gap: 7px;
+			margin-left: -10px;
+			margin-right: -10px;
 		}
 		.logo{
 			a{
 				display: grid;
 				&:hover img{
-					box-shadow: 0 0 5px #fff;
+					box-shadow: 0 0 5px #ccc;
 				}
 				img{
 					display: inline-block;
@@ -30,14 +35,7 @@ h2,h3,h4{user-select: none};
 		.links-pizzas-drinks{
 			display: grid;
 			grid-template-columns: auto auto;
-			grid-column-gap: 16px;
 			align-items: center;
-			@media (max-width: 650px) {
-				padding-left: 20px;
-			}
-			@media (max-width: 500px) {
-				display: none;
-			}
 			a{
 				display: grid;
 				grid-template-columns: auto auto;
@@ -52,9 +50,9 @@ h2,h3,h4{user-select: none};
 					}
 				}
 				p{
-					width: 80px;
+					// width: 80px;
 					text-align: right;
-					margin-right: 6px;
+					margin-right: 8px;
 					font-family: 'Indie Flower', cursive;
 					line-height: 14px;
 					font-weight: normal;
@@ -71,27 +69,29 @@ h2,h3,h4{user-select: none};
 			}
 		}
 		.block-social{
-			justify-self: end;
-			align-self: center;
-			margin-right: 40px;
+			display: grid;
 			@media (max-width: 380px) {
-				display: none;
+				// display: none;
 			}
 			a{
 				display: grid;
+				justify-self: end;
 				grid-template-columns: auto auto;
-				align-items: center;
+
 				&:hover img{
 					transform: scale(1.2);
 				}
 				p{
 					font-family: 'Indie Flower', cursive;
+					align-self: center;
 					text-align: right;
 					color: #475993;
-					line-height: 16px;
-					align-self: center;
+					line-height: 14px;
 					user-select: none;
 					@media (max-width: 650px) {
+						width: 80px;
+					}
+					@media (max-width: 450px) {
 						display: none;
 					}
 				}
@@ -103,26 +103,69 @@ h2,h3,h4{user-select: none};
 				}							
 			}
 		}
-		.block-tel{
+		.block-phones{
 			display: grid;
-			align-self: center;
-			display: inline-grid;
-			grid-column-gap: 20px;
-			@media (max-width: 500px) {
-				justify-items: end;
-			}
-			a{
-				color: #fff;
+			position: relative;
+			&:active .numbers-phones{
 				display: block;
-				font-size: 17px;
-				transition: .2s;
-				@media (max-width: 650px) {
-					font-size: 16px;
-					line-height: 20px;
+			}
+			.img-phone{
+				justify-self: end;
+				display: grid;
+				grid-template-columns: auto auto;
+				cursor: pointer;
+				&:hover img{
+					transform: scale(1.2);
+				}
+				p{
+					text-align: right;
+					margin-right: 10px;
+					font-family: 'Indie Flower', cursive;
+					line-height: 14px;
+					align-self: center;
+					@media (max-width: 650px) {
+						display: none;
+					}
+				}
+				img{
+					width: 40px;
+					height: 40px;
+					transition: .2s;
+				}
+			}
+			.numbers-phones{
+				display: none;
+				position: absolute;
+				padding-top: 40px;
+				width: 190px;
+				right: -20px;
+				transition: .2s ease-out;
+				@media (max-width: 360px) {
+					right: -20px;
+				}
+				.wrap-border{
+					padding: 15px;
+					@media (max-width: 500px) {
+						background-color: #3C201A;
+						background-color: rgba(0,0,0,.7);
+					}
 				}
 				&:hover{
-					font-weight: bold;
-					text-decoration: underline;
+					padding-top: 57px;
+					display: block;
+				}
+				a{
+					color: #fff;
+					display: block;
+					font-size: 17px;
+					transition: .2s;
+					@media (max-width: 650px) {
+						font-size: 16px;
+						line-height: 24px;
+					}
+					&:hover{
+						color: #aaa;
+					}
 				}
 			}
 		}

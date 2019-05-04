@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>aeroplus</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="shortcut icon" href="/images/favicon.png" type="image/png"> -->
+		<link rel="stylesheet" href="../css/fontawesome.css">
+		<link rel="stylesheet" href="../css/slick.css">
+		<link rel="stylesheet" href="../css/slick-theme.css">
+		<link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+
+		<link rel="stylesheet" href="../css/jquery.formstyler.css">
+		<link rel="stylesheet" href="../css/jquery.formstyler.theme.css">
+		
+		<link rel="stylesheet" href="../css/style.css">
+
+	</head>
+	<bod>
+<header class = "home-header-wrap">
+	<div class="home-header">
+		<div class="container">
+			<div class="header-content">
+				<div class="header-logotipe">
+					<img src="../images/header-logo.png" alt="">
+				</div>
+				<div class="menu-mini">
+					<i class="fas fa-bars">
+						<div class="count-loved-round"></div>
+					</i>
+				</div>
+				<div class="menu-search-favorite-cabinet">
+					<div class="header-search-favorite-cabinet">
+						<form action="search" method="POST" id="header-search">
+							<input id="autocomplete" type="type" placeholder="Я шукаю: кондиціонер">
+							<button></button>
+							<div class="clear"></div>
+							<div class="open-search-list" style = "display: none;">
+								<ul>
+									<li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/36" id="ui-id-2" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-3" tabindex="-1"><img src="/images/img_description.jpg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-4" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">175 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/44" id="ui-id-5" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-6" tabindex="-1"><img src="/uploads/1/2019-01/f4t1dcmHeVdWMFr6EyhGh0pbHmFYbxiZSIIUOneI.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-7" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">1000 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/46" id="ui-id-8" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-9" tabindex="-1"><img src="/uploads/1/2019-01/SmRgdsyHAFxPJT0g7zVdySAsUVCi1GwRcEweBra8.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-10" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">6540 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/47" id="ui-id-11" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-12" tabindex="-1"><img src="/uploads/1/2019-01/VLroABnpsygsFj35yDyaKKM7osIxshPo9g3K07hT.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-13" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">5000 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/49" id="ui-id-14" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-15" tabindex="-1"><img src="/uploads/1/2019-01/ozPDGLFazDfPRalPlgxGhdt8HXVJWEF40HGUB8BP.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-16" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">1580 грн.</div></div></li>
+								</ul>
+							</div>
+							<div class="header-empty-search" style = "opacity: 0">
+								<div class="image-block">
+									<div class="search-blue"></div>
+								</div>
+								<div class="text">По вашому запиту нічого не знайдено</div>
+							</div> 
+						</form>
+						<div class="favorite-cabinet">
+							<div class="cabinet">
+								<a href="#" data-text= "Кабінет">
+									<i class="fas fa-user"></i>
+								</a>
+							</div>
+							<div class="favorite">
+								<a href="#" data-text= "Улюблені">
+									<i class="far fa-heart">
+										<div class="count-loved-round"></div>
+									</i>
+								</a>
+								<div class="drop-down-favorite" id = "show-favorite">
+									<div class="triangle"></div>
+										<div class="list-block">
+											<!-- блок показу улюблені -->
+											<div class="none-products hidden">
+												<i class = "like-icon"></i><span>Немає збережених товарів</span>
+											</div>
+											<div class="drop-down-list-favorite hidden">
+												<ul>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+												</ul>
+												<div class="bootm-text">
+													<span>Додано в улюблені</span>
+												</div>
+											</div>
+											<!-- блок показу улюблені -->
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<ul class="main-menu">
+						<li class = "active"><a href="#">Наші послуги</a></li>
+						<li>
+							<a href="#">Товари</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li>
+							<a href="#">Галарея</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li>
+							<a href="#">Про нас</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+<div class="wrapper description-goods">
+	<section class="section-bread-crumbs">
+		<div class="container">
+			<ul class="breadcrumbs">
+				<li><a class = "hover-line" href="#">Товари</a></li>
+				<li><a class = "hover-line" href="#">Кондиціонери Neoclima</a></li>
+				<li><a class = "active" href="#">Кондиціонер Neoclima MIURA NS/NU-07AHQ</a></li>
+			</ul>
+		</div>
+	</section>
+	<section class="section-brief-description-card">
+		<div class="container">
+			<div class="brief-description-card">
+				<div class="pictures-card-block">
+					<div class="pictures-mini-full">
+						<div class="pictures-mini-wrap">
+							<div class="picture-mini active" data-choice = "0">
+								<div class="image">
+									<img src="../images/img_mini_description.jpg" alt="">
+								</div>
+							</div>
+							<div class="picture-mini" data-choice = "1">
+								<div class="image">
+									<img src="../images/img_mini_description.jpg" alt="">
+								</div>
+							</div>
+							<div class="picture-mini" data-choice = "2">
+								<div class="image">
+									<img src="../images/img_mini_description.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="full-picture-wrap">
+							<a href="../images/img_description.jpg" class="full-picture active" data-select = "0">
+								<img src="../images/img_description.jpg" width="100" height="100" alt=""/>
+							</a>
+							<a href="../images/img_description.jpg" class="full-picture" data-select = "1">
+								<img src="../images/img_description.jpg" width="100" height="100" alt=""/>
+							</a>
+							<a href="../images/img_description.jpg" class="full-picture" data-select = "2">
+								<img src="../images/img_description.jpg" width="100" height="100" alt=""/>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="description-card">
+					<div class="description-title">
+						<h1>Кондиціонер Neoclima MIURA ( -7 C ) <br>NS/NU-07AHQ</h1>
+					</div>
+
+					<div class="description-price">
+						<span>6 999 грн</span>
+					</div>
+					<div class="button-line-blue">
+						<a data-fancybox="order" data-src="#order" href="#">Оформити замовлення</a>
+					</div>
+
+					<ul class="description-list">
+						<li>
+							<div class="text">Холод / Тепло</div>
+							<div class="description">2,05 / 2,34 S м2</div>
+						</li>
+						<li>
+							<div class="text">Внутрішній блок</div>
+							<div class="description">NU-07AHQ</div>
+						</li>
+						<li>
+							<div class="text">Зовнішній блок</div>
+							<div class="description">NU-07AHQ</div>
+						</li>
+						<li>
+							<div class="text">Вольтаж, частота, фазность</div>
+							<div class="description">220-240~/1/50Q</div>
+						</li>
+					</ul>
+					<div class="button-linck-blue scrol-page">
+						<a href="#characteristic" class="hover-line" data-characteristic = "1">Всі характеристики</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-full-description-card" id = "characteristic">
+		<div class="container">
+			<div class="full-description-car-wrap">
+				<div class="description-car-filter-list">
+					<div class="description-car-filter-block active" data-filter = "0">
+						<span>Опис кондиціонера</span>
+					</div>
+					<div class="description-car-filter-block" data-filter = "1">
+						<span>Характеристики</span>
+					</div>
+					<div class="description-car-filter-block" data-filter = "2">
+						<span>Відео</span>
+					</div>
+				</div>
+				<div class="full-description-car-list">
+					<ul class="description-car-selected-block active" data-selected = "0">
+						<li>
+							<div class="selected-block-title">
+								<span>Ізотермічність приміщення</span>
+							</div>
+							<div class="selected-block-text">
+								<p>Завдяки об’ємному повітряному потокові забезпечується рівномірний розподіл повітря тапідтримується однакова температура повітря у всьому приміщенні.</p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Холод / Тепло</span>
+							</div>
+							<div class="selected-block-text">
+								<p>Кондиціонери здатні не тільки охолоджувати повітря в приміщенні, але й працювати на обігрівання врежимі теплового насоса.</p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Лицьова панель, що легко миється</span>
+							</div>
+							<div class="selected-block-text">
+								<p>Підтримувати чистоту передньої панелі кондиціонера дуже просто: вона легко відкривається ймиється водою.</p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Режим SLEEP</span>
+							</div>
+							<div class="selected-block-text">
+								<p></p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>М’яке осушення повітря</span>
+							</div>
+							<div class="selected-block-text">
+								<p>У режимі осушення кондиціонер починає працювати на охолодження. Коли тепле повітря стикається з холодним теплообмінником внутрішнього блока, на теплообміннику конденсується волога, яка відводиться через дренажний шланг. Отож, зменшується вологість повітря, а температура знижується не більше ніж на 1°С.</p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Фільтр грубого очищення</span>
+							</div>
+							<div class="selected-block-text">
+								<p></p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Автоперезапуск</span>
+							</div>
+							<div class="selected-block-text">
+								<p>У разі аварійного вимкнення кондиціонера в результаті збоїв електроживлення в пам’яті кондиціонера зберігаються задані робочі параметри, які автоматично активуються під час відновлення електропостачання.</p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Пульт дистанційного керування з антибактеріальним покриттям</span>
+							</div>
+							<div class="selected-block-text">
+								<p>На корпус пульта ДК нанесено антибактеріальне покриття, котре ефективно знищує бактерії на його поверхні та перешкоджає поширенню інфекції від користувача до користувача. </p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Безшумна робота</span>
+							</div>
+							<div class="selected-block-text">
+								<p>Кондиціонери Neoclima завдяки спеціальній конструкції внутрішнього блока працюють зі зниженим рівнем шуму.</p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Функція I - Feel</span>
+							</div>
+							<div class="selected-block-text">
+								<p>Пульт ДУ комплектується датчиком температури, який вимірює температуру повітря в місці свого перебування і передає цю інформацію внутрішнього блоку кондиціонера.</p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Функція «Диммер»</span>
+							</div>
+							<div class="selected-block-text">
+								<p>Скористайтеся в нічний час. Вона вимикає/приглушує підсвічування дисплея кондиціонера для комфортнішого сну.</p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Автоматичне перемикання режимів</span>
+							</div>
+							<div class="selected-block-text">
+								<p>Спеціальні датчики періодично вимірюють температуру всередині та поза приміщенням. На підставі цих вимірів і заданої температури мікропроцесор визначає найбільш відповідний режим роботи у поточних умовах для підтримування заданої температури в приміщенні.</p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Умонтований 24-годинний таймер</span>
+							</div>
+							<div class="selected-block-text">
+								<p>Таймер забезпечує запрограмовану користувачем добову роботу кондиціонера в автоматичному режимі. Можна автоматично вмикати й вимикати кондиціонер у заданий час.</p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Стійкість до перепадів напруги</span>
+							</div>
+							<div class="selected-block-text">
+								<p>Коливання напруги в електромережі істотно знижує термін служби примкнених приладів, не кажучи вже про продуктивність. Для роботи кондиціонерів, де важливі точність і стабільність результатів,перепади напруги відіграють важливу роль. Кондиціонери Neoclima зберігають 100%-ву продуктивність роботи в умовах нестабільного подавання електроенергії.</p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Швидке охолодження режим «турбо»</span>
+							</div>
+							<div class="selected-block-text">
+								<p>Для швидкого досягнення заданої температури в режимі «турбо» вмикається потужніший потік повітря, який охолоджує все приміщення.</p>
+							</div>
+						</li>
+						<li>
+							<div class="selected-block-title">
+								<span>Антикорозійне покриття теплообмінників</span>
+							</div>
+							<div class="selected-block-text">
+								<p>У кондиціонерах Neoclima використовується антикорозійне покриття поверхонь теплообмінників внутрішнього і зовнішнього блоків. Спеціальне покриття надійно захищає теплообмінники від корозії, продовжує термін служби кондиціонера без зміни його робочих характеристик.</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="description-car-selected-block" data-selected = "1">
+						<li>
+							<div class="characteristic-title">
+								<span>Холод / Тепло</span>
+							</div>
+							<div class="characteristic-text">
+								<span>2,05 / 2,34 S м2 </span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Внутрішній блок</span>
+							</div>
+							<div class="characteristic-text">
+								<span>NU-07AHQ</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Зовнішній блок</span>
+							</div>
+							<div class="characteristic-text">
+								<span>NU-07AHQ</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Вольтаж, частота, фазность</span>
+							</div>
+							<div class="characteristic-text">
+								<span>220-240~/1/50 В/Ф/Гц</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Потужність охолодження</span>
+							</div>
+							<div class="characteristic-text">
+								<span>7 000 Бте/год</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Потужність охолодження</span>
+							</div>
+							<div class="characteristic-text">
+								<span>2 050 Вт</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Охолодження номінальна споживна потужність</span>
+							</div>
+							<div class="characteristic-text">
+								<span>629 Вт</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Номінальний споживаний струм</span>
+							</div>
+							<div class="characteristic-text">
+								<span>2,80 А</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Енергоефективність EER (клас)</span>
+							</div>
+							<div class="characteristic-text">
+								<span>3,26 (A) Вт/Вт</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Потужність обігріву</span>
+							</div>
+							<div class="characteristic-text">
+								<span>8 000 Бте/год</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Потужність обігріву</span>
+							</div>
+							<div class="characteristic-text">
+								<span>2 345 Вт</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Обігрів номінальна споживана потужність</span>
+							</div>
+							<div class="characteristic-text">
+								<span>639 Вт</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Номінальний споживаний струм</span>
+							</div>
+							<div class="characteristic-text">
+								<span>2,8 А</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Енергоефективність COP (клас)</span>
+							</div>
+							<div class="characteristic-text">
+								<span>3,67 (A) Вт/Вт</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Вологовидалення</span>
+							</div>
+							<div class="characteristic-text">
+								<span>0,8 л/год</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Максимально споживана потужність</span>
+							</div>
+							<div class="characteristic-text">
+								<span>1 050 Вт</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Максимальний споживний струм</span>
+							</div>
+							<div class="characteristic-text">
+								<span>5,5 А</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Рівень шуму внутрішнього блоку (Hi/Mi/Lo)</span>
+							</div>
+							<div class="characteristic-text">
+								<span>38/33/26 дБ</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Розміри (Д*В*Г)</span>
+							</div>
+							<div class="characteristic-text">
+								<span>717×302×193мм</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Внутрішній блок розміри в упаковці (Д*В*Г)</span>
+							</div>
+							<div class="characteristic-text">
+								<span>785×375×285мм</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Вага Нетто / Брутто</span>
+							</div>
+							<div class="characteristic-text">
+								<span>7,5/10 кг</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Рівень шуму зовнішнього блоку </span>
+							</div>
+							<div class="characteristic-text">
+								<span>52 дБ</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Розміри (Д*В*Г)</span>
+							</div>
+							<div class="characteristic-text">
+								<span>700×550×275мм</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Розміри в упаковці (Д*В*Г)</span>
+							</div>
+							<div class="characteristic-text">
+								<span>815×615×325мм</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Вага Нетто / Брутто</span>
+							</div>
+							<div class="characteristic-text">
+								<span>23,7/25,9 кг</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Відстань між опорами</span>
+							</div>
+							<div class="characteristic-text">
+								<span>450 мм</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Компресор</span>
+							</div>
+							<div class="characteristic-text">
+								<span>Toshiba (GMCC)</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Тип / Вага холодоагенту</span>
+							</div>
+							<div class="characteristic-text">
+								<span>R410A/520 грам</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Джерело живлення</span>
+							</div>
+							<div class="characteristic-text">
+								<span>Внутрішній блок</span>
+							</div>
+						</li>
+						<li>
+							<div class="characteristic-title">
+								<span>Діапазон робочих температур (охолодження / обігрів)</span>
+							</div>
+							<div class="characteristic-text">
+								<span>від 18 до 43°С / від -7 до 24°С</span>
+							</div>
+						</li>
+					</ul>
+					<div class="description-car-selected-block video-block" data-selected = "2">
+						<div class="video-wrap">
+							<div class="embed-container">
+								<iframe width="962" height="541" src="https://www.youtube.com/embed/MdQpQQwFB8A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+<div class="makingo_order" id="order" style="display: none;">
+	<div class="order-top">
+		<div class="order-top-title">Оформлення замовлення</div>
+	</div>
+	<div class="order-container">
+		<div class="order-container-title">
+			<span>Для оформлення замовлення <br>заповніть форму нище.</span>
+		</div>
+		<div class="error-wrap">
+			<div class="error"></div>
+		</div>
+		<form id = "formx" class="form-order"  action="javascript:void(null)" method="POST" onsubmit="call()">
+			<div class="input">
+				<input name="user" title="Введіть ваше ім'я (не менше трьох літер)" required="" minlength="3" aria-required="true" placeholder="Ваше ім'я">
+			</div>
+			<div class="input">
+				<input id="phone" title="Не вірний телейон" name="phone" required="" type="number" rangelength="[2,12]" aria-required="true" placeholder="Ваш номер телефону">
+			</div>
+			<div class="input">
+				<input id="email" title="Невірно введений Email" name="email" required="" type="email" aria-required="true" placeholder="E-mail">
+			</div>
+			<div class="button-line-blue">
+				<button>Залишити заявку</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="shipped_order" id="shipped_order" style="display: none;">
+	<div class="order-top-title">Оформлення замовлення</div>
+	<div class="order-container">
+		<div class="order-container-title">
+			<span>Ваше замовлення успішно відправлинне.<br>Наш менеджер зателефонуває вам.</span>
+		</div>
+	</div>
+</div>
+
+
+		<footer class="footer-wrap">
+		<!-- http://vioagency.com.ua/ -->
+			<div class="container">
+				<div class="footer">
+					<div class="left">
+						<p>Інженерно-монтажна організація Аероплюс. Всі права захищені</p>
+					</div>
+					<div class="right">
+						<span>Розроблено <a class = "hover-line" href="http://vioagency.com.ua/" target="_blanck">VIOagency</a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB55s_HCIM3COosq89bsgJOOVh6fBDTts8"></script>
+		<script src="../js/slick.min.js"></script>
+		<script src="../js/jquery.fancybox.min.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
+		<script src="../js/jquery.validate.min.js"></script>
+		<script src="../js/jquery.formstyler.min.js"></script>
+		<!-- <script src="../js/jquery.ui.touch-punch.min.js"></script> -->
+		
+		<script src="../js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<svg width="12" height="8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <path d="m1236,161l-1.41,1.41l4.58,4.59l-4.58,4.59l1.41,1.41l6,-6l-6,-6z" id="cgpca"/>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g transform="rotate(90 6.034712791442872,3.9628274440765385) " id="svg_1">
+   <g id="svg_2">
+    <use id="svg_3" x="-1232.260221" y="-163.037174" xlink:href="#cgpca" fill="#2e3092"/>
+   </g>
+  </g>
+ </g>
+</svg>

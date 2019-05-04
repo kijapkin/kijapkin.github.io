@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>aeroplus</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="shortcut icon" href="/images/favicon.png" type="image/png"> -->
+		<link rel="stylesheet" href="../css/fontawesome.css">
+		<link rel="stylesheet" href="../css/slick.css">
+		<link rel="stylesheet" href="../css/slick-theme.css">
+		<link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+
+		<link rel="stylesheet" href="../css/jquery.formstyler.css">
+		<link rel="stylesheet" href="../css/jquery.formstyler.theme.css">
+		
+		<link rel="stylesheet" href="../css/style.css">
+
+	</head>
+	<bod>
+<header class = "home-header-wrap">
+	<div class="home-header">
+		<div class="container">
+			<div class="header-content">
+				<div class="header-logotipe">
+					<img src="../images/header-logo.png" alt="">
+				</div>
+				<div class="menu-mini">
+					<i class="fas fa-bars">
+						<div class="count-loved-round"></div>
+					</i>
+				</div>
+				<div class="menu-search-favorite-cabinet">
+					<div class="header-search-favorite-cabinet">
+						<form action="search" method="POST" id="header-search">
+							<input id="autocomplete" type="type" placeholder="Я шукаю: кондиціонер">
+							<button></button>
+							<div class="clear"></div>
+							<div class="open-search-list" style = "display: none;">
+								<ul>
+									<li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/36" id="ui-id-2" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-3" tabindex="-1"><img src="/images/img_description.jpg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-4" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">175 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/44" id="ui-id-5" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-6" tabindex="-1"><img src="/uploads/1/2019-01/f4t1dcmHeVdWMFr6EyhGh0pbHmFYbxiZSIIUOneI.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-7" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">1000 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/46" id="ui-id-8" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-9" tabindex="-1"><img src="/uploads/1/2019-01/SmRgdsyHAFxPJT0g7zVdySAsUVCi1GwRcEweBra8.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-10" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">6540 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/47" id="ui-id-11" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-12" tabindex="-1"><img src="/uploads/1/2019-01/VLroABnpsygsFj35yDyaKKM7osIxshPo9g3K07hT.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-13" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">5000 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/49" id="ui-id-14" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-15" tabindex="-1"><img src="/uploads/1/2019-01/ozPDGLFazDfPRalPlgxGhdt8HXVJWEF40HGUB8BP.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-16" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">1580 грн.</div></div></li>
+								</ul>
+							</div>
+							<div class="header-empty-search" style = "opacity: 0">
+								<div class="image-block">
+									<div class="search-blue"></div>
+								</div>
+								<div class="text">По вашому запиту нічого не знайдено</div>
+							</div> 
+						</form>
+						<div class="favorite-cabinet">
+							<div class="cabinet">
+								<a href="#" data-text= "Кабінет">
+									<i class="fas fa-user"></i>
+								</a>
+							</div>
+							<div class="favorite">
+								<a href="#" data-text= "Улюблені">
+									<i class="far fa-heart">
+										<div class="count-loved-round"></div>
+									</i>
+								</a>
+								<div class="drop-down-favorite" id = "show-favorite">
+									<div class="triangle"></div>
+										<div class="list-block">
+											<!-- блок показу улюблені -->
+											<div class="none-products hidden">
+												<i class = "like-icon"></i><span>Немає збережених товарів</span>
+											</div>
+											<div class="drop-down-list-favorite hidden">
+												<ul>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+												</ul>
+												<div class="bootm-text">
+													<span>Додано в улюблені</span>
+												</div>
+											</div>
+											<!-- блок показу улюблені -->
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<ul class="main-menu">
+						<li class = "active"><a href="#">Наші послуги</a></li>
+						<li>
+							<a href="#">Товари</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li>
+							<a href="#">Галарея</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li>
+							<a href="#">Про нас</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+<div class="wrapper home">
+	<section class="section-video-wrap">
+		<div class="video-wrap">
+			<div class="imag-baner">
+				<!-- <img class="delayedLoad" src="/video/buner-video.jpg" id = "delayedLoad"/> -->
+				 <video muted loop autoplay poster="/video/buner-video.jpg" id="videobaner">  <!-- muted loop autoplay loop autoplay muted -->
+					<source src="/video/videoplayback.mp4" type='video/mp4;'>
+				</video> 
+			</div>
+			<div class="button-video">
+				<div class="container">
+					<div class="sound">
+						<div class="button-sound active" id = "volume">
+							<i class="fas fa-volume-up">
+								<span class="soundless"></span>
+							</i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="section-text-buttn">
+			<div class="container">
+				<div class="text-buttn">
+					<div class="left-text">
+						<p>Інженерно-монтажна організація, яка здійснює проектування, монтаж та сервісне обслуговування <a href="#">систем вентиляції, кондиціювання, опалення</a> для всіх типів приміщення.</p>
+					</div>
+					<div class="right-button">
+						<div class="button">
+							<a href="#">Наші послуги</a>
+						</div>
+						<div class="button">
+							<a href="#">Більше про нас</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-signature-two-block desktop">
+		<div class="container">
+			<div class="section-signature">
+				<div class="left">
+					<span>Наші послуги</span>
+				</div>
+				<div class="right">
+					<a class = "hover-line" href="#">Сервісне та гарантійне обслуговування</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-two-col-list">
+		<div class="container">
+			<ul class="two-col-list">
+				<li style="background-image: url('../images/home_bg_1.png');">
+					<div class="block">
+						<div class="title">
+							<h2>Кондиціонування</h2>
+						</div>
+						<div class="button-line-blue">
+							<a href="#">Детальніше</a>
+						</div>
+					</div>
+				</li>
+				<li style="background-image: url('../images/home_bg_2.png');">
+					<div class="block">
+						<div class="title">
+							<h2>Вентиляція</h2>
+						</div>
+						<div class="button-line-blue">
+							<a href="#">Детальніше</a>
+						</div>
+					</div>
+				</li>
+				<li style="background-image: url('../images/home_bg_3.png');">
+					<div class="block">
+						<div class="title">
+							<h2>Опалення</h2>
+						</div>
+						<div class="button-line-blue">
+							<a href="#">Детальніше</a>
+						</div>
+					</div>
+				</li>
+				<li style="background-image: url('../images/home_bg_4.png');">
+					<div class="block">
+						<div class="title">
+							<h2>Алмазне <br> свердління</h2>
+						</div>
+						<div class="button-line-blue">
+							<a href="#">Детальніше</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="section-signature-two-block mobile">
+		<div class="container">
+			<div class="section-signature">
+				<div class="right">
+					<a class = "hover-line" href="#">Сервісне та гарантійне обслуговування</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-signature-one-block">
+		<div class="container">
+			<div class="signature-one">
+				<div class="title">
+					<span>Популярні товари</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-col-4-list">
+		<div class="container">
+			<div class="col-4-list-wrap">
+				<div class="col-4-row-wrap">
+					<ul class="list-col-4">
+						<li>
+							<div class="li-block">
+								<div class="block">
+									<div class="top-li-block">
+										<span class="span-left">Код: 1014780</span>
+										<span class="span-right laved" data-id = "0">
+											<i class="far fa-heart"></i>
+										</span>
+									</div>
+									<div class="li-image">
+										<img src="../images/home_produkt_1.jpg" alt="">
+									</div>
+									<div class="li-title">
+										<h2>Кондиционер спліт <br>Samsung AR09MSFPAWQNER</h2>
+									</div>
+									<div class="li-price">
+										<span>12 493 грн</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="li-block">
+								<div class="block">
+									<div class="top-li-block">
+										<span class="span-left">Код: 1643784</span>
+										<span class="span-right laved" data-id = "1">
+											<i class="far fa-heart"></i>
+										</span>
+									</div>
+									<div class="li-image">
+										<img src="../images/home_produkt_2.jpg" alt="">
+									</div>
+									<div class="li-title">
+										<h2>Вентилятор<br> PRANA - 200G</h2>
+									</div>
+									<div class="li-price">
+										<span>5 323 грн</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="li-block">
+								<div class="block">
+									<div class="top-li-block">
+										<span class="span-left">Код: 1014780</span>
+										<span class="span-right laved" data-id = "2">
+											<i class="far fa-heart"></i>
+										</span>
+									</div>
+									<div class="li-image">
+										<img src="../images/home_produkt_3.jpg" alt="">
+									</div>
+									<div class="li-title">
+										<h2>Вентилятор <br>Soler&Palau</h2>
+									</div>
+									<div class="li-price">
+										<span>672 грн</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class = "li-hidden">
+							<div class="li-block">
+								<div class="block">
+									<div class="top-li-block">
+										<span class="span-left">Код: 1014780</span>
+										<span class="span-right laved" data-id = "3">
+											<i class="far fa-heart"></i>
+										</span>
+									</div>
+									<div class="li-image">
+										<img src="../images/home_produkt_4.jpg" alt="">
+									</div>
+									<div class="li-title">
+										<h2>Кондиционер спліт <br>Samsung Eolo Mythos 24 2E</h2>
+									</div>
+									<div class="li-price">
+										<span>16 577 грн</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class = "li-hidden">
+							<div class="li-block">
+								<div class="block">
+									<div class="top-li-block">
+										<span class="span-left">Код: 1014780</span>
+										<span class="span-right laved" data-id = "4">
+											<i class="far fa-heart"></i>
+										</span>
+									</div>
+									<div class="li-image">
+										<img src="../images/home_produkt_3.jpg" alt="">
+									</div>
+									<div class="li-title">
+										<h2>Вентилятор <br>Soler&Palau</h2>
+									</div>
+									<div class="li-price">
+										<span>672 грн</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class = "li-hidden">
+							<div class="li-block">
+								<div class="block">
+									<div class="top-li-block">
+										<span class="span-left">Код: 1643784</span>
+										<span class="span-right laved" data-id = "5">
+											<i class="far fa-heart"></i>
+										</span>
+									</div>
+									<div class="li-image">
+										<img src="../images/home_produkt_2.jpg" alt="">
+									</div>
+									<div class="li-title">
+										<h2>Вентилятор<br> PRANA - 200G</h2>
+									</div>
+									<div class="li-price">
+										<span>5 323 грн</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class = "li-hidden">
+							<div class="li-block">
+								<div class="block">
+									<div class="top-li-block">
+										<span class="span-left">Код: 1014780</span>
+										<span class="span-right laved" data-id = "6">
+											<i class="far fa-heart"></i>
+										</span>
+									</div>
+									<div class="li-image">
+										<img src="../images/home_produkt_4.jpg" alt="">
+									</div>
+									<div class="li-title">
+										<h2>Кондиционер спліт <br>Samsung Eolo Mythos 24 2E</h2>
+									</div>
+									<div class="li-price">
+										<span>16 577 грн</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class = "li-hidden">
+							<div class="li-block">
+								<div class="block">
+									<div class="top-li-block">
+										<span class="span-left">Код: 1014780</span>
+										<span class="span-right laved" data-id = "7">
+											<i class="far fa-heart"></i>
+										</span>
+									</div>
+									<div class="li-image">
+										<img src="../images/home_produkt_1.jpg" alt="">
+									</div>
+									<div class="li-title">
+										<h2>Кондиционер спліт <br>Samsung AR09MSFPAWQNER</h2>
+									</div>
+									<div class="li-price">
+										<span>12 493 грн</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="button-border-blue-wrap" data-count = "3">
+			<div class="container">
+				<div class="button-border-blue">
+					<span>Показати ще</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="section-signature-one-block">
+		<div class="container">
+			<div class="signature-one">
+				<div class="title">
+					<span>Наші клієнти</span>
+				</div>
+			</div>
+		</div> 
+	</section>-->
+	<section class="section-title-slider-logos">
+		<div class="container">
+			<div class="title-slider-logos">
+				<div class="title">
+					<span>Наші клієнти</span>
+				</div>
+				<div class="slider-logos-wrap">
+					<div class="slider-logos">
+						<div class="logo">
+							<div class="image-wrap">
+								<img src="../images/partner-logo_1.png" alt="" width="144" height="73">
+							</div>
+						</div>
+						<div class="logo">
+							<div class="image-wrap">
+								<img src="../images/partner-logo_2.png" alt="" width="197" height="66">
+							</div>
+						</div>
+						<div class="logo">
+							<div class="image-wrap">
+								<img src="../images/partner-logo_3.png" alt="" width="104" height="103">
+							</div>
+						</div>
+						<div class="logo">
+							<div class="image-wrap">
+								<img src="../images/partner-logo_4.png" alt="" width="94" height="145">
+							</div>
+						</div>
+						<div class="logo">
+							<div class="image-wrap">
+								<img src="../images/partner-logo_5.png" alt="" width="186" height="80">
+							</div>
+						</div>
+						<div class="logo">
+							<div class="image-wrap">
+								<img src="../images/partner-logo_6.png" alt="" width="203" height="46">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-text-one-gallery">
+		<div class="container">
+			<div class="text-one-gallery">
+				<div class="title-linck">
+					<span class="title">Галарея</span>
+					<a href="#" class="hover-line">Більше фото</a>
+				</div>
+				<div class="one-gallery" data-speed = "5000"> <!--data-count - вказати кількість зображень -->
+					<div class="image">
+						<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 1">
+					</div>
+					<div class="image">
+						<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 2">
+					</div>
+					<div class="image">
+						<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 3">
+					</div>
+					<div class="image">
+						<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 4">
+					</div>
+					<div class="image">
+						<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 5">
+					</div>
+					<div class="image">
+						<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 6">
+					</div>
+					<div class="image">
+						<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 7">
+					</div>
+					<div class="image">
+						<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 8">
+					</div>
+					<div class="image">
+						<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 9">
+					</div>
+					<div class="image">
+						<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 10">
+					</div>
+					<div class="image">
+						<img src="../images/home-gallery_1.jpg" alt="Заголовок до фотогфафії 11">
+					</div>
+				</div>
+				<div class="one-gallery-settings">
+						<div class="count">
+							<span class="current">01</span> / 
+							<span class="total-number">00</span> 
+						</div>
+						<div class="position">
+							<span class="line"></span>
+						</div>
+						<div class="control">
+							<span class="prev"></span>
+							<span class="next"></span>
+						</div>
+				</div>
+				<div class="name-image-active">
+					<span>Заголовок до фотогфафії 1</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-col-3-list">
+		<div class="signature-two-block">
+			<div class="container">
+				<div class="section-signature">
+					<div class="left">
+						<span>Новини</span>
+					</div>
+					<div class="right">
+						<a class="hover-line" href="#">Більше новин</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<ul class="col-3-list-wrap">
+				<li>
+					<div class="li-block">
+						<div class="image-block">
+							<img src="../images/new_img_1.jpg" alt="">
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини <br>на два рядка</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="li-block">
+						<div class="image-block">
+							<img src="../images/new_img_2.jpg" alt="">
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини на один ряд</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="li-block">
+						<div class="image-block">
+							<!-- <img src="../images/new_img_2.jpg" alt=""> -->
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини без картинки</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="li-block">
+						<div class="image-block">
+							<img src="../images/new_img_3.jpg" alt="">
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини на один ряд</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="li-block">
+						<div class="image-block">
+							<!-- <img src="../images/new_img_3.jpg" alt=""> -->
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини без картинки на два рядка</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="li-block">
+						<div class="image-block">
+							<img src="../images/new_img_4.jpg" alt="">
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини <br>на два рядка</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class = "li-new-hidden">
+					<div class="li-block">
+						<div class="image-block">
+							<img src="../images/new_img_1.jpg" alt="">
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини <br>на два рядка</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class = "li-new-hidden">
+					<div class="li-block">
+						<div class="image-block">
+							<img src="../images/new_img_2.jpg" alt="">
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини на один ряд</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class = "li-new-hidden">
+					<div class="li-block">
+						<div class="image-block">
+							<!-- <img src="../images/new_img_2.jpg" alt=""> -->
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини без картинки</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class = "li-new-hidden">
+					<div class="li-block">
+						<div class="image-block">
+							<img src="../images/new_img_3.jpg" alt="">
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини на один ряд</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class = "li-new-hidden">
+					<div class="li-block">
+						<div class="image-block">
+							<!-- <img src="../images/new_img_3.jpg" alt=""> -->
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини без картинки на два рядка</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class = "li-new-hidden">
+					<div class="li-block">
+						<div class="image-block">
+							<img src="../images/new_img_4.jpg" alt="">
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини <br>на два рядка</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class = "li-new-hidden">
+					<div class="li-block">
+						<div class="image-block">
+							<img src="../images/new_img_1.jpg" alt="">
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини <br>на два рядка</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class = "li-new-hidden">
+					<div class="li-block">
+						<div class="image-block">
+							<img src="../images/new_img_2.jpg" alt="">
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини на один ряд</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class = "li-new-hidden">
+					<div class="li-block">
+						<div class="image-block">
+							<!-- <img src="../images/new_img_2.jpg" alt=""> -->
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини без картинки</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class = "li-new-hidden">
+					<div class="li-block">
+						<div class="image-block">
+							<img src="../images/new_img_3.jpg" alt="">
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини на один ряд</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class = "li-new-hidden">
+					<div class="li-block">
+						<div class="image-block">
+							<!-- <img src="../images/new_img_3.jpg" alt=""> -->
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини без картинки на два рядка</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class = "li-new-hidden">
+					<div class="li-block">
+						<div class="image-block">
+							<img src="../images/new_img_4.jpg" alt="">
+						</div>
+						<div class="li-title-text">
+							<div class="li-title">
+								<h2>Заголовок новини <br>на два рядка</h2>
+							</div>
+							<div class="li-text">
+								<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись…</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="button-border-blue-wrap">
+			<div class="container">
+				<div class="button-border-blue">
+					<span>Більше новин</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-contact-text">
+		<div class="container">
+			<div class="contact-title-social-text">
+				<div class="signature-one-block">
+					<div class="title">
+						<span>Контакти</span>
+					</div>
+				</div>
+				<div class="contact-text-block">
+
+					<div class="title-social-wrap">
+						<div class="title">
+							<h1>Інженерно-монтажна <br>організація Аероплюс</h1>
+						</div>
+						<ul class="soc-wrap">
+							<li class="round">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="contact-text">
+						<div class="text-row">
+							<div class="col-block">
+								<div class="title">Директор</div>
+								<div class="name">Завада Михайло Михайлович</div>
+							</div>
+							<div class="col-block">
+								<div class="title">Технічний директор</div>
+								<div class="name">Лагдан Орест Іванович</div>
+							</div>
+							<div class="col-last-block">
+									<div class="title">E-mail</div>
+									<div class="name">
+											<a href="mailto:aeroplus@ukr.net" class="hover-line">aeroplus@ukr.net</a>
+									</div>
+							</div>
+						</div>
+						<div class="text-row">
+							<div class="col-block">
+								<div class="title">Адреса</div>
+								<div class="name">м. Івано-Франківськ, <br>вул. Галицька 132</div>
+							</div>
+							<div class="col-block">
+								<div class="title">Графік роботи</div>
+								<div class="name">Пн-Пт: з 09:00 до 18:00 <br>Cб-Нд: вихiдний</div>
+							</div>
+							<div class="col-last-block">
+								<div class="title">Телефони</div>
+									<ul class="name">
+										<li>
+											<a href="tell:0342509448" class="hover-line">(0342) 509 448</a>
+										</li>
+										<li>
+											<a href="tell:0980880809" class="hover-line">(098) 088 08 09</a>
+										</li>
+									</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-feedback-map">
+		<div class="container">
+			<div class="feedback-map">
+				<div class="map" id="home-map"
+				data-adress = "вулиця Галицька, 132, Івано-Франківськ, Івано-Франківська область, 76000"
+				data-lat = "48.947083"
+				data-lng = "24.695263"
+				></div>
+				<form action="" metod = "POST" class="feedback" id="feedback">
+					<label for="" class = "label-block">
+						<input id="username" name="username" type="text" placeholder="Ваше ім'я" >
+						<label class="error" for="username"></label>
+					</label>
+					<label for="" class = "label-block">
+						<input id="email" name="email" type="email" placeholder="E-mail">
+						<label for="email"></label>
+					</label>
+						<textarea name="text" id="" placeholder="Повідомлення"></textarea>
+						<div class="button-line-blue">
+							<button>Відправити</button>
+						</div>
+				</form>
+			</div>
+		</div>
+	</section>
+</div>
+		<footer class="footer-wrap">
+		<!-- http://vioagency.com.ua/ -->
+			<div class="container">
+				<div class="footer">
+					<div class="left">
+						<p>Інженерно-монтажна організація Аероплюс. Всі права захищені</p>
+					</div>
+					<div class="right">
+						<span>Розроблено <a class = "hover-line" href="http://vioagency.com.ua/" target="_blanck">VIOagency</a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB55s_HCIM3COosq89bsgJOOVh6fBDTts8"></script>
+		<script src="../js/slick.min.js"></script>
+		<script src="../js/jquery.fancybox.min.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
+		<script src="../js/jquery.validate.min.js"></script>
+		<script src="../js/jquery.formstyler.min.js"></script>
+		<!-- <script src="../js/jquery.ui.touch-punch.min.js"></script> -->
+		
+		<script src="../js/main.js"></script>
+	</body>
+</html>

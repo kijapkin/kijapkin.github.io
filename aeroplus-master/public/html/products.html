@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>aeroplus</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="shortcut icon" href="/images/favicon.png" type="image/png"> -->
+		<link rel="stylesheet" href="../css/fontawesome.css">
+		<link rel="stylesheet" href="../css/slick.css">
+		<link rel="stylesheet" href="../css/slick-theme.css">
+		<link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+
+		<link rel="stylesheet" href="../css/jquery.formstyler.css">
+		<link rel="stylesheet" href="../css/jquery.formstyler.theme.css">
+		
+		<link rel="stylesheet" href="../css/style.css">
+
+	</head>
+	<bod>
+<header class = "home-header-wrap">
+	<div class="home-header">
+		<div class="container">
+			<div class="header-content">
+				<div class="header-logotipe">
+					<img src="../images/header-logo.png" alt="">
+				</div>
+				<div class="menu-mini">
+					<i class="fas fa-bars">
+						<div class="count-loved-round"></div>
+					</i>
+				</div>
+				<div class="menu-search-favorite-cabinet">
+					<div class="header-search-favorite-cabinet">
+						<form action="search" method="POST" id="header-search">
+							<input id="autocomplete" type="type" placeholder="Я шукаю: кондиціонер">
+							<button></button>
+							<div class="clear"></div>
+							<div class="open-search-list" style = "display: none;">
+								<ul>
+									<li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/36" id="ui-id-2" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-3" tabindex="-1"><img src="/images/img_description.jpg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-4" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">175 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/44" id="ui-id-5" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-6" tabindex="-1"><img src="/uploads/1/2019-01/f4t1dcmHeVdWMFr6EyhGh0pbHmFYbxiZSIIUOneI.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-7" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">1000 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/46" id="ui-id-8" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-9" tabindex="-1"><img src="/uploads/1/2019-01/SmRgdsyHAFxPJT0g7zVdySAsUVCi1GwRcEweBra8.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-10" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">6540 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/47" id="ui-id-11" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-12" tabindex="-1"><img src="/uploads/1/2019-01/VLroABnpsygsFj35yDyaKKM7osIxshPo9g3K07hT.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-13" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">5000 грн.</div></div></li><li class="ui-menu-item"><a class="search-linck ui-menu-item-wrapper" href="/goods/kondеtsіonеri_18_48_31/49" id="ui-id-14" tabindex="-1"></a><div class="header-search-image ui-menu-item-wrapper" id="ui-id-15" tabindex="-1"><img src="/uploads/1/2019-01/ozPDGLFazDfPRalPlgxGhdt8HXVJWEF40HGUB8BP.jpeg" alt=""></div><div class="header-search-title-price ui-menu-item-wrapper" id="ui-id-16" tabindex="-1"><div class="header-search-name">Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div><div class="header-search-price">1580 грн.</div></div></li>
+								</ul>
+							</div>
+							<div class="header-empty-search" style = "opacity: 0">
+								<div class="image-block">
+									<div class="search-blue"></div>
+								</div>
+								<div class="text">По вашому запиту нічого не знайдено</div>
+							</div> 
+						</form>
+						<div class="favorite-cabinet">
+							<div class="cabinet">
+								<a href="#" data-text= "Кабінет">
+									<i class="fas fa-user"></i>
+								</a>
+							</div>
+							<div class="favorite">
+								<a href="#" data-text= "Улюблені">
+									<i class="far fa-heart">
+										<div class="count-loved-round"></div>
+									</i>
+								</a>
+								<div class="drop-down-favorite" id = "show-favorite">
+									<div class="triangle"></div>
+										<div class="list-block">
+											<!-- блок показу улюблені -->
+											<div class="none-products hidden">
+												<i class = "like-icon"></i><span>Немає збережених товарів</span>
+											</div>
+											<div class="drop-down-list-favorite hidden">
+												<ul>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+													<li>
+														<a class="" href="#"></a>
+														<img src="/images/img_description.jpg" alt="">
+														<div class = "name-product">
+															<div class="title">Кондиціонер Neoclima MIURA ( -7 C )  NS/NU-07AHQ</div>
+															<span class="">6540 грн.</span>
+														</div>
+													</li>
+												</ul>
+												<div class="bootm-text">
+													<span>Додано в улюблені</span>
+												</div>
+											</div>
+											<!-- блок показу улюблені -->
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<ul class="main-menu">
+						<li class = "active"><a href="#">Наші послуги</a></li>
+						<li>
+							<a href="#">Товари</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li>
+							<a href="#">Галарея</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li>
+							<a href="#">Про нас</a>
+							<ul class="minor-main">
+								<li><a href="#">Кондиціонери</a></li>
+								<li><a href="#">Вентилятори</a></li>
+							</ul>
+							<a class="mean-expand" href="#"></a>
+						</li>
+						<li><a href="#">Новини</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+<div class="wrapper products">
+	<main>
+		<article>
+			<!-- <section class="section-products">
+			</section> -->
+			<section class="section-bread-crumbs">
+				<div class="container">
+					<ul class="breadcrumbs">
+						<li><a class="hover-line" href="#">Товари</a></li>
+						<li><a class="active" href="#">Кондиціонери</a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="section-filter-wrap">
+				<div class="container">
+					<div class="section-filter">
+						<form action="POST" class="filter">
+							<ul class="choice-products">
+								<li class = "active" data-number = "0" >Кондиціонери</li>
+								<li data-number = "1" >Вентилятори</li>
+							</ul>
+							<div class="select-wrap">
+								<select name="sort" id="select-options">
+									<option value="">по рейтингу</option>
+									<option value="">Від дешевих до дорогих</option>
+									<option value="">Від дорогих до дешевих</option>
+									<option value="">Популярні</option>
+									<option value="">Новинки</option>
+									<option value="">Акційні</option>
+									<option value="">По рейтингу</option>
+								</select>
+							</div>
+							<div class="filter-wrap" id = "filter-choice">
+								<div class="span-title">
+									<span class = "text hover-line">Фільтр</span>
+									<span class="remove"></span>
+									<div class="price-slider-choice">
+										<div class="price-slider">
+											<div class="title-price">Ціна (грн)</div>
+											<div class="slider">
+												<div 
+													id="slider-range"
+													data-min = "0"
+													data-max = "20000"
+													data-defaultmin = "3000"
+													data-defaultmax = "15000"></div>
+												<input 
+													type="text"
+													name="min"
+													id = "amount-min"
+													maxlength='6'
+													onkeyup="this.value=this.value.replace(/[^0-9]+/g,'')">
+												<div class = "hyphen">-</div>
+												<input 
+													type="text"
+													name="max"
+													id = "amount-max"
+													maxlength='6'
+													onkeyup="this.value=this.value.replace(/[^0-9]+/g,'')">
+											</div>
+										</div>
+											<div class="ul-producer-list">
+												<div class="producer-title">Виробник</div>
+												<ul>
+													<li>
+														<input type="checkbox" id="fruit0" name="fruit-0" value="Carrier">
+	  												<label for="fruit0">Carrier</label>
+													</li>
+													<li>
+														<input type="checkbox" id="fruit1" name="fruit-1" value="Gree">
+	  												<label for="fruit1">Gree</label>
+													</li>
+													<li>
+														<input type="checkbox" id="fruit2" name="fruit-2" value="Neoclima">
+	  												<label for="fruit2">Neoclima</label>
+													</li>
+													<li>
+														<input type="checkbox" id="fruit3" name="fruit-3" value="LG">
+	  												<label for="fruit3">LG</label>
+													</li>
+													<li>
+														<input type="checkbox" id="fruit4" name="fruit-4" value="Toshiba">
+	  												<label for="fruit4">Toshiba</label>
+													</li>
+													<li>
+														<input type="checkbox" id="fruit5" name="fruit-5" value="Galactic">
+	  												<label for="fruit5">Galactic</label>
+													</li>
+													<li>
+														<input type="checkbox" id="fruit6" name="fruit-6" value="Panasonic">
+	  												<label for="fruit6">Panasonic</label>
+													</li>
+													<li>
+														<input type="checkbox" id="fruit7" name="fruit-7" value="Sakata">
+	  												<label for="fruit7">Sakata</label>
+													</li>
+													<li>
+														<input type="checkbox" id="fruit8" name="fruit-8" value="M.E.">
+	  												<label for="fruit8">M.E.</label>
+													</li>
+													<li>
+														<input type="checkbox" id="fruit9" name="fruit-9" value="Leberg">
+	  												<label for="fruit9">Leberg</label>
+													</li>
+												</ul>
+											</div>
+											<div class="ul-type-list">
+												<div class="producer-title">Тип</div>
+												<ul>
+													<li>
+														<input type="checkbox" id="type0" name="type0" value="Інвертор">
+	  												<label for="type0">Інвертор</label>
+													</li>
+													<li>
+														<input type="checkbox" id="type1" name="type1" value="On/Off">
+	  												<label for="type1">On/Off</label>
+													</li>
+												</ul>
+											</div>
+											<div class="ul-type-block-insert-list">
+												<div class="producer-title">Тип встановлення внутрішнього блоку</div>
+												<ul>
+													<li>
+														<input type="checkbox" id="block0" name="block0" value="Спліт система настінного типу">
+	  												<label for="block0">Спліт система настінного типу</label>
+													</li>
+													<li>
+														<input type="checkbox" id="block1" name="block1" value="Спліт система мобільного типу">
+	  												<label for="block1">Спліт система мобільного типу</label>
+													</li>
+												</ul>
+											</div>
+										<div class="form-button">
+											<button>Застосувати фільтр</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="section-col-4-list active" data-choice = "0">
+				<div class="container">
+					<div class="col-4-list-wrap">
+						<div class="col-4-row-wrap">
+							<ul class="list-col-4">
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "0">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_1.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung AR09MSFPAWQNER</h2>
+											</div>
+											<div class="li-price">
+												<span>12 493 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1643784</span>
+												<span class="span-right laved" data-id = "1">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_2.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор<br> PRANA - 200G</h2>
+											</div>
+											<div class="li-price">
+												<span>5 323 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "2">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_3.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор <br>Soler&Palau</h2>
+											</div>
+											<div class="li-price">
+												<span>672 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "3">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_4.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung Eolo Mythos 24 2E</h2>
+											</div>
+											<div class="li-price">
+												<span>16 577 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "0">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_1.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung AR09MSFPAWQNER</h2>
+											</div>
+											<div class="li-price">
+												<span>12 493 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1643784</span>
+												<span class="span-right laved" data-id = "1">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_2.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор<br> PRANA - 200G</h2>
+											</div>
+											<div class="li-price">
+												<span>5 323 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "2">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_3.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор <br>Soler&Palau</h2>
+											</div>
+											<div class="li-price">
+												<span>672 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "3">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_4.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung Eolo Mythos 24 2E</h2>
+											</div>
+											<div class="li-price">
+												<span>16 577 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "0">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_1.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung AR09MSFPAWQNER</h2>
+											</div>
+											<div class="li-price">
+												<span>12 493 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1643784</span>
+												<span class="span-right laved" data-id = "1">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_2.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор<br> PRANA - 200G</h2>
+											</div>
+											<div class="li-price">
+												<span>5 323 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "2">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_3.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор <br>Soler&Palau</h2>
+											</div>
+											<div class="li-price">
+												<span>672 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "3">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_4.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung Eolo Mythos 24 2E</h2>
+											</div>
+											<div class="li-price">
+												<span>16 577 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class = "li-hidden">
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "4">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_3.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор <br>Soler&Palau</h2>
+											</div>
+											<div class="li-price">
+												<span>672 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class = "li-hidden">
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1643784</span>
+												<span class="span-right laved" data-id = "5">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_2.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор<br> PRANA - 200G</h2>
+											</div>
+											<div class="li-price">
+												<span>5 323 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class = "li-hidden">
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "6">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_4.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung Eolo Mythos 24 2E</h2>
+											</div>
+											<div class="li-price">
+												<span>16 577 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class = "li-hidden">
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "7">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_1.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung AR09MSFPAWQNER</h2>
+											</div>
+											<div class="li-price">
+												<span>12 493 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class = "li-hidden">
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "4">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_3.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор <br>Soler&Palau</h2>
+											</div>
+											<div class="li-price">
+												<span>672 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class = "li-hidden">
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1643784</span>
+												<span class="span-right laved" data-id = "5">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_2.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор<br> PRANA - 200G</h2>
+											</div>
+											<div class="li-price">
+												<span>5 323 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class = "li-hidden">
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "6">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_4.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung Eolo Mythos 24 2E</h2>
+											</div>
+											<div class="li-price">
+												<span>16 577 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class = "li-hidden">
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "7">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_1.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung AR09MSFPAWQNER</h2>
+											</div>
+											<div class="li-price">
+												<span>12 493 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="button-border-blue-wrap" data-count = "4">
+					<div class="container">
+						<div class="button-border-blue">
+							<span>Показати ще</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-col-4-list" data-choice = "1">
+				<div class="container">
+					<div class="col-4-list-wrap">
+						<div class="col-4-row-wrap">
+							<ul class="list-col-4">
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "0">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_1.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung AR09MSFPAWQNER</h2>
+											</div>
+											<div class="li-price">
+												<span>12 493 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1643784</span>
+												<span class="span-right laved" data-id = "1">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_2.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор<br> PRANA - 200G</h2>
+											</div>
+											<div class="li-price">
+												<span>5 323 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "2">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_3.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор <br>Soler&Palau</h2>
+											</div>
+											<div class="li-price">
+												<span>672 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "3">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_4.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung Eolo Mythos 24 2E</h2>
+											</div>
+											<div class="li-price">
+												<span>16 577 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "0">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_1.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung AR09MSFPAWQNER</h2>
+											</div>
+											<div class="li-price">
+												<span>12 493 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1643784</span>
+												<span class="span-right laved" data-id = "1">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_2.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор<br> PRANA - 200G</h2>
+											</div>
+											<div class="li-price">
+												<span>5 323 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "2">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_3.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор <br>Soler&Palau</h2>
+											</div>
+											<div class="li-price">
+												<span>672 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "3">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_4.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung Eolo Mythos 24 2E</h2>
+											</div>
+											<div class="li-price">
+												<span>16 577 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "0">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_1.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung AR09MSFPAWQNER</h2>
+											</div>
+											<div class="li-price">
+												<span>12 493 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1643784</span>
+												<span class="span-right laved" data-id = "1">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_2.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор<br> PRANA - 200G</h2>
+											</div>
+											<div class="li-price">
+												<span>5 323 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "2">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_3.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор <br>Soler&Palau</h2>
+											</div>
+											<div class="li-price">
+												<span>672 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "3">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_4.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung Eolo Mythos 24 2E</h2>
+											</div>
+											<div class="li-price">
+												<span>16 577 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class = "li-hidden">
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "4">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_3.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор <br>Soler&Palau</h2>
+											</div>
+											<div class="li-price">
+												<span>672 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class = "li-hidden">
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1643784</span>
+												<span class="span-right laved" data-id = "5">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_2.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Вентилятор<br> PRANA - 200G</h2>
+											</div>
+											<div class="li-price">
+												<span>5 323 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class = "li-hidden">
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "6">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_4.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung Eolo Mythos 24 2E</h2>
+											</div>
+											<div class="li-price">
+												<span>16 577 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class = "li-hidden">
+									<div class="li-block">
+										<div class="block">
+											<div class="top-li-block">
+												<span class="span-left">Код: 1014780</span>
+												<span class="span-right laved" data-id = "7">
+													<i class="far fa-heart"></i>
+												</span>
+											</div>
+											<div class="li-image">
+												<img src="../images/home_produkt_1.jpg" alt="">
+											</div>
+											<div class="li-title">
+												<h2>Кондиционер спліт <br>Samsung AR09MSFPAWQNER</h2>
+											</div>
+											<div class="li-price">
+												<span>12 493 грн</span>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="button-border-blue-wrap">
+					<div class="container">
+						<div class="button-border-blue" data-count = "4">
+							<span>Показати ще</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-products-text">
+				<div class="container">
+					<div class="products-text">
+						<p>Вентилятори використовують для примусової циркуляції повітря в промислових і побутових приміщеннях. Побутові вентилятори відрізняються за місцем призначення Кухонні: очищають наповнене запахами, димом та випарами повітря. Більш потужний центробіжний варіант не лише позбудеться забрудненого повітря, а й надасть доступ свіжому. Для ванної кімнати та санвузлів: їх задача – видаляти вологу та неприємний запах з приміщення. Найчастіше це стандартні осьові механізми, що характеризуються низьким шумом та невеликою потужністю. Камінні – встановлюються на димарях та відповідають за відведення диму. За методом встановлення виділяють: настінні вентилятори – зазвичай встановлюються у ванних кімнатах та туалетах; віконні – монтуються в кватирках або у спеціальних прорізах у вікнах. Інтернет-магазин вентиляторів в Івано-Франківську «Аероплюс» пропонує продукцію одного з найкращих виробників побутових вентиляторів – іспанського бренду Soler&Рalau.</p>
+						<p>Промислові вентилятори використовуються на великих об’єктах, де система кондиціонування вимагає встановлення потужних агрегатів, стійких до навантажень і агресивного впливу довкілля. Вони можуть бути осьовими, що відводять повітря назовні, або центробіжними, що ведуть в мережу повітроводів. Серед промислових вентиляторів можна виділити: канальні: компактні за розміром механізми, які монтуються на повітроводах з круглим чи прямокутним перерізом та забезпечують рівномірний розподіл повітря по приміщенню; дахові: встановлюються на дахах будівель, використовуються для горизонтального викиду повітря з великих за площею приміщень: ресторанів, магазинів, складів, офісних центрів та ін. Промислова кліматична техніка на нашому сайті представлена українським брендом ASIS, що зарекомендував себе надійним та якісним виробником.</p>
+						<p>Чому варто купити вентилятори в “Аероплюс”: великий асортимент продукції відмінної якості; доступна ціна; детальна консультація спеціаліста; швидка обробка замовлень; оплата готівкою і на карту. Компанія «Аероплюс» здійснює не лише продаж кліматичної техніки гуртом та вроздріб, а й монтаж обладнання. Тож якщо вас цікавить вигідна ціна вентилятора в Івано-Франківську та якісне обслуговування, звертайтеся до нас.</p>
+					</div>
+				</div>
+			</section>
+		</article>
+	</main>
+</div>
+		<footer class="footer-wrap">
+		<!-- http://vioagency.com.ua/ -->
+			<div class="container">
+				<div class="footer">
+					<div class="left">
+						<p>Інженерно-монтажна організація Аероплюс. Всі права захищені</p>
+					</div>
+					<div class="right">
+						<span>Розроблено <a class = "hover-line" href="http://vioagency.com.ua/" target="_blanck">VIOagency</a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB55s_HCIM3COosq89bsgJOOVh6fBDTts8"></script>
+		<script src="../js/slick.min.js"></script>
+		<script src="../js/jquery.fancybox.min.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
+		<script src="../js/jquery.validate.min.js"></script>
+		<script src="../js/jquery.formstyler.min.js"></script>
+		<!-- <script src="../js/jquery.ui.touch-punch.min.js"></script> -->
+		
+		<script src="../js/main.js"></script>
+	</body>
+</html>
