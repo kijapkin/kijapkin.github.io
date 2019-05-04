@@ -34,12 +34,13 @@ p.text-cont, p.text-cont>a{
 	text-transform: uppercase;
 	margin: 10px auto;
 	cursor: pointer;
-	transition: all .2s ease;
+	transition: .2s ease;
 }
 #button-home>a:hover{
 	color: #fff;
-	background: #FF0000;
+	background: #555;
 	transition: all .2s ease;
+	box-shadow: 0 0 10px #fff;
 }
 
 @media screen and (max-width: 980px){
