@@ -21,7 +21,7 @@
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
-	padding: 20px 10px 0;
+	padding: 20px 10px 0 10px;
 	background-color: rgba(0,0,0,.2);
 }
 p.title{
@@ -82,10 +82,10 @@ p.under{
 	padding-bottom: 10px;
 }
 .zasnovnyk{
-	font-size: 2em;
+	font-size: 32px;
 }
 .fio{
-	font-size: 40px;
+	font-size: 46px;
 	color:  #679ED2;
 }
 p.contacts{
