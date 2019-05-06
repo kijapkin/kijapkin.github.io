@@ -74,7 +74,6 @@ p.text-contacts, p.text-contacts>a{
 	text-align: center;
 	background-color: rgba(255,255,255,.7);
 	border-radius: 30px;
-	margin-top: 40px;
 	transition: .2s;
 }
 .button-location:hover{
@@ -90,21 +89,23 @@ p.text-contacts, p.text-contacts>a{
 	color: #000;
 }
 p.copy-coder a, p.copy-owner a, p.contacts a{
-	/* font-size: 12px; */
-	color: #4671D5;
 	color: #FFFFFF;
 }
 #footer{
-	min-height: 100px;
 	color: #FFFFFF;
 	padding: 20px;
 	font-size: 13px;
 	background: rgba(0,0,0,.3);
+	margin-top: -5px;
 }
-#footer a{
+.links{
+	margin-top: 40px;
+}
+.links a{
 	transition: .3s;
 	border-bottom: 1px solid transparent;
+	color: #FFFFFF;
 }
-#footer a:hover{
+.links a:hover{
 	border-bottom: 1px solid #FFF;
 }
