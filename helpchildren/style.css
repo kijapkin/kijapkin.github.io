@@ -91,14 +91,12 @@ p.under{
 p.contacts{
 	color: #fff;
 	font-size: 14px;
-	font-style: italic;
 }
 p.contacts>a{
 	color: #fff;
 }
 p.copy-coder a, p.copy-owner a{
 	font-size: 14px;
-	font-style: italic;
 	color: #4671D5;
 }
 .block-button-location{
