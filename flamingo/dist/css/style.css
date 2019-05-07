@@ -623,13 +623,23 @@ section {
     grid-template-columns: auto auto;
     justify-items: center;
     margin-bottom: 60px; }
+    @media (max-width: 1200px) {
+      .section-presentation .imgs-buttles {
+        grid-template-columns: auto; } }
     .section-presentation .imgs-buttles img {
       width: 570px;
       margin: 0 10px; }
       .section-presentation .imgs-buttles img:first-child {
         justify-self: end; }
+        @media (max-width: 1200px) {
+          .section-presentation .imgs-buttles img:first-child {
+            justify-self: center;
+            margin-bottom: 30px; } }
       .section-presentation .imgs-buttles img:last-child {
         justify-self: start; }
+        @media (max-width: 1200px) {
+          .section-presentation .imgs-buttles img:last-child {
+            justify-self: center; } }
 
 /* .footer {
 	width: 100%;

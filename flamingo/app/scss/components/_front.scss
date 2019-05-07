@@ -101,14 +101,24 @@ section{
 		grid-template-columns: auto auto;
 		justify-items: center;
 		margin-bottom: 60px;
+		@media (max-width: 1200px) {
+			grid-template-columns: auto;
+		}
 		img{
 			width: 570px;
 			margin: 0 10px;
 			&:first-child{
 				justify-self: end;
+				@media (max-width: 1200px) {
+					justify-self: center;
+					margin-bottom: 30px;
+				}
 			}
 			&:last-child{
 				justify-self: start;
+				@media (max-width: 1200px) {
+					justify-self: center;
+				}
 			}
 		}
 	}
