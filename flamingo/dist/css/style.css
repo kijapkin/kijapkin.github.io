@@ -404,9 +404,6 @@ td,
 th {
   padding: 0; }
 
-.middle {
-  padding-bottom: 235px; }
-
 html {
   height: 100%; }
 
@@ -601,7 +598,11 @@ section {
 
 .section-presentation {
   text-align: center;
-  padding-top: 50px; }
+  display: grid;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .section-presentation h1 {
     font-size: 76px;
     font-family: 'Raleway', sans-serif;
@@ -630,9 +631,10 @@ section {
       .section-presentation .imgs-buttles img:last-child {
         justify-self: start; }
 
-.footer {
-  width: 100%;
-  margin: -235px auto 0;
-  height: 235px;
-  background: #fff;
-  position: relative; }
+/* .footer {
+	width: 100%;
+	margin: -235px auto 0;
+	height: 235px;
+	background: #fff;
+	position: relative;
+} */

@@ -76,7 +76,8 @@ section{
 }
 .section-presentation{
 	text-align: center;
-	padding-top: 50px;
+	display: grid;
+	align-items: center;
 	h1{
 		font-size: 76px;
 		font-family: 'Raleway', sans-serif;
