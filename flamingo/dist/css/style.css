@@ -535,6 +535,101 @@ a {
 .slick-arrow.slick-hidden {
   display: none; }
 
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: normal; }
+
+h1, h2 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #000; }
+
+#main-wrapper {
+  max-width: 1540px;
+  color: #FFFFFF;
+  margin: 0 auto; }
+
+section {
+  min-height: 100vh;
+  outline: 1px dashed green; }
+
+.section-home {
+  background-color: #000;
+  text-align: center; }
+  .section-home .top-block {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; }
+    .section-home .top-block .main-menu ul {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      padding-left: 30px;
+      padding-top: 30px;
+      max-width: 550px; }
+      .section-home .top-block .main-menu ul li a {
+        color: #FFFFFF;
+        font-size: 16px;
+        border-bottom: 1px solid transparent;
+        -webkit-transition: .1s;
+        -o-transition: .1s;
+        transition: .1s; }
+        .section-home .top-block .main-menu ul li a:hover {
+          text-shadow: 0 0 12px #FFFFFF;
+          border-bottom: 1px solid #FFFFFF; }
+    .section-home .top-block .img-logo img {
+      width: 300px; }
+    .section-home .top-block .social-block {
+      display: grid;
+      grid-template-columns: repeat(4, 40px);
+      justify-self: end;
+      padding-right: 30px;
+      padding-top: 30px; }
+  .section-home h1 {
+    font-size: 107px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; }
+  .section-home h2 {
+    font-size: 76px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700; }
+
+.section-presentation {
+  text-align: center;
+  padding-top: 50px; }
+  .section-presentation h1 {
+    font-size: 76px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    padding-bottom: 60px; }
+  .section-presentation h5 {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-bottom: 60px; }
+    .section-presentation h5:last-child {
+      max-width: 650px; }
+  .section-presentation .imgs-buttles {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    margin-bottom: 60px; }
+    .section-presentation .imgs-buttles img {
+      width: 570px;
+      margin: 0 10px; }
+      .section-presentation .imgs-buttles img:first-child {
+        justify-self: end; }
+      .section-presentation .imgs-buttles img:last-child {
+        justify-self: start; }
+
 .footer {
   width: 100%;
   margin: -235px auto 0;
