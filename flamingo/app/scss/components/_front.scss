@@ -21,11 +21,17 @@ body{
 }
 section{
 	min-height: 100vh;
-	outline: 1px dashed green;
+	// outline: 1px dashed green;
+	// background-color: #000;
 }
 .section-home{
-	background-color: #000;
 	text-align: center;
+	position: relative;
+	// background-image: url(../images/paralax.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	// background-position: bottom;
+	background-image: url(../images/bg-paralax.png);
 	.top-block{
 		display: grid;
 		grid-template-columns: 1fr auto 1fr;
@@ -127,11 +133,25 @@ section{
 			font-size: 26px;
 		}
 	}
+	/* .img-paralax{
+		position: relative;
+		z-index: 100;
+		background-image: url(../images/bg-paralax.png);
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		height: 600px;
+		width: 100%;
+		img{
+	
+		}
+	} */
 }
 .section-presentation{
 	text-align: center;
 	display: grid;
 	align-items: center;
+	position: relative;
+	z-index: 200;
 	h1{
 		font-size: 76px;
 		font-family: 'Raleway', sans-serif;
