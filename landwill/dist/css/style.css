@@ -1426,8 +1426,8 @@ section.main-slider {
             align-items: center;
             text-align: center;
             width: 157px;
-            height: 80px;
-            padding: 0 20px;
+            /*height: 80px;*/
+            padding: 5px 10px;
             background: #FFC700;
             -webkit-border-radius: 8px;
             border-radius: 8px;
@@ -1438,7 +1438,7 @@ section.main-slider {
             font-family: PT Sans;
             font-style: normal;
             font-weight: bold;
-            line-height: normal;
+            /*line-height: normal;*/
             font-size: 24px;
             position: absolute;
             top: 60px;
@@ -2451,7 +2451,8 @@ section.common-wrapper {
       -ms-flex-align: center;
       align-items: center;
       grid-template-columns: auto auto;
-      grid-template-areas: "pv win" ". ph"; }
+      grid-template-areas: "pv win"
+ ". ph"; }
       section.common-wrapper .calculator form .block-calculator .block-right .window-calculator input[type=range] {
         -webkit-appearance: none;
         width: 440px;
@@ -6652,7 +6653,8 @@ section.section-prices {
         -ms-flex-align: center;
         align-items: center;
         grid-template-columns: auto auto;
-        grid-template-areas: "pv win" ". ph"; }
+        grid-template-areas: "pv win"
+ ". ph"; }
         section.section-prices .main-block-prices .calculator form .block-calculator .block-right .window-calculator input[type=range] {
           -webkit-appearance: none;
           width: 440px;
@@ -8022,7 +8024,8 @@ section.section-servitude .calculator form .block-calculator .block-right .windo
     -ms-flex-align: center;
     align-items: center;
     grid-template-columns: auto auto;
-    grid-template-areas: "pv win" ". ph";
+    grid-template-areas: "pv win"
+ ". ph";
 }
 
 section.section-servitude .calculator form .block-calculator .block-right .window-calculator input[type=range] {

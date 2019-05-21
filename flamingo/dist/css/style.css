@@ -1189,8 +1189,7 @@ section.section-3-steps .wrapper .wrapper-inner {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
-  outline: 1px dashed lime; }
+  align-items: center; }
   section.section-3-steps .wrapper .wrapper-inner h1 {
     font-size: 76px;
     line-height: 1;
@@ -1724,7 +1723,7 @@ section.section-club {
   height: 100vh; }
   section.section-club .block-main-title h1 {
     color: #ffb300;
-    font-size: 15q0px;
+    font-size: 150px;
     line-height: 1;
     font-weight: 800;
     text-transform: uppercase;
