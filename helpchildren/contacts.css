@@ -9,13 +9,14 @@
 	font-family: tahoma, arial;
 }
 #wrapper{
+	background-color: lime;
 	background-image: url(imgs/bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	min-height: 100vh;	
+	min-height: 100vh;
 }
 #header{
 	padding: 0 10px;
@@ -40,34 +41,26 @@
 	font-size: 20px;
 }
 #map{
-	max-width: 100%;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+#map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 p.text-contacts, p.text-contacts>a{
 	padding: 20px 0px;
 	color: #FFFFFF;
 	font-size: 1.2em;
 }
-#button-home{
-	font-size: 1.5em;
-	padding-bottom: 20px;
-}
-#button-home a{
-	display: block;
-	margin: 0px auto 10px;
-	width: 300px;
-	text-align: center;
-	background: rgba(255,255,255,.4);
-	padding: 10px;
-	border-radius: 30px;
-	font-size: 1.5em;
-	font-family: lobster;
-	color: #000;
-	transition: .2s;
-	margin-top: 40px;
-}
 .block-button-location{
 	text-align: center;
-	padding-bottom: 40px;
+	margin: 40px 0;
 }
 .button-location{
 	display: inline-block;
@@ -95,14 +88,10 @@ p.copy-coder a, p.copy-owner a, p.contacts a{
 	color: #FFFFFF;
 	padding: 20px;
 	font-size: 13px;
-	background: rgba(0,0,0,.3);
-	margin-top: -5px;
-}
-.links{
-	margin-top: 120px;
+	/*background-color: rgba(0,0,0,.4);*/
 }
 .links a{
-	transition: .3s;
+	transition: .2s;
 	border-bottom: 1px solid transparent;
 	color: #FFFFFF;
 }

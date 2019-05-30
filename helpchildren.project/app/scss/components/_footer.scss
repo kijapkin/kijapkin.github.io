@@ -1,0 +1,22 @@
+.footer {
+	width: 100%;
+	margin: -235px auto 0;
+	background: #fff;
+	position: relative;
+	background-color: rgba(0,0,0,.8);
+	padding: 10px;
+	max-width: 1200px;
+	margin: 0 auto;
+	p.contacts{
+		color: #fff;
+		font-size: 14px;
+		a{
+			color: #fff;
+		}
+	}
+	p.copy-coder a, 
+	p.copy-owner a{
+		font-size: 14px;
+		color: #4671D5;
+	}
+}
