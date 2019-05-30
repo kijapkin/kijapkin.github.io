@@ -26,6 +26,7 @@
 }
 p.title{
 	color: #679ED2;
+	/*text-shadow: 0 0 4px #fff;*/
 	font-size: 70px;
 	opacity: .8;
 	font-family: lobster;
