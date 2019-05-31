@@ -10,7 +10,7 @@
 }
 #wrapper{
 	background-color: lime;
-	background-image: url(imgs/bg.jpg);
+	background-image: url(images/bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
