@@ -446,7 +446,7 @@ h5{
   margin-left: auto;
 }
 
-/***
+/******
   ** Extendable classes
   **/
 .ball, .ball-1, .ball-2, .ball-3, .ball-4, .top-banner .container::before, .top-banner .container::after, .super-sale__top-banner::before, .price__top-banner:not(.price__top-banner-extra)::before, .advantages-item:nth-of-type(1)::after, .advantages-item:nth-of-type(2)::after, .advantages-item:nth-of-type(3)::after, .advantages-item:nth-of-type(4)::after, .advantages-img::before, .advantages-img::after, .video-wrapper::after, .slogan__video::before, .why-we-img::before, .why-we-img::after, .why-we-item:nth-of-type(2)::after, .why-we-item:nth-of-type(3)::after, .gallery-tab-wrapper::before, .gallery-tab-wrapper::after, .sale-text .container::before, .sale-text .container::after, .sale-text-content::after, .slogan__text-sale::before, .title__how-we::before, .how-we-item:nth-of-type(4)::before, .bottom-banner .container::before, .bottom-banner .container::after, .bottom-banner-clothing::before {
