@@ -4,7 +4,7 @@
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/FuturaPTBook/FuturaPTBook.eot");
-  src: url("../fonts/FuturaPTBook/FuturaPTBook.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPTBook/FuturaPTBook.woff") format("woff"), url("../fonts/FuturaPTBook/FuturaPTBook.ttf") format("truetype");
+  src: url("../fonts/FuturaPTBook/FuturaPTBook.eot") format("embedded-opentype"), url("../fonts/FuturaPTBook/FuturaPTBook.woff") format("woff"), url("../fonts/FuturaPTBook/FuturaPTBook.ttf") format("truetype");
 }
 
 @font-face {
@@ -56,6 +56,7 @@ html {
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  font-family: tahoma,arial,san-serif;
 }
 
 input:-ms-input-placeholder {
@@ -293,8 +294,8 @@ h5{
   -webkit-border-radius: 20px;
           border-radius: 20px;
   background-color: #ff3930;
-  font-family: "FuturaPTBook", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 30px;
+  font-family: tahoma, sans-serif;
+  font-size: 28px;
   color: #fff;
   letter-spacing: .05em;
   text-align: center;
@@ -454,7 +455,7 @@ h5{
   display: block;
   width: 163px;
   height: 163px;
-  background: url(../img/general/ball.png) center/contain no-repeat;
+  background: url(ball.png) center/contain no-repeat;
   content: "";
   pointer-events: none;
 }
@@ -504,7 +505,7 @@ h5{
   **/
 .top-banner {
   padding: 10px 0 28px;
-  /*background-image: url(./PUMA_files/top-banner-bg.jpg);*/
+  background-image: url(top-banner-bg.jpg);
   background-position: 50% -webkit-calc(100% - 130px);
   background-position: 50% calc(100% - 130px);
   -webkit-background-size: cover;
@@ -585,7 +586,7 @@ h5{
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
           align-items: flex-end;
-  font-size: 36px;
+  font-size: 34px;
 }
 
 .logo .logo-img {
@@ -747,7 +748,7 @@ h5{
   display: block;
   width: 8.3125em;
   height: 10em;
-  background: url(../img/general/advantages-arrow.png) center/contain no-repeat;
+  background: url(advantages-arrow.png) center/contain no-repeat;
   content: "";
 }
 
@@ -882,8 +883,10 @@ h5{
 }
 
 .advantages-item-text {
-  font-size: 18px;
+  font-size: 16px;
   width: 100%;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
 .advantages-img {
@@ -957,7 +960,7 @@ h5{
   z-index: -3;
   width: 38.1875em;
   height: 29.75em;
-  background: url(../img/content/video-puma.jpg) center/contain no-repeat;
+  background: url(video-puma.jpg) center/contain no-repeat;
   content: "";
   pointer-events: none;
 }
@@ -976,7 +979,7 @@ h5{
   width: 559px;
   width: 70%;
   padding-bottom: 82.88%;
-  background: url(../img/content/video-couple.png) center/contain no-repeat;
+  background: url(video-couple.png) center/contain no-repeat;
   content: "";
   z-index: 1;
   opacity: 1;
@@ -1050,7 +1053,7 @@ h5{
   left: 50%;
   width: 6em;
   height: 4.25em;
-  background: url(../img/general/youtube-button.png) center/contain no-repeat;
+  background: url(youtube-button.png) center/contain no-repeat;
   opacity: 1;
   overflow: hidden;
   -webkit-transform: translate(-50%, -50%);
@@ -1084,7 +1087,8 @@ h5{
 .video-text {
   position: relative;
   width: 310px;
-  font-size: 18px;
+  font-size: 15px;
+  line-height: 1.4;
   text-align: justify;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1125,6 +1129,8 @@ h5{
 
 .slogan span {
   font-family: "FuturaPTBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 900;
+  padding-top: 10px;
 }
 
 .slogan__video {
@@ -1176,7 +1182,7 @@ h5{
   display: block;
   width: 41.3125em;
   height: 12.875em;
-  background: url(../img/general/why-we-puma.png) center/contain no-repeat;
+  background: url(why-we-puma.png) center/contain no-repeat;
   content: "";
 }
 
@@ -1368,7 +1374,7 @@ h5{
   display: block;
   width: 50.9375em;
   height: 49.5em;
-  background: url(../img/general/gallery-bg.jpg) center/contain no-repeat;
+  background: url(gallery-bg.jpg) center/contain no-repeat;
   content: "";
   z-index: -3;
 }
@@ -1432,7 +1438,7 @@ h5{
   display: block;
   width: 5.125em;
   height: 8.3125em;
-  background: url(../img/general/gallery-arrow.png) center/contain no-repeat;
+  background: url(gallery-arrow.png) center/contain no-repeat;
   content: "";
   z-index: 1;
   cursor: pointer;
@@ -1582,7 +1588,7 @@ h5{
   content: "";
   top: 96%;
   right: -34.2%;
-  background: url(../img/general/order-puma-grey-bg.jpg) center/contain no-repeat;
+  background: url(order-puma-grey-bg.jpg) center/contain no-repeat;
 }
 
 .order-puma-black .order-sliders {
@@ -1596,7 +1602,7 @@ h5{
   content: "";
   top: 103%;
   right: 76.8%;
-  background: url(../img/general/order-puma-black-bg.jpg) center/contain no-repeat;
+  background: url(order-puma-black-bg.jpg) center/contain no-repeat;
 }
 
 .order-pink .size-table-wrapper {
@@ -1611,7 +1617,7 @@ h5{
   content: "";
   top: 4%;
   right: -118.2%;
-  background: url(../img/general/order-pink-bg.jpg) center/contain no-repeat;
+  background: url(order-pink-bg.jpg) center/contain no-repeat;
 }
 
 .orders-title {
@@ -1668,6 +1674,8 @@ h5{
 
 .title__order span {
   font-size: 50px;
+  font-weight: 900;
+  padding-top: 10px;
 }
 
 .price__order {
@@ -1749,7 +1757,8 @@ h5{
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
           align-items: flex-start;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.6;
   width: 100%;
 }
 
@@ -1765,8 +1774,9 @@ h5{
 }
 
 .descr-row b {
-  font-family: "FuturaPTDemi", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  /*font-family: "FuturaPTDemi", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;*/
   color: #5e3a08;
+  font-weight: 800;
 }
 
 .order-toggle {
@@ -2146,7 +2156,7 @@ h5{
   display: block;
   width: 2.4375em;
   height: 3.875em;
-  background: url(../img/general/order-slider-arrow.png) center/contain no-repeat;
+  background: url(order-slider-arrow.png) center/contain no-repeat;
   content: "";
   z-index: 1;
   cursor: pointer;
@@ -2260,7 +2270,7 @@ h5{
 }
 
 .sale-text-discount b {
-  font-family: FuturaPTBold;
+  /*font-family: FuturaPTBold;*/
   font-size: .83333em;
   color: #ffa11b;
   letter-spacing: normal;
@@ -2275,7 +2285,7 @@ h5{
   display: block;
   width: 4.825em;
   height: 4.4em;
-  background: url(../img/general/sale-text-arrow.jpg) center/contain no-repeat;
+  background: url(sale-text-arrow.jpg) center/contain no-repeat;
   content: "";
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -2483,7 +2493,7 @@ h5{
   display: block;
   width: 29.4375em;
   height: 51.6875em;
-  background: url(../img/general/reviews-woman-img.jpg) 0 0/contain no-repeat;
+  background: url(reviews-woman-img.jpg) 0 0/contain no-repeat;
   content: "";
   z-index: -1;
   pointer-events: none;
@@ -2520,7 +2530,7 @@ h5{
   display: block;
   width: 18.6875em;
   height: 38.75em;
-  background: url(../img/general/reviews-man-img.jpg) 0 0/contain no-repeat;
+  background: url(reviews-man-img.jpg) 0 0/contain no-repeat;
   content: "";
   z-index: -1;
   pointer-events: none;
@@ -2613,7 +2623,7 @@ h5{
   display: block;
   width: 8.8125em;
   height: 3.9375em;
-  background: url(../img/general/reviews-slider-arrow.png) center/contain no-repeat;
+  background: url(reviews-slider-arrow.png) center/contain no-repeat;
   content: "";
   z-index: 3;
   cursor: pointer;
@@ -2642,7 +2652,7 @@ h5{
   ** Bottom Banner
   **/
 .bottom-banner {
-  background-image: url(../img/content/bottom-banner-bg.jpg);
+  background-image: url(bottom-banner-bg.jpg);
   background-position: 50% 55px;
   -webkit-background-size: cover;
           background-size: cover;
@@ -3826,7 +3836,7 @@ h5{
   .top-banner-clothing::before {
     position: absolute;
     display: block;
-    background: url(../img/general/ball.png) center/contain no-repeat;
+    background: url(ball.png) center/contain no-repeat;
     content: "";
     pointer-events: none;
     right: auto;
@@ -3839,7 +3849,7 @@ h5{
   .top-banner-clothing::after {
     position: absolute;
     display: block;
-    background: url(../img/general/ball.png) center/contain no-repeat;
+    background: url(ball.png) center/contain no-repeat;
     content: "";
     pointer-events: none;
     right: 76%;
