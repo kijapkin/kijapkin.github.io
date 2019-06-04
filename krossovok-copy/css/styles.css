@@ -1188,9 +1188,10 @@ h5{
 
 .why-we-img {
   position: absolute;
-  left: 60px;
-  bottom: 0;
-  width: 324px;
+  z-index: -1;
+  left: -80px;
+  bottom: 200px;
+  width: 624px;
 }
 
 .why-we-img::before {
@@ -2220,12 +2221,14 @@ h5{
 
 .sale-text-content::before {
   position: absolute;
+  z-index: -1;
   left: -webkit-calc(100% + 68px);
   left:         calc(100% + 68px);
-  top: 0;
+  top: 190px;
   display: block;
-  width: 295px;
+  width: 495px;
   height: 697px;
+  transform: rotateY(180deg);
   background: url(../images/red-kross-1.png) 0 0/contain no-repeat;
   content: "";
 }
