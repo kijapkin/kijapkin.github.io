@@ -692,7 +692,6 @@ section.section-home {
         font-size: 26px; } }
 
 section.section-presentation {
-  height: 100vh;
   display: grid;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -770,7 +769,6 @@ section.section-presentation {
               justify-self: center; } }
 
 section.section-whatisit .block-titles {
-  height: 50vh;
   display: grid;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -796,7 +794,6 @@ section.section-whatisit .block-titles {
           font-weight: 800; } }
 
 section.section-whatisit .block-whatisit-1 {
-  height: 50vh;
   display: grid;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -811,7 +808,6 @@ section.section-whatisit .block-whatisit-1 {
       -webkit-background-size: contain;
       background-size: contain;
       background-position: center;
-      height: 45vh;
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center; }
@@ -901,7 +897,6 @@ section.section-whatisit .block-whatisit-1 {
                 padding: 0 3px; } }
 
 section.section-whatisit .block-whatisit-2 .inner-block {
-  height: 50vh;
   display: grid;
   grid-template-columns: 6fr 1fr;
   grid-column-gap: 40px; }
@@ -1036,7 +1031,6 @@ section.section-whatisit .block-whatisit-2 .inner-block {
     -webkit-background-size: contain;
     background-size: contain;
     background-position: center;
-    height: 45vh;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center; }
@@ -1045,7 +1039,6 @@ section.section-whatisit .block-whatisit-2 .inner-block {
         display: none; } }
 
 section.section-whatisit .block-whatisit-3 .inner-block {
-  height: 50vh;
   display: grid;
   grid-template-columns: 160px auto 160px;
   -webkit-box-align: center;
@@ -1059,8 +1052,7 @@ section.section-whatisit .block-whatisit-3 .inner-block {
     background-repeat: no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
-    background-position: center;
-    height: 45vh; }
+    background-position: center; }
     @media (max-width: 1600px) {
       section.section-whatisit .block-whatisit-3 .inner-block .img-bottle {
         width: 150px; } }
@@ -1118,7 +1110,6 @@ section.section-whatisit .block-whatisit-3 .inner-block {
     -webkit-background-size: contain;
     background-size: contain;
     background-position: center;
-    height: 45vh;
     grid-area: 1/3/-1/-1; }
     @media (max-width: 1600px) {
       section.section-whatisit .block-whatisit-3 .inner-block .img-running-man {
@@ -1134,7 +1125,6 @@ section.section-whatisit .block-whatisit-3 .inner-block {
         grid-area: 2/1/3/-1; } }
 
 section.section-3-steps .wrapper .wrapper-inner {
-  height: 100vh;
   display: grid;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -1231,8 +1221,7 @@ section.section-3-steps .wrapper .wrapper-inner {
             height: 150px; }
 
 section.section-juice .block-main-title {
-  display: grid;
-  height: 50vh; }
+  display: grid; }
   section.section-juice .block-main-title .inner {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
@@ -1254,7 +1243,6 @@ section.section-juice .block-juice {
   -ms-flex-item-align: center;
   align-self: center; }
   section.section-juice .block-juice .wrapper-inner {
-    height: 50vh;
     display: grid;
     grid-template-columns: auto 160px auto auto;
     grid-column-gap: 3%; }
@@ -1292,7 +1280,6 @@ section.section-juice .block-juice {
       -webkit-background-size: contain;
       background-size: contain;
       background-position: center;
-      height: 45vh;
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center; }
@@ -1695,8 +1682,7 @@ section.section-club {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
-  height: 100vh; }
+  align-items: center; }
   section.section-club .block-main-title h1 {
     color: #ffb300;
     font-size: 150px;
@@ -1823,8 +1809,7 @@ section.section-cashback {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
-  height: 100vh; }
+  align-items: center; }
   section.section-cashback .block-main-title {
     margin-bottom: 50px; }
     @media (max-width: 700px) {
@@ -1906,8 +1891,7 @@ section.section-payment {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
-  height: 100vh; }
+  align-items: center; }
   section.section-payment .block-main-title {
     margin-bottom: 50px; }
     @media (max-width: 700px) {
@@ -2001,8 +1985,7 @@ section.section-delivery {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
-  height: 100vh; }
+  align-items: center; }
   section.section-delivery .block-main-title {
     margin-bottom: 80px; }
     @media (max-width: 700px) {
@@ -2070,8 +2053,7 @@ section.section-contacts {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
-  height: 100vh; }
+  align-items: center; }
   section.section-contacts .block-main-title {
     margin-bottom: 30px; }
     @media (max-width: 700px) {
@@ -2178,8 +2160,7 @@ section.section-questions {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
-  height: 100vh; }
+  align-items: center; }
   section.section-questions .img-fruits {
     text-align: center; }
     section.section-questions .img-fruits img {
