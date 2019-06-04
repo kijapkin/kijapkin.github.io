@@ -1,6 +1,5 @@
 @charset "UTF-8";
-
-/*@font-face {
+@font-face {
   font-family: "FuturaPTBook";
   font-weight: normal;
   font-style: normal;
@@ -46,7 +45,7 @@
   font-style: normal;
   src: url("../fonts/FuturaPTCondBook/FuturaPTCondBook.eot");
   src: url("../fonts/FuturaPTCondBook/FuturaPTCondBook.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPTCondBook/FuturaPTCondBook.woff") format("woff"), url("../fonts/FuturaPTCondBook/FuturaPTCondBook.ttf") format("truetype");
-}*/
+}
 
 html {
   -webkit-box-sizing: border-box;
@@ -57,8 +56,6 @@ html {
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-          font-family: tahoma, arial, san-serif;
-          line-height: 1;
 }
 
 input:-ms-input-placeholder {
@@ -296,8 +293,8 @@ h5{
   -webkit-border-radius: 20px;
           border-radius: 20px;
   background-color: #ff3930;
-  /*font-family: "FuturaPTBook", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;*/
-  font-size: 25px;
+  font-family: "FuturaPTBook", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 30px;
   color: #fff;
   letter-spacing: .05em;
   text-align: center;
@@ -318,6 +315,13 @@ h5{
 .btn:hover {
   color: #fff;
   text-decoration: none;
+ /* -webkit-border-radius: 0;
+          border-radius: 0;*/
+  -webkit-transition: -webkit-border-radius .6s;
+          transition: -webkit-border-radius .6s;
+       -o-transition:         border-radius .6s;
+          transition:         border-radius .6s;
+          transition:         border-radius .6s, -webkit-border-radius .6s;
 }
 
 .btn:hover::before {
@@ -450,7 +454,7 @@ h5{
   display: block;
   width: 163px;
   height: 163px;
-  background: url(../img/general/ball.png) center/contain no-repeat;
+  background: url(../images/ball.png) center/contain no-repeat;
   content: "";
   pointer-events: none;
 }
@@ -542,16 +546,17 @@ h5{
 
 .top-banner-clothing {
   position: absolute;
-  bottom: 10px;
-  left: 25%;
+  bottom: -86px;
+  left: 16%;
   width: 754px;
 }
 
 .top-banner-clothing img {
     width: 660px;
     position: relative;
+    z-index: -1;
     left: 140px;
-    top: -130px;
+    top: -230px;
 }
 
 .top-banner-line {
@@ -631,8 +636,8 @@ h5{
 
 .price__top-banner {
   position: absolute;
-  bottom: 47%;
-  left: 0;
+  bottom: 47.4%;
+  left: 16.8%;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
@@ -642,7 +647,7 @@ h5{
 }
 
 .price__top-banner .actual-price {
-  color: #AA4444;
+  color: #ff3930;
 }
 
 .price__top-banner:not(.price__top-banner-extra)::before {
@@ -884,14 +889,14 @@ h5{
 
 .advantages-img {
   position: absolute;
-  left: 42%;
-  top: 60%;
+  left: 60%;
+  top: 70%;
   z-index: -1;
-  width: 30em;
+  width: 38em;
   height: 45.25em;
   -webkit-transform: translateX(-50%) translateY(-50%) translateY(-25px);
       -ms-transform: translateX(-50%) translateY(-50%) translateY(-25px);
-          transform: translateX(-50%) translateY(-50%) translateY(-25px) rotate(60deg);
+          transform: translateX(-50%) translateY(-50%) translateY(-25px);
 }
 
 .advantages-img::before {
@@ -953,7 +958,7 @@ h5{
   z-index: -3;
   width: 38.1875em;
   height: 29.75em;
-  background: url(../img/content/video-puma.jpg) center/contain no-repeat;
+  /*background: url(../images/video-puma.jpg) center/contain no-repeat;*/
   content: "";
   pointer-events: none;
 }
@@ -972,7 +977,7 @@ h5{
   width: 559px;
   width: 70%;
   padding-bottom: 82.88%;
-  background: url(../img/content/video-couple.png) center/contain no-repeat;
+  /*background: url(../images/video-couple.png) center/contain no-repeat;*/
   content: "";
   z-index: 1;
   opacity: 1;
@@ -1021,7 +1026,7 @@ h5{
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../img/content/video-poster.jpg) center/cover no-repeat;
+  /*background: url(../images/video-poster.jpg) center/cover no-repeat;*/
   border: none;
   text-indent: -999em;
   overflow: hidden;
@@ -1046,7 +1051,7 @@ h5{
   left: 50%;
   width: 6em;
   height: 4.25em;
-  background: url(../img/general/youtube-button.png) center/contain no-repeat;
+  /*background: url(../images/youtube-button.png) center/contain no-repeat;*/
   opacity: 1;
   overflow: hidden;
   -webkit-transform: translate(-50%, -50%);
@@ -1120,7 +1125,7 @@ h5{
 }
 
 .slogan span {
-  font-weight: bold;
+  font-family: "FuturaPTBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
 .slogan__video {
@@ -1172,7 +1177,7 @@ h5{
   display: block;
   width: 41.3125em;
   height: 12.875em;
-  background: url(../img/general/why-we-puma.png) center/contain no-repeat;
+  background: url(../images/why-we-puma.png) center/contain no-repeat;
   content: "";
 }
 
@@ -1183,20 +1188,9 @@ h5{
 
 .why-we-img {
   position: absolute;
-  left: 0px;
-  bottom: 200px;
-  width: 524px;
-  transform: rotate(60deg);
-  /*background-color: lime;*/
-  z-index: -1;
-}
-@media (max-width: 1199px) {
-  .why-we-img{
-    display: none;
-  }
-  .how-we-img{
-    display: none;
-  }
+  left: 60px;
+  bottom: 0;
+  width: 324px;
 }
 
 .why-we-img::before {
@@ -1225,7 +1219,7 @@ h5{
           justify-content: space-between;
   width: 648px;
   margin-right: 115px;
-  /*margin-bottom: 202px;*/
+  margin-bottom: 202px;
 }
 
 .why-we-item {
@@ -1375,7 +1369,7 @@ h5{
   display: block;
   width: 50.9375em;
   height: 49.5em;
-  background: url(../img/general/gallery-bg.jpg) center/contain no-repeat;
+  background: url(../images/gallery-bg.jpg) center/contain no-repeat;
   content: "";
   z-index: -3;
 }
@@ -1439,7 +1433,7 @@ h5{
   display: block;
   width: 5.125em;
   height: 8.3125em;
-  background: url(../img/general/gallery-arrow.png) center/contain no-repeat;
+  background: url(../images/gallery-arrow.png) center/contain no-repeat;
   content: "";
   z-index: 1;
   cursor: pointer;
@@ -1618,7 +1612,7 @@ h5{
   content: "";
   top: 4%;
   right: -118.2%;
-  background: url(../img/general/order-pink-bg.jpg) center/contain no-repeat;
+  background: url(../images/order-pink-bg.jpg) center/contain no-repeat;
 }
 
 .orders-title {
@@ -1860,7 +1854,7 @@ h5{
   font-size: 20px;
   text-transform: none;
   color: #5e3a08;
-  content: "Выберите цвет:";
+  content: "абаБаЕбаИбаЕ баВаЕб:";
 }
 
 .color {
@@ -2081,7 +2075,7 @@ h5{
   opacity: .5;
 }
 
-.order-puma-grey .order-slider-woman .order-slider-inner::before {
+/*.order-puma-grey .order-slider-woman .order-slider-inner::before {
   background-image: url(../img/catalogue/white/2.jpg);
 }
 
@@ -2103,7 +2097,7 @@ h5{
 
 .order-pink .order-slider-black .order-slider-inner::before {
   background-image: url(../img/catalogue/pink/black/2.jpg);
-}
+}*/
 
 .order-slider-inner {
   position: relative;
@@ -2153,7 +2147,7 @@ h5{
   display: block;
   width: 2.4375em;
   height: 3.875em;
-  background: url(../img/general/order-slider-arrow.png) center/contain no-repeat;
+  background: url(../images/order-slider-arrow.png) center/contain no-repeat;
   content: "";
   z-index: 1;
   cursor: pointer;
@@ -2230,13 +2224,10 @@ h5{
   left:         calc(100% + 68px);
   top: 0;
   display: block;
-  width: 495px;
+  width: 295px;
   height: 697px;
   background: url(../images/red-kross-1.png) 0 0/contain no-repeat;
   content: "";
-  transform: rotateY(180deg);
-  margin-top: 260px;
-  /*background-color: lime;*/
 }
 
 .sale-text-content::after {
@@ -2270,10 +2261,10 @@ h5{
 }
 
 .sale-text-discount b {
+  font-family: "FuturaPTBold", tahoma;
   font-size: .83333em;
   color: #ffa11b;
   letter-spacing: normal;
-  font-weight: bold;
 }
 
 .sale-text-discount::before {
@@ -2285,7 +2276,7 @@ h5{
   display: block;
   width: 4.825em;
   height: 4.4em;
-  background: url(../img/general/sale-text-arrow.jpg) center/contain no-repeat;
+  background: url(../images/sale-text-arrow.jpg) center/contain no-repeat;
   content: "";
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -2424,11 +2415,9 @@ h5{
 .how-we-img {
   position: absolute;
   left: -17%;
-  top: 150px;
+  top: -36px;
   z-index: -3;
-  transform: rotate(60deg);
   width: 554px;
-
 }
 
 /***
@@ -2495,7 +2484,7 @@ h5{
   display: block;
   width: 29.4375em;
   height: 51.6875em;
-  background: url(../img/general/reviews-woman-img.jpg) 0 0/contain no-repeat;
+  background: url(../images/reviews-woman-img.jpg) 0 0/contain no-repeat;
   content: "";
   z-index: -1;
   pointer-events: none;
@@ -2532,7 +2521,7 @@ h5{
   display: block;
   width: 18.6875em;
   height: 38.75em;
-  background: url(../img/general/reviews-man-img.jpg) 0 0/contain no-repeat;
+  background: url(../images/reviews-man-img.jpg) 0 0/contain no-repeat;
   content: "";
   z-index: -1;
   pointer-events: none;
@@ -2700,7 +2689,10 @@ h5{
   -webkit-align-self: center;
   -ms-flex-item-align: center;
           align-self: center;
-  text-shadow: 0 0 6px #000;
+}
+
+.bottom-banner-title span {
+  font-family: "FuturaPTBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
 .bottom-banner-content {
@@ -2744,6 +2736,7 @@ h5{
 }
 
 .bottom-banner-descr {
+  font-family: "FuturaPTDemi", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 30px;
   color: #fff;
   text-align: center;
@@ -2756,7 +2749,7 @@ h5{
   position: absolute;
   top: 200px;
   left: -82px;
-  z-index: -10;
+  z-index: -5;
   width: 672px;
 }
 
@@ -2772,6 +2765,7 @@ h5{
   **/
 .footer {
   width: 100%;
+  font-family: "RobotoLight", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 14px;
   color: #98641a;
   display: -webkit-box;
@@ -3833,7 +3827,7 @@ h5{
   .top-banner-clothing::before {
     position: absolute;
     display: block;
-    background: url(../img/general/ball.png) center/contain no-repeat;
+    background: url(../images/ball.png) center/contain no-repeat;
     content: "";
     pointer-events: none;
     right: auto;
@@ -3846,7 +3840,7 @@ h5{
   .top-banner-clothing::after {
     position: absolute;
     display: block;
-    background: url(../img/general/ball.png) center/contain no-repeat;
+    background: url(../images/ball.png) center/contain no-repeat;
     content: "";
     pointer-events: none;
     right: 76%;
@@ -4427,6 +4421,7 @@ h5{
   }
 
   .friday p{
+    font-family: 'Roboto', sans-serif;
     color: #fff;
     font-size: 20px;
     text-transform: uppercase;
@@ -4446,7 +4441,7 @@ h5{
   position: absolute;
   right: -30px;
   top: -30px;
-  background: url('../img/f-close.png') no-repeat center top / contain;
+  background: url('../images/f-close.png') no-repeat center top / contain;
   width: 24px;
   height: 24px;
   border: 0;
@@ -4475,7 +4470,7 @@ h5{
   left: 0;
   top: 0;
   right: 0;
-  background: url('../img/e-top.png') no-repeat center top / cover;
+  background: url('../images/e-top.png') no-repeat center top / cover;
   width: 100%;
   height: 70px;
   z-index: 999;
@@ -4531,5 +4526,16 @@ h5{
 
   .descr-row{
     font-size: 17px;
+  }
+}
+
+@media (max-width: 450px) {
+  .bottom-banner-clothing {
+    position: absolute;
+    bottom: 200px;
+    top: 200px;
+    left: -82px;
+    z-index: -5;
+    width: 550px;
   }
 }
