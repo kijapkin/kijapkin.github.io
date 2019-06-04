@@ -1,10 +1,11 @@
 @charset "UTF-8";
-@font-face {
+
+/*@font-face {
   font-family: "FuturaPTBook";
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/FuturaPTBook/FuturaPTBook.eot");
-  src: url("../fonts/FuturaPTBook/FuturaPTBook.eot") format("embedded-opentype"), url("../fonts/FuturaPTBook/FuturaPTBook.woff") format("woff"), url("../fonts/FuturaPTBook/FuturaPTBook.ttf") format("truetype");
+  src: url("../fonts/FuturaPTBook/FuturaPTBook.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPTBook/FuturaPTBook.woff") format("woff"), url("../fonts/FuturaPTBook/FuturaPTBook.ttf") format("truetype");
 }
 
 @font-face {
@@ -45,7 +46,7 @@
   font-style: normal;
   src: url("../fonts/FuturaPTCondBook/FuturaPTCondBook.eot");
   src: url("../fonts/FuturaPTCondBook/FuturaPTCondBook.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPTCondBook/FuturaPTCondBook.woff") format("woff"), url("../fonts/FuturaPTCondBook/FuturaPTCondBook.ttf") format("truetype");
-}
+}*/
 
 html {
   -webkit-box-sizing: border-box;
@@ -56,7 +57,8 @@ html {
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  font-family: tahoma,arial,san-serif;
+          font-family: tahoma, arial, san-serif;
+          line-height: 1;
 }
 
 input:-ms-input-placeholder {
@@ -294,8 +296,8 @@ h5{
   -webkit-border-radius: 20px;
           border-radius: 20px;
   background-color: #ff3930;
-  font-family: tahoma, sans-serif;
-  font-size: 28px;
+  /*font-family: "FuturaPTBook", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;*/
+  font-size: 25px;
   color: #fff;
   letter-spacing: .05em;
   text-align: center;
@@ -316,13 +318,6 @@ h5{
 .btn:hover {
   color: #fff;
   text-decoration: none;
-  -webkit-border-radius: 0;
-          border-radius: 0;
-  -webkit-transition: -webkit-border-radius .6s;
-          transition: -webkit-border-radius .6s;
-       -o-transition:         border-radius .6s;
-          transition:         border-radius .6s;
-          transition:         border-radius .6s, -webkit-border-radius .6s;
 }
 
 .btn:hover::before {
@@ -344,7 +339,7 @@ h5{
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #ff7670;
+  background-color: red;
   -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
           transform: scaleX(0);
@@ -447,7 +442,7 @@ h5{
   margin-left: auto;
 }
 
-/******
+/***
   ** Extendable classes
   **/
 .ball, .ball-1, .ball-2, .ball-3, .ball-4, .top-banner .container::before, .top-banner .container::after, .super-sale__top-banner::before, .price__top-banner:not(.price__top-banner-extra)::before, .advantages-item:nth-of-type(1)::after, .advantages-item:nth-of-type(2)::after, .advantages-item:nth-of-type(3)::after, .advantages-item:nth-of-type(4)::after, .advantages-img::before, .advantages-img::after, .video-wrapper::after, .slogan__video::before, .why-we-img::before, .why-we-img::after, .why-we-item:nth-of-type(2)::after, .why-we-item:nth-of-type(3)::after, .gallery-tab-wrapper::before, .gallery-tab-wrapper::after, .sale-text .container::before, .sale-text .container::after, .sale-text-content::after, .slogan__text-sale::before, .title__how-we::before, .how-we-item:nth-of-type(4)::before, .bottom-banner .container::before, .bottom-banner .container::after, .bottom-banner-clothing::before {
@@ -455,7 +450,7 @@ h5{
   display: block;
   width: 163px;
   height: 163px;
-  background: url(ball.png) center/contain no-repeat;
+  background: url(../img/general/ball.png) center/contain no-repeat;
   content: "";
   pointer-events: none;
 }
@@ -505,11 +500,11 @@ h5{
   **/
 .top-banner {
   padding: 10px 0 28px;
-  background-image: url(top-banner-bg.jpg);
+  background-image: url(../images/top-banner-bg.jpg);
   background-position: 50% -webkit-calc(100% - 130px);
   background-position: 50% calc(100% - 130px);
   -webkit-background-size: cover;
-  background-size: cover;
+          background-size: cover;
   background-repeat: no-repeat;
   overflow: visible;
 }
@@ -547,8 +542,8 @@ h5{
 
 .top-banner-clothing {
   position: absolute;
-  bottom: -86px;
-  left: 16%;
+  bottom: 10px;
+  left: 25%;
   width: 754px;
 }
 
@@ -586,7 +581,7 @@ h5{
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
           align-items: flex-end;
-  font-size: 34px;
+  font-size: 36px;
 }
 
 .logo .logo-img {
@@ -636,8 +631,8 @@ h5{
 
 .price__top-banner {
   position: absolute;
-  bottom: 47.4%;
-  left: 16.8%;
+  bottom: 47%;
+  left: 0;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
@@ -647,7 +642,7 @@ h5{
 }
 
 .price__top-banner .actual-price {
-  color: #009cff;
+  color: #AA4444;
 }
 
 .price__top-banner:not(.price__top-banner-extra)::before {
@@ -748,7 +743,7 @@ h5{
   display: block;
   width: 8.3125em;
   height: 10em;
-  background: url(advantages-arrow.png) center/contain no-repeat;
+  background: url(../images/advantages-arrow.png) center/contain no-repeat;
   content: "";
 }
 
@@ -883,22 +878,20 @@ h5{
 }
 
 .advantages-item-text {
-  font-size: 16px;
+  font-size: 18px;
   width: 100%;
-  font-weight: bold;
-  line-height: 1.4;
 }
 
 .advantages-img {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 42%;
+  top: 60%;
   z-index: -1;
-  width: 38em;
+  width: 30em;
   height: 45.25em;
   -webkit-transform: translateX(-50%) translateY(-50%) translateY(-25px);
       -ms-transform: translateX(-50%) translateY(-50%) translateY(-25px);
-          transform: translateX(-50%) translateY(-50%) translateY(-25px);
+          transform: translateX(-50%) translateY(-50%) translateY(-25px) rotate(60deg);
 }
 
 .advantages-img::before {
@@ -960,7 +953,7 @@ h5{
   z-index: -3;
   width: 38.1875em;
   height: 29.75em;
-  background: url(video-puma.jpg) center/contain no-repeat;
+  background: url(../img/content/video-puma.jpg) center/contain no-repeat;
   content: "";
   pointer-events: none;
 }
@@ -979,7 +972,7 @@ h5{
   width: 559px;
   width: 70%;
   padding-bottom: 82.88%;
-  background: url(video-couple.png) center/contain no-repeat;
+  background: url(../img/content/video-couple.png) center/contain no-repeat;
   content: "";
   z-index: 1;
   opacity: 1;
@@ -1053,7 +1046,7 @@ h5{
   left: 50%;
   width: 6em;
   height: 4.25em;
-  background: url(youtube-button.png) center/contain no-repeat;
+  background: url(../img/general/youtube-button.png) center/contain no-repeat;
   opacity: 1;
   overflow: hidden;
   -webkit-transform: translate(-50%, -50%);
@@ -1087,8 +1080,7 @@ h5{
 .video-text {
   position: relative;
   width: 310px;
-  font-size: 15px;
-  line-height: 1.4;
+  font-size: 18px;
   text-align: justify;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1128,9 +1120,7 @@ h5{
 }
 
 .slogan span {
-  font-family: "FuturaPTBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-weight: 900;
-  padding-top: 10px;
+  font-weight: bold;
 }
 
 .slogan__video {
@@ -1182,7 +1172,7 @@ h5{
   display: block;
   width: 41.3125em;
   height: 12.875em;
-  background: url(why-we-puma.png) center/contain no-repeat;
+  background: url(../img/general/why-we-puma.png) center/contain no-repeat;
   content: "";
 }
 
@@ -1193,9 +1183,20 @@ h5{
 
 .why-we-img {
   position: absolute;
-  left: 60px;
-  bottom: 0;
-  width: 324px;
+  left: 0px;
+  bottom: 200px;
+  width: 524px;
+  transform: rotate(60deg);
+  /*background-color: lime;*/
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .why-we-img{
+    display: none;
+  }
+  .how-we-img{
+    display: none;
+  }
 }
 
 .why-we-img::before {
@@ -1224,7 +1225,7 @@ h5{
           justify-content: space-between;
   width: 648px;
   margin-right: 115px;
-  margin-bottom: 202px;
+  /*margin-bottom: 202px;*/
 }
 
 .why-we-item {
@@ -1374,7 +1375,7 @@ h5{
   display: block;
   width: 50.9375em;
   height: 49.5em;
-  background: url(gallery-bg.jpg) center/contain no-repeat;
+  background: url(../img/general/gallery-bg.jpg) center/contain no-repeat;
   content: "";
   z-index: -3;
 }
@@ -1438,7 +1439,7 @@ h5{
   display: block;
   width: 5.125em;
   height: 8.3125em;
-  background: url(gallery-arrow.png) center/contain no-repeat;
+  background: url(../img/general/gallery-arrow.png) center/contain no-repeat;
   content: "";
   z-index: 1;
   cursor: pointer;
@@ -1588,7 +1589,7 @@ h5{
   content: "";
   top: 96%;
   right: -34.2%;
-  background: url(order-puma-grey-bg.jpg) center/contain no-repeat;
+  background: url(../images/order-puma-grey-bg.jpg) center/contain no-repeat;
 }
 
 .order-puma-black .order-sliders {
@@ -1602,7 +1603,7 @@ h5{
   content: "";
   top: 103%;
   right: 76.8%;
-  background: url(order-puma-black-bg.jpg) center/contain no-repeat;
+  background: url(../images/order-puma-black-bg.jpg) center/contain no-repeat;
 }
 
 .order-pink .size-table-wrapper {
@@ -1617,7 +1618,7 @@ h5{
   content: "";
   top: 4%;
   right: -118.2%;
-  background: url(order-pink-bg.jpg) center/contain no-repeat;
+  background: url(../img/general/order-pink-bg.jpg) center/contain no-repeat;
 }
 
 .orders-title {
@@ -1674,8 +1675,6 @@ h5{
 
 .title__order span {
   font-size: 50px;
-  font-weight: 900;
-  padding-top: 10px;
 }
 
 .price__order {
@@ -1757,8 +1756,7 @@ h5{
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
           align-items: flex-start;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 20px;
   width: 100%;
 }
 
@@ -1774,9 +1772,8 @@ h5{
 }
 
 .descr-row b {
-  /*font-family: "FuturaPTDemi", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;*/
+  font-family: "FuturaPTDemi", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   color: #5e3a08;
-  font-weight: 800;
 }
 
 .order-toggle {
@@ -2156,7 +2153,7 @@ h5{
   display: block;
   width: 2.4375em;
   height: 3.875em;
-  background: url(order-slider-arrow.png) center/contain no-repeat;
+  background: url(../img/general/order-slider-arrow.png) center/contain no-repeat;
   content: "";
   z-index: 1;
   cursor: pointer;
@@ -2233,10 +2230,13 @@ h5{
   left:         calc(100% + 68px);
   top: 0;
   display: block;
-  width: 295px;
+  width: 495px;
   height: 697px;
-  background: url(../img/content/sale-text-img.png) 0 0/contain no-repeat;
+  background: url(../images/red-kross-1.png) 0 0/contain no-repeat;
   content: "";
+  transform: rotateY(180deg);
+  margin-top: 260px;
+  /*background-color: lime;*/
 }
 
 .sale-text-content::after {
@@ -2270,10 +2270,10 @@ h5{
 }
 
 .sale-text-discount b {
-  /*font-family: FuturaPTBold;*/
   font-size: .83333em;
   color: #ffa11b;
   letter-spacing: normal;
+  font-weight: bold;
 }
 
 .sale-text-discount::before {
@@ -2285,7 +2285,7 @@ h5{
   display: block;
   width: 4.825em;
   height: 4.4em;
-  background: url(sale-text-arrow.jpg) center/contain no-repeat;
+  background: url(../img/general/sale-text-arrow.jpg) center/contain no-repeat;
   content: "";
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -2424,9 +2424,11 @@ h5{
 .how-we-img {
   position: absolute;
   left: -17%;
-  top: -36px;
+  top: 150px;
   z-index: -3;
+  transform: rotate(60deg);
   width: 554px;
+
 }
 
 /***
@@ -2493,7 +2495,7 @@ h5{
   display: block;
   width: 29.4375em;
   height: 51.6875em;
-  background: url(reviews-woman-img.jpg) 0 0/contain no-repeat;
+  background: url(../img/general/reviews-woman-img.jpg) 0 0/contain no-repeat;
   content: "";
   z-index: -1;
   pointer-events: none;
@@ -2530,7 +2532,7 @@ h5{
   display: block;
   width: 18.6875em;
   height: 38.75em;
-  background: url(reviews-man-img.jpg) 0 0/contain no-repeat;
+  background: url(../img/general/reviews-man-img.jpg) 0 0/contain no-repeat;
   content: "";
   z-index: -1;
   pointer-events: none;
@@ -2623,7 +2625,7 @@ h5{
   display: block;
   width: 8.8125em;
   height: 3.9375em;
-  background: url(reviews-slider-arrow.png) center/contain no-repeat;
+  background: url(../images/reviews-slider-arrow.png) center/contain no-repeat;
   content: "";
   z-index: 3;
   cursor: pointer;
@@ -2652,7 +2654,7 @@ h5{
   ** Bottom Banner
   **/
 .bottom-banner {
-  background-image: url(bottom-banner-bg.jpg);
+  background-image: url(../images/bottom-banner-bg.jpg);
   background-position: 50% 55px;
   -webkit-background-size: cover;
           background-size: cover;
@@ -2698,10 +2700,7 @@ h5{
   -webkit-align-self: center;
   -ms-flex-item-align: center;
           align-self: center;
-}
-
-.bottom-banner-title span {
-  font-family: "FuturaPTBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  text-shadow: 0 0 6px #000;
 }
 
 .bottom-banner-content {
@@ -2745,7 +2744,6 @@ h5{
 }
 
 .bottom-banner-descr {
-  font-family: "FuturaPTDemi", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 30px;
   color: #fff;
   text-align: center;
@@ -2756,9 +2754,9 @@ h5{
 
 .bottom-banner-clothing {
   position: absolute;
-  top: 46px;
+  top: 200px;
   left: -82px;
-  z-index: -3;
+  z-index: -10;
   width: 672px;
 }
 
@@ -2774,7 +2772,6 @@ h5{
   **/
 .footer {
   width: 100%;
-  font-family: "RobotoLight", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 14px;
   color: #98641a;
   display: -webkit-box;
@@ -3836,7 +3833,7 @@ h5{
   .top-banner-clothing::before {
     position: absolute;
     display: block;
-    background: url(ball.png) center/contain no-repeat;
+    background: url(../img/general/ball.png) center/contain no-repeat;
     content: "";
     pointer-events: none;
     right: auto;
@@ -3849,7 +3846,7 @@ h5{
   .top-banner-clothing::after {
     position: absolute;
     display: block;
-    background: url(ball.png) center/contain no-repeat;
+    background: url(../img/general/ball.png) center/contain no-repeat;
     content: "";
     pointer-events: none;
     right: 76%;
@@ -4430,7 +4427,6 @@ h5{
   }
 
   .friday p{
-    font-family: 'Roboto', sans-serif;
     color: #fff;
     font-size: 20px;
     text-transform: uppercase;

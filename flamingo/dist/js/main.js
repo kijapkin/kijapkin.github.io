@@ -9,10 +9,14 @@ $(document).ready(function(){
 
     var lock = false;
 
-    $('#mainWrapper').on('mousewheel', function(e){
+    $(document).on('mousewheel', '#mainWrapper', function(e){
         if(lock){
             return false;
         };
+
+        //console.log('offsetY: '+e.originalEvent.offsetY);
+        console.log('pageY: '+e.originalEvent.pageY);
+        return true;
 
         if(e.originalEvent.wheelDelta /120 > 0) {
             if (picCur > 0) {
