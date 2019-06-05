@@ -562,24 +562,23 @@ h1, h2 {
 body {
   background-color: #000; }
 
-#mainWrapper {
-  height: 100vh;
-  position: relative; }
+/* #mainWrapper{
+    	height: 100vh;
+    	position: relative;
+    } */
+/* .halfSlide{
+	position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
 
-.halfSlide {
-  position: absolute;
-  background-color: #000;
-  width: 100%;
-  height: 100vh;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  overflow: hidden;
-  -webkit-transition: .8s ease-in-out;
-  -o-transition: .8s ease-in-out;
-  transition: .8s ease-in-out; }
-
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+	transition: .8s ease-in-out;
+} */
 section.section-home {
   min-height: 100vh;
   text-align: center;
@@ -692,6 +691,7 @@ section.section-home {
         font-size: 26px; } }
 
 section.section-presentation {
+  height: 100vh;
   display: grid;
   -webkit-box-align: center;
   -webkit-align-items: center;
