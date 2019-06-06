@@ -64,11 +64,13 @@
 //         return false;
 //     });
 // });
-
-new fullpage('#fullpage', {
-    //options here
-    autoScrolling: true,
-    scrollHorizontally: true
+$(document).ready(function(){
+	if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+		new fullpage('#fullpage', {
+	    	autoScrolling: true,
+		    scrollHorizontally: true
+		});
+	}
 });
 
 //methods

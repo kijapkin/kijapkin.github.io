@@ -23,6 +23,7 @@ h1,h2{
 body{
 	background-color: #000;	
 }
+
 /* #mainWrapper{
     	height: 100vh;
     	position: relative;
@@ -43,13 +44,16 @@ body{
 
 // ----------HOME-SCREEN----------
 .section-home{
-	min-height: 100vh;
+	height: 100vh;
 	text-align: center;
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url(../images/bg-paralax.png);
 	background-position: 0 -200px;
+	@media (max-width: 768px) {
+		background-image: none;
+	}
 	.top-block{
 		display: grid;
 		grid-template-columns: 1fr auto 1fr;
@@ -257,12 +261,17 @@ body{
 .section-whatisit{
 	.block-titles{
 		// outline: 2px dashed red;
-		// height: 50vh;
+		height: 50vh;
 		padding-bottom: 80px;
 		display: grid;
 		align-items: center;
+		@media (max-width: 1199px) {
+			height: auto;
+			padding: 30px 0;
+		}
 		@media (max-width: 425px) {
 			padding-bottom: 20px;
+			height: auto;
 		}
 		.titles{
 			text-align: right;
@@ -287,9 +296,13 @@ body{
 	}
 	.block-whatisit-1{
 		// outline: 1px dashed lime;
-		// height: 50vh;
+		height: 50vh;
 		display: grid;
 		align-items: center;
+		@media (max-width: 1199px) {
+			height: auto;
+			padding: 30px 0;
+		}
 		.block-scheme{
 			display: grid;
 			grid-template-columns: 1fr 6fr;
@@ -404,6 +417,10 @@ body{
 			display: grid;
 			grid-template-columns:6fr 1fr;
 			grid-column-gap: 40px;
+			@media (max-width: 1199px) {
+				height: auto;
+				padding: 30px 0;
+			}
 			@media (max-width: 768px) {
 				grid-template-columns: auto;
 			}
@@ -546,10 +563,14 @@ body{
 	.block-whatisit-3{
 		// outline: 1px dashed lime;
 		.inner-block{
-			// height: 50vh;
+			height: 50vh;
 			display: grid;
 			grid-template-columns: 160px auto 160px;
 			align-items: center;
+			@media (max-width: 1199px) {
+				height: auto;
+				padding: 30px 0;
+			}
 			@media (max-width: 768px) {
 				grid-template-columns: auto;
 				grid-template-rows: auto auto auto;
@@ -630,10 +651,7 @@ body{
 					width: 100px;
 				}
 				@media (max-width: 768px) {
-					width: 120px;
-					height: 200px;
-					// justify-self: end;
-					grid-area: 2/1/3/-1;
+					display: none;
 				}
 			}
 		}
@@ -689,7 +707,7 @@ body{
 					grid-row-gap: 10%;
 					@media (max-width: 500px) {
 						grid-template-columns: auto ;
-						grid-row-gap: 0px;
+						grid-row-gap: 30px;
 					}
 					.steps-card{
 						text-align: center;
@@ -730,7 +748,7 @@ body{
 								display: inline-grid;								
 								}
 								p{
-									padding-bottom: 10px;
+									padding-bottom: 50px;
 									@media (max-width: 500px) {
 										grid-row: 2/3;
 									}
@@ -743,6 +761,7 @@ body{
 									@media (max-width: 500px) {
 										font-size: 65px;
 										font-weight: 500;
+										margin: 20px;
 									}
 								}
 								div>img{
@@ -781,6 +800,9 @@ body{
 	.block-juice{
 		// outline: 1px dashed lime;
 		align-self: center;
+		@media (max-width: 1199px) {
+			padding: 30px 0;
+		}
 		.wrapper-inner{
 			height: 50vh;
 			display: grid;
@@ -791,6 +813,7 @@ body{
 				grid-row-gap: 20px;
 				align-items: center;
 				justify-items: center;
+				height: auto;
 			}
 			.block-round-imgs{
 				display: grid;
@@ -818,8 +841,9 @@ body{
 				height: 45vh;
 				align-self: center;
 				@media (max-width: 1199px) {
-					grid-area: 1/1/2/2;
-					height: 250px;
+					// grid-area: 1/1/span 1/span 1;
+					height: 300px;
+					width: 100px;
 				}
 			}
 			.block-titles{
@@ -827,6 +851,7 @@ body{
 				padding-top: 20px;
 				@media (max-width: 1199px) {
 					grid-area: 1/2/2/3;
+					text-align: left;
 				}
 				h4{
 					font-size: 26px;
@@ -869,6 +894,9 @@ body{
 			.icon-buttons{
 				margin-bottom: 1%;
 				text-align: left;
+				@media (max-width: 1199px) {
+					text-align: center;
+				}
 				.button{
 					display: inline-block;
 					img{
@@ -1001,19 +1029,13 @@ body{
 		}
 	}
 	.block-juice-odd{
-		.wrapper-inner{
-			grid-template-columns: auto 160px auto auto;
-			/* .img-bottle{
-				height: 400px;
-			} */
-			.block-description{
-				p{
+		.block-description{
+			p{
+				justify-self: end;
+			}
+			.right-block{
+				.button-add{
 					justify-self: end;
-				}
-				.right-block{
-					.button-add{
-						justify-self: end;
-					}
 				}
 			}
 		}
@@ -1022,6 +1044,13 @@ body{
 		background-color: #0E0E0E;
 		.wrapper-inner{
 			grid-template-columns: auto auto 160px auto;
+			@media (max-width: 1199px) {
+				grid-template-columns: 1fr 1fr;
+				grid-row-gap: 20px;
+				align-items: center;
+				justify-items: center;
+				height: auto;
+			}
 			.block-description{
 				.icon-buttons{
 					text-align: right;
@@ -1109,7 +1138,10 @@ body{
 							}
 						}
 						.button-buy{
-								grid-column: 1/-1; 
+								grid-column: 1/-1;
+								@media (max-width: 600px) {
+									grid-area: 1/1/-1/2;
+								}
 							a{
 								display: grid;
 								align-items: center;
@@ -1272,13 +1304,16 @@ body{
 		}
 	}
 }
-
 // ----------CLUB----------
 .section-club{
 	display: grid;
 	align-items: center;
-	// height: 100vh;
+	height: 100vh;
 	// outline: 1px dashed lime;
+	@media (max-width: 1199px) {
+		padding: 30px 0;
+		height: auto;
+	}
 	.block-main-title{
 		h1{
 			color: #ffb300;
@@ -1425,8 +1460,12 @@ body{
 .section-cashback{
 	display: grid;
 	align-items: center;
-	// height: 100vh;
+	height: 100vh;
 	// outline: 1px dashed lime;
+	@media (max-width: 1199px) {
+		padding: 30px 0;
+		// height: auto;
+	}
 	.block-main-title{
 		margin-bottom: 50px;
 		@media (max-width: 700px) {
@@ -1517,8 +1556,12 @@ body{
 .section-payment{
 	display: grid;
 	align-items: center;
-	// height: 100vh;
+	height: 100vh;
 	// outline: 1px dashed lime;
+	@media (max-width: 1199px) {
+		padding: 30px 0;
+		// height: auto;
+	}
 	.block-main-title{
 		margin-bottom: 50px;
 		@media (max-width: 700px) {
@@ -1619,8 +1662,12 @@ body{
 .section-delivery{
 	display: grid;
 	align-items: center;
-	// height: 100vh;
+	height: 100vh;
 	// outline: 1px dashed lime;
+	@media (max-width: 1199px) {
+		padding: 30px 0;
+		// height: auto;
+	}
 	.block-main-title{
 		margin-bottom: 80px;
 		@media (max-width: 700px) {
@@ -1697,8 +1744,12 @@ body{
 .section-contacts{
 	display: grid;
 	align-items: center;
-	// height: 100vh;
+	height: 100vh;
 	// outline: 1px dashed lime;
+	@media (max-width: 1199px) {
+		padding: 30px 0;
+		height: auto;
+	}
 	.block-main-title{
 		margin-bottom: 30px;
 		@media (max-width: 700px) {
@@ -1815,8 +1866,12 @@ body{
 .section-questions{
 	display: grid;
 	align-items: center;
-	// height: 100vh;
+	height: 100vh;
 	// outline: 1px dashed lime;
+	@media (max-width: 1199px) {
+		padding: 30px 0;
+		// height: auto;
+	}
 	.img-fruits{
 		text-align: center;
 		img{
