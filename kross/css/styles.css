@@ -1190,7 +1190,7 @@ h5{
   position: absolute;
   z-index: -1;
   left: -80px;
-  bottom: 200px;
+  bottom: 0;
   width: 624px;
 }
 

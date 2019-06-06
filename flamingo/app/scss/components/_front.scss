@@ -42,7 +42,7 @@ body{
 } */
 
 // ----------HOME-SCREEN----------
-section.section-home{
+.section-home{
 	min-height: 100vh;
 	text-align: center;
 	position: relative;
@@ -167,7 +167,7 @@ section.section-home{
 }
 
 // ----------PRESENTATION----------
-section.section-presentation{
+.section-presentation{
 	// outline: 1px dashed lime;
 	height: 100vh;
 	display: grid;
@@ -254,12 +254,16 @@ section.section-presentation{
 }
 
 // ----------WHAT-IS-IT?----------
-section.section-whatisit{
+.section-whatisit{
 	.block-titles{
 		// outline: 2px dashed red;
 		// height: 50vh;
+		padding-bottom: 80px;
 		display: grid;
 		align-items: center;
+		@media (max-width: 425px) {
+			padding-bottom: 20px;
+		}
 		.titles{
 			text-align: right;
 			h1{
@@ -290,11 +294,14 @@ section.section-whatisit{
 			display: grid;
 			grid-template-columns: 1fr 6fr;
 			grid-column-gap: 40px;
+			@media (max-width: 768px) {
+				grid-template-columns: auto auto;
+			}
 			.img-bottle{
 				background-repeat: no-repeat;
 				background-size: contain;
 				background-position: center;
-				// height: 45vh;
+				height: 45vh;
 				align-self: center;
 				@media (max-width: 768px) {
 					display: none;
@@ -306,7 +313,7 @@ section.section-whatisit{
 					display: grid;
 					grid-template-columns: 80px auto;
 					h1{
-						font-size: 120px;
+						font-size: 140px;
 						font-weight: 700;
 						line-height: .5;
 						font-family: 'Raleway', sans-serif;
@@ -329,6 +336,7 @@ section.section-whatisit{
 					margin-top: 1vh;
 					@media (max-width: 1024px) {
 						margin-top: 10px;
+						margin-bottom: 16px;
 					}
 					li{
 						font-size: 18px;
@@ -350,7 +358,7 @@ section.section-whatisit{
 						text-align: center;
 						@media (max-width: 630px) {
 							display: grid;
-							grid-template-columns: auto auto;
+							grid-template-columns: 1fr 6fr;
 							align-items: center;
 							margin-bottom: 1vh;
 						}
@@ -392,7 +400,7 @@ section.section-whatisit{
 	.block-whatisit-2{
 		// outline: 1px dashed lime;
 		.inner-block{
-			// height: 50vh;
+			height: 50vh;
 			display: grid;
 			grid-template-columns:6fr 1fr;
 			grid-column-gap: 40px;
@@ -405,7 +413,7 @@ section.section-whatisit{
 					display: grid;
 					grid-template-columns: auto 90px;
 					h1{
-						font-size: 120px;
+						font-size: 140px;
 						font-weight: 700;
 						line-height: .5;
 						grid-area: 1/2/3/-1;
@@ -527,7 +535,7 @@ section.section-whatisit{
 				background-repeat: no-repeat;
 				background-size: contain;
 				background-position: center;
-				// height: 45vh;
+				height: 45vh;
 				align-self: center;
 				@media (max-width: 768px) {
 					display: none;
@@ -542,12 +550,16 @@ section.section-whatisit{
 			display: grid;
 			grid-template-columns: 160px auto 160px;
 			align-items: center;
+			@media (max-width: 768px) {
+				grid-template-columns: auto;
+				grid-template-rows: auto auto auto;
+			}
 			.img-bottle{
 				align-self: center;
 				background-repeat: no-repeat;
 				background-size: contain;
 				background-position: center;
-				// height: 45vh;
+				height: 45vh;
 				@media (max-width: 1600px) {
 					width: 150px;
 				}
@@ -566,14 +578,13 @@ section.section-whatisit{
 					display: grid;
 					grid-template-columns: 150px auto;
 					@media (max-width: 1600px) {
-						grid-template-columns: 90px auto;
+						grid-template-columns: 130px auto;
 					}
 					@media (max-width: 1024px) {
-						grid-template-columns: 50px auto;
+						grid-template-columns: 98px auto;
 					}
 					h1{
-						text-align: right;
-						font-size: 220px;
+						font-size: 150px;
 						font-weight: 700;
 						line-height: .5;
 						font-family: 'Raleway', sans-serif;
@@ -587,7 +598,7 @@ section.section-whatisit{
 						}
 					}
 					h2{
-						font-size: 86px;
+						font-size: 60px;
 						line-height: .95;
 						font-family: 'Raleway', sans-serif;
 						font-weight: 700;
@@ -610,7 +621,7 @@ section.section-whatisit{
 				background-repeat: no-repeat;
 				background-size: contain;
 				background-position: center;
-				// height: 45vh;
+				height: 45vh;
 				grid-area: 1/3/-1/-1;
 				@media (max-width: 1600px) {
 					width: 150px;
@@ -620,8 +631,8 @@ section.section-whatisit{
 				}
 				@media (max-width: 768px) {
 					width: 120px;
-					height: 350px;
-					justify-self: end;
+					height: 200px;
+					// justify-self: end;
 					grid-area: 2/1/3/-1;
 				}
 			}
@@ -630,7 +641,7 @@ section.section-whatisit{
 }
 
 // ----------3-STEPS----------
-section.section-3-steps{
+.section-3-steps{
 	// outline: 1px dashed blue;
 	.wrapper{
 		.wrapper-inner{
@@ -747,10 +758,10 @@ section.section-3-steps{
 }
 
 // ----------JUICE----------
-section.section-juice{
+.section-juice{
 	.block-main-title{
 		display: grid;
-		// height: 50vh;
+		height: 50vh;
 		.inner{
 			align-self: center;
 			h1{
@@ -771,7 +782,7 @@ section.section-juice{
 		// outline: 1px dashed lime;
 		align-self: center;
 		.wrapper-inner{
-			// height: 50vh;
+			height: 50vh;
 			display: grid;
 			grid-template-columns: auto 160px auto auto;
 			grid-column-gap: 3%;
@@ -804,7 +815,7 @@ section.section-juice{
 				background-repeat: no-repeat;
 				background-size: contain;
 				background-position: center;
-				// height: 45vh;
+				height: 45vh;
 				align-self: center;
 				@media (max-width: 1199px) {
 					grid-area: 1/1/2/2;
@@ -1174,10 +1185,10 @@ section.section-juice{
 }
 
 // ----------SMOOTHIE----------
-section.section-smoothie{
+.section-smoothie{
 	.block-main-title{
 		display: grid;
-		// height: 50vh;
+		height: 50vh;
 		.inner{
 			align-self: center;
 			h1{
@@ -1263,7 +1274,7 @@ section.section-smoothie{
 }
 
 // ----------CLUB----------
-section.section-club{
+.section-club{
 	display: grid;
 	align-items: center;
 	// height: 100vh;
@@ -1411,7 +1422,7 @@ section.section-club{
 }
 
 // ----------CASHBACK----------
-section.section-cashback{
+.section-cashback{
 	display: grid;
 	align-items: center;
 	// height: 100vh;
@@ -1503,7 +1514,7 @@ section.section-cashback{
 }
 
 // ----------PAYMENT----------
-section.section-payment{
+.section-payment{
 	display: grid;
 	align-items: center;
 	// height: 100vh;
@@ -1605,7 +1616,7 @@ section.section-payment{
 }
 
 // ----------DELIVERY----------
-section.section-delivery{
+.section-delivery{
 	display: grid;
 	align-items: center;
 	// height: 100vh;
@@ -1683,7 +1694,7 @@ section.section-delivery{
 }
 
 // ----------CONTACTS----------
-section.section-contacts{
+.section-contacts{
 	display: grid;
 	align-items: center;
 	// height: 100vh;
@@ -1801,7 +1812,7 @@ section.section-contacts{
 }
 
 // ----------QUESTIONS----------
-section.section-questions{
+.section-questions{
 	display: grid;
 	align-items: center;
 	// height: 100vh;
