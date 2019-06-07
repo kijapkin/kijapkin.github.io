@@ -44,7 +44,7 @@ body{
 
 // ----------HOME-SCREEN----------
 .section-home{
-	// height: 100vh;
+	height: 100vh;
 	text-align: center;
 	position: relative;
 	background-repeat: no-repeat;
@@ -177,6 +177,10 @@ body{
 	display: grid;
 	align-items: center;
 	text-align: center;
+	/* @media (max-width: 768px) {
+		padding: 30px 0;
+		height: auto;
+	} */
 	.wrapper-inner{
 		padding: 20px;
 		// outline: 1px dashed blue;
@@ -262,6 +266,10 @@ body{
 	display: grid;
 	align-items: center;
 	height: 100vh;
+	@media (max-width: 768px) {
+		padding: 30px 0;
+		height: auto;
+	}
 	.block-titles{
 		// outline: 2px dashed red;
 		height: 50vh;
@@ -311,7 +319,7 @@ body{
 			grid-template-columns: 1fr 6fr;
 			grid-column-gap: 40px;
 			@media (max-width: 768px) {
-				grid-template-columns: auto auto;
+				grid-template-columns: auto;
 			}
 			.img-bottle{
 				background-repeat: no-repeat;
@@ -369,6 +377,7 @@ body{
 					grid-template-columns: repeat(6,auto);
 					@media (max-width: 630px) {
 						grid-template-columns: auto;
+						grid-row-gap: 1vh;
 					}
 					.card-img{
 						text-align: center;
@@ -376,7 +385,6 @@ body{
 							display: grid;
 							grid-template-columns: 1fr 6fr;
 							align-items: center;
-							margin-bottom: 1vh;
 						}
 						&:nth-child(odd){
 							margin-top: 6vh;
@@ -456,17 +464,15 @@ body{
 				h5{
 					text-align: right;
 					font-size: 16px;
-					margin-top: 1vh;
-					margin-bottom: 1vh;
-					line-height: 1.1;
+					margin-top: 10px;
+					// margin-bottom: 1vh;
+					// line-height: 1.1;
 					@media (max-width: 1440px) {
 						font-size: 14px;
 					}
 					@media (max-width: 1024px) {
 						font-size: 14px;
-					}
-					@media (max-width: 1024px) {
-						text-align: center;
+						text-align: right;
 					}
 				}
 				.wrapper-gemo{
@@ -639,6 +645,9 @@ body{
 				p{
 					max-width: 400px;
 					font-size: 19px;
+					@media (max-width: 1024px) {
+						font-size: 14px;
+					}
 				}
 			}
 			.img-running-man{
@@ -668,6 +677,10 @@ body{
 	height: 100vh;
 	display: grid;
 	align-items: center;
+	@media (max-width: 768px) {
+		padding: 30px 0;
+		height: auto;
+	}
 	.wrapper-inner{
 		.inner{
 			display: grid;
@@ -784,6 +797,9 @@ body{
 	.block-main-title{
 		display: grid;
 		height: 50vh;
+		@media (max-width: 768px) {
+			height: auto;
+		}		
 		.inner{
 			align-self: center;
 			h1{
@@ -1224,6 +1240,9 @@ body{
 	.block-main-title{
 		display: grid;
 		height: 50vh;
+		@media (max-width: 768px) {
+			height: auto;
+		}
 		.inner{
 			align-self: center;
 			h1{
@@ -1313,7 +1332,7 @@ body{
 	align-items: center;
 	height: 100vh;
 	// outline: 1px dashed lime;
-	@media (max-width: 1199px) {
+	@media (max-width: 768px) {
 		padding: 30px 0;
 		height: auto;
 	}
@@ -1465,7 +1484,7 @@ body{
 	align-items: center;
 	height: 100vh;
 	// outline: 1px dashed lime;
-	@media (max-width: 1199px) {
+	@media (max-width: 768px) {
 		padding: 30px 0;
 		// height: auto;
 	}
@@ -1561,7 +1580,7 @@ body{
 	align-items: center;
 	height: 100vh;
 	// outline: 1px dashed lime;
-	@media (max-width: 1199px) {
+	@media (max-width: 768px) {
 		padding: 30px 0;
 		// height: auto;
 	}
@@ -1667,7 +1686,7 @@ body{
 	align-items: center;
 	height: 100vh;
 	// outline: 1px dashed lime;
-	@media (max-width: 1199px) {
+	@media (max-width: 768px) {
 		padding: 30px 0;
 		// height: auto;
 	}
@@ -1749,7 +1768,7 @@ body{
 	align-items: center;
 	height: 100vh;
 	// outline: 1px dashed lime;
-	@media (max-width: 1199px) {
+	@media (max-width: 768px) {
 		padding: 30px 0;
 		height: auto;
 	}
@@ -1871,7 +1890,7 @@ body{
 	align-items: center;
 	height: 100vh;
 	// outline: 1px dashed lime;
-	@media (max-width: 1199px) {
+	@media (max-width: 768px) {
 		padding: 30px 0;
 		// height: auto;
 	}
