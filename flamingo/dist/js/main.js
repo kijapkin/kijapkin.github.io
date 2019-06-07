@@ -71,6 +71,7 @@ $(document).ready(function(){
 		    scrollHorizontally: true
 		});
 	}
+	$.stellar();
 });
 
 //methods
