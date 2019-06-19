@@ -25,7 +25,10 @@ header {
 			@media (max-width: 440px) {
 				display: block;
 				padding: 20px;
-				background-color: rgba(0,0,0,.8);
+				background-color: rgba(0,0,0,.6);
+				background-image: url(../images/bg.jpg);
+				margin-left: -15px;
+				margin-right: -15px;
 			}
             ul {
             	min-height: 53px;
@@ -38,6 +41,7 @@ header {
 					display: block;
 					padding: 20px 0;
 					width: auto;
+					text-align: center;
 				}
                 li {
                     position: relative;
@@ -110,6 +114,9 @@ header {
             .btn-free {
                 text-align: center;
                 width: 228px;
+                @media (max-width: 440px) {
+                	margin: 0 auto;
+                }
 
                 a {
                     display: flex;
