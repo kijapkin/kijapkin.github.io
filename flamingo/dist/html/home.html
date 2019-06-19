@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="/images/favicon.png" type="image/png">
 	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/fullPage.css" />
+	<link rel="stylesheet" href="../css/jquery.fullPage.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
@@ -20,15 +20,15 @@
             <div id="fullpage">
                 <!-- ----------HOME-SCREEN---------- -->
                 <div class="section">
-                    <div class="section section-home" data-stellar-background-ratio="0.5">
+                    <div class="section-home" data-stellar-background-ratio="0.5">
                         <div class="top-block">
                             <div class="main-menu">
                                 <ul>
-                                    <li><a href="#">Что это?</a></li>
-                                    <li><a href="#">Соки</a></li>
-                                    <li><a href="#">Смузи</a></li>
-                                    <li><a href="#">Отзывы</a></li>
-                                    <li><a href="#">Контакты</a></li>
+                                    <li data-menuanchor="whatisit"><a href="#whatisit">Что это?</a></li>
+                                    <li data-menuanchor="juice"><a href="#juice">Соки</a></li>
+                                    <li data-menuanchor="smoothie"><a href="#smoothie">Смузи</a></li>
+                                    <li data-menuanchor="payment"><a href="#payment">Оплата</a></li>
+                                    <li data-menuanchor="contacts"><a href="#contacts">Контакты</a></li>
                                 </ul>
                             </div>
                             <div class="img-logo"><img src="../images/flamingo.png" alt=""></div>
@@ -72,8 +72,10 @@
                                 </div>
                             </div>
                         </div>
-                        <h1>Flamingo</h1>
-                        <h2>ORGANIC ENERGY DRINK</h1>
+                        <div class="home-block-titles">
+                            <h1>Flamingo</h1>
+                            <h2>ORGANIC ENERGY DRINK</h2>
+                        </div>
                     </div>
                 </div>
                 <!-- ----------presentation -->
@@ -90,7 +92,7 @@
                     </div>
                 </div>
                 <!-- ----------WHAT IS IT -->
-                <div class="section">
+                <div class="section" data-anchor="whatisit">
                     <div class="section-whatisit">
                         <div class="block-titles">
                             <div class="titles">
@@ -238,7 +240,7 @@
                     </div>
                 </div>
                 <!-- ----------JUICE -->
-                <div class="section section-juice">
+                <div class="section section-juice" data-anchor="juice">
                     <div class="container">
                         <div class="block-main-title">
                             <div class="inner">
@@ -678,7 +680,7 @@
                     </div>
                 </div>
                 <!-- ----------SMOOTHIE -->
-                <div class="section section-smoothie section-juice">
+                <div class="section section-smoothie section-juice" data-anchor="smoothie">
                     <div class="container">
                         <div class="block-main-title">
                             <div class="inner">
@@ -689,7 +691,7 @@
                     </div>
                 </div>
                 <div class="section section-smoothie section-juice">
-                    <div class="block-juice block-juice-even juice1">
+                    <div class="block-juice block-juice-odd juice1">
                         <div class="container">
                             <div class="wrapper-inner">
                                 <div class="block-round-imgs">
@@ -835,7 +837,7 @@
                     </div>
                 </div>
                 <div class="section section-smoothie section-juice">
-                    <div class="halfSlide block-juice block-juice-odd juice3">
+                    <div class="block-juice block-juice-odd juice3">
                         <div class="container">
                             <div class="wrapper-inner">
                                 <div class="block-round-imgs">
@@ -1178,7 +1180,7 @@
                     </div>
                 </div>
                 <!-- ----------PAYMENT -->
-                <div class="section">
+                <div class="section" data-anchor="payment">
                     <div class="section-payment">
                         <div class="container">
                             <div class="half block-main-title">
@@ -1238,7 +1240,7 @@
                     </div>
                 </div>
                 <!-- ----------CONTACTS -->
-                <div class="section">
+                <div class="section" data-anchor="contacts">
                     <div class="section-contacts">
                         <div class="container">
                             <div class="block-main-title">
@@ -1340,12 +1342,11 @@
     <div class="footer_content container">
     </div>
 </footer>
-<script src="../js/jquery.js"></script>
-<script src="../js/fullpage.js"></script>
-<script src="../js/jquery.stellar.min.js"></script>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="../js/jquery.stellar.min.js"></script>
 <script src="../js/slick.min.js"></script>
-<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyAsgajRdZv5H2LGoHO8BXbyVZq2CLMZNxE"></script> -->
-<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 <script src="../js/main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,760 @@
+/*block1*/
+/* after_qbici */
+.block1 {
+    height: 504px;
+    padding: 54px 0 0;
+}
+
+.block1 h1 {
+    color: #ffc935;
+    font-size: 60px;
+    letter-spacing: 8.4px;
+    width: 617px;
+    float: right;
+    line-height: 28px;
+    text-align: right;
+}
+
+.block1 h1 span {
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 1.32px;
+    line-height: 24px;
+    padding-right: 10px;
+}
+
+.top-title {
+    padding: 0 20px 30px 0;
+}
+
+.sale {
+    background: url(./images/sale.png) no-repeat;
+    width: 127px;
+    height: 126px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    text-shadow: 0 2px 0 #cb720e;
+    padding: 31px 0 0;
+    text-align: center;
+    position: absolute;
+    top: 96px;
+    right: 339px;
+}
+
+.sale p {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.formbox {
+    width: 320px;
+    border-radius: 10px;
+    background: rgba(71, 1, 41, .4);
+    padding: 20px 0 20px;
+    float: right;
+}
+
+.gift {
+    background: url(./images/marker.png) no-repeat 0 0;
+    width: 118px;
+    height: 143px;
+    position: absolute;
+    top: 271px;
+    right: 351px;
+}
+
+/*block2*/
+/* endzeit_____ */
+
+/*block3*/
+/* michael-k90 */
+.block3 {
+    padding: 10px 0 60px;
+}
+
+.preim {
+    text-align: center;
+}
+
+.preim li {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    color: #137fda;
+}
+
+.preim li:before {
+    content: '';
+    display: block;
+    width: 112px;
+    height: 112px;
+    border-radius: 100%;
+    margin: 0 auto 10px;
+    background: #e1effb url(./images/icons.png) no-repeat center 28px;
+    -webkit-box-shadow: inset 0 0 0 13px rgba(255, 255, 255, .5), 0 2px 5px 0 rgba(0, 0, 0, .1);
+    ;
+    box-shadow: inset 0 0 0 13px rgba(255, 255, 255, .5), 0 2px 5px 0 rgba(0, 0, 0, .1);
+    ;
+}
+
+.preim li:nth-child(2):before {
+    background: #f2f9e7 url(./images/icons.png) no-repeat center -54px;
+}
+
+.preim li:nth-child(3):before {
+    background: #fef6e1 url(./images/icons.png) no-repeat center -134px;
+}
+
+.preim li:nth-child(4):before {
+    background: #fce6e8 url(./images/icons.png) no-repeat center -215px;
+}
+
+.preim li:nth-child(2) {
+    color: #89c709;
+}
+
+.preim li:nth-child(3) {
+    color: #f1c32f;
+}
+
+.preim li:nth-child(4) {
+    color: #b5160d;
+}
+
+.preim p {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+
+.giftbox .preim li:before {
+    content: '';
+    display: block;
+    width: 112px;
+    height: 112px;
+    border-radius: 100%;
+    margin: 0 auto 10px;
+    background: #e1effb url(./images/icons2.png) no-repeat center 28px;
+    -webkit-box-shadow: inset 0 0 0 13px rgba(255, 255, 255, .5), 0 2px 5px 0 rgba(0, 0, 0, .1);
+    ;
+    box-shadow: inset 0 0 0 13px rgba(255, 255, 255, .5), 0 2px 5px 0 rgba(0, 0, 0, .1);
+    ;
+}
+
+.giftbox .preim li:nth-child(2):before {
+    background: #f2f9e7 url(./images/icons2.png) no-repeat center -54px;
+}
+
+.giftbox .preim li:nth-child(3):before {
+    background: #fef6e1 url(./images/icons2.png) no-repeat center -134px;
+}
+
+.giftbox .preim li:nth-child(4):before {
+    background: #fce6e8 url(./images/icons2.png) no-repeat center -215px;
+}
+
+/*block4*/
+/* bizlife_inc */
+.block4 {
+    background: url(./images/b2.png) no-repeat center top;
+    color: #fff;
+    padding: 58px 0 68px;
+}
+
+.block4 .wrap {
+    padding-left: 461px;
+}
+
+.block4 h2,
+.block4 h2 span {
+    color: #fff;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.block4 h2 {
+    margin-bottom: 20px;
+}
+
+.block4 .photo {
+    background: url(./images/photo.jpg) no-repeat 0 0;
+    width: 403px;
+    height: 403px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    border: 30px solid rgba(255, 255, 255, .5);
+    background-clip: padding-box;
+}
+
+.block4 .wrap>p {
+    text-align: center;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+img[src$="i1.png"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img[src$="i2.png"] {
+    position: absolute;
+    top: 342px;
+    left: 37px;
+}
+
+img[src$="i3.png"] {
+    position: absolute;
+    top: 334px;
+    left: 412px;
+}
+
+/*block5*/
+/* owmen17 */
+.block5 h2 span {
+    color: #0e7dce;
+}
+
+.block5 .wrap {
+    background: url(./images/baby.jpg) no-repeat 0 120px;
+}
+
+.gallery {
+    width: 455px;
+    height: 329px;
+    border-radius: 10px;
+    overflow: hidden;
+    float: right;
+}
+
+.job {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.job li {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    margin-right: 20px;
+}
+
+.job li:last-child {
+    margin-right: 0;
+}
+
+.job img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.job p {
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+.giftbox {
+    background: #f9fcf1;
+}
+
+.giftbox h2 span {
+    color: #0e7dce;
+}
+
+.giftbox .video-container {
+    width: 480px;
+    height: 270px;
+    float: left;
+    margin-right: 30px;
+}
+
+.giftbox .wrap>p {
+    text-align: center;
+}
+
+/*block6*/
+/* after_qbici */
+.block6 {
+    background: #5c0358;
+    background: -moz-linear-gradient(-45deg, #5c0358 0%, #840461 50%, #5c0358 100%);
+    background: -webkit-linear-gradient(-45deg, #5c0358 0%, #840461 50%, #5c0358 100%);
+    background: linear-gradient(135deg, #5c0358 0%, #840461 50%, #5c0358 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5c0358', endColorstr='#5c0358', GradientType=1);
+    color: #fff;
+    padding-bottom: 60px;
+}
+
+.block6 h2 span {
+    color: #ffc834;
+}
+
+.reviews {
+    margin-bottom: 40px;
+}
+
+.reviews .rev {
+    display: table;
+    width: 850px;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+}
+
+.rev-img {
+    width: 226px;
+    height: 226px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.rev img {
+    border-radius: 100%;
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.rev h3 {
+    font-size: 18px;
+    text-transform: none;
+    overflow: hidden;
+}
+
+.rev h3:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #ffc834;
+    float: left;
+    margin: 2px 10px 0 0;
+    border: 5px solid #cb7648;
+}
+
+.rev h3 span {
+    font-size: 14px;
+}
+
+.rev p {
+    font-size: 16px;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.rev-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.videoreviews {}
+
+.videoreviews li {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+
+}
+
+.videoreviews li {}
+
+.videoreviews li {}
+
+.videoreviews li .video-container {
+    width: 260px;
+    height: 130px;
+}
+
+/*block7*/
+/* endzeit_____ */
+.block7 h2 span {
+    color: #0e7dce;
+}
+
+.ship {
+    text-align: center;
+}
+
+.ship li {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.333333%;
+}
+
+.ship h3 {
+    color: #85c500;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.ship p {
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+.ship li:before {
+    content: '';
+    display: block;
+    background: #effdd0 url(./images/ship.png) no-repeat center 37px;
+    width: 114px;
+    height: 114px;
+    border-radius: 100%;
+    margin: 0 auto 20px;
+    border: 6px solid #fff;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+}
+
+.ship li:nth-child(2):before {
+    background: #f2f8fc url(./images/ship.png) no-repeat center -90px;
+}
+
+.ship li:nth-child(3):before {
+    background: #ffe5f5 url(./images/ship.png) no-repeat center -218px;
+}
+
+.ship li:nth-child(2) h3 {
+    color: #0e7dce;
+}
+
+.ship li:nth-child(3) h3 {
+    color: #ad287a;
+}
+
+/*block8*/
+/* michael-k90 */
+.end {}
+
+/*block9*/
+/* bizlife_inc */
+
+
+/*block10*/
+/* owmen17 */
+
+
+.footer {
+    text-align: center;
+    padding: 40px 0 30px;
+}
+
+.footer a {
+    font-size: 14px;
+    color: #333;
+}
+
+/*-------------------------------------- Media Queries ----959---------------------------------*/
+/* after_qbici */
+@media screen and (max-width: 976px) {
+    .block1 {
+        background: url(./images/b1m.jpg) no-repeat center top;
+        height: 504px;
+        padding: 25px 0 0;
+    }
+
+    .gift {
+        top: 309px;
+    }
+
+    .top-title {
+        padding: 0;
+        background: rgba(71, 1, 41, .4);
+        text-align: center;
+        border-radius: 10px;
+        padding: 30px 0 19px 0;
+        margin-bottom: 20px;
+    }
+
+    .block1 h1 {
+        width: auto;
+        float: none;
+        text-align: center;
+    }
+
+    .sale {
+        top: 139px;
+    }
+
+    .video-container {
+        width: 100%;
+        height: 350px;
+    }
+
+    .block4 {
+        background: #5c0358;
+        background: -moz-linear-gradient(-45deg, #5c0358 0%, #840461 50%, #5c0358 100%);
+        background: -webkit-linear-gradient(-45deg, #5c0358 0%, #840461 50%, #5c0358 100%);
+        background: linear-gradient(135deg, #5c0358 0%, #840461 50%, #5c0358 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5c0358', endColorstr='#5c0358', GradientType=1);
+    }
+
+    .block4 .wrap {
+        padding-left: 10px;
+    }
+
+    .block4 .photo {
+        width: 300px;
+        height: 300px;
+        position: static;
+        background-size: contain;
+        border-width: 20px;
+        margin: 0 auto 20px;
+    }
+
+    img[src$="i1.png"] {
+        top: 114px;
+        left: 106px;
+    }
+
+    img[src$="i2.png"] {
+        top: 565px;
+    }
+
+    img[src$="i3.png"] {
+        left: 501px;
+    }
+
+    .giftbox .video-container {
+        width: 100%;
+        height: 347px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .giftbox img {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .videoreviews li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .videoreviews li .video-container {
+        width: 100%;
+        height: 360px;
+    }
+
+    .block5 .wrap {
+        background-position: center 120px;
+    }
+
+    .block6 {
+        padding-bottom: 30px;
+    }
+
+    .gallery {
+        float: none;
+        margin: 389px auto 0px;
+    }
+
+    .job li {
+        margin: 0 10px 20px;
+    }
+
+    h2.title>span {
+        font-size: 40px;
+    }
+
+    .rev-img {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    .rev-img img {
+        margin: 0 auto;
+    }
+
+    .reviews .rev {
+        display: block;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .rev h3 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .rev-text {
+        display: block;
+    }
+
+    .rev h3:before {
+        display: inline-block;
+        float: none;
+        position: relative;
+        top: 3px;
+    }
+
+    .ship li {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .ship li:before {
+        margin: 0 30px 0 0;
+        float: left;
+    }
+
+    .ship h3 {
+        padding-top: 22px;
+    }
+
+    .ship h3,
+    .ship p {
+        overflow: hidden;
+    }
+
+    .ship p {
+        padding: 0;
+    }
+
+}
+
+/*-------------------------------------- Media Queries ----639---------------------------------*/
+/* michael-k90 */
+@media screen and (max-width: 659px) {
+    .block1 {
+        background: #470129 url(./images/b1s.jpg) no-repeat center top;
+        height: auto;
+        padding: 25px 0 46px;
+    }
+
+    .gift {
+        top: 280px;
+        right: 3px;
+    }
+
+    .block1 .wrap {
+        padding: 0;
+    }
+
+    .videoreviews li .video-container {
+        height: 180px;
+    }
+
+    .top-title {
+        padding: 21px 0 14px 0;
+    }
+
+    .block1 h1 {
+        font-size: 38px;
+        letter-spacing: 0;
+    }
+
+    .block1 h1 span {
+        font-size: 14px;
+        letter-spacing: 0;
+        padding: 0;
+    }
+
+    .formbox {
+        float: none;
+        margin: 0 auto;
+        background: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    .giftbox .video-container {
+        height: 173px;
+    }
+
+    .sale {
+        position: static;
+        margin: 0 0 221px 190px;
+    }
+
+    .video-container {
+        height: 180px;
+    }
+
+    h2.title>span {
+        font-size: 22px;
+    }
+
+    h2.title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .preim li {
+        width: 100%;
+        padding: 0 30px 20px;
+    }
+
+    .preim li:last-child {
+        padding-bottom: 0;
+    }
+
+    .block4 h2,
+    .block4 h2 span {
+        line-height: 27px;
+    }
+
+    .block4 .photo {
+        width: 230px;
+        height: 230px;
+        border-width: 10px;
+    }
+
+    img[src$="i1.png"] {
+        top: 107px;
+        left: 29px;
+        width: 60px;
+    }
+
+    img[src$="i3.png"] {
+        left: 252px;
+        top: 262px;
+        width: 46px;
+    }
+
+    img[src$="i2.png"] {
+        top: 565px;
+        width: 50px;
+        top: inherit;
+        z-index: 12;
+        bottom: -75px;
+    }
+
+    .block4 {
+        padding: 47px 0 68px;
+    }
+
+    .block5 .wrap {
+        background: none;
+    }
+
+    .gallery {
+        margin-top: 0;
+        width: 100%;
+        height: 216px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: 155px;
+    }
+
+    .ship li:before {
+        margin: 0 auto;
+        float: none;
+    }
+
+    .ship h3,
+    .ship p {
+        text-align: center;
+    }
+}
