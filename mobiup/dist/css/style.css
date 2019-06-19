@@ -943,7 +943,7 @@ header {
         height: 390px; }
         @media (max-width: 650px) {
           .wrapper .block-content .block-price-lists .price-list:hover {
-            height: 720px; } }
+            height: 740px; } }
       .wrapper .block-content .block-price-lists .price-list:hover .block-title span {
         -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
