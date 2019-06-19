@@ -109,6 +109,7 @@
 					transform: rotate(180deg);
 				}
 				.block-title{
+					user-select: none;
 					height: 74px;
 					background-position: center;
 					background-size: cover;

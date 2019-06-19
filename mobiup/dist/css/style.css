@@ -949,6 +949,10 @@ header {
         -ms-transform: rotate(180deg);
         transform: rotate(180deg); }
       .wrapper .block-content .block-price-lists .price-list .block-title {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         height: 74px;
         background-position: center;
         -webkit-background-size: cover;
