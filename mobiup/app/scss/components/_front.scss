@@ -58,7 +58,7 @@
 			display: grid;
 			align-items: center;
 			h1{
-				color: #FFFFFF;
+				color: #CCD;
 				font-size: 32px;
 				// font-weight: bold;
 			}
@@ -86,11 +86,12 @@
 			}
 		}
 	}
-	.block-content{
+	#block-content{
 		h1{
 			font-size: 30px;
 			text-align: center;
 			padding: 35px 0;
+			user-select: none;
 		}
 		.block-price-lists{
 			margin-bottom: 7px;

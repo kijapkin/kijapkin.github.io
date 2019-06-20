@@ -605,6 +605,8 @@ header {
           padding: 20px;
           background-color: rgba(0, 0, 0, 0.6);
           background-image: url(../images/bg.jpg);
+          -webkit-background-size: cover;
+          background-size: cover;
           margin-left: -15px;
           margin-right: -15px; } }
       header .top-strip .container-wrapper ul {
@@ -896,7 +898,7 @@ header {
       -ms-flex-align: center;
       align-items: center; }
       .wrapper #block-bg .container h1 {
-        color: #FFFFFF;
+        color: #CCD;
         font-size: 32px; }
       .wrapper #block-bg .container h2 {
         font-size: 23px;
@@ -933,29 +935,33 @@ header {
             display: -ms-flexbox;
             display: flex;
             margin-right: 25px; }
-  .wrapper .block-content h1 {
+  .wrapper #block-content h1 {
     font-size: 30px;
     text-align: center;
-    padding: 35px 0; }
-  .wrapper .block-content .block-price-lists {
+    padding: 35px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .wrapper #block-content .block-price-lists {
     margin-bottom: 7px; }
-    .wrapper .block-content .block-price-lists .price-list {
+    .wrapper #block-content .block-price-lists .price-list {
       height: 74px;
       margin-bottom: 7px;
       overflow: hidden;
       -webkit-transition: .4s ease-in-out;
       -o-transition: .4s ease-in-out;
       transition: .4s ease-in-out; }
-      .wrapper .block-content .block-price-lists .price-list:hover {
+      .wrapper #block-content .block-price-lists .price-list:hover {
         height: 390px; }
         @media (max-width: 650px) {
-          .wrapper .block-content .block-price-lists .price-list:hover {
+          .wrapper #block-content .block-price-lists .price-list:hover {
             height: 740px; } }
-      .wrapper .block-content .block-price-lists .price-list:hover .block-title span {
+      .wrapper #block-content .block-price-lists .price-list:hover .block-title span {
         -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
         transform: rotate(180deg); }
-      .wrapper .block-content .block-price-lists .price-list .block-title {
+      .wrapper #block-content .block-price-lists .price-list .block-title {
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -973,20 +979,20 @@ header {
         -ms-flex-align: center;
         align-items: center;
         grid-template-columns: 55fr 37fr auto; }
-        .wrapper .block-content .block-price-lists .price-list .block-title p {
+        .wrapper #block-content .block-price-lists .price-list .block-title p {
           font-size: 24px;
           font-weight: bold; }
-        .wrapper .block-content .block-price-lists .price-list .block-title span {
+        .wrapper #block-content .block-price-lists .price-list .block-title span {
           -webkit-transition: .5s;
           -o-transition: .5s;
           transition: .5s; }
-        .wrapper .block-content .block-price-lists .price-list .block-title p:nth-child(2) {
+        .wrapper #block-content .block-price-lists .price-list .block-title p:nth-child(2) {
           font-size: 18px;
           font-weight: normal; }
-      .wrapper .block-content .block-price-lists .price-list .block-items {
+      .wrapper #block-content .block-price-lists .price-list .block-items {
         -webkit-box-shadow: 0 3px 10px #e5e5e5;
         box-shadow: 0 3px 10px #e5e5e5; }
-        .wrapper .block-content .block-price-lists .price-list .block-items .item {
+        .wrapper #block-content .block-price-lists .price-list .block-items .item {
           font-size: 18px;
           height: 44px;
           background-color: #FFFFFF;
@@ -1001,24 +1007,24 @@ header {
           align-items: center;
           grid-template-columns: 34fr 10fr 10fr 10fr; }
           @media (max-width: 650px) {
-            .wrapper .block-content .block-price-lists .price-list .block-items .item {
+            .wrapper #block-content .block-price-lists .price-list .block-items .item {
               grid-template-columns: 1fr;
               height: auto; } }
-          .wrapper .block-content .block-price-lists .price-list .block-items .item p {
+          .wrapper #block-content .block-price-lists .price-list .block-items .item p {
             color: #1aa760;
             text-align: right; }
-            .wrapper .block-content .block-price-lists .price-list .block-items .item p:first-child {
+            .wrapper #block-content .block-price-lists .price-list .block-items .item p:first-child {
               color: #000;
               text-align: left; }
-          .wrapper .block-content .block-price-lists .price-list .block-items .item:nth-child(even) {
+          .wrapper #block-content .block-price-lists .price-list .block-items .item:nth-child(even) {
             background-color: #f8f8f8; }
-          .wrapper .block-content .block-price-lists .price-list .block-items .item:hover {
+          .wrapper #block-content .block-price-lists .price-list .block-items .item:hover {
             background-color: #FFFFFF;
             -webkit-box-shadow: 0 4px 20px #CCC;
             box-shadow: 0 4px 20px #CCC;
             position: relative;
             z-index: 1; }
-          .wrapper .block-content .block-price-lists .price-list .block-items .item button {
+          .wrapper #block-content .block-price-lists .price-list .block-items .item button {
             border: none;
             color: #00aee8;
             background-color: inherit;
