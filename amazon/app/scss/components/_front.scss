@@ -1,79 +1,222 @@
-*{
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	text-decoration: none;
-	font-family: sans-serif;
-	box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
-.wrapper_content{
-	background-color: #d0d0d0;
-	padding: 5px 0 40px;
-	.main-block{
-		max-width: 800px;
-		margin: 0 auto;
-		.inner-blocks{
-			background-color: #FFFFFF;
-			padding: 0 16px;
-			margin-bottom: 5px;
-		}
-		.block-congratulations{
-			padding-top: 18px;
-			margin-bottom: 0;
-			.text-config{
-				display: flex;
-				align-items: center;
-				.img{
-					margin-right: 5px;
-					padding-top: 5px;
-				}
-				div{
-					h3{
-						color: #212121;
-						font-size: small;
-					}
-					span{
-						color: #9fa2a6;
-						font-size: x-small;
-					}
-				}
-			}
-			.block-text{
-				padding-top: 5px;
-				p{
-					color: #111;
-					font-size: small;
-					padding-bottom: 20px;
-					span{
-						font-weight: bold;
-					}
-				}
-			}
-		}
-		.block-time{
-			border-top: 1px solid #ccc;
-			p{
-				padding: 10px 0;
-				color: #737373;
-				font-size: small;
-				font-weight: 300;
-				b{
-					color: red;
-				}
-			}
-		}
-		.block-questions{
-			padding: 30px 10px;
-			.title{
-			}
-			.block-buttons{
-				button{
-					max-width: 616px;
-					padding: 10px 0;
-					margin: 5px 0;
-					background-color: linear-gradient(to bottom,#f6d99f 0,#f1c54c 100%);
-				}
-			}
-		}
-	}
+
+body {
+    background-color: #d0d0d0;
+    min-height: 100vh;
+}
+
+.wrapper_content {
+    padding: 5px 0 40px;
+
+    .main-block {
+        max-width: 800px;
+        margin: 0 auto;
+
+        .inner-blocks {
+            background-color: #FFFFFF;
+            padding: 0 16px;
+            margin-bottom: 5px;
+        }
+
+        .block-congratulations {
+            padding-top: 18px;
+            margin-bottom: 0;
+
+            .text-config {
+                display: flex;
+                align-items: center;
+
+                .img {
+                    margin-right: 5px;
+                    padding-top: 5px;
+                }
+
+                div {
+                    h3 {
+                        color: #212121;
+                        font-size: small;
+                    }
+
+                    span {
+                        color: #9fa2a6;
+                        font-size: x-small;
+                    }
+                }
+            }
+
+            .block-text {
+                padding-top: 5px;
+
+                p {
+                    color: #111;
+                    font-size: small;
+                    padding-bottom: 20px;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .block-time {
+            border-top: 1px solid #ccc;
+
+            p {
+                padding: 10px 0;
+                color: #737373;
+                font-size: small;
+                font-weight: 300;
+
+                b {
+                    color: red;
+                }
+            }
+        }
+
+        .block-questions {
+            text-align: center;
+            padding: 30px 10px;
+
+            .title {
+                p {
+                    font-weight: 300;
+                    color: #212121;
+                    font-size: 1.2em;
+
+                    &:nth-child(2) {
+                        font-weight: bold;
+                    }
+
+                    &:nth-child(3) {
+                        font-size: 1em;
+                    }
+                }
+            }
+
+            .buttons {
+                margin: 0 auto;
+                text-align: center;
+                max-width: 616px;
+
+                a {
+                    display: block;
+                    padding: 10px 0;
+                    margin: 10px 0;
+                    background-color: lime;
+                    border-radius: 3px;
+                    border: 1px solid #928058;
+                    background: linear-gradient(to bottom, #f6d99f 0, #f1c54c 100%);
+                }
+            }
+        }
+
+        .block-customer-reviews {
+            padding: 20px 16px 0;
+
+            h2 {
+                color: #C60;
+                font-size: 16px;
+                font-weight: normal;
+                padding-bottom: 20px;
+            }
+
+            .reviews-block {
+                .block-review {
+                    padding-bottom: 30px;
+
+                    .block-stars {
+                        display: flex;
+                        align-items: center;
+
+                        .stars {
+                            .rating-group {
+                                display: inline-flex;
+                            }
+
+                            .rating__icon {
+                                pointer-events: none;
+                            }
+
+                            /* hide radio inputs */
+                            .rating__input {
+                                position: absolute !important;
+                                left: -9999px !important;
+                            }
+
+                            /* set icon padding and size */
+                            .rating__label {
+                                cursor: pointer;
+                                padding: 0 0.1em;
+                                font-size: 15px;
+                            }
+
+                            /* set default star color */
+                            .rating__icon--star {
+                                color: orange;
+                            }
+
+                            /* set color of none icon when unchecked */
+                            .rating__icon--none {
+                                color: #eee;
+                            }
+
+                            /* if none icon is checked, make it red */
+                            .rating__input--none:checked+.rating__label .rating__icon--none {
+                                color: red;
+                            }
+
+                            /* if any input is checked, make its following siblings grey */
+                            .rating__input:checked~.rating__label .rating__icon--star {
+                                color: #ddd;
+                            }
+
+                            /* make all stars orange on rating group hover */
+                            .rating-group:hover .rating__label .rating__icon--star {
+                                color: orange;
+                            }
+
+                            /* make hovered input's following siblings grey on hover */
+                            .rating__input:hover~.rating__label .rating__icon--star {
+                                color: #ddd;
+                            }
+
+                            /* make none icon grey on rating group hover */
+                            .rating-group:hover .rating__input--none:not(:hover)+.rating__label .rating__icon--none {
+                                color: #eee;
+                            }
+                        }
+                        span{
+                        	font-weight: bold;
+                        	padding-left: 6px;
+                        	font-size: small;
+                        }
+                    }
+                    .block-name{
+                    	padding-top: 4px;
+                    	span{
+                    		color: #545454;
+                    		font-weight: 700;
+                    		font-size: small;
+                    		&:nth-child(2){
+                    			color: #0064c0;
+                    		}
+                    	}
+                    }
+                    p{
+                    	color: #111;
+                    	font-size: small;
+                    	padding-top: 4px;
+                    }
+                }
+            }
+        }
+    }
 }

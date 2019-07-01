@@ -177,6 +177,8 @@ a:hover {
     padding: 6px 0;
     border-bottom: 2px solid #f90;
     text-align: center;
+    position: fixed;
+    width: 100%;
 }
 
 .top-strip h1 {
@@ -200,7 +202,7 @@ a:hover {
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 12px 0 8px;
+    padding: 40px 0 8px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -218,7 +220,7 @@ a:hover {
 }
 
 .bottom-strip .wrapper-header h2 {
-    padding: 8px 0;
+    padding: 6px 0;
     font-size: 1.05em;
     color: #111;
     font-weight: normal;
@@ -236,8 +238,12 @@ a:hover {
     box-sizing: border-box;
 }
 
-.wrapper_content {
+body {
     background-color: #d0d0d0;
+    min-height: 100vh;
+}
+
+.wrapper_content {
     padding: 5px 0 40px;
 }
 
@@ -313,20 +319,128 @@ a:hover {
 }
 
 .wrapper_content .main-block .block-questions {
+    text-align: center;
     padding: 30px 10px;
 }
 
-.wrapper_content .main-block .block-questions .block-buttons button {
-    max-width: 616px;
-    padding: 10px 0;
-    margin: 5px 0;
-    background-color: linear-gradient(to bottom, #f6d99f 0, #f1c54c 100%);
+.wrapper_content .main-block .block-questions .title p {
+    font-weight: 300;
+    color: #212121;
+    font-size: 1.2em;
 }
 
-.footer {
-    width: 100%;
-    margin: -235px auto 0;
-    height: 235px;
-    background: #fff;
-    position: relative;
+.wrapper_content .main-block .block-questions .title p:nth-child(2) {
+    font-weight: bold;
 }
+
+.wrapper_content .main-block .block-questions .title p:nth-child(3) {
+    font-size: 1em;
+}
+
+.wrapper_content .main-block .block-questions .buttons {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 616px;
+}
+
+.wrapper_content .main-block .block-questions .buttons a {
+    display: block;
+    padding: 10px 0;
+    margin: 10px 0;
+    background-color: lime;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #928058;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6d99f), to(#f1c54c));
+    background: -webkit-linear-gradient(top, #f6d99f 0, #f1c54c 100%);
+    background: -o-linear-gradient(top, #f6d99f 0, #f1c54c 100%);
+    background: linear-gradient(to bottom, #f6d99f 0, #f1c54c 100%);
+}
+
+.wrapper_content .main-block .block-customer-reviews {
+    padding: 20px 16px 0;
+}
+
+.wrapper_content .main-block .block-customer-reviews h2 {
+    color: #C60;
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.wrapper_content .main-block .block-customer-reviews .reviews-block .block-review {
+    padding-bottom: 30px;
+}
+
+.wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars .stars {
+            /* hide radio inputs */
+            /* set icon padding and size */
+            /* set default star color */
+            /* set color of none icon when unchecked */
+            /* if none icon is checked, make it red */
+            /* if any input is checked, make its following siblings grey */
+            /* make all stars orange on rating group hover */
+            /* make hovered input's following siblings grey on hover */
+            /* make none icon grey on rating group hover */ }
+            .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars .stars .rating-group {
+              display: -webkit-inline-box;
+              display: -webkit-inline-flex;
+              display: -ms-inline-flexbox;
+              display: inline-flex; }
+            .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars .stars .rating__icon {
+              pointer-events: none; }
+            .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars .stars .rating__input {
+              position: absolute !important;
+              left: -9999px !important; }
+            .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars .stars .rating__label {
+              cursor: pointer;
+              padding: 0 0.1em;
+              font-size: 15px; }
+            .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars .stars .rating__icon--star {
+              color: orange; }
+            .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars .stars .rating__icon--none {
+              color: #eee; }
+            .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars .stars .rating__input--none:checked + .rating__label .rating__icon--none {
+              color: red; }
+            .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars .stars .rating__input:checked ~ .rating__label .rating__icon--star {
+              color: #ddd; }
+            .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars .stars .rating-group:hover .rating__label .rating__icon--star {
+              color: orange; }
+            .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars .stars .rating__input:hover ~ .rating__label .rating__icon--star {
+              color: #ddd; }
+            .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars .stars .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+              color: #eee; }
+          .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-stars span {
+            font-weight: bold;
+            padding-left: 6px;
+            font-size: small; }
+        .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-name {
+          padding-top: 4px; }
+          .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-name span {
+            color: #545454;
+            font-weight: 700;
+            font-size: small; }
+            .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review .block-name span:nth-child(2) {
+              color: #0064c0; }
+        .wrapper_content .main-block .block-customer-reviews .reviews-block .block-review p {
+          color: #111;
+          font-size: small;
+          padding-top: 4px; }
+
+.footer {
+  width: 100%;
+  margin: -235px auto 0;
+  height: 235px;
+  background: #fff;
+  position: relative; }
