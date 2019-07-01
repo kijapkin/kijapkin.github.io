@@ -1,0 +1,19 @@
+.top-strip{
+	background-color: #232f3e;
+	padding: 6px 0;
+   	border-bottom: 2px solid #f90;
+   	text-align: center;
+   	h1{
+		color: #fff;
+	    font-weight: 600;
+	    font-size: 12px;
+   	}
+}
+.bottom-strip{
+	background-color: #232f3e;
+	.inner-strip{
+		display: flex;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+}
