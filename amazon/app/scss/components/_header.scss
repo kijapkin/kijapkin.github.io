@@ -9,11 +9,30 @@
 	    font-size: 12px;
    	}
 }
-.bottom-strip{
+.middle-strip{
 	background-color: #232f3e;
-	.inner-strip{
+	.wrapper-header{
 		display: flex;
+		align-items: center;
 		max-width: 800px;
 		margin: 0 auto;
+		padding: 12px 0 8px;
+		justify-content: space-between;
+	}
+}
+.bottom-strip{
+	background-color: #EEEEEE;
+	border-bottom: 1px solid #ccc;
+	.wrapper-header{
+		margin: 0 auto;
+		max-width: 800px;
+		h2{
+			padding: 8px 0;
+			font-size: 1.05em;
+			color: #111;
+			font-weight: normal;
+			display: inline-block;
+			border-bottom:2px solid #ff9900;
+		}
 	}
 }

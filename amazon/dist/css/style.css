@@ -1,7 +1,3 @@
-.middle {
-    padding-bottom: 235px;
-}
-
 html {
     height: 100%;
 }
@@ -10,7 +6,6 @@ body {
   /* font: 400 14px 'ProximaNova', Arial, sans-serif; */
     width: 100%;
     height: 100%;
-    line-height: 1.3;
     position: relative;
 }
 
@@ -190,17 +185,45 @@ a:hover {
     font-size: 12px;
 }
 
-.bottom-strip {
+.middle-strip {
     background-color: #232f3e;
 }
 
-.bottom-strip .inner-strip {
+.middle-strip .wrapper-header {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     max-width: 800px;
     margin: 0 auto;
+    padding: 12px 0 8px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.bottom-strip {
+    background-color: #EEEEEE;
+    border-bottom: 1px solid #ccc;
+}
+
+.bottom-strip .wrapper-header {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.bottom-strip .wrapper-header h2 {
+    padding: 8px 0;
+    font-size: 1.05em;
+    color: #111;
+    font-weight: normal;
+    display: inline-block;
+    border-bottom: 2px solid #ff9900;
 }
 
 * {
@@ -211,6 +234,93 @@ a:hover {
     font-family: sans-serif;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.wrapper_content {
+    background-color: #d0d0d0;
+    padding: 5px 0 40px;
+}
+
+.wrapper_content .main-block {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.wrapper_content .main-block .inner-blocks {
+    background-color: #FFFFFF;
+    padding: 0 16px;
+    margin-bottom: 5px;
+}
+
+.wrapper_content .main-block .block-congratulations {
+    padding-top: 18px;
+    margin-bottom: 0;
+}
+
+.wrapper_content .main-block .block-congratulations .text-config {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.wrapper_content .main-block .block-congratulations .text-config .img {
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+.wrapper_content .main-block .block-congratulations .text-config div h3 {
+    color: #212121;
+    font-size: small;
+}
+
+.wrapper_content .main-block .block-congratulations .text-config div span {
+    color: #9fa2a6;
+    font-size: x-small;
+}
+
+.wrapper_content .main-block .block-congratulations .block-text {
+    padding-top: 5px;
+}
+
+.wrapper_content .main-block .block-congratulations .block-text p {
+    color: #111;
+    font-size: small;
+    padding-bottom: 20px;
+}
+
+.wrapper_content .main-block .block-congratulations .block-text p span {
+    font-weight: bold;
+}
+
+.wrapper_content .main-block .block-time {
+    border-top: 1px solid #ccc;
+}
+
+.wrapper_content .main-block .block-time p {
+    padding: 10px 0;
+    color: #737373;
+    font-size: small;
+    font-weight: 300;
+}
+
+.wrapper_content .main-block .block-time p b {
+    color: red;
+}
+
+.wrapper_content .main-block .block-questions {
+    padding: 30px 10px;
+}
+
+.wrapper_content .main-block .block-questions .block-buttons button {
+    max-width: 616px;
+    padding: 10px 0;
+    margin: 5px 0;
+    background-color: linear-gradient(to bottom, #f6d99f 0, #f1c54c 100%);
 }
 
 .footer {
